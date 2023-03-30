@@ -1,0 +1,15 @@
+BOX=blinky-box-tutorial
+SUBSCRIBETOPIC=blinky-box-tutorial/+/+/#
+MONGODBIP=mongodb+srv://admin:aaaaaa@cluster0.bbbbbbmongodb.net/blinky-lite?retryWrites=true&w=majority
+MQTTCLIENTID=blinky-box-tutorial
+MQTTSERVERIP=ccccc.com
+MQTTUSERNAME=ddddd
+MQTTPASSWORD=eeeee
+NEXMOAPIKEY=fffff
+NEXMOAPISECRET=ggggg
+JWTKEYSECRET=hhhhh
+MAXDBSIZE=450000000
+IPREFWEB=https://www.mmmm.se
+TWOFA=0
+ENABLEARCHIVE=1
+NODEREDCONFIGSECRET=nnnnn
