@@ -1154,35 +1154,6 @@
         "y": 3559
     },
     {
-        "id": "f50b4ef8bb21b694",
-        "type": "group",
-        "z": "e17f7487.2a78e8",
-        "name": "Data Logger",
-        "style": {
-            "stroke": "#001f60",
-            "fill": "#ffffbf",
-            "label": true,
-            "color": "#001f60"
-        },
-        "nodes": [
-            "f20b241f2c715e8e",
-            "4ffc61b266cd720c",
-            "d0942eab7e4a8590",
-            "e30d52b0766a90c3",
-            "079ec35186fa23a5",
-            "34606eece52fa71b",
-            "fcb77c04cd512365",
-            "c10c2247f9504692",
-            "a190426bb07ca2a4",
-            "2641ddb623e2304e",
-            "22b380bf271f32a6",
-            "51d9c19228581a47",
-            "58d6ed06f139a48c"
-        ],
-        "x": 154,
-        "y": 479
-    },
-    {
         "id": "c3a9f56445acb1b2",
         "type": "group",
         "z": "8475ab9.3d26058",
@@ -1404,7 +1375,9 @@
             "4855b6b5352f7431"
         ],
         "x": 154,
-        "y": 819
+        "y": 819,
+        "w": 1582,
+        "h": 82
     },
     {
         "id": "4d9aee0d09b30607",
@@ -1424,7 +1397,9 @@
             "893874ffb26184f9"
         ],
         "x": 154,
-        "y": 959
+        "y": 959,
+        "w": 932,
+        "h": 82
     },
     {
         "id": "801fb378bac3288c",
@@ -1979,9 +1954,7 @@
             "bb7837ce.8d7338"
         ],
         "x": 154,
-        "y": 59,
-        "w": 1132,
-        "h": 82
+        "y": 59
     },
     {
         "id": "bb926706795e937c",
@@ -2058,7 +2031,9 @@
             "1e4c722624acdcc6"
         ],
         "x": 154,
-        "y": 59
+        "y": 59,
+        "w": 472,
+        "h": 322
     },
     {
         "id": "efd09052a685f540",
@@ -2308,6 +2283,38 @@
         ],
         "x": 1194,
         "y": 2419
+    },
+    {
+        "id": "94d9d3035ab5f721",
+        "type": "group",
+        "z": "e17f7487.2a78e8",
+        "name": "Data Logger",
+        "style": {
+            "stroke": "#001f60",
+            "fill": "#ffffbf",
+            "label": true
+        },
+        "nodes": [
+            "f20b241f2c715e8e",
+            "4ffc61b266cd720c",
+            "d0942eab7e4a8590",
+            "e30d52b0766a90c3",
+            "079ec35186fa23a5",
+            "34606eece52fa71b",
+            "fcb77c04cd512365",
+            "c10c2247f9504692",
+            "a190426bb07ca2a4",
+            "2641ddb623e2304e",
+            "22b380bf271f32a6",
+            "51d9c19228581a47",
+            "58d6ed06f139a48c",
+            "f75b9887786b11c4",
+            "d770011b4e239589"
+        ],
+        "x": 134,
+        "y": 439,
+        "w": 1512,
+        "h": 322
     },
     {
         "id": "6ad7c930.1a06b8",
@@ -5072,14 +5079,14 @@
         "id": "f20b241f2c715e8e",
         "type": "mongodb3 in",
         "z": "e17f7487.2a78e8",
-        "g": "f50b4ef8bb21b694",
+        "g": "94d9d3035ab5f721",
         "service": "_ext_",
         "configNode": "9cd5ff5e.caf86",
         "name": "",
         "collection": "trays",
         "operation": "update",
-        "x": 1480,
-        "y": 580,
+        "x": 1460,
+        "y": 540,
         "wires": [
             []
         ]
@@ -5140,7 +5147,7 @@
         "id": "4ffc61b266cd720c",
         "type": "link out",
         "z": "e17f7487.2a78e8",
-        "g": "f50b4ef8bb21b694",
+        "g": "94d9d3035ab5f721",
         "name": "Subscribe Readings Out",
         "mode": "link",
         "links": [
@@ -5167,15 +5174,15 @@
             "410760b7c1cdbc31",
             "4df00f1e3ab2a9ef"
         ],
-        "x": 1225,
-        "y": 520,
+        "x": 1205,
+        "y": 480,
         "wires": []
     },
     {
         "id": "d0942eab7e4a8590",
         "type": "mqtt in",
         "z": "e17f7487.2a78e8",
-        "g": "f50b4ef8bb21b694",
+        "g": "94d9d3035ab5f721",
         "name": "Subscribe ",
         "topic": "$(SUBSCRIBETOPIC)",
         "qos": "0",
@@ -5184,8 +5191,8 @@
         "nl": false,
         "rap": false,
         "inputs": 0,
-        "x": 240,
-        "y": 640,
+        "x": 220,
+        "y": 600,
         "wires": [
             [
                 "e30d52b0766a90c3"
@@ -5196,13 +5203,13 @@
         "id": "e30d52b0766a90c3",
         "type": "json",
         "z": "e17f7487.2a78e8",
-        "g": "f50b4ef8bb21b694",
+        "g": "94d9d3035ab5f721",
         "name": "",
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 370,
-        "y": 640,
+        "x": 350,
+        "y": 600,
         "wires": [
             [
                 "079ec35186fa23a5"
@@ -5213,7 +5220,7 @@
         "id": "079ec35186fa23a5",
         "type": "function",
         "z": "e17f7487.2a78e8",
-        "g": "f50b4ef8bb21b694",
+        "g": "94d9d3035ab5f721",
         "name": "Split MQTT topic",
         "func": "var mqttArray = msg.topic.split('/');\nreturn {\n    topic   :   msg.topic, \n    payload : \n    [\n        {\n            $and   :    \n            [\n                {\n                    type : mqttArray[1]\n                },\n                {\n                    name : mqttArray[2]\n                }\n            ]\n        }, \n        {\n            projection  :\n            {\n                _id :   0\n                \n            }\n        }\n    ],\n    'tray'    :   msg.payload,\n    'action'  :   mqttArray[3]\n};\n",
         "outputs": 1,
@@ -5221,8 +5228,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 530,
-        "y": 640,
+        "x": 510,
+        "y": 600,
         "wires": [
             [
                 "34606eece52fa71b"
@@ -5233,14 +5240,14 @@
         "id": "34606eece52fa71b",
         "type": "mongodb3 in",
         "z": "e17f7487.2a78e8",
-        "g": "f50b4ef8bb21b694",
+        "g": "94d9d3035ab5f721",
         "service": "_ext_",
         "configNode": "9cd5ff5e.caf86",
         "name": "",
         "collection": "trays",
         "operation": "findOne",
-        "x": 750,
-        "y": 640,
+        "x": 730,
+        "y": 600,
         "wires": [
             [
                 "fcb77c04cd512365"
@@ -5251,7 +5258,7 @@
         "id": "fcb77c04cd512365",
         "type": "function",
         "z": "e17f7487.2a78e8",
-        "g": "f50b4ef8bb21b694",
+        "g": "94d9d3035ab5f721",
         "name": "Check if Tray Exists",
         "func": "function isEmpty(obj) \n{\n    for(var key in obj) \n    {\n        if(obj.hasOwnProperty(key))\n            return false;\n    }\n    return true;\n}\nif (isEmpty(msg.payload)) return null;\nreturn msg;",
         "outputs": 1,
@@ -5259,8 +5266,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 970,
-        "y": 640,
+        "x": 950,
+        "y": 600,
         "wires": [
             [
                 "c10c2247f9504692"
@@ -5271,7 +5278,7 @@
         "id": "c10c2247f9504692",
         "type": "switch",
         "z": "e17f7487.2a78e8",
-        "g": "f50b4ef8bb21b694",
+        "g": "94d9d3035ab5f721",
         "name": "",
         "property": "action",
         "propertyType": "msg",
@@ -5290,13 +5297,18 @@
                 "t": "eq",
                 "v": "postMortem",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "echo",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 3,
-        "x": 1130,
-        "y": 640,
+        "outputs": 4,
+        "x": 1110,
+        "y": 600,
         "wires": [
             [
                 "a190426bb07ca2a4",
@@ -5307,6 +5319,9 @@
             ],
             [
                 "51d9c19228581a47"
+            ],
+            [
+                "f75b9887786b11c4"
             ]
         ]
     },
@@ -5314,7 +5329,7 @@
         "id": "a190426bb07ca2a4",
         "type": "function",
         "z": "e17f7487.2a78e8",
-        "g": "f50b4ef8bb21b694",
+        "g": "94d9d3035ab5f721",
         "name": "update reading",
         "func": "if (!global.get('enableArchive')) return null;\nmsg.tray.timeStamp = new Date().getTime();\nvar keys = Object.keys(msg.tray);\nfor (var ii = 0; ii < keys.length; ++ii) msg.payload[keys[ii]] = msg.tray[keys[ii]];\n\nvar updateTrayMsg = \n{\n    topic:'updateTray',\n    payload:\n    [\n        {\n            $and   :    \n            [\n                {\n                    type : msg.payload.type\n                },\n                {\n                    name : msg.payload.name\n                }\n            ]\n        }, \n        msg.payload\n    ]\n};\nreturn updateTrayMsg\n",
         "outputs": 1,
@@ -5322,8 +5337,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1280,
-        "y": 580,
+        "x": 1260,
+        "y": 540,
         "wires": [
             [
                 "f20b241f2c715e8e"
@@ -5334,7 +5349,7 @@
         "id": "2641ddb623e2304e",
         "type": "function",
         "z": "e17f7487.2a78e8",
-        "g": "f50b4ef8bb21b694",
+        "g": "94d9d3035ab5f721",
         "name": "archive data",
         "func": "if (!global.get('enableArchive')) return null;\nmsg.tray.timeStamp = new Date().getTime();\nvar keys = Object.keys(msg.tray);\nfor (var ii = 0; ii < keys.length; ++ii) msg.payload[keys[ii]] = msg.tray[keys[ii]];\n\nvar archiveMsg = null;\nvar archiveTray = JSON.parse(JSON.stringify(msg.tray));\ndelete archiveTray.arcPeriod;\nkeys = Object.keys(archiveTray);\nfor (var ii = 0; ii < keys.length; ++ii)\n{\n    if (archiveTray[keys[ii]].hasOwnProperty('type'))\n    {\n        \n        archiveTray[keys[ii]] = JSON.parse(JSON.stringify(msg.tray[keys[ii]].value));\n    }\n}\narchiveMsg = {topic:'archiveData',payload: [archiveTray]};\nreturn archiveMsg\n",
         "outputs": 1,
@@ -5342,8 +5357,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1270,
-        "y": 640,
+        "x": 1250,
+        "y": 600,
         "wires": [
             [
                 "22b380bf271f32a6"
@@ -5354,14 +5369,14 @@
         "id": "22b380bf271f32a6",
         "type": "mongodb3 in",
         "z": "e17f7487.2a78e8",
-        "g": "f50b4ef8bb21b694",
+        "g": "94d9d3035ab5f721",
         "service": "_ext_",
         "configNode": "9cd5ff5e.caf86",
         "name": "",
         "collection": "archiver",
         "operation": "insertOne",
-        "x": 1500,
-        "y": 640,
+        "x": 1480,
+        "y": 600,
         "wires": [
             []
         ]
@@ -5454,7 +5469,7 @@
         "id": "51d9c19228581a47",
         "type": "function",
         "z": "e17f7487.2a78e8",
-        "g": "f50b4ef8bb21b694",
+        "g": "94d9d3035ab5f721",
         "name": "add postMortem",
         "func": "if (!global.get('enableArchive')) return null;\nmsg.tray.timeStamp = new Date().getTime();\nvar addPostMortemMsg = \n{\n    topic:'updateTray',\n    payload: [msg.tray]\n};\nreturn addPostMortemMsg\n",
         "outputs": 1,
@@ -5462,8 +5477,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1280,
-        "y": 700,
+        "x": 1260,
+        "y": 660,
         "wires": [
             [
                 "58d6ed06f139a48c"
@@ -5474,14 +5489,14 @@
         "id": "58d6ed06f139a48c",
         "type": "mongodb3 in",
         "z": "e17f7487.2a78e8",
-        "g": "f50b4ef8bb21b694",
+        "g": "94d9d3035ab5f721",
         "service": "_ext_",
         "configNode": "9cd5ff5e.caf86",
         "name": "",
         "collection": "postMortem",
         "operation": "insertOne",
-        "x": 1510,
-        "y": 700,
+        "x": 1490,
+        "y": 660,
         "wires": [
             []
         ]
@@ -5705,6 +5720,45 @@
         "libs": [],
         "x": 500,
         "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f75b9887786b11c4",
+        "type": "function",
+        "z": "e17f7487.2a78e8",
+        "g": "94d9d3035ab5f721",
+        "name": "Echo tray",
+        "func": "var newMsg = \n{\n    topic: msg.tray.topic,\n    payload: JSON.stringify(msg.payload)\n};\nreturn  newMsg;  \n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 720,
+        "wires": [
+            [
+                "d770011b4e239589"
+            ]
+        ]
+    },
+    {
+        "id": "d770011b4e239589",
+        "type": "mqtt out",
+        "z": "e17f7487.2a78e8",
+        "g": "94d9d3035ab5f721",
+        "name": "",
+        "topic": "",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "84d80994.260508",
+        "x": 1410,
+        "y": 720,
         "wires": []
     },
     {
