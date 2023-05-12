@@ -1,1 +1,1 @@
-# Blinky-Box Tutorial
+# Blinky-Lite-Box
