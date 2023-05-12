@@ -333,10 +333,10 @@ module.exports = {
          */
         tours: false,
         page: {
-            title: "blinky-box-tutorial"
+            title: "blinky-lite-box"
         },
         header: {
-            title: "blinky-box-tutorial"
+            title: "blinky-lite-box"
          },
     
 
