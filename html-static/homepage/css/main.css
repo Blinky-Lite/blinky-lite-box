@@ -154,7 +154,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url("/jekyll/img/header.jpg");
+  background-image: url("/homepage/img/header.jpg");
   text-align: center;
   color: white;
 }
