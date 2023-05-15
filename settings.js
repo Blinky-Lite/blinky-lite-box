@@ -40,7 +40,7 @@ module.exports = {
      * node-red from being able to decrypt your existing credentials and they will be
      * lost.
      */
-    credentialSecret: process.env.NODEREDCONFIGSECRET,
+    credentialSecret: false,
 
     /** By default, the flow JSON will be formatted over multiple lines making
      * it easier to compare changes when using version control.
@@ -76,7 +76,7 @@ module.exports = {
         type: "credentials",
         users: [{
             username: "admin",
-            password: "$2a$12$.VFC8rcOkXcDTVP0bJwFwujNc6R1qACWZzDfSJalIObNeYFV1BRLi",
+            password: "$2a$12$PwPyHimCHJW88CXZ9onmL.KKxOSDsZ0rVlno/kNSSZxVBFHMWd26W",
             permissions: "*"
         }]
     },

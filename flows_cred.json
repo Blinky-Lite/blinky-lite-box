@@ -1,3 +1,11 @@
 {
-    "$": "d6e44c3b8eca655417bbc8a0202f94d3jSHZGmL5onqan1+MEJyPjngB4K/X74sUutuEns5wwVkiZwAMD4ytVBKqkMaIiHTk8eGKDphzEsGUAndoYRL+24MqkgNVLRYeduUD"
+    "84d80994.260508": {
+        "user": "$(MQTTUSERNAME)",
+        "password": "$(MQTTPASSWORD)"
+    },
+    "9cd5ff5e.caf86": {},
+    "81dcb3a4917e5d5f": {
+        "apikey": "$(NEXMOAPIKEY)",
+        "apisecret": "$(NEXMOAPISECRET)"
+    }
 }

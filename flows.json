@@ -1930,7 +1930,9 @@
             "30a4a020cf5c79ba"
         ],
         "x": 114,
-        "y": 99
+        "y": 99,
+        "w": 342,
+        "h": 422
     },
     {
         "id": "8513b8699a14012a",
@@ -1954,7 +1956,9 @@
             "bb7837ce.8d7338"
         ],
         "x": 154,
-        "y": 59
+        "y": 59,
+        "w": 1132,
+        "h": 82
     },
     {
         "id": "bb926706795e937c",
@@ -2033,6 +2037,38 @@
         "x": 154,
         "y": 59,
         "w": 472,
+        "h": 322
+    },
+    {
+        "id": "94d9d3035ab5f721",
+        "type": "group",
+        "z": "e17f7487.2a78e8",
+        "name": "Data Logger",
+        "style": {
+            "stroke": "#001f60",
+            "fill": "#ffffbf",
+            "label": true
+        },
+        "nodes": [
+            "f20b241f2c715e8e",
+            "4ffc61b266cd720c",
+            "d0942eab7e4a8590",
+            "e30d52b0766a90c3",
+            "079ec35186fa23a5",
+            "34606eece52fa71b",
+            "fcb77c04cd512365",
+            "c10c2247f9504692",
+            "a190426bb07ca2a4",
+            "2641ddb623e2304e",
+            "22b380bf271f32a6",
+            "51d9c19228581a47",
+            "58d6ed06f139a48c",
+            "f75b9887786b11c4",
+            "d770011b4e239589"
+        ],
+        "x": 134,
+        "y": 439,
+        "w": 1512,
         "h": 322
     },
     {
@@ -2285,38 +2321,6 @@
         "y": 2419
     },
     {
-        "id": "94d9d3035ab5f721",
-        "type": "group",
-        "z": "e17f7487.2a78e8",
-        "name": "Data Logger",
-        "style": {
-            "stroke": "#001f60",
-            "fill": "#ffffbf",
-            "label": true
-        },
-        "nodes": [
-            "f20b241f2c715e8e",
-            "4ffc61b266cd720c",
-            "d0942eab7e4a8590",
-            "e30d52b0766a90c3",
-            "079ec35186fa23a5",
-            "34606eece52fa71b",
-            "fcb77c04cd512365",
-            "c10c2247f9504692",
-            "a190426bb07ca2a4",
-            "2641ddb623e2304e",
-            "22b380bf271f32a6",
-            "51d9c19228581a47",
-            "58d6ed06f139a48c",
-            "f75b9887786b11c4",
-            "d770011b4e239589"
-        ],
-        "x": 134,
-        "y": 439,
-        "w": 1512,
-        "h": 322
-    },
-    {
         "id": "6ad7c930.1a06b8",
         "type": "ui_base",
         "theme": {
@@ -2428,7 +2432,7 @@
         "type": "mqtt-broker",
         "name": "MQTT Broker",
         "broker": "$(MQTTSERVERIP)",
-        "port": "1883",
+        "port": "$(MQTTPORT)",
         "clientid": "$(MQTTCLIENTID)",
         "autoConnect": true,
         "usetls": false,
