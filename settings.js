@@ -76,7 +76,7 @@ module.exports = {
         type: "credentials",
         users: [{
             username: "admin",
-            password: "$2a$12$PwPyHimCHJW88CXZ9onmL.KKxOSDsZ0rVlno/kNSSZxVBFHMWd26W",
+            password: process.env.NODEREDPASSWORD,
             permissions: "*"
         }]
     },
@@ -139,7 +139,7 @@ module.exports = {
  ******************************************************************************/
 
     /** the tcp port that the Node-RED web server is listening on */
-    uiPort: process.env.PORT || 60427,
+    uiPort: process.env.NODEREDPORT,
 
     /** By default, the Node-RED UI accepts connections on all IPv4 interfaces.
      * To listen on all IPv6 addresses, set uiHost to "::",
@@ -333,10 +333,10 @@ module.exports = {
          */
         tours: false,
         page: {
-            title: "blinky-lite-box"
+            title: process.env.NODEREDLABEL
         },
         header: {
-            title: "blinky-lite-box"
+            title: process.env.NODEREDLABEL
          },
     
 
