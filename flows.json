@@ -1375,9 +1375,7 @@
             "4855b6b5352f7431"
         ],
         "x": 154,
-        "y": 819,
-        "w": 1582,
-        "h": 82
+        "y": 819
     },
     {
         "id": "4d9aee0d09b30607",
@@ -1397,9 +1395,7 @@
             "893874ffb26184f9"
         ],
         "x": 154,
-        "y": 959,
-        "w": 932,
-        "h": 82
+        "y": 959
     },
     {
         "id": "801fb378bac3288c",
@@ -1602,7 +1598,9 @@
             "9a57a0bad4264074"
         ],
         "x": 174,
-        "y": 59
+        "y": 59,
+        "w": 1532,
+        "h": 322
     },
     {
         "id": "6feaa64a0a1fa2e4",
@@ -1633,7 +1631,9 @@
             "6597cda2e4462431"
         ],
         "x": 174,
-        "y": 439
+        "y": 439,
+        "w": 1712,
+        "h": 202
     },
     {
         "id": "5cd034832a45a34a",
@@ -1665,7 +1665,9 @@
             "953197def2c1598c"
         ],
         "x": 184,
-        "y": 719
+        "y": 719,
+        "w": 1522,
+        "h": 242
     },
     {
         "id": "af622659deabdbdd",
@@ -1954,9 +1956,7 @@
             "bb7837ce.8d7338"
         ],
         "x": 154,
-        "y": 59,
-        "w": 1132,
-        "h": 82
+        "y": 59
     },
     {
         "id": "bb926706795e937c",
@@ -2033,9 +2033,7 @@
             "1e4c722624acdcc6"
         ],
         "x": 154,
-        "y": 59,
-        "w": 472,
-        "h": 322
+        "y": 59
     },
     {
         "id": "efd09052a685f540",
@@ -11202,7 +11200,7 @@
         "fieldType": "msg",
         "format": "javascript",
         "syntax": "mustache",
-        "template": "//numberSetCube\n        class NumberSetCube   extends CubeRowParameterView\n        {\n            addComponents(widgetColumns)\n            {\n                this.inputBox = document.createElement('input');\n                this.inputBox.setAttribute('class', 'numberSetCube-inputbox');\n                this.inputBox.setAttribute('type', 'text');\n                this.inputBox.setAttribute('value', '0');\n                this.inputBox.oninput = event => {this.inputChange()};\n                widgetColumns[0].appendChild(this.inputBox);\n\n                this.unitSpan  = document.createElement('span');\n                this.unitSpan.setAttribute('class', 'cubeRowParameterView-unit-span');\n                this.unitSpan.innerHTML = '';\n                widgetColumns[1].appendChild(this.unitSpan);\n\n                this.settingButton = document.createElement('button');\n                this.settingButton.setAttribute('class', 'btn btn-block numberSetCube-button');\n                this.settingButton.innerHTML = '&#10003;';\n                this.settingButton.onclick = event => {this.changeSetting()};\n                widgetColumns[2].appendChild(this.settingButton);\n\n                this.showSettingButton(false);\n            }\n\n            showSettingButton(showButton)\n            {\n                if (showButton)\n                {\n                    this.settingButton.style.display='block';\n                }\n                else\n                {\n                    this.settingButton.style.display='none';\n                }\n            }\n            inputChange()\n            {\n                this.card.settingInProgress = true\n                this.changed = true;\n                this.showSettingButton(true);\n            }\n            changeSetting()\n            {\n                this.showSettingButton(false);\n                if (isNaN(this.inputBox.value))\n                {\n                    this.changed = false;\n                    return;\n                }\n                let payload = {'cube': this.config.cubeName, 'value':Number(this.inputBox.value)};\n                let actionMsg = \n                    {\n                        topic   : this.card.app.box + '/' +  this.tray.type + '/' +  this.tray.name + '/setting/setting',\n                        payload : payload\n                    };\n                this.card.app.sendActionMsg('sendSettingToMqtt','setting',actionMsg);\n                this.changed = false;\n                this.card.settingInProgress = false;\n            }\n            updateCubeValue()\n            {\n                if (!this.changed) \n                {\n                    this.inputBox.value = this.tray[this.config.cubeName].value.toString();\n                    this.unitSpan.innerHTML    = this.tray[this.config.cubeName].unit;\n                }\n\n            }\n        }\n",
+        "template": "//numberSetCube\n        class NumberSetCube   extends CubeRowParameterView\n        {\n            addComponents(widgetColumns)\n            {\n                this.inputBox = document.createElement('input');\n                this.inputBox.setAttribute('class', 'numberSetCube-inputbox');\n                this.inputBox.setAttribute('type', 'text');\n                this.inputBox.setAttribute('value', '0');\n                this.inputBox.onclick = event => {this.inputChange()};\n                widgetColumns[0].appendChild(this.inputBox);\n\n                this.unitSpan  = document.createElement('span');\n                this.unitSpan.setAttribute('class', 'cubeRowParameterView-unit-span');\n                this.unitSpan.innerHTML = '';\n                widgetColumns[1].appendChild(this.unitSpan);\n\n                this.settingButton = document.createElement('button');\n                this.settingButton.setAttribute('class', 'btn btn-block numberSetCube-button');\n                this.settingButton.innerHTML = '&#10003;';\n                this.settingButton.onclick = event => {this.changeSetting()};\n                widgetColumns[2].appendChild(this.settingButton);\n\n                this.showSettingButton(false);\n            }\n\n            showSettingButton(showButton)\n            {\n                if (showButton)\n                {\n                    this.settingButton.style.display='block';\n                }\n                else\n                {\n                    this.settingButton.style.display='none';\n                }\n            }\n            inputChange()\n            {\n                this.card.settingInProgress = true\n                this.changed = true;\n                this.showSettingButton(true);\n            }\n            changeSetting()\n            {\n                this.showSettingButton(false);\n                if (isNaN(this.inputBox.value))\n                {\n                    this.changed = false;\n                    return;\n                }\n                let payload = {'cube': this.config.cubeName, 'value':Number(this.inputBox.value)};\n                let actionMsg = \n                    {\n                        topic   : this.card.app.box + '/' +  this.tray.type + '/' +  this.tray.name + '/setting/setting',\n                        payload : payload\n                    };\n                this.card.app.sendActionMsg('sendSettingToMqtt','setting',actionMsg);\n                this.changed = false;\n                this.card.settingInProgress = false;\n            }\n            updateCubeValue()\n            {\n                if (!this.changed) \n                {\n                    this.inputBox.value = this.tray[this.config.cubeName].value.toString();\n                    this.unitSpan.innerHTML    = this.tray[this.config.cubeName].unit;\n                }\n\n            }\n        }\n",
         "output": "str",
         "x": 1140,
         "y": 140,
