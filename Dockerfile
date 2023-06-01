@@ -1,4 +1,7 @@
 FROM node:16.20-alpine3.16
+RUN apk add --update \
+    curl \
+    && rm -rf /var/cache/apk/*
 COPY package.json       /app/
 COPY package-lock.json  /app/
 COPY html-static/       /app/html-static/
