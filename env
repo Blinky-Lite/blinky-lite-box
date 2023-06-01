@@ -14,5 +14,5 @@ IPREFWEB=https://www.mmmm.se
 TWOFA=0
 ENABLEARCHIVE=1
 NODEREDLABEL=blinky-lite-box
-NODEREDPASSWORD=$2a.......................................................z6
 NODEREDPORT=60427
+ENABLE_NODERED_EDITOR=1

@@ -1182,7 +1182,9 @@
             "a9bfa7132c055cbb"
         ],
         "x": 174,
-        "y": 319
+        "y": 319,
+        "w": 1052,
+        "h": 342
     },
     {
         "id": "410a9f1e572e2cb6",
@@ -1375,7 +1377,9 @@
             "4855b6b5352f7431"
         ],
         "x": 154,
-        "y": 819
+        "y": 819,
+        "w": 1582,
+        "h": 82
     },
     {
         "id": "4d9aee0d09b30607",
@@ -1395,7 +1399,9 @@
             "893874ffb26184f9"
         ],
         "x": 154,
-        "y": 959
+        "y": 959,
+        "w": 932,
+        "h": 82
     },
     {
         "id": "801fb378bac3288c",
@@ -1515,7 +1521,9 @@
             "bf4cd7e5aa7b7c58"
         ],
         "x": 174,
-        "y": 699
+        "y": 699,
+        "w": 1102,
+        "h": 842
     },
     {
         "id": "b47ef8a5f938f683",
@@ -1556,7 +1564,9 @@
             "09c74c5d6613d881"
         ],
         "x": 174,
-        "y": 1579
+        "y": 1579,
+        "w": 802,
+        "h": 842
     },
     {
         "id": "e7108cefde0d37c6",
@@ -1598,9 +1608,7 @@
             "9a57a0bad4264074"
         ],
         "x": 174,
-        "y": 59,
-        "w": 1532,
-        "h": 322
+        "y": 59
     },
     {
         "id": "6feaa64a0a1fa2e4",
@@ -1631,9 +1639,7 @@
             "6597cda2e4462431"
         ],
         "x": 174,
-        "y": 439,
-        "w": 1712,
-        "h": 202
+        "y": 439
     },
     {
         "id": "5cd034832a45a34a",
@@ -1665,9 +1671,7 @@
             "953197def2c1598c"
         ],
         "x": 184,
-        "y": 719,
-        "w": 1522,
-        "h": 242
+        "y": 719
     },
     {
         "id": "af622659deabdbdd",
@@ -2033,7 +2037,9 @@
             "1e4c722624acdcc6"
         ],
         "x": 154,
-        "y": 59
+        "y": 59,
+        "w": 472,
+        "h": 322
     },
     {
         "id": "efd09052a685f540",
@@ -4978,13 +4984,10 @@
         "name": "Prune every 2 hours",
         "props": [
             {
-                "p": "payload",
-                "v": "",
-                "vt": "date"
+                "p": "payload"
             },
             {
                 "p": "topic",
-                "v": "",
                 "vt": "str"
             }
         ],
@@ -5065,10 +5068,10 @@
         "g": "a34ee7cdaf781b79",
         "service": "_ext_",
         "configNode": "9cd5ff5e.caf86",
-        "name": "",
+        "name": "find archiver size",
         "collection": "archiver",
         "operation": "stats",
-        "x": 540,
+        "x": 520,
         "y": 860,
         "wires": [
             [
@@ -5791,6 +5794,71 @@
         "wires": [
             [
                 "d770011b4e239589"
+            ]
+        ]
+    },
+    {
+        "id": "7c3a93f70a2b990a",
+        "type": "http in",
+        "z": "e17f7487.2a78e8",
+        "name": "healthcheck API",
+        "url": "/health",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 900,
+        "y": 240,
+        "wires": [
+            [
+                "64c995f0808eef31"
+            ]
+        ],
+        "info": "## Healthcheck HTTP API\n\n- __HTTP GET__ on `/health` should provide __HTTP 200__ response with response body `OK`"
+    },
+    {
+        "id": "f3da0fdf99cbba3e",
+        "type": "http response",
+        "z": "e17f7487.2a78e8",
+        "name": "HealthCheckNode",
+        "statusCode": "",
+        "headers": {},
+        "x": 1390,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "64c995f0808eef31",
+        "type": "function",
+        "z": "e17f7487.2a78e8",
+        "name": "HTTP healthcheck response",
+        "func": "if (msg.hasOwnProperty(\"status\"))\n{\n    if (msg.status.source.type == \"mqtt in\")\n    {\n        if (msg.status.fill == \"green\")\n        {\n            context.set('mqtt',true);\n        }\n        else\n        {\n            context.set('mqtt',false);\n        }\n    }\n    if (msg.status.source.type == \"mongodb3 in\")\n    {\n        context.set('mongodb',true);\n    }\n    return null;\n}\nmsg.payload = \"OK\"\nmsg.statusCode = 200;\nif (!context.get('mqtt'))\n{\n    msg.payload = \"Service Unavailable\"\n    msg.statusCode = 503;\n}\nif (!context.get('mongodb'))\n{\n    msg.payload = \"Service Unavailable\"\n    msg.statusCode = 503;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('mqtt',false);\ncontext.set('mongo',false);\n",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 240,
+        "wires": [
+            [
+                "f3da0fdf99cbba3e"
+            ]
+        ]
+    },
+    {
+        "id": "dd24db4533a1cbba",
+        "type": "status",
+        "z": "e17f7487.2a78e8",
+        "name": "",
+        "scope": [
+            "d0942eab7e4a8590",
+            "e6a006f16634c572"
+        ],
+        "x": 880,
+        "y": 200,
+        "wires": [
+            [
+                "64c995f0808eef31"
             ]
         ]
     },
@@ -11752,7 +11820,8 @@
             "e56768527bdb29b5",
             "e9b81d60792d4436",
             "f2cd4d12b66320a4",
-            "f9bb75fa3e0a41d6"
+            "f9bb75fa3e0a41d6",
+            "b93a0ae30af50fd8"
         ],
         "x": 815,
         "y": 620,
@@ -11879,7 +11948,8 @@
         "links": [
             "14b7f9da.2d7c86",
             "391c64861533e865",
-            "f8b52e91de395ae5"
+            "f8b52e91de395ae5",
+            "2a72f4a96a010d33"
         ],
         "x": 215,
         "y": 1160,
@@ -11933,7 +12003,8 @@
             "e56768527bdb29b5",
             "e9b81d60792d4436",
             "f2cd4d12b66320a4",
-            "f9bb75fa3e0a41d6"
+            "f9bb75fa3e0a41d6",
+            "b93a0ae30af50fd8"
         ],
         "x": 815,
         "y": 1160,
@@ -12010,7 +12081,8 @@
             "c3fe489d56f32ea2",
             "ca97d41d99a6b5df",
             "cc72650eba9a8cf5",
-            "d2e21cd7ddfe525b"
+            "d2e21cd7ddfe525b",
+            "2a72f4a96a010d33"
         ],
         "x": 215,
         "y": 540,

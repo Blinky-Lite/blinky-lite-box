@@ -13,5 +13,7 @@ ENV BOX=blinky-lite-box
 ENV SUBSCRIBETOPIC="blinky-lite-box/+/+/#"
 ENV IPREFWEB="https://www.blinky-lite.se"
 ENV NODEREDLABEL=blinky-lite-box
+ENV ENABLE_NODERED_EDITOR=0
+ENV NODEREDPORT=60427
 RUN npm install
 CMD ["sh", "-c", "exec node --max-old-space-size=384 node_modules/node-red/red.js -s ./settings.js -u ./"]
