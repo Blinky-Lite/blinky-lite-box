@@ -1182,9 +1182,7 @@
             "a9bfa7132c055cbb"
         ],
         "x": 174,
-        "y": 319,
-        "w": 1052,
-        "h": 342
+        "y": 319
     },
     {
         "id": "410a9f1e572e2cb6",
@@ -1228,7 +1226,9 @@
             "568288857ebaefaa"
         ],
         "x": 174,
-        "y": 79
+        "y": 79,
+        "w": 1072,
+        "h": 502
     },
     {
         "id": "943ba30499779d75",
@@ -1521,9 +1521,7 @@
             "bf4cd7e5aa7b7c58"
         ],
         "x": 174,
-        "y": 699,
-        "w": 1102,
-        "h": 842
+        "y": 699
     },
     {
         "id": "b47ef8a5f938f683",
@@ -1564,9 +1562,7 @@
             "09c74c5d6613d881"
         ],
         "x": 174,
-        "y": 1579,
-        "w": 802,
-        "h": 842
+        "y": 1579
     },
     {
         "id": "e7108cefde0d37c6",
@@ -1814,7 +1810,9 @@
             "0a99db112dc71f82"
         ],
         "x": 174,
-        "y": 59
+        "y": 59,
+        "w": 1532,
+        "h": 322
     },
     {
         "id": "9a451502d1c0caed",
@@ -1859,7 +1857,9 @@
             "f6c83af80fbf9931"
         ],
         "x": 174,
-        "y": 479
+        "y": 479,
+        "w": 1952,
+        "h": 362
     },
     {
         "id": "b972aa3ee60fa207",
@@ -1936,7 +1936,9 @@
             "30a4a020cf5c79ba"
         ],
         "x": 114,
-        "y": 99
+        "y": 99,
+        "w": 342,
+        "h": 422
     },
     {
         "id": "8513b8699a14012a",
@@ -1960,7 +1962,9 @@
             "bb7837ce.8d7338"
         ],
         "x": 154,
-        "y": 59
+        "y": 59,
+        "w": 1132,
+        "h": 82
     },
     {
         "id": "bb926706795e937c",
@@ -1989,7 +1993,9 @@
             "0ae559dfc1cd42e5"
         ],
         "x": 174,
-        "y": 679
+        "y": 679,
+        "w": 1152,
+        "h": 202
     },
     {
         "id": "d6abb27829dbfb86",
@@ -2011,7 +2017,9 @@
             "22ec08a66c477512"
         ],
         "x": 174,
-        "y": 959
+        "y": 959,
+        "w": 1192,
+        "h": 122
     },
     {
         "id": "3d14d6dd8299469d",
@@ -2614,6 +2622,12 @@
         "id": "e86ebc65866440b1",
         "type": "websocket-listener",
         "path": "/settingsLog/websocket",
+        "wholemsg": "false"
+    },
+    {
+        "id": "7798d00fb5b7723a",
+        "type": "websocket-listener",
+        "path": "/misc_control/websocket",
         "wholemsg": "false"
     },
     {
@@ -5807,7 +5821,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 900,
-        "y": 240,
+        "y": 120,
         "wires": [
             [
                 "64c995f0808eef31"
@@ -5823,7 +5837,7 @@
         "statusCode": "",
         "headers": {},
         "x": 1390,
-        "y": 240,
+        "y": 120,
         "wires": []
     },
     {
@@ -5831,14 +5845,14 @@
         "type": "function",
         "z": "e17f7487.2a78e8",
         "name": "HTTP healthcheck response",
-        "func": "if (msg.hasOwnProperty(\"status\"))\n{\n    if (msg.status.source.type == \"mqtt in\")\n    {\n        if (msg.status.fill == \"green\")\n        {\n            context.set('mqtt',true);\n        }\n        else\n        {\n            context.set('mqtt',false);\n        }\n    }\n    if (msg.status.source.type == \"mongodb3 in\")\n    {\n        context.set('mongodb',true);\n    }\n    return null;\n}\nmsg.payload = \"OK\"\nmsg.statusCode = 200;\nif (!context.get('mqtt'))\n{\n    msg.payload = \"Service Unavailable\"\n    msg.statusCode = 503;\n}\nif (!context.get('mongodb'))\n{\n    msg.payload = \"Service Unavailable\"\n    msg.statusCode = 503;\n}\nreturn msg;",
+        "func": "if (msg.topic == \"trays\")\n{\n    context.set('mongodb',true);\n    return null;\n}\nmsg.payload = \"OK\"\nmsg.statusCode = 200;\nif (!context.get('mongodb'))\n{\n    msg.payload = \"Service Unavailable\"\n    msg.statusCode = 503;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('mqtt',false);\ncontext.set('mongo',false);\n",
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('mongo',false);\n",
         "finalize": "",
         "libs": [],
         "x": 1140,
-        "y": 240,
+        "y": 120,
         "wires": [
             [
                 "f3da0fdf99cbba3e"
@@ -5846,21 +5860,498 @@
         ]
     },
     {
-        "id": "dd24db4533a1cbba",
-        "type": "status",
+        "id": "569168456427135e",
+        "type": "mongodb3 in",
         "z": "e17f7487.2a78e8",
+        "service": "_ext_",
+        "configNode": "9cd5ff5e.caf86",
         "name": "",
-        "scope": [
-            "d0942eab7e4a8590",
-            "e6a006f16634c572"
-        ],
-        "x": 880,
-        "y": 200,
+        "collection": "trays",
+        "operation": "find.toArray",
+        "x": 1120,
+        "y": 260,
         "wires": [
             [
+                "708c3595fe381dbe",
                 "64c995f0808eef31"
             ]
         ]
+    },
+    {
+        "id": "3011b27dae26801e",
+        "type": "inject",
+        "z": "e17f7487.2a78e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "3",
+        "topic": "trays",
+        "payload": "",
+        "payloadType": "date",
+        "x": 900,
+        "y": 260,
+        "wires": [
+            [
+                "569168456427135e"
+            ]
+        ]
+    },
+    {
+        "id": "708c3595fe381dbe",
+        "type": "function",
+        "z": "e17f7487.2a78e8",
+        "name": "Prep mqtt files",
+        "func": "let pwtxt = env.get(\"BOXUSER\") + \":\" + env.get(\"BOXUSERPW\");\nlet acltxt = \"user \" + env.get(\"BOXUSER\") + \"\\ntopic readwrite #\\n\\n\";\nlet userList = [];\nuserList.push(env.get(\"BOXUSER\"));\nfor (let itray in msg.payload)\n{\n    if (msg.payload[itray].hasOwnProperty('mqtt'))\n    {\n        if (userList.indexOf(msg.payload[itray].mqtt.user) < 0)\n        {\n            userList.push(msg.payload[itray].mqtt.user);\n            pwtxt = pwtxt + \"\\n\" + msg.payload[itray].mqtt.user + \":\" + msg.payload[itray].mqtt.pw;\n\n            acltxt = acltxt + \"user \" + msg.payload[itray].mqtt.user + \"\\n\";\n            for (let itopic in msg.payload[itray].mqtt.readtopic)\n            {\n                acltxt = acltxt + \"topic read \" + msg.payload[itray].mqtt.readtopic[itopic] + \"\\n\";\n            }\n            for (let itopic in msg.payload[itray].mqtt.writetopic)\n            {\n                acltxt = acltxt + \"topic write \" + msg.payload[itray].mqtt.writetopic[itopic] + \"\\n\";\n            }\n            acltxt = acltxt + \"\\n\";\n        }\n    }\n}\nreturn [{topic:'pwfile', payload:pwtxt, filename:(env.get('DATADIR') + \"/pwfileclear\")},\n    {topic:'aclfile', payload:acltxt,filename:(env.get('DATADIR') + \"/aclfile\")}];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 260,
+        "wires": [
+            [
+                "090b4cb114fc858d"
+            ],
+            [
+                "3dfeb16127ae902a"
+            ]
+        ]
+    },
+    {
+        "id": "090b4cb114fc858d",
+        "type": "file",
+        "z": "e17f7487.2a78e8",
+        "name": "mqtt_pw.txt",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1550,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3dfeb16127ae902a",
+        "type": "file",
+        "z": "e17f7487.2a78e8",
+        "name": "mqtt_acl.txt",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1550,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0e9a32b082e0bb56",
+        "type": "http in",
+        "z": "e17f7487.2a78e8",
+        "name": "/misc_control",
+        "url": "/misc_control",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 250,
+        "y": 1160,
+        "wires": [
+            [
+                "c99ccb9727e84a19"
+            ]
+        ]
+    },
+    {
+        "id": "9c7212044fecfb9a",
+        "type": "template",
+        "z": "e17f7487.2a78e8",
+        "name": "Set Title",
+        "field": "payload.title",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "Misc. Control",
+        "output": "str",
+        "x": 460,
+        "y": 1200,
+        "wires": [
+            [
+                "cd86e5bde55d2dc6"
+            ]
+        ]
+    },
+    {
+        "id": "968f3f10f0fe1eb3",
+        "type": "template",
+        "z": "e17f7487.2a78e8",
+        "name": "navBarIcon",
+        "field": "payload.navBarIcon",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "settings.png",
+        "output": "str",
+        "x": 470,
+        "y": 1160,
+        "wires": [
+            [
+                "9c7212044fecfb9a"
+            ]
+        ]
+    },
+    {
+        "id": "17c64d81dde04a4e",
+        "type": "function",
+        "z": "e17f7487.2a78e8",
+        "name": "Allowed Roles",
+        "func": "msg.payload.allowedRoles = ['misc_control'];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 1240,
+        "wires": [
+            [
+                "2e410bd00b6b8723"
+            ]
+        ]
+    },
+    {
+        "id": "ffea2ec16b4b3c16",
+        "type": "template",
+        "z": "e17f7487.2a78e8",
+        "name": "body",
+        "field": "payload.body",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!-- Body HTML -->\n    <div width=\"100%\" style='padding-bottom:25px;'>\n        <div class='card'>\n            <div class='card-body' align=\"center\">\n                <table width=\"100%\">\n                    <tr>\n                        <td style=\"padding-bottom:25px;\">\n                            <input type=\"button\" class=\"btn btn-block card-button medium-text\" value=\"Update MQTT ACL\" onclick=\"upDateMqttAcl()\" />\n                        </td>\n                    </tr>\n                </table>\n            </div>\n        </div>\n    </div>\n{{{payload.html.user}}}\n ",
+        "output": "str",
+        "x": 930,
+        "y": 1240,
+        "wires": [
+            [
+                "44cc18dc6e545196"
+            ]
+        ]
+    },
+    {
+        "id": "adf274bd4a43ad9c",
+        "type": "template",
+        "z": "e17f7487.2a78e8",
+        "name": "javascript",
+        "field": "payload.javascript",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "{{{payload.script.global}}}\n{{{payload.script.user}}}\n",
+        "output": "str",
+        "x": 700,
+        "y": 1240,
+        "wires": [
+            [
+                "9af8712c01bfec2b"
+            ]
+        ]
+    },
+    {
+        "id": "9af8712c01bfec2b",
+        "type": "template",
+        "z": "e17f7487.2a78e8",
+        "name": "html.user",
+        "field": "payload.html.user",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "                <div class='card' id='userCardId'>\n                    <div class='card-body' align=\"center\">\n                        <table width=\"100%\">\n                            <tr>\n                                <td  align=\"left\">\n                                     <span class='card-text' style='color:black;'>User:</span>\n                                </td>\n                                <td  align=\"right\">\n                                     <span class='card-text' id='usernameId'></span>\n                                </td>\n                            </tr>\n                            <tr>\n                                <td  align=\"left\">\n                                    <span class='card-text' style='color:black;'>Time left:</span>\n                                </td>\n                                <td  align=\"right\">\n                                     <span class='card-text' id='expTimeId'></span>\n                                </td>\n                            </tr>\n                        </table>\n                        <table width=\"100%\">\n                            <tr>\n                                <td width=\"40%\">\n                                    <button class='btn btn-block card-button big-text' id='logoutButton' onclick=\"renew()\" >Renew</button>\n                                </td>\n                                <td width=\"10%\"></td>\n                                <td width=\"40%\">\n                                    <button class='btn btn-block card-button big-text' id='logoutButton' onclick=\"logout()\" >Logout</button>\n                                </td>\n                            </tr>\n                        </table>\n                    </div>\n                </div>\n",
+        "output": "str",
+        "x": 940,
+        "y": 1200,
+        "wires": [
+            [
+                "ffea2ec16b4b3c16"
+            ]
+        ]
+    },
+    {
+        "id": "cd86e5bde55d2dc6",
+        "type": "template",
+        "z": "e17f7487.2a78e8",
+        "name": "script.global",
+        "field": "payload.script.global",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "        useWebSockets(true);\n        function onDocumentReady()\n        {\n            getCreds();\n            setInterval(function(){getCreds();}, 1000);\n//            initLaunchMenu();\n            \n        }\n        function onWebSocketOpen()\n        {\n        }\n        function onWebSocketClose()\n        {\n            \n        }\n        function onWebSocketMessage(msg)\n        {\n            switch(msg.topic)\n            {\n                case 'renew':\n                    if (msg.userID == userID)\n                    {\n                        updateCookie(msg);\n                    }\n                    break;\n                case 'permissionError':\n                    if (msg.userID == userID)\n                    {\n                        acknowledgeDialog('Permission', 'Error', msg.payload);\n                    }\n                    break;\n                case 'loginExpired':\n                    if (msg.userID == userID)\n                    {\n                       location.reload();\n                    }\n                    break;\n                default:\n                    break;\n            }\n        }\n        function upDateMqttAcl()\n        {\n            let buttonFunctions = \n            [\n                function()\n                {\n                    $( this ).dialog( \"close\" );\n                    sendActionMsg(\"updateMqtttACL\",\"misc_control\",{topic:\"trays\",payload: new Date().getTime()});\n                    acknowledgeDialog(\"Update\", \"MQTT ACL\", \"Completed.\")\n                }, \n                function()\n                {\n                    $( this ).dialog( \"close\" );\n                }\n            ];\n            optionDialog(\"Update\", \"MQTT ACL\", \"Be Careful!\", [\"Set\",\"Cancel\"], buttonFunctions);\n        }\n",
+        "output": "str",
+        "x": 710,
+        "y": 1160,
+        "wires": [
+            [
+                "594ff738d0c34142"
+            ]
+        ]
+    },
+    {
+        "id": "594ff738d0c34142",
+        "type": "template",
+        "z": "e17f7487.2a78e8",
+        "name": "script.user",
+        "field": "payload.script.user",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "        function getCreds()\n        {\n            var now = new Date().getTime();\n            var expDate = Number(getCookie('ExpDate'));\n            if (expDate > 0)\n            {\n                expDate = expDate - now;\n                if(expDate < 0)\n                {\n                    logout();\n                }\n                else\n                {\n                    var hours = Math.floor(expDate / 3600000);\n                    var minutes = expDate - hours * 3600000;\n                    minutes = Math.floor(minutes / 60000);\n                    var seconds = expDate - (hours * 3600000) - (minutes * 60000);\n                    seconds = Math.floor(seconds / 1000);\n                    hours = hours.toString();\n                    if (hours.length == 1) hours = '0' + hours; \n                    minutes = minutes.toString();\n                    if (minutes.length == 1) minutes = '0' + minutes; \n                    seconds = seconds.toString();\n                    if (seconds.length == 1) seconds = '0' + seconds; \n                    var timeString = hours + ':' + minutes + ':' + seconds;\n                    $('#usernameId').text(getCookie('Username'));\n                    $('#expTimeId').text(timeString);\n                }\n            }\n            else\n            {\n                $('#usernameId').text(getCookie('Username'));\n                $('#expTimeId').text('Forever');\n            }\n        }\n        function logout()\n        {\n            document.cookie = box + \"Role= ; expires = Thu, 01 Jan 1970 00:00:00 GMT\";\n            document.cookie = box + \"ExpDate= ; expires = Thu, 01 Jan 1970 00:00:00 GMT\";\n            document.cookie = box + \"Username= ; expires = Thu, 01 Jan 1970 00:00:00 GMT\";\n            window.location.href = \"/\";\n        }\n        function renew()\n        {\n            var actionMsg = {};\n            sendActionMsg('renew', 'renew', actionMsg);\n        }\n        function updateCookie(msg)\n        {\n            let expTimeout = Math.round((Number(msg.expDate) - new Date().getTime()) / 1000).toString();\n            if (Number(msg.expDate) < 0)\n            {\n                document.cookie = box + \"Role=\" + msg.role;\n                document.cookie = box + \"ExpDate=\" + msg.expDate;\n                document.cookie = box + \"Username=\" + msg.username;\n            }\n            else\n            {\n                let expDateString = \"; max-age=\" + expTimeout;\n                document.cookie = box + \"Role=\" + msg.role + expDateString;\n                document.cookie = box + \"ExpDate=\" + msg.expDate + expDateString;\n                document.cookie = box + \"Username=\" + msg.username + expDateString;\n            }\n        }\n        function downloadToken()\n        {\n            downloadString(getCookie(\"Role\"), \"text/plain\", box + \"-token.txt\");\n        }\n// from https://gist.github.com/danallison/3ec9d5314788b337b682\n        function downloadString(text, fileType, fileName) \n        {\n            var blob = new Blob([text], { type: fileType });\n            \n            var a = document.createElement('a');\n            a.download = fileName;\n            a.href = URL.createObjectURL(blob);\n            a.dataset.downloadurl = [fileType, a.download, a.href].join(':');\n            a.style.display = \"none\";\n            document.body.appendChild(a);\n            a.click();\n            document.body.removeChild(a);\n            setTimeout(function() { URL.revokeObjectURL(a.href); }, 1500);\n        }",
+        "output": "str",
+        "x": 710,
+        "y": 1200,
+        "wires": [
+            [
+                "adf274bd4a43ad9c"
+            ]
+        ]
+    },
+    {
+        "id": "44cc18dc6e545196",
+        "type": "subflow:c57c2f9e65e6cb70",
+        "z": "e17f7487.2a78e8",
+        "name": "",
+        "x": 1090,
+        "y": 1240,
+        "wires": [
+            [
+                "2f82e36b1d0ad6fd"
+            ]
+        ]
+    },
+    {
+        "id": "2f82e36b1d0ad6fd",
+        "type": "subflow:ca529822.9112f8",
+        "z": "e17f7487.2a78e8",
+        "name": "",
+        "x": 1230,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "2e410bd00b6b8723",
+        "type": "subflow:2d027d69.1fdeb2",
+        "z": "e17f7487.2a78e8",
+        "name": "",
+        "x": 260,
+        "y": 1280,
+        "wires": [
+            [
+                "968f3f10f0fe1eb3"
+            ]
+        ]
+    },
+    {
+        "id": "c99ccb9727e84a19",
+        "type": "subflow:3fec913b325ae6ff",
+        "z": "e17f7487.2a78e8",
+        "name": "",
+        "x": 260,
+        "y": 1200,
+        "wires": [
+            [
+                "17c64d81dde04a4e"
+            ]
+        ]
+    },
+    {
+        "id": "47caa98e472822e3",
+        "type": "websocket in",
+        "z": "e17f7487.2a78e8",
+        "name": "/misc_control/websocket",
+        "server": "7798d00fb5b7723a",
+        "client": "",
+        "x": 290,
+        "y": 1480,
+        "wires": [
+            [
+                "7c8b82caa23e861c"
+            ]
+        ]
+    },
+    {
+        "id": "feb28ea091b09cd9",
+        "type": "function",
+        "z": "e17f7487.2a78e8",
+        "name": "Renew Token",
+        "func": "if (msg.token.timeoutMin > 0) msg.token.expDate = new Date().getTime() + msg.token.timeoutMin * 60000;\ndelete msg.token['iat']\nmsg.payload = JSON.parse(JSON.stringify(msg.token));\ndelete msg['token'];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 1380,
+        "wires": [
+            [
+                "8ec1140aedaa7461"
+            ]
+        ]
+    },
+    {
+        "id": "8ec1140aedaa7461",
+        "type": "JsonWebToken",
+        "z": "e17f7487.2a78e8",
+        "name": "encrypt token",
+        "tokenconfig": "6acefdd9.69f124",
+        "x": 980,
+        "y": 1380,
+        "wires": [
+            [
+                "aed9d6a80cf80101"
+            ]
+        ]
+    },
+    {
+        "id": "aed9d6a80cf80101",
+        "type": "function",
+        "z": "e17f7487.2a78e8",
+        "name": "Renew Cookies",
+        "func": "var newMsg = \n{\n    topic : 'renew',\n    payload: \n    {\n        topic       : 'renew',\n        userID      : msg.userID,\n        role        : msg.token,\n        expDate     : msg.payload.expDate.toString(),\n        username    : msg.payload.username\n    }\n}\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1160,
+        "y": 1380,
+        "wires": [
+            [
+                "6462c5345d15f386"
+            ]
+        ]
+    },
+    {
+        "id": "6462c5345d15f386",
+        "type": "websocket out",
+        "z": "e17f7487.2a78e8",
+        "name": "/misc_control/websocket",
+        "server": "7798d00fb5b7723a",
+        "client": "",
+        "x": 1390,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "7c8b82caa23e861c",
+        "type": "subflow:fee416c.fb205e8",
+        "z": "e17f7487.2a78e8",
+        "name": "",
+        "x": 530,
+        "y": 1480,
+        "wires": [
+            [
+                "3ad60fe96b19381d"
+            ],
+            [
+                "6462c5345d15f386"
+            ]
+        ]
+    },
+    {
+        "id": "3ad60fe96b19381d",
+        "type": "switch",
+        "z": "e17f7487.2a78e8",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "updateMqtttACL",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "renew",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 650,
+        "y": 1380,
+        "wires": [
+            [
+                "2b3e10887863c510"
+            ],
+            [
+                "feb28ea091b09cd9"
+            ]
+        ]
+    },
+    {
+        "id": "2b3e10887863c510",
+        "type": "function",
+        "z": "e17f7487.2a78e8",
+        "name": "Shift msg",
+        "func": "return msg.payload;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 1340,
+        "wires": [
+            [
+                "a005207a94834400"
+            ]
+        ]
+    },
+    {
+        "id": "17550e228f281c2e",
+        "type": "link in",
+        "z": "e17f7487.2a78e8",
+        "name": "mongo find trays in",
+        "links": [
+            "a005207a94834400"
+        ],
+        "x": 915,
+        "y": 320,
+        "wires": [
+            [
+                "569168456427135e"
+            ]
+        ]
+    },
+    {
+        "id": "a005207a94834400",
+        "type": "link out",
+        "z": "e17f7487.2a78e8",
+        "name": "control reset acl out",
+        "mode": "link",
+        "links": [
+            "17550e228f281c2e"
+        ],
+        "x": 885,
+        "y": 1340,
+        "wires": []
     },
     {
         "id": "6c0d5efd35302d9d",

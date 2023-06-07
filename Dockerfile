@@ -1,7 +1,6 @@
 FROM nodered/node-red:3.0.2-16
-#RUN apk add --update \
-#    curl \
-#    && rm -rf /var/cache/apk/*
+USER root
+RUN apk add --no-cache curl
 COPY html-static/       /data/html-static/
 COPY flows.json         /data/flows.json
 COPY flows_cred.json    /data/flows_cred.json
@@ -24,3 +23,6 @@ ENV NODEREDLABEL=blinky-lite-box
 ENV ENABLE_NODERED_EDITOR=0
 ENV NODEREDPORT=60427
 ENV HTMLSTATIC=/data/html-static
+ENV DATADIR=/data/mqtt-auth
+ENV BOXUSER=blinky-lite
+USER node-red
