@@ -1262,7 +1262,9 @@
             "7738e37c816651ac"
         ],
         "x": 154,
-        "y": 1079
+        "y": 1079,
+        "w": 1322,
+        "h": 302
     },
     {
         "id": "68d752967679bda5",
@@ -1307,7 +1309,9 @@
             "7a6b0d267f0d03ef"
         ],
         "x": 154,
-        "y": 1459
+        "y": 1459,
+        "w": 1782,
+        "h": 522
     },
     {
         "id": "cc576e0ff6a48284",
@@ -1355,7 +1359,9 @@
             "c87ec7f3f92ea7d3"
         ],
         "x": 154,
-        "y": 3199
+        "y": 3199,
+        "w": 1452,
+        "h": 602
     },
     {
         "id": "a34ee7cdaf781b79",
@@ -1723,7 +1729,9 @@
             "f33cd19097d8a3b1"
         ],
         "x": 154,
-        "y": 59
+        "y": 59,
+        "w": 1572,
+        "h": 482
     },
     {
         "id": "588a107b144a078a",
@@ -1768,7 +1776,9 @@
             "9fadad95613eca54"
         ],
         "x": 154,
-        "y": 619
+        "y": 619,
+        "w": 1812,
+        "h": 382
     },
     {
         "id": "e789a1b186378ec0",
@@ -1810,9 +1820,7 @@
             "0a99db112dc71f82"
         ],
         "x": 174,
-        "y": 59,
-        "w": 1532,
-        "h": 322
+        "y": 59
     },
     {
         "id": "9a451502d1c0caed",
@@ -1857,9 +1865,7 @@
             "f6c83af80fbf9931"
         ],
         "x": 174,
-        "y": 479,
-        "w": 1952,
-        "h": 362
+        "y": 479
     },
     {
         "id": "b972aa3ee60fa207",
@@ -1904,7 +1910,9 @@
             "7e74b55c48b46b62"
         ],
         "x": 162,
-        "y": 2067
+        "y": 2067,
+        "w": 1976,
+        "h": 1046
     },
     {
         "id": "565f4068c450fc58",
@@ -1936,9 +1944,7 @@
             "30a4a020cf5c79ba"
         ],
         "x": 114,
-        "y": 99,
-        "w": 342,
-        "h": 422
+        "y": 99
     },
     {
         "id": "8513b8699a14012a",
@@ -2073,7 +2079,9 @@
             "fbb62ed673bd505e"
         ],
         "x": 188,
-        "y": 2553
+        "y": 2553,
+        "w": 1804,
+        "h": 534
     },
     {
         "id": "7e74b55c48b46b62",
@@ -2104,7 +2112,9 @@
             "b6a28210e2d18575"
         ],
         "x": 194,
-        "y": 2093
+        "y": 2093,
+        "w": 1918,
+        "h": 434
     },
     {
         "id": "49a3f583c0875ffc",
@@ -2128,7 +2138,9 @@
             "3c3a7da04a40eff2"
         ],
         "x": 1094,
-        "y": 2579
+        "y": 2579,
+        "w": 872,
+        "h": 82
     },
     {
         "id": "1b26e93ccb3ef98b",
@@ -2149,7 +2161,9 @@
             "e031088776231fd1"
         ],
         "x": 1474,
-        "y": 2679
+        "y": 2679,
+        "w": 492,
+        "h": 82
     },
     {
         "id": "1b74ec2e93fa5123",
@@ -2173,7 +2187,9 @@
             "2f48023e49920b79"
         ],
         "x": 1094,
-        "y": 2819
+        "y": 2819,
+        "w": 872,
+        "h": 82
     },
     {
         "id": "fbb62ed673bd505e",
@@ -2198,7 +2214,9 @@
             "a9b0290f353328f3"
         ],
         "x": 214,
-        "y": 2939
+        "y": 2939,
+        "w": 1372,
+        "h": 122
     },
     {
         "id": "d78fadb84ac3a977",
@@ -2222,7 +2240,9 @@
             "7f0c7c2f1594961d"
         ],
         "x": 1194,
-        "y": 2119
+        "y": 2119,
+        "w": 892,
+        "h": 82
     },
     {
         "id": "8a54730859fd312d",
@@ -2246,7 +2266,9 @@
             "e617ce9529e5b6f6"
         ],
         "x": 1214,
-        "y": 2219
+        "y": 2219,
+        "w": 872,
+        "h": 82
     },
     {
         "id": "4bc94be4667ab860",
@@ -2272,7 +2294,9 @@
             "52e96b92ee8aa125"
         ],
         "x": 754,
-        "y": 2319
+        "y": 2319,
+        "w": 1332,
+        "h": 82
     },
     {
         "id": "b6a28210e2d18575",
@@ -2296,7 +2320,9 @@
             "f0458fb64cc43ca4"
         ],
         "x": 1194,
-        "y": 2419
+        "y": 2419,
+        "w": 892,
+        "h": 82
     },
     {
         "id": "6ad7c930.1a06b8",
@@ -3432,7 +3458,7 @@
         "type": "function",
         "z": "3fec913b325ae6ff",
         "name": "https check",
-        "func": "let ireq = -1;\nfor (let ii = 0; ii < msg.req.rawHeaders.length; ++ii)\n{\n    if (msg.req.rawHeaders[ii] == \"X-Forwarded-Proto\") ireq = ii + 1;\n}\nif (ireq >= 0) \n{\n    if (msg.req.rawHeaders[ireq] == 'http')\n    {\n        msg.cookies = { };\n        let ireq2 = -1;\n        for (let ii = 0; ii < msg.req.rawHeaders.length; ++ii)\n        {\n            if (msg.req.rawHeaders[ii] == \"Host\") ireq2 = ii + 1;\n        }\n        if (ireq2 >= 0)\n        {\n            let host = msg.req.rawHeaders[ireq2];\n            let url = \"https://\" + host + msg.req.url;\n            msg.payload['httpsUrl'] = url;\n        }\n        else\n        {\n            msg.payload['httpsUrl'] = '';\n        }\n        msg.payload.errorMsg = \"Insecure Connection!\";\n        return [null,msg];\n    }\n}\nreturn [msg,null];",
+        "func": "if (Number(env.get('REQUIREHTTPS')) < 1 ) return [msg,null];\nlet ireq = -1;\nfor (let ii = 0; ii < msg.req.rawHeaders.length; ++ii)\n{\n    if (msg.req.rawHeaders[ii] == \"X-Forwarded-Proto\") ireq = ii + 1;\n}\nif (ireq >= 0) \n{\n    if (msg.req.rawHeaders[ireq] == 'http')\n    {\n        msg.cookies = { };\n        let ireq2 = -1;\n        for (let ii = 0; ii < msg.req.rawHeaders.length; ++ii)\n        {\n            if (msg.req.rawHeaders[ii] == \"Host\") ireq2 = ii + 1;\n        }\n        if (ireq2 >= 0)\n        {\n            let host = msg.req.rawHeaders[ireq2];\n            let url = \"https://\" + host + msg.req.url;\n            msg.payload['httpsUrl'] = url;\n        }\n        else\n        {\n            msg.payload['httpsUrl'] = '';\n        }\n        msg.payload.errorMsg = \"Insecure Connection!\";\n        return [null,msg];\n    }\n}\nreturn [msg,null];",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -7561,7 +7587,7 @@
         "z": "90f83725.6dae08",
         "g": "943ba30499779d75",
         "name": "Set box cookie",
-        "func": "\nmsg.cookies = { };\nif (msg.payload.expDate > 0)\n{\n    let maxAge = msg.payload.expDate - new Date().getTime();\n    msg.cookies[global.get('box') + 'Role'] = {value: msg.token, maxAge: maxAge, sameSite:'strict', secure:true};\n    msg.cookies[global.get('box') + 'Username'] = {value: msg.payload.username, maxAge: maxAge, sameSite:'strict', secure:true};\n    msg.cookies[global.get('box') + 'ExpDate'] = {value: msg.payload.expDate, maxAge: maxAge, sameSite:'strict', secure:true};\n}\nelse\n{\n    msg.cookies[global.get('box') + 'Role'] = {value: msg.token, sameSite:'strict', secure:true};\n    msg.cookies[global.get('box') + 'Username'] = {value: msg.payload.username, sameSite:'strict', secure:true};\n    msg.cookies[global.get('box') + 'ExpDate'] = {value: msg.payload.expDate, sameSite:'strict', secure:true};\n}\nmsg.statusCode = 302;\nmsg.headers = {};\nmsg.headers.location = '/'\nvar previousUrl = msg.userData.url;\nif(previousUrl == undefined)\n{\n    msg.headers.location = '/'\n}\nelse\n{\n    msg.headers.location = previousUrl;\n}\nreturn msg;",
+        "func": "let requireHttps = true;\nif (Number(env.get('REQUIREHTTPS')) < 1 ) requireHttps = false;\nmsg.cookies = { };\nif (msg.payload.expDate > 0)\n{\n    let maxAge = msg.payload.expDate - new Date().getTime();\n    msg.cookies[global.get('box') + 'Role'] = {value: msg.token, maxAge: maxAge, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'Username'] = {value: msg.payload.username, maxAge: maxAge, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'ExpDate'] = {value: msg.payload.expDate, maxAge: maxAge, sameSite:'strict', secure:requireHttps};\n}\nelse\n{\n    msg.cookies[global.get('box') + 'Role'] = {value: msg.token, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'Username'] = {value: msg.payload.username, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'ExpDate'] = {value: msg.payload.expDate, sameSite:'strict', secure:requireHttps};\n}\nmsg.statusCode = 302;\nmsg.headers = {};\nmsg.headers.location = '/'\nvar previousUrl = msg.userData.url;\nif(previousUrl == undefined)\n{\n    msg.headers.location = '/'\n}\nelse\n{\n    msg.headers.location = previousUrl;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9979,7 +10005,7 @@
         "z": "90f83725.6dae08",
         "g": "1b26e93ccb3ef98b",
         "name": "Set box cookie",
-        "func": "\nmsg.cookies = { };\nif (msg.payload.expDate > 0)\n{\n    let maxAge = msg.payload.expDate - new Date().getTime();\n    msg.cookies[global.get('box') + 'Role'] = {value: msg.token, maxAge: maxAge, sameSite:'strict', secure:true};\n    msg.cookies[global.get('box') + 'Username'] = {value: msg.payload.username, maxAge: maxAge, sameSite:'strict', secure:true};\n    msg.cookies[global.get('box') + 'ExpDate'] = {value: msg.payload.expDate, maxAge: maxAge, sameSite:'strict', secure:true};\n}\nelse\n{\n    msg.cookies[global.get('box') + 'Role'] = {value: msg.token, sameSite:'strict', secure:true};\n    msg.cookies[global.get('box') + 'Username'] = {value: msg.payload.username, sameSite:'strict', secure:true};\n    msg.cookies[global.get('box') + 'ExpDate'] = {value: msg.payload.expDate, sameSite:'strict', secure:true};\n}\nmsg.statusCode = 302;\nmsg.headers = {};\nmsg.headers.location = '/'\nvar previousUrl = msg.userData.url;\nif(previousUrl == undefined)\n{\n    msg.headers.location = '/'\n}\nelse\n{\n    msg.headers.location = previousUrl;\n}\nreturn msg;",
+        "func": "let requireHttps = true;\nif (Number(env.get('REQUIREHTTPS')) < 1 ) requireHttps = false;\nmsg.cookies = { };\nif (msg.payload.expDate > 0)\n{\n    let maxAge = msg.payload.expDate - new Date().getTime();\n    msg.cookies[global.get('box') + 'Role'] = {value: msg.token, maxAge: maxAge, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'Username'] = {value: msg.payload.username, maxAge: maxAge, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'ExpDate'] = {value: msg.payload.expDate, maxAge: maxAge, sameSite:'strict', secure:requireHttps};\n}\nelse\n{\n    msg.cookies[global.get('box') + 'Role'] = {value: msg.token, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'Username'] = {value: msg.payload.username, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'ExpDate'] = {value: msg.payload.expDate, sameSite:'strict', secure:requireHttps};\n}\nmsg.statusCode = 302;\nmsg.headers = {};\nmsg.headers.location = '/'\nvar previousUrl = msg.userData.url;\nif(previousUrl == undefined)\n{\n    msg.headers.location = '/'\n}\nelse\n{\n    msg.headers.location = previousUrl;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
