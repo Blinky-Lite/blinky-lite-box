@@ -218,7 +218,7 @@ module.exports = {
      * following property can be used to identify a directory of static content
      * that should be served at http://localhost:1880/.
      */
-    httpStatic: process.env.HTMLSTATIC,
+    httpStatic: process.env.HTMLSTATICDIR,
 //    httpStatic: 'html-static',
 /*******************************************************************************
  * Runtime Settings
@@ -334,10 +334,10 @@ module.exports = {
          */
         tours: false,
         page: {
-            title: process.env.NODEREDLABEL
+            title: "blinky-lite-box"
         },
         header: {
-            title: process.env.NODEREDLABEL
+            title: "blinky-lite-box"
          },
     
 
