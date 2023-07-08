@@ -1954,7 +1954,9 @@
             "bb7837ce.8d7338"
         ],
         "x": 154,
-        "y": 59
+        "y": 59,
+        "w": 1132,
+        "h": 82
     },
     {
         "id": "bb926706795e937c",
@@ -2090,12 +2092,12 @@
             "7c3a93f70a2b990a",
             "f3da0fdf99cbba3e",
             "64c995f0808eef31",
-            "f960b8a8199407bf"
+            "537bf8b86b4354ba"
         ],
         "x": 794,
         "y": 79,
         "w": 712,
-        "h": 162
+        "h": 142
     },
     {
         "id": "efd09052a685f540",
@@ -5916,10 +5918,10 @@
         "z": "e17f7487.2a78e8",
         "g": "58645e2c91cd1ed6",
         "name": "HTTP healthcheck response",
-        "func": "if (msg.hasOwnProperty(\"status\"))\n{\n    if (msg.status.fill == \"green\")\n    {\n        context.set('mqtt',true);\n    }\n    else\n    {\n        context.set('mqtt',false);\n    }\n        \n    return null;\n}\nmsg.payload = \"OK\"\nmsg.statusCode = 200;\nif (!context.get('mqtt'))\n{\n    msg.payload = \"Service Unavailable\"\n    msg.statusCode = 503;\n}\nreturn msg;",
+        "func": "if (msg.topic == \"health\")\n{\n    context.set('health', true)\n    return null;\n}\nmsg.payload = \"OK\"\nmsg.statusCode = 200;\nif (!context.get('health'))\n{\n    msg.payload = \"Service Unavailable\"\n    msg.statusCode = 503;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('mqtt',false);\n",
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('health',false);\n",
         "finalize": "",
         "libs": [],
         "x": 1140,
@@ -5978,23 +5980,6 @@
         "wires": [
             [
                 "a1ac9e631b1c38ed"
-            ]
-        ]
-    },
-    {
-        "id": "f960b8a8199407bf",
-        "type": "status",
-        "z": "e17f7487.2a78e8",
-        "g": "58645e2c91cd1ed6",
-        "name": "MQTT Status",
-        "scope": [
-            "d0942eab7e4a8590"
-        ],
-        "x": 890,
-        "y": 200,
-        "wires": [
-            [
-                "64c995f0808eef31"
             ]
         ]
     },
@@ -6490,6 +6475,36 @@
             ],
             [
                 "95877a13b118a9a4"
+            ]
+        ]
+    },
+    {
+        "id": "537bf8b86b4354ba",
+        "type": "inject",
+        "z": "e17f7487.2a78e8",
+        "g": "58645e2c91cd1ed6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "health",
+        "payload": "",
+        "payloadType": "date",
+        "x": 930,
+        "y": 180,
+        "wires": [
+            [
+                "64c995f0808eef31"
             ]
         ]
     },
