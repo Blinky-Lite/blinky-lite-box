@@ -1,11 +1,11 @@
 BOX=blinky-box-tutorial
-SUBSCRIBETOPIC=blinky-box-tutorial/+/+/#
 MONGODBIP=mongodb+srv://admin:aaaaaa@cluster0.bbbbbbmongodb.net/blinky-lite?retryWrites=true&w=majority
-MQTTCLIENTID=blinky-box-tutorial
+MQTTCLIENTID=blinky-lite-box-01
 MQTTSERVERIP=ccccc.com
-MQTTUSERNAME=ddddd
+MQTTUSERNAME=blinky-lite-box-01
 MQTTPASSWORD=eeeee
 MQTTPORT=1883
+MQTTACLDATADIR=/home/pi/blinky-lite-base/blinky-lite-starter-kit/docker/blinky-mqtt-docker/mqtt-auth
 NEXMOAPIKEY=fffff
 NEXMOAPISECRET=ggggg
 JWTKEYSECRET=hhhhh
@@ -15,6 +15,5 @@ TWOFA=0
 ENABLEARCHIVE=1
 NODEREDPORT=60427
 HTMLSTATICDIR=html-static
-MQTTAUTHDIR=./mqtt-auth
 REQUIREHTTPS=0
 ENABLE_NODERED_EDITOR=1
