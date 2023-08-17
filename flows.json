@@ -1226,7 +1226,9 @@
             "568288857ebaefaa"
         ],
         "x": 174,
-        "y": 79
+        "y": 79,
+        "w": 1072,
+        "h": 502
     },
     {
         "id": "943ba30499779d75",
@@ -1876,9 +1878,7 @@
             "d387c14850e4b2de"
         ],
         "x": 134,
-        "y": 439,
-        "w": 952,
-        "h": 302
+        "y": 439
     },
     {
         "id": "7046efa6cee97ff7",
@@ -1983,7 +1983,9 @@
             "0ae559dfc1cd42e5"
         ],
         "x": 174,
-        "y": 679
+        "y": 679,
+        "w": 1152,
+        "h": 202
     },
     {
         "id": "d6abb27829dbfb86",
@@ -2005,7 +2007,9 @@
             "22ec08a66c477512"
         ],
         "x": 174,
-        "y": 959
+        "y": 959,
+        "w": 1192,
+        "h": 122
     },
     {
         "id": "3d14d6dd8299469d",
@@ -2719,7 +2723,7 @@
         "fieldType": "msg",
         "format": "html",
         "syntax": "mustache",
-        "template": "    <meta charset=\"UTF-8\">\n    <link rel=\"icon\" href=\"/img/favicon.ico?v=4\" type=\"image/x-icon\"/>\n    <title>{{payload.title}}</title>\n    <link rel=\"stylesheet\" href=\"/css/bootstrap.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui-timepicker-addon.css\"/>\n    <script src=\"/jquery/jquery.js\"></script>\n    <script src=\"/jquery/jquery-ui.js\"></script>\n    <script src=\"/jquery/jquery-ui-timepicker-addon.js\"></script>\n    <script src=\"/scripts/plotly-latest.min.js\"></script>\n    <script src=\"/scripts/pako.min.js\"></script>\n{{{payload.extraScripts}}}\n    <style>\n{{{payload.css}}}\n    </style>\n    <script>\n{{{payload.utilityScripts}}}\n    </script>\n    <script>\n{{{payload.javascript}}}\n    </script>\n",
+        "template": "    <meta charset=\"UTF-8\">\n    <link rel=\"icon\" href=\"/img/favicon.ico?v=4\" type=\"image/x-icon\"/>\n    <title>{{payload.title}}</title>\n    <link rel=\"stylesheet\" href=\"/css/bootstrap.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui-timepicker-addon.css\"/>\n    <link rel=\"stylesheet\" href=\"/css/boxColorScheme.css\"/>\n    <script src=\"/jquery/jquery.js\"></script>\n    <script src=\"/jquery/jquery-ui.js\"></script>\n    <script src=\"/jquery/jquery-ui-timepicker-addon.js\"></script>\n    <script src=\"/scripts/plotly-latest.min.js\"></script>\n    <script src=\"/scripts/pako.min.js\"></script>\n    <style>\n{{{payload.css}}}\n    </style>\n{{{payload.extraScripts}}}\n    <script>\n{{{payload.utilityScripts}}}\n    </script>\n    <script>\n{{{payload.javascript}}}\n    </script>\n",
         "output": "str",
         "x": 670,
         "y": 40,
@@ -4412,7 +4416,7 @@
         "fieldType": "msg",
         "format": "css",
         "syntax": "mustache",
-        "template": "        :root \n        {\n            --color1          :   #083357;\n            --color2          :   #c6c2bb;\n            --color3          :   #e7e7e7;\n            --color4          :   #c6c2bb;\n            --color5          :   #ffffff;\n            --color6          :   #487895;\n          --big-text-size :300%;\n          --medium-text-size :200%;\n          --bold-text :900;\n          --vert-pad : 25px;\n          --horz-pad : 25px;\n        }\n        body \n        {\n          background-color: var(--color1) !important;\n          padding-left:25px;\n          padding-right:25px;\n        }\n        \n        img \n        {\n          object-fit: contain;\n        }\n        a\n        {\n            color: white;\n        }\n        a:visited \n        { \n            color: white;\n        }\n        a:hover \n        { \n            color: var(--color5);\n        }\n\n        .jumbotron \n        {\n          background-color: var(--color1) !important;\n          color: white;\n          padding-top:25px;\n          padding-bottom:25px;\n        }\n        .jumbotron-title\n        {\n          color:var(--color5);\n        }\n        .jumbotron-button\n        {\n          color: white;\n          background-color: var(--color1);\n       }\n        .card\n        {\n          background-color: var(--color1) !important;\n          text-align: center;\n          border-style: solid;\n          border-width: 2px;\n          border-color: var(--color3);\n        }\n        .card-body\n        {\n          background-color: var(--color2);;\n        }\n        .card-button\n        {\n          color: var(--color5) !important;\n          background-color: var(--color1) !important;\n          font-weight: bold;\n        }\n        .card-title\n        {\n            color             :   var(--color5);\n            font-weight       :   900;\n            font-size         :   300%;\n        }\n        .card-title-button\n        {\n            color             :   var(--color5) !important;\n            background-color  :   var(--color1) !important;\n            font-weight       :   900;\n            font-size         :   300%;\n            font-style        :   italic;        \n        }\n        .card-text\n        {\n          color: var(--color6);\n          text-align: left;\n          font-size: var(--big-text-size);\n        }\n        .tableHeading\n        {\n          color:var(--container-title-color);\n        }\n        .tableText\n        {\n          color:var(--container-text-color);\n          font-size: var(--big-text-size);\n        }\n       .vert-pad\n        {\n            padding-top:var(--vert-pad);;\n            padding-bottom:var(--vert-pad);;\n        }\n        .horz-pad\n        {\n            padding-left:var(--horz-pad);;\n            padding-right:var(--horz-pad);;\n        }\n        .big-text\n        {\n            font-size: var(--big-text-size);\n        }\n        .medium-text\n        {\n            font-size: var(--medium-text-size);\n        }\n        .bold-text\n        {\n            font-weight: var(--bold-text);\n        }\n       .ui-dialog-titlebar-close \n        {\n            visibility: hidden;\n        }\n        input.inputLarger \n        { \n            transform: scale(3); \n            margin: 1px;\n        }\n        .googleSlide4by3-container \n        {\n            position: relative;\n            overflow: hidden;\n            padding-top: 75.0%;\n        }\n        .googleSlide4by3-iframe {\n            position: absolute;\n            top: 0;\n            left: 0;\n            width: 100%;\n            height: 100%;\n            border: 0;\n        }        \n        .custom-select\n        {\n            color: black;\n            background-color: white;\n            height:80px;\n            line-height:70px;\n        }\n        .hovertext text\n        {\n          font-size:30px !important;\n        }",
+        "template": "        body \n        {\n          background-color: var(--color1) !important;\n          padding-left:25px;\n          padding-right:25px;\n        }\n        \n        img \n        {\n          object-fit: contain;\n        }\n        a\n        {\n            color: white;\n        }\n        a:visited \n        { \n            color: white;\n        }\n        a:hover \n        { \n            color: var(--color5);\n        }\n\n        .jumbotron \n        {\n          background-color: var(--color1) !important;\n          color: white;\n          padding-top:25px;\n          padding-bottom:25px;\n        }\n        .jumbotron-title\n        {\n          color:var(--color5);\n        }\n        .jumbotron-button\n        {\n          color: white;\n          background-color: var(--color1);\n       }\n        .card\n        {\n          background-color: var(--color1) !important;\n          text-align: center;\n          border-style: solid;\n          border-width: 2px;\n          border-color: var(--color3);\n        }\n        .card-body\n        {\n          background-color: var(--color2);;\n        }\n        .card-button\n        {\n          color: var(--color5) !important;\n          background-color: var(--color1) !important;\n          font-weight: bold;\n        }\n        .card-title\n        {\n            color             :   var(--color5);\n            font-weight       :   900;\n            font-size         :   300%;\n        }\n        .card-title-button\n        {\n            color             :   var(--color5) !important;\n            background-color  :   var(--color1) !important;\n            font-weight       :   900;\n            font-size         :   300%;\n            font-style        :   italic;        \n        }\n        .card-text\n        {\n          color: var(--color6);\n          text-align: left;\n          font-size: var(--big-text-size);\n        }\n        .tableHeading\n        {\n          color:var(--container-title-color);\n        }\n        .tableText\n        {\n          color:var(--container-text-color);\n          font-size: var(--big-text-size);\n        }\n       .vert-pad\n        {\n            padding-top:var(--vert-pad);;\n            padding-bottom:var(--vert-pad);;\n        }\n        .horz-pad\n        {\n            padding-left:var(--horz-pad);;\n            padding-right:var(--horz-pad);;\n        }\n        .big-text\n        {\n            font-size: var(--big-text-size);\n        }\n        .medium-text\n        {\n            font-size: var(--medium-text-size);\n        }\n        .bold-text\n        {\n            font-weight: var(--bold-text);\n        }\n       .ui-dialog-titlebar-close \n        {\n            visibility: hidden;\n        }\n        input.inputLarger \n        { \n            transform: scale(3); \n            margin: 1px;\n        }\n        .googleSlide4by3-container \n        {\n            position: relative;\n            overflow: hidden;\n            padding-top: 75.0%;\n        }\n        .googleSlide4by3-iframe {\n            position: absolute;\n            top: 0;\n            left: 0;\n            width: 100%;\n            height: 100%;\n            border: 0;\n        }        \n        .custom-select\n        {\n            color: black;\n            background-color: white;\n            height:80px;\n            line-height:70px;\n        }\n        .hovertext text\n        {\n          font-size:30px !important;\n        }",
         "output": "str",
         "x": 190,
         "y": 80,
