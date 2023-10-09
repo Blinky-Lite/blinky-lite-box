@@ -1226,9 +1226,7 @@
             "568288857ebaefaa"
         ],
         "x": 174,
-        "y": 79,
-        "w": 1072,
-        "h": 502
+        "y": 79
     },
     {
         "id": "943ba30499779d75",
@@ -1262,7 +1260,9 @@
             "7738e37c816651ac"
         ],
         "x": 154,
-        "y": 1079
+        "y": 1079,
+        "w": 1322,
+        "h": 302
     },
     {
         "id": "68d752967679bda5",
@@ -1307,7 +1307,9 @@
             "7a6b0d267f0d03ef"
         ],
         "x": 154,
-        "y": 1459
+        "y": 1459,
+        "w": 1782,
+        "h": 522
     },
     {
         "id": "cc576e0ff6a48284",
@@ -1355,7 +1357,9 @@
             "c87ec7f3f92ea7d3"
         ],
         "x": 154,
-        "y": 3199
+        "y": 3199,
+        "w": 1452,
+        "h": 602
     },
     {
         "id": "a34ee7cdaf781b79",
@@ -1719,7 +1723,9 @@
             "f33cd19097d8a3b1"
         ],
         "x": 154,
-        "y": 59
+        "y": 59,
+        "w": 1572,
+        "h": 482
     },
     {
         "id": "588a107b144a078a",
@@ -1764,7 +1770,9 @@
             "9fadad95613eca54"
         ],
         "x": 154,
-        "y": 619
+        "y": 619,
+        "w": 1812,
+        "h": 382
     },
     {
         "id": "e789a1b186378ec0",
@@ -1896,7 +1904,9 @@
             "7e74b55c48b46b62"
         ],
         "x": 162,
-        "y": 2067
+        "y": 2067,
+        "w": 1976,
+        "h": 1046
     },
     {
         "id": "565f4068c450fc58",
@@ -1983,9 +1993,7 @@
             "0ae559dfc1cd42e5"
         ],
         "x": 174,
-        "y": 679,
-        "w": 1152,
-        "h": 202
+        "y": 679
     },
     {
         "id": "d6abb27829dbfb86",
@@ -2007,9 +2015,7 @@
             "22ec08a66c477512"
         ],
         "x": 174,
-        "y": 959,
-        "w": 1192,
-        "h": 122
+        "y": 959
     },
     {
         "id": "3d14d6dd8299469d",
@@ -2119,7 +2125,9 @@
             "fbb62ed673bd505e"
         ],
         "x": 188,
-        "y": 2553
+        "y": 2553,
+        "w": 1804,
+        "h": 534
     },
     {
         "id": "7e74b55c48b46b62",
@@ -2150,7 +2158,9 @@
             "b6a28210e2d18575"
         ],
         "x": 194,
-        "y": 2093
+        "y": 2093,
+        "w": 1918,
+        "h": 434
     },
     {
         "id": "49a3f583c0875ffc",
@@ -2174,7 +2184,9 @@
             "3c3a7da04a40eff2"
         ],
         "x": 1094,
-        "y": 2579
+        "y": 2579,
+        "w": 872,
+        "h": 82
     },
     {
         "id": "1b26e93ccb3ef98b",
@@ -2195,7 +2207,9 @@
             "e031088776231fd1"
         ],
         "x": 1474,
-        "y": 2679
+        "y": 2679,
+        "w": 492,
+        "h": 82
     },
     {
         "id": "1b74ec2e93fa5123",
@@ -2219,7 +2233,9 @@
             "2f48023e49920b79"
         ],
         "x": 1094,
-        "y": 2819
+        "y": 2819,
+        "w": 872,
+        "h": 82
     },
     {
         "id": "fbb62ed673bd505e",
@@ -2244,7 +2260,9 @@
             "a9b0290f353328f3"
         ],
         "x": 214,
-        "y": 2939
+        "y": 2939,
+        "w": 1372,
+        "h": 122
     },
     {
         "id": "d78fadb84ac3a977",
@@ -2268,7 +2286,9 @@
             "7f0c7c2f1594961d"
         ],
         "x": 1194,
-        "y": 2119
+        "y": 2119,
+        "w": 892,
+        "h": 82
     },
     {
         "id": "8a54730859fd312d",
@@ -2292,7 +2312,9 @@
             "e617ce9529e5b6f6"
         ],
         "x": 1214,
-        "y": 2219
+        "y": 2219,
+        "w": 872,
+        "h": 82
     },
     {
         "id": "4bc94be4667ab860",
@@ -2318,7 +2340,9 @@
             "52e96b92ee8aa125"
         ],
         "x": 754,
-        "y": 2319
+        "y": 2319,
+        "w": 1332,
+        "h": 82
     },
     {
         "id": "b6a28210e2d18575",
@@ -2342,7 +2366,9 @@
             "f0458fb64cc43ca4"
         ],
         "x": 1194,
-        "y": 2419
+        "y": 2419,
+        "w": 892,
+        "h": 82
     },
     {
         "id": "6ad7c930.1a06b8",
@@ -10499,7 +10525,7 @@
         "z": "90f83725.6dae08",
         "g": "7e74b55c48b46b62",
         "name": "Check password",
-        "func": "if (msg.match == false)  \n{\n    delete msg.userData['cred'];\n    msg.payload.errorMsg = 'Error: Invalid Credentials';\n    return [msg, null,null,null];\n\n}\nif ((\"secret2Fa\" in msg.userData.cred))\n{\n    delete msg.userData['cred'];\n    msg.payload.errorMsg = 'Error: 2FA Secret already exists. \\nContact System Administrator';\n    return [null, msg,null,null];\n}\nif (!msg.userData.cred.hasOwnProperty(\"validPassword\"))\n{\n    msg.payload = {errorMsg: 'Stale password. New Password required.'};\n    msg.userData.cred = {username: msg.userData.cred.username}\n    delete msg.match\n    return [null, null,null,msg];\n}\nif (!msg.userData.cred.validPassword)\n{\n    msg.payload = {username: msg.userData.cred.username,  errorMsg: 'Stale password. New Password required.'};\n    delete msg.userData.cred;\n    delete msg.match\n    return [null, null,null,msg];\n}\n\nlet { authenticator } = global.get('otplib');\nlet secret = authenticator.generateSecret();\nlet queryFilter = \n{\n    username : msg.userData.cred.username\n}\nmsg.payload = [queryFilter, { $set: {tempSecret2Fa:secret} }];\ndelete msg.match;\nmsg.userData.cred = {username: queryFilter.username, secret : secret}\n\nreturn [null, null, msg,null];",
+        "func": "if (msg.match == false)  \n{\n    delete msg.userData['cred'];\n    msg.payload.errorMsg = 'Error: Invalid Credentials';\n    return [msg, null,null,null];\n\n}\nif ((\"secret2Fa\" in msg.userData.cred))\n{\n    delete msg.userData['cred'];\n    msg.payload.errorMsg = 'Error: 2FA Secret already exists. \\nContact System Administrator';\n    return [null, msg,null,null];\n}\nif (!msg.userData.cred.hasOwnProperty(\"validPassword\"))\n{\n    msg.payload = {errorMsg: 'Stale password. New Password required.'};\n    msg.userData.cred = {username: msg.userData.cred.username}\n    delete msg.match\n    return [null, null,null,msg];\n}\nif (!msg.userData.cred.validPassword)\n{\n    msg.payload = {username: msg.userData.cred.username,  errorMsg: 'Stale password. New Password required.'};\n//    delete msg.userData.cred;\n    delete msg.match\n    return [null, null,null,msg];\n}\n\nlet { authenticator } = global.get('otplib');\nlet secret = authenticator.generateSecret();\nlet queryFilter = \n{\n    username : msg.userData.cred.username\n}\nmsg.payload = [queryFilter, { $set: {tempSecret2Fa:secret} }];\ndelete msg.match;\nmsg.userData.cred = {username: queryFilter.username, secret : secret}\n\nreturn [null, null, msg,null];",
         "outputs": 4,
         "noerr": 0,
         "initialize": "",
@@ -10839,7 +10865,7 @@
         "fieldType": "msg",
         "format": "html",
         "syntax": "mustache",
-        "template": "<!-- Body HTML -->\n        <div class='card'>\n            <p class='card-title'>Open 2FA phone app and scan QR code</p>\n            <div class='card-body' align=\"center\">\n                <img src=\"{{{payload.qrcode}}}\" width=\"50%\"> \n                <form action=\"/processLoginFor2FaOtp\" method=\"POST\">\n                    <table align='center'>\n                        <tr>\n                            <td>\n                                <span class=\"big-text\">User</span>\n                            </td>\n                            <td>\n                                <span class=\"big-text\">{{{payload.username}}}</>\n                            </td>\n                        </tr>\n                        <tr>\n                            <td>\n                                <label for=\"optCode\" class=\"big-text\">OTP code</label>\n                            </td>\n                            <td>\n                                <input name=\"optCode\" type=\"text\" class=\"big-text\"/>\n                            </td>\n                        </tr>\n                        <tr>\n                            <td>\n                            </td>\n                            <td>\n                                <input type=\"submit\" class=\"btn jumbotron-button btn-block big-text bold-text\"/>\n                            </td>\n                        </tr>\n                    </table>    \n                    <input type=\"hidden\" name=\"url\" value=\"{{{userData.url}}}\" />\n                    <input type=\"hidden\" name=\"username\" value=\"{{{payload.username}}}\" />\n                </form>  \n            </div>\n        </div>",
+        "template": "<!-- Body HTML -->\n        <div class='card'>\n            <p class='card-title'>Open 2FA phone app and enter OTP code</p>\n            <div class='card-body' align=\"center\">\n                <form action=\"/processLoginFor2FaOtp\" method=\"POST\">\n                    <table align='center'>\n                        <tr>\n                            <td>\n                                <span class=\"big-text\">User</span>\n                            </td>\n                            <td>\n                                <span class=\"big-text\">{{{payload.username}}}</>\n                            </td>\n                        </tr>\n                        <tr>\n                            <td>\n                                <label for=\"optCode\" class=\"big-text\">OTP code</label>\n                            </td>\n                            <td>\n                                <input name=\"optCode\" type=\"text\" class=\"big-text\"/>\n                            </td>\n                        </tr>\n                        <tr>\n                            <td>\n                            </td>\n                            <td>\n                                <input type=\"submit\" class=\"btn jumbotron-button btn-block big-text bold-text\"/>\n                            </td>\n                        </tr>\n                    </table>    \n                    <input type=\"hidden\" name=\"url\" value=\"{{{userData.url}}}\" />\n                    <input type=\"hidden\" name=\"username\" value=\"{{{payload.username}}}\" />\n                </form>  \n                <img src=\"{{{payload.qrcode}}}\" width=\"50%\" style=\"padding-top:25px;\"> \n            </div>\n        </div>",
         "output": "str",
         "x": 1730,
         "y": 2360,
