@@ -4,8 +4,7 @@
         "password": "$(MQTTPASSWORD)"
     },
     "9cd5ff5e.caf86": {},
-    "81dcb3a4917e5d5f": {
-        "apikey": "$(NEXMOAPIKEY)",
-        "apisecret": "$(NEXMOAPISECRET)"
+    "e0737e12da5aa7cd": {
+        "token": "$(TELBOT)"
     }
 }

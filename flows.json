@@ -1261,9 +1261,7 @@
             "57fbe797d000b43c"
         ],
         "x": 174,
-        "y": 79,
-        "w": 1072,
-        "h": 502
+        "y": 79
     },
     {
         "id": "943ba30499779d75",
@@ -1635,7 +1633,9 @@
             "9a57a0bad4264074"
         ],
         "x": 174,
-        "y": 59
+        "y": 59,
+        "w": 1532,
+        "h": 322
     },
     {
         "id": "6feaa64a0a1fa2e4",
@@ -1666,7 +1666,9 @@
             "6597cda2e4462431"
         ],
         "x": 174,
-        "y": 439
+        "y": 439,
+        "w": 1712,
+        "h": 202
     },
     {
         "id": "5cd034832a45a34a",
@@ -1684,7 +1686,6 @@
             "45361510f76b6ea6",
             "07d4aeec1281418d",
             "d6a092a9310a35d1",
-            "8d7053e51ba2cdf6",
             "50313c2a6f9db216",
             "1fe8aeeb08bc4ca5",
             "bca21aae583a014d",
@@ -1695,10 +1696,13 @@
             "389f0d2b43d45971",
             "6ae9ada997ae1a68",
             "884d2fc7fc64f29b",
-            "953197def2c1598c"
+            "953197def2c1598c",
+            "ae70029265b0b2ce"
         ],
         "x": 184,
-        "y": 719
+        "y": 719,
+        "w": 1542,
+        "h": 242
     },
     {
         "id": "af622659deabdbdd",
@@ -1913,9 +1917,7 @@
             "d387c14850e4b2de"
         ],
         "x": 74,
-        "y": 519,
-        "w": 952,
-        "h": 302
+        "y": 519
     },
     {
         "id": "7046efa6cee97ff7",
@@ -1965,9 +1967,7 @@
             "30a4a020cf5c79ba"
         ],
         "x": 114,
-        "y": 99,
-        "w": 342,
-        "h": 422
+        "y": 99
     },
     {
         "id": "8513b8699a14012a",
@@ -1991,7 +1991,9 @@
             "bb7837ce.8d7338"
         ],
         "x": 154,
-        "y": 59
+        "y": 59,
+        "w": 1132,
+        "h": 82
     },
     {
         "id": "bb926706795e937c",
@@ -2020,9 +2022,7 @@
             "0ae559dfc1cd42e5"
         ],
         "x": 174,
-        "y": 879,
-        "w": 1152,
-        "h": 202
+        "y": 879
     },
     {
         "id": "d6abb27829dbfb86",
@@ -2044,9 +2044,7 @@
             "22ec08a66c477512"
         ],
         "x": 174,
-        "y": 1159,
-        "w": 1192,
-        "h": 122
+        "y": 1159
     },
     {
         "id": "3d14d6dd8299469d",
@@ -2602,10 +2600,6 @@
         "wholemsg": "false"
     },
     {
-        "id": "81dcb3a4917e5d5f",
-        "type": "nexmobasic"
-    },
-    {
         "id": "50615d2a2028c321",
         "type": "websocket-listener",
         "path": "/app11/websocket",
@@ -2712,6 +2706,31 @@
         "type": "websocket-listener",
         "path": "/mqttACLcontrol/websocket",
         "wholemsg": "false"
+    },
+    {
+        "id": "e0737e12da5aa7cd",
+        "type": "telegram bot",
+        "botname": "Telegram Bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
     },
     {
         "id": "b9df3f26.ab53f",
@@ -4502,7 +4521,7 @@
         "fieldType": "msg",
         "format": "javascript",
         "syntax": "mustache",
-        "template": "// alarmLimitDialog\n        class AlarmLimitDialog\n        {\n            constructor(app)\n            {\n                this.app = app;\n            }\n            onDocumentReady(cardContainerId)\n            {\n                this.cardContainer = document.getElementById(cardContainerId);\n                \n                let limitName = [\"LOLO\", \"LOW\", \"HIGH\", \"HIHI\", \"Name\", \"Phone\"];\n                this.limitInput = [];\n                \n                let limitTable = document.createElement('table');\n                limitTable.setAttribute('width', '100%');\n\n                for (let ii = 0; ii < 6; ++ii)\n                {\n                    let limitSpan  = document.createElement('span');\n                    limitSpan.setAttribute('class', 'alarmLimit-label-text');\n                    limitSpan.innerHTML = limitName[ii];\n                    \n                    let limitSpanTd = document.createElement('td');\n                    limitSpanTd.setAttribute('width', '50%');\n                    limitSpanTd.setAttribute('align', 'left');\n                    limitSpanTd.appendChild(limitSpan);\n    \n                    this.limitInput[ii] = document.createElement('input');\n                    this.limitInput[ii].setAttribute('class', 'alarmLimit-input-text');\n                    this.limitInput[ii].setAttribute('type', 'text');\n                    this.limitInput[ii].setAttribute('value', '0');\n\n                    let limitInputTd = document.createElement('td');\n                    limitInputTd.setAttribute('width', '50%');\n                    limitInputTd.setAttribute('align', 'right');\n                    limitInputTd.appendChild(this.limitInput[ii]);\n                    \n                    let limitTr = document.createElement('tr');\n                    limitTr.appendChild(limitSpanTd);\n                    limitTr.appendChild(limitInputTd);\n                    \n                    limitTable.appendChild(limitTr);\n                }\n                let holdingTable = document.createElement('table');\n                holdingTable.setAttribute('width', '100%');\n                let holdingTableTr1 = document.createElement('tr');\n                let holdingTableTr2 = document.createElement('tr');\n                let holdingTableTd1 = document.createElement('td');\n                let holdingTableTd2 = document.createElement('td');\n                holdingTableTr1.appendChild(holdingTableTd1);\n                holdingTableTr2.appendChild(holdingTableTd2);\n                holdingTable.appendChild(holdingTableTr1);\n                holdingTable.appendChild(holdingTableTr2);\n                holdingTableTd1.appendChild(limitTable);\n                \n                let buttonTable = document.createElement('table');\n                buttonTable.setAttribute('width', '100%');\n                let buttonTableTr1 = document.createElement('tr');\n                let buttonTableTd1 = document.createElement('td');\n                let buttonTableTd2 = document.createElement('td');\n                buttonTableTd1.setAttribute('width', '50%');\n                buttonTableTd1.setAttribute('align', 'center');\n                buttonTableTd1.setAttribute('style', 'padding-top:20px;');\n                buttonTableTd2.setAttribute('width', '50%');\n                buttonTableTd2.setAttribute('style', 'padding-top:20px;');\n                buttonTableTd2.setAttribute('align', 'center');\n                buttonTableTr1.appendChild(buttonTableTd1);\n                buttonTableTr1.appendChild(buttonTableTd2);\n                buttonTable.appendChild(buttonTableTr1);\n                holdingTable.appendChild(buttonTable);\n                \n                this.setButton = document.createElement('button');\n                this.setButton.setAttribute('class', 'btn alarmLimit-button');\n                this.setButton.innerHTML = 'Set';\n                this.setButton.onclick = event => {this.changeLimits()};\n                buttonTableTd1.appendChild(this.setButton);\n\n                this.cancelButton = document.createElement('button');\n                this.cancelButton.setAttribute('class', 'btn alarmLimit-button');\n                this.cancelButton.innerHTML = 'Cancel';\n                this.cancelButton.onclick = event => {this.cancel()};\n                buttonTableTd2.appendChild(this.cancelButton);\n                \n                let limitCardBody = document.createElement('div');\n                limitCardBody.setAttribute('class', 'alarmLimit-card-body');\n                limitCardBody.appendChild(limitTable);\n                \n                this.cardTitle = document.createElement('p');\n                this.cardTitle.setAttribute('class', 'alarmLimit-card-title');\n                this.cardTitle.innerHTML = \"Cube\";\n                \n                this.limitCard = document.createElement('div');\n                this.limitCard.setAttribute('class', 'dialog-modal-content card alarmLimit-card');\n                this.limitCard.appendChild(this.cardTitle);\n                this.limitCard.appendChild(limitCardBody);\n                this.limitCard.appendChild(holdingTable);\n\n                this.cardContainer.appendChild(this.limitCard);\n            }\n            showAlarmConfig(show)\n            {\n                if (show)\n                {\n                    this.cardContainer.style.display = \"block\";\n                    this.limitCard.style.display = \"block\";\n                }\n                else\n                {\n                    this.cardContainer.style.display = \"none\";\n                }\n            }\n            cancel()\n            {\n                this.cardContainer.style.display = \"none\";\n            }\n            changeLimits()\n            {\n                for (let ii = 0; ii < 4; ++ii) \n                {\n                    if (isNaN(this.limitInput[ii].value) )\n                    {\n                        this.cardContainer.style.display = \"none\";\n                        return;\n                    }\n                }\n                this.tray[this.cubeName].alarm.limits.lolo = Number(this.limitInput[0].value);\n                this.tray[this.cubeName].alarm.limits.low  = Number(this.limitInput[1].value);\n                this.tray[this.cubeName].alarm.limits.high = Number(this.limitInput[2].value);\n                this.tray[this.cubeName].alarm.limits.hihi = Number(this.limitInput[3].value);\n                this.tray[this.cubeName].alarm.notify.name = this.limitInput[4].value;\n                this.tray[this.cubeName].alarm.notify.number = this.limitInput[5].value;\n                let configInfo = \n                {\n                    cube : this.cubeName,\n                    limits: this.tray[this.cubeName].alarm.limits,\n                    notify: this.tray[this.cubeName].alarm.notify\n                };\n                this.updateTrayConfig(configInfo);\n                this.cardContainer.style.display = \"none\";\n            }\n            editAlarmConfig(cubeName, tray)\n            {\n                this.cubeName = cubeName;\n                this.tray = tray;\n                this.cardTitle.innerHTML = this.tray.type + \".\" + this.tray.name + \".\" + this.cubeName;\n                this.limitInput[0].value = this.tray[this.cubeName].alarm.limits.lolo.toString();\n                this.limitInput[1].value = this.tray[this.cubeName].alarm.limits.low.toString();\n                this.limitInput[2].value = this.tray[this.cubeName].alarm.limits.high.toString();\n                this.limitInput[3].value = this.tray[this.cubeName].alarm.limits.hihi.toString();\n                this.limitInput[4].value = this.tray[this.cubeName].alarm.notify.name;\n                this.limitInput[5].value = this.tray[this.cubeName].alarm.notify.number;\n                this.showAlarmConfig(true);\n\n            }\n            updateTrayConfig(configInfo)\n            {\n                let actionMsg = \n                {\n                    topic   : this.app.box + '/tray/' +  this.tray.type + '/' +  this.tray.name + '/setting/config',\n                    payload : configInfo\n                };\n                this.app.sendActionMsg('config','setting',actionMsg);\n            }\n        }",
+        "template": "// alarmLimitDialog\n        class AlarmLimitDialog\n        {\n            constructor(app)\n            {\n                this.app = app;\n            }\n            onDocumentReady(cardContainerId)\n            {\n                this.cardContainer = document.getElementById(cardContainerId);\n                \n                let limitName = [\"LOLO\", \"LOW\", \"HIGH\", \"HIHI\", \"Chat Name\", \"Chat ID\"];\n                this.limitInput = [];\n                \n                let limitTable = document.createElement('table');\n                limitTable.setAttribute('width', '100%');\n\n                for (let ii = 0; ii < 6; ++ii)\n                {\n                    let limitSpan  = document.createElement('span');\n                    limitSpan.setAttribute('class', 'alarmLimit-label-text');\n                    limitSpan.innerHTML = limitName[ii];\n                    \n                    let limitSpanTd = document.createElement('td');\n                    limitSpanTd.setAttribute('width', '50%');\n                    limitSpanTd.setAttribute('align', 'left');\n                    limitSpanTd.appendChild(limitSpan);\n    \n                    this.limitInput[ii] = document.createElement('input');\n                    this.limitInput[ii].setAttribute('class', 'alarmLimit-input-text');\n                    this.limitInput[ii].setAttribute('type', 'text');\n                    this.limitInput[ii].setAttribute('value', '0');\n\n                    let limitInputTd = document.createElement('td');\n                    limitInputTd.setAttribute('width', '50%');\n                    limitInputTd.setAttribute('align', 'right');\n                    limitInputTd.appendChild(this.limitInput[ii]);\n                    \n                    let limitTr = document.createElement('tr');\n                    limitTr.appendChild(limitSpanTd);\n                    limitTr.appendChild(limitInputTd);\n                    \n                    limitTable.appendChild(limitTr);\n                }\n                let holdingTable = document.createElement('table');\n                holdingTable.setAttribute('width', '100%');\n                let holdingTableTr1 = document.createElement('tr');\n                let holdingTableTr2 = document.createElement('tr');\n                let holdingTableTd1 = document.createElement('td');\n                let holdingTableTd2 = document.createElement('td');\n                holdingTableTr1.appendChild(holdingTableTd1);\n                holdingTableTr2.appendChild(holdingTableTd2);\n                holdingTable.appendChild(holdingTableTr1);\n                holdingTable.appendChild(holdingTableTr2);\n                holdingTableTd1.appendChild(limitTable);\n                \n                let buttonTable = document.createElement('table');\n                buttonTable.setAttribute('width', '100%');\n                let buttonTableTr1 = document.createElement('tr');\n                let buttonTableTd1 = document.createElement('td');\n                let buttonTableTd2 = document.createElement('td');\n                buttonTableTd1.setAttribute('width', '50%');\n                buttonTableTd1.setAttribute('align', 'center');\n                buttonTableTd1.setAttribute('style', 'padding-top:20px;');\n                buttonTableTd2.setAttribute('width', '50%');\n                buttonTableTd2.setAttribute('style', 'padding-top:20px;');\n                buttonTableTd2.setAttribute('align', 'center');\n                buttonTableTr1.appendChild(buttonTableTd1);\n                buttonTableTr1.appendChild(buttonTableTd2);\n                buttonTable.appendChild(buttonTableTr1);\n                holdingTable.appendChild(buttonTable);\n                \n                this.setButton = document.createElement('button');\n                this.setButton.setAttribute('class', 'btn alarmLimit-button');\n                this.setButton.innerHTML = 'Set';\n                this.setButton.onclick = event => {this.changeLimits()};\n                buttonTableTd1.appendChild(this.setButton);\n\n                this.cancelButton = document.createElement('button');\n                this.cancelButton.setAttribute('class', 'btn alarmLimit-button');\n                this.cancelButton.innerHTML = 'Cancel';\n                this.cancelButton.onclick = event => {this.cancel()};\n                buttonTableTd2.appendChild(this.cancelButton);\n                \n                let limitCardBody = document.createElement('div');\n                limitCardBody.setAttribute('class', 'alarmLimit-card-body');\n                limitCardBody.appendChild(limitTable);\n                \n                this.cardTitle = document.createElement('p');\n                this.cardTitle.setAttribute('class', 'alarmLimit-card-title');\n                this.cardTitle.innerHTML = \"Cube\";\n                \n                this.limitCard = document.createElement('div');\n                this.limitCard.setAttribute('class', 'dialog-modal-content card alarmLimit-card');\n                this.limitCard.appendChild(this.cardTitle);\n                this.limitCard.appendChild(limitCardBody);\n                this.limitCard.appendChild(holdingTable);\n\n                this.cardContainer.appendChild(this.limitCard);\n            }\n            showAlarmConfig(show)\n            {\n                if (show)\n                {\n                    this.cardContainer.style.display = \"block\";\n                    this.limitCard.style.display = \"block\";\n                }\n                else\n                {\n                    this.cardContainer.style.display = \"none\";\n                }\n            }\n            cancel()\n            {\n                this.cardContainer.style.display = \"none\";\n            }\n            changeLimits()\n            {\n                for (let ii = 0; ii < 4; ++ii) \n                {\n                    if (isNaN(this.limitInput[ii].value) )\n                    {\n                        this.cardContainer.style.display = \"none\";\n                        return;\n                    }\n                }\n                this.tray[this.cubeName].alarm.limits.lolo = Number(this.limitInput[0].value);\n                this.tray[this.cubeName].alarm.limits.low  = Number(this.limitInput[1].value);\n                this.tray[this.cubeName].alarm.limits.high = Number(this.limitInput[2].value);\n                this.tray[this.cubeName].alarm.limits.hihi = Number(this.limitInput[3].value);\n                this.tray[this.cubeName].alarm.notify.name = this.limitInput[4].value;\n                this.tray[this.cubeName].alarm.notify.number = this.limitInput[5].value;\n                let configInfo = \n                {\n                    cube : this.cubeName,\n                    limits: this.tray[this.cubeName].alarm.limits,\n                    notify: this.tray[this.cubeName].alarm.notify\n                };\n                this.updateTrayConfig(configInfo);\n                this.cardContainer.style.display = \"none\";\n            }\n            editAlarmConfig(cubeName, tray)\n            {\n                this.cubeName = cubeName;\n                this.tray = tray;\n                this.cardTitle.innerHTML = this.tray.type + \".\" + this.tray.name + \".\" + this.cubeName;\n                this.limitInput[0].value = this.tray[this.cubeName].alarm.limits.lolo.toString();\n                this.limitInput[1].value = this.tray[this.cubeName].alarm.limits.low.toString();\n                this.limitInput[2].value = this.tray[this.cubeName].alarm.limits.high.toString();\n                this.limitInput[3].value = this.tray[this.cubeName].alarm.limits.hihi.toString();\n                this.limitInput[4].value = this.tray[this.cubeName].alarm.notify.name;\n                this.limitInput[5].value = this.tray[this.cubeName].alarm.notify.number;\n                this.showAlarmConfig(true);\n\n            }\n            updateTrayConfig(configInfo)\n            {\n                let actionMsg = \n                {\n                    topic   : this.app.box + '/tray/' +  this.tray.type + '/' +  this.tray.name + '/setting/config',\n                    payload : configInfo\n                };\n                this.app.sendActionMsg('config','setting',actionMsg);\n            }\n        }",
         "output": "str",
         "x": 190,
         "y": 80,
@@ -11371,24 +11390,6 @@
         "wires": []
     },
     {
-        "id": "8d7053e51ba2cdf6",
-        "type": "sendsms",
-        "z": "a614b07c28242d69",
-        "g": "5cd034832a45a34a",
-        "creds": "81dcb3a4917e5d5f",
-        "to": "{{msg.to}}",
-        "fr": "{{msg.from}}",
-        "text": "{{msg.payload}}",
-        "unicode": false,
-        "x": 1470,
-        "y": 760,
-        "wires": [
-            [
-                "50313c2a6f9db216"
-            ]
-        ]
-    },
-    {
         "id": "50313c2a6f9db216",
         "type": "debug",
         "z": "a614b07c28242d69",
@@ -11400,7 +11401,7 @@
         "tostatus": false,
         "complete": "true",
         "targetType": "full",
-        "x": 1610,
+        "x": 1630,
         "y": 760,
         "wires": []
     },
@@ -11455,18 +11456,19 @@
         "type": "function",
         "z": "a614b07c28242d69",
         "g": "5cd034832a45a34a",
-        "name": "Prepare SMS",
-        "func": "if (msg.payload.cube.alarm.notify.name.length < 1) return null;\nif (msg.payload.cube.alarm.notify.number.length < 1) return null;\nlet alarmHistory = context.get('alarmHistory');\nlet staleSMSTimeout = flow.get('staleSMSTimeout');\nlet now = new Date().getTime();\nif (alarmHistory.length > 0)\n{\n    while (alarmHistory.length > 0)\n    {\n        if ((now - alarmHistory[0].timestamp) > staleSMSTimeout)\n        {\n            alarmHistory.shift();\n        }\n        else\n        {\n            break;\n        }\n    }\n\n    if (alarmHistory.length > 0)\n    {\n        if (alarmHistory.findIndex(cube => cube.title == msg.payload.title) >= 0) return null;\n    }\n}\nalarmHistory.push({title:msg.payload.title, timestamp:now});\n\nlet type = '';\nif (msg.payload.cube.alarm.value == 1) type = 'LOW';\nif (msg.payload.cube.alarm.value == 2) type = 'HIGH';\nif (msg.payload.cube.alarm.value == 3) type = 'LOLO';\nif (msg.payload.cube.alarm.value == 4) type = 'HIHI';\nvar message = 'Alarm-' + type + ': ' + msg.payload.title;\nmessage = message + ' is at ' + msg.payload.cube.value.toString() + ' ' + msg.payload.cube.unit\nreturn {topic:'sms',to:msg.payload.cube.alarm.notify.number, payload:message, from:'46000000000'};\n",
+        "name": "Prepare Telegram",
+        "func": "if (msg.payload.cube.alarm.notify.name.length < 1) return null;\nif (msg.payload.cube.alarm.notify.number.length < 1) return null;\nlet alarmHistory = context.get('alarmHistory');\nlet staleSMSTimeout = flow.get('staleSMSTimeout');\nlet now = new Date().getTime();\nif (alarmHistory.length > 0)\n{\n    while (alarmHistory.length > 0)\n    {\n        if ((now - alarmHistory[0].timestamp) > staleSMSTimeout)\n        {\n            alarmHistory.shift();\n        }\n        else\n        {\n            break;\n        }\n    }\n\n    if (alarmHistory.length > 0)\n    {\n        if (alarmHistory.findIndex(cube => cube.title == msg.payload.title) >= 0) return null;\n    }\n}\nalarmHistory.push({title:msg.payload.title, timestamp:now});\n\nlet type = '';\nif (msg.payload.cube.alarm.value == 1) type = 'LOW';\nif (msg.payload.cube.alarm.value == 2) type = 'HIGH';\nif (msg.payload.cube.alarm.value == 3) type = 'LOLO';\nif (msg.payload.cube.alarm.value == 4) type = 'HIHI';\nvar message = 'Alarm-' + type + ': ' + msg.payload.title;\nmessage = message + ' is at ' + msg.payload.cube.value.toString() + ' ' + msg.payload.cube.unit\n\nreturn {topic:\"telegram\", payload:{\"type\":\"message\",\"chatId\":msg.payload.cube.alarm.notify.number,\"content\":message}};\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('alarmHistory',[]);",
         "finalize": "",
         "libs": [],
-        "x": 1280,
+        "x": 1290,
         "y": 760,
         "wires": [
             [
-                "8d7053e51ba2cdf6"
+                "ae70029265b0b2ce"
             ]
         ]
     },
@@ -12353,6 +12355,23 @@
         "wires": [
             [
                 "f5c2349fed54764b"
+            ]
+        ]
+    },
+    {
+        "id": "ae70029265b0b2ce",
+        "type": "telegram sender",
+        "z": "a614b07c28242d69",
+        "g": "5cd034832a45a34a",
+        "name": "Telegram Send",
+        "bot": "e0737e12da5aa7cd",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1480,
+        "y": 760,
+        "wires": [
+            [
+                "50313c2a6f9db216"
             ]
         ]
     },
