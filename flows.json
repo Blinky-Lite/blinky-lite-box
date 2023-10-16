@@ -1295,7 +1295,9 @@
             "7738e37c816651ac"
         ],
         "x": 154,
-        "y": 1079
+        "y": 1079,
+        "w": 1322,
+        "h": 302
     },
     {
         "id": "68d752967679bda5",
@@ -1340,7 +1342,9 @@
             "7a6b0d267f0d03ef"
         ],
         "x": 154,
-        "y": 1459
+        "y": 1459,
+        "w": 1782,
+        "h": 522
     },
     {
         "id": "cc576e0ff6a48284",
@@ -1388,7 +1392,9 @@
             "c87ec7f3f92ea7d3"
         ],
         "x": 154,
-        "y": 3199
+        "y": 3199,
+        "w": 1452,
+        "h": 602
     },
     {
         "id": "a34ee7cdaf781b79",
@@ -1633,9 +1639,7 @@
             "9a57a0bad4264074"
         ],
         "x": 174,
-        "y": 59,
-        "w": 1532,
-        "h": 322
+        "y": 59
     },
     {
         "id": "6feaa64a0a1fa2e4",
@@ -1666,9 +1670,7 @@
             "6597cda2e4462431"
         ],
         "x": 174,
-        "y": 439,
-        "w": 1712,
-        "h": 202
+        "y": 439
     },
     {
         "id": "5cd034832a45a34a",
@@ -1700,9 +1702,7 @@
             "ae70029265b0b2ce"
         ],
         "x": 184,
-        "y": 719,
-        "w": 1542,
-        "h": 242
+        "y": 719
     },
     {
         "id": "af622659deabdbdd",
@@ -1758,7 +1758,9 @@
             "f33cd19097d8a3b1"
         ],
         "x": 154,
-        "y": 59
+        "y": 59,
+        "w": 1572,
+        "h": 482
     },
     {
         "id": "588a107b144a078a",
@@ -1803,7 +1805,9 @@
             "9fadad95613eca54"
         ],
         "x": 154,
-        "y": 619
+        "y": 619,
+        "w": 1812,
+        "h": 382
     },
     {
         "id": "e789a1b186378ec0",
@@ -1935,7 +1939,9 @@
             "7e74b55c48b46b62"
         ],
         "x": 162,
-        "y": 2067
+        "y": 2067,
+        "w": 1976,
+        "h": 1046
     },
     {
         "id": "565f4068c450fc58",
@@ -2154,7 +2160,9 @@
             "fbb62ed673bd505e"
         ],
         "x": 188,
-        "y": 2553
+        "y": 2553,
+        "w": 1804,
+        "h": 534
     },
     {
         "id": "7e74b55c48b46b62",
@@ -2185,7 +2193,9 @@
             "b6a28210e2d18575"
         ],
         "x": 194,
-        "y": 2093
+        "y": 2093,
+        "w": 1918,
+        "h": 434
     },
     {
         "id": "49a3f583c0875ffc",
@@ -2209,7 +2219,9 @@
             "3c3a7da04a40eff2"
         ],
         "x": 1094,
-        "y": 2579
+        "y": 2579,
+        "w": 872,
+        "h": 82
     },
     {
         "id": "1b26e93ccb3ef98b",
@@ -2230,7 +2242,9 @@
             "e031088776231fd1"
         ],
         "x": 1474,
-        "y": 2679
+        "y": 2679,
+        "w": 492,
+        "h": 82
     },
     {
         "id": "1b74ec2e93fa5123",
@@ -2254,7 +2268,9 @@
             "2f48023e49920b79"
         ],
         "x": 1094,
-        "y": 2819
+        "y": 2819,
+        "w": 872,
+        "h": 82
     },
     {
         "id": "fbb62ed673bd505e",
@@ -2279,7 +2295,9 @@
             "a9b0290f353328f3"
         ],
         "x": 214,
-        "y": 2939
+        "y": 2939,
+        "w": 1372,
+        "h": 122
     },
     {
         "id": "d78fadb84ac3a977",
@@ -2303,7 +2321,9 @@
             "7f0c7c2f1594961d"
         ],
         "x": 1194,
-        "y": 2119
+        "y": 2119,
+        "w": 892,
+        "h": 82
     },
     {
         "id": "8a54730859fd312d",
@@ -2327,7 +2347,9 @@
             "e617ce9529e5b6f6"
         ],
         "x": 1214,
-        "y": 2219
+        "y": 2219,
+        "w": 872,
+        "h": 82
     },
     {
         "id": "4bc94be4667ab860",
@@ -2353,7 +2375,9 @@
             "52e96b92ee8aa125"
         ],
         "x": 754,
-        "y": 2319
+        "y": 2319,
+        "w": 1332,
+        "h": 82
     },
     {
         "id": "b6a28210e2d18575",
@@ -2377,7 +2401,9 @@
             "f0458fb64cc43ca4"
         ],
         "x": 1194,
-        "y": 2419
+        "y": 2419,
+        "w": 892,
+        "h": 82
     },
     {
         "id": "6ad7c930.1a06b8",
@@ -9659,8 +9685,9 @@
         "z": "90f83725.6dae08",
         "g": "af622659deabdbdd",
         "name": "get Appconfig",
-        "func": "let trayList = []\nlet viewAllTrays = false;\nfor (let allowedTray of msg.token.trays) \n{\n    if (allowedTray.type == '*') \n    {\n        viewAllTrays = true;\n        break;\n    }\n}\nfor( let ii in msg.payload ) \n{\n    if( msg.payload.hasOwnProperty(ii) ) \n    {\n        let trayDb = msg.payload[ii];\n        if (viewAllTrays)\n        {\n            trayList.push(JSON.parse(JSON.stringify(trayDb)));\n        }\n        else\n        {\n            for (let allowedTray of msg.token.trays) \n            {\n                if (allowedTray.type == trayDb.type) \n                {\n                    if (allowedTray.name == '*')\n                    {\n                        trayList.push(JSON.parse(JSON.stringify(trayDb)));\n                    }\n                    else\n                    {\n                        if (allowedTray.name == trayDb.name)\n                        {\n                            trayList.push(JSON.parse(JSON.stringify(trayDb)));\n                        }\n                    }\n                }\n            }\n        }\n    }\n}\n\nlet trayListType = []\nlet trayListSort = [];\nfor( let ii in trayList ) \n{\n    let index = trayListType.findIndex(tray => tray.type == trayList[ii].type);\n    if (index < 0)\n    {\n        trayListType.push({type:trayList[ii].type});\n        trayListSort.push([trayList[ii]]);\n    }\n    else\n    {\n        trayListSort[index].push(trayList[ii]);\n    }\n}\ntrayListSort.sort( \n    function(a, b) \n    {\n        var x = a[0]['type'].toUpperCase(); \n        var y = b[0]['type'].toUpperCase();\n        return ((x < y) ? -1 : ((x > y) ? 1 : 0));\n    }\n);\nfor( let ii in trayListSort ) \n{\n    trayListSort[ii].sort( \n        function(a, b) \n        {\n            var x = a['name'].toUpperCase(); \n            var y = b['name'].toUpperCase();\n            return ((x < y) ? -1 : ((x > y) ? 1 : 0));\n        }\n    );\n}\n\nlet app = msg.req['_parsedUrl'].pathname.split('/')[1];\nmsg['urlInput'] = JSON.stringify( {box:global.get('box'), trayList:trayListSort});\nmsg.payload = [{ app: app},{projection  :{_id : 0} }]\n\nreturn msg;\n",
+        "func": "let trayList = []\nlet viewAllTrays = false;\nfor (let allowedTray of msg.token.trays) \n{\n    if (allowedTray.type == '*') \n    {\n        viewAllTrays = true;\n        break;\n    }\n}\nfor( let ii in msg.payload ) \n{\n    if( msg.payload.hasOwnProperty(ii) ) \n    {\n        let trayDb = msg.payload[ii];\n        if (viewAllTrays)\n        {\n            trayList.push(JSON.parse(JSON.stringify(trayDb)));\n        }\n        else\n        {\n            for (let allowedTray of msg.token.trays) \n            {\n                if (allowedTray.type == trayDb.type) \n                {\n                    if (allowedTray.name == '*')\n                    {\n                        trayList.push(JSON.parse(JSON.stringify(trayDb)));\n                    }\n                    else\n                    {\n                        if (allowedTray.name == trayDb.name)\n                        {\n                            trayList.push(JSON.parse(JSON.stringify(trayDb)));\n                        }\n                    }\n                }\n            }\n        }\n    }\n}\nlet trayListType = []\nlet trayListSort = [];\nfor( let ii in trayList ) \n{\n    let index = trayListType.findIndex(tray => tray.type == trayList[ii].type);\n    if (index < 0)\n    {\n        trayListType.push({type:trayList[ii].type});\n        trayListSort.push([trayList[ii]]);\n    }\n    else\n    {\n        trayListSort[index].push(trayList[ii]);\n    }\n}\ntrayListSort.sort( \n    function(a, b) \n    {\n        var x = a[0]['type'].toUpperCase(); \n        var y = b[0]['type'].toUpperCase();\n        return ((x < y) ? -1 : ((x > y) ? 1 : 0));\n    }\n);\nfor( let ii in trayListSort ) \n{\n    trayListSort[ii].sort( \n        function(a, b) \n        {\n            var x = a['name'].toUpperCase(); \n            var y = b['name'].toUpperCase();\n            return ((x < y) ? -1 : ((x > y) ? 1 : 0));\n        }\n    );\n}\n\nlet app = msg.req['_parsedUrl'].pathname.split('/')[1];\nmsg['urlInput'] = JSON.stringify( {box:global.get('box'), trayList:trayListSort});\nmsg.payload = [{ app: app},{projection  :{_id : 0} }]\n\nreturn msg;\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -10158,8 +10185,9 @@
         "z": "90f83725.6dae08",
         "g": "588a107b144a078a",
         "name": "Sort Archive Data",
-        "func": "function objectLength( object ) {\n    var length = 0;\n    for( var key in object ) {\n        if( object.hasOwnProperty(key) ) {\n            ++length;\n        }\n    }\n    return length;\n}\n\nfunction sortByKey(arr, key) \n{\n    return arr.sort( function(a, b) \n        {\n            var x = a[key]; \n            var y = b[key];\n            return ((x < y) ? 1 : ((x > y) ? -1 : 0));\n        } );\n}\n\nvar numRecords = objectLength(msg.payload);\nif (numRecords < 1)\n{\n    return {\n        topic : 'getSettingsLog',\n        payload:{\n            topic           : 'getSettingsLog',\n            payload         : null,\n            userID          : msg.userID,\n        }\n    };\n}\nvar records = [];\nfor (var ii = 0; ii < numRecords; ++ii) \n{\n    let splitTopic = msg.payload[ii].topic.split('/');\n    let type = splitTopic[1];\n    let name = splitTopic[2];\n    let allowedTray = false;\n    for (let itray in msg.trayList)\n    {\n        if ((msg.trayList[itray].type == type) && (msg.trayList[itray].name == name) )\n        {\n            allowedTray = true;\n            break;\n        }\n    }\n    if (allowedTray)\n    {\n        let data = \n        {\n            type        : type,\n            name        : name,\n            cube        : msg.payload[ii].tray.cube,\n            value       : msg.payload[ii].tray.value,\n            timeStamp   : msg.payload[ii].timeStamp,\n            username    : msg.payload[ii].username,\n            url         : msg.payload[ii].ipInfo.url\n        }\n        records.push(data); \n    }\n}\nsortByKey(records, 'timeStamp');\n\nreturn {\n    payload:{\n        topic           : 'getSettingsLog',\n        payload         : records,\n        userID          : msg.userID,\n    }\n};\n",
+        "func": "function objectLength( object ) {\n    var length = 0;\n    for( var key in object ) {\n        if( object.hasOwnProperty(key) ) {\n            ++length;\n        }\n    }\n    return length;\n}\n\nfunction sortByKey(arr, key) \n{\n    return arr.sort( function(a, b) \n        {\n            var x = a[key]; \n            var y = b[key];\n            return ((x < y) ? 1 : ((x > y) ? -1 : 0));\n        } );\n}\n\nvar numRecords = objectLength(msg.payload);\nif (numRecords < 1)\n{\n    return {\n        topic : 'getSettingsLog',\n        payload:{\n            topic           : 'getSettingsLog',\n            payload         : null,\n            userID          : msg.userID,\n        }\n    };\n}\nvar records = [];\nfor (var ii = 0; ii < numRecords; ++ii) \n{\n    let splitTopic = msg.payload[ii].topic.split('/');\n    let type = splitTopic[2];\n    let name = splitTopic[3];\n    let allowedTray = false;\n    for (let itray in msg.trayList)\n    {\n        if ((msg.trayList[itray].type == type) && (msg.trayList[itray].name == name) )\n        {\n            allowedTray = true;\n            break;\n        }\n    }\n    if (allowedTray)\n    {\n        let data = \n        {\n            type        : type,\n            name        : name,\n            cube        : msg.payload[ii].tray.cube,\n            value       : msg.payload[ii].tray.value,\n            timeStamp   : msg.payload[ii].timeStamp,\n            username    : msg.payload[ii].username,\n            url         : msg.payload[ii].ipInfo.url\n        }\n        records.push(data); \n    }\n}\nsortByKey(records, 'timeStamp');\n\nreturn {\n    payload:{\n        topic           : 'getSettingsLog',\n        payload         : records,\n        userID          : msg.userID,\n    }\n};\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
