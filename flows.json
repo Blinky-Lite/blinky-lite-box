@@ -1295,9 +1295,7 @@
             "7738e37c816651ac"
         ],
         "x": 154,
-        "y": 1079,
-        "w": 1322,
-        "h": 302
+        "y": 1079
     },
     {
         "id": "68d752967679bda5",
@@ -1342,9 +1340,7 @@
             "7a6b0d267f0d03ef"
         ],
         "x": 154,
-        "y": 1459,
-        "w": 1782,
-        "h": 522
+        "y": 1459
     },
     {
         "id": "cc576e0ff6a48284",
@@ -1392,9 +1388,7 @@
             "c87ec7f3f92ea7d3"
         ],
         "x": 154,
-        "y": 3199,
-        "w": 1452,
-        "h": 602
+        "y": 3199
     },
     {
         "id": "a34ee7cdaf781b79",
@@ -1639,7 +1633,9 @@
             "9a57a0bad4264074"
         ],
         "x": 174,
-        "y": 59
+        "y": 59,
+        "w": 1532,
+        "h": 322
     },
     {
         "id": "6feaa64a0a1fa2e4",
@@ -1670,7 +1666,9 @@
             "6597cda2e4462431"
         ],
         "x": 174,
-        "y": 439
+        "y": 439,
+        "w": 1712,
+        "h": 202
     },
     {
         "id": "5cd034832a45a34a",
@@ -1702,7 +1700,9 @@
             "ae70029265b0b2ce"
         ],
         "x": 184,
-        "y": 719
+        "y": 719,
+        "w": 1542,
+        "h": 242
     },
     {
         "id": "af622659deabdbdd",
@@ -1758,9 +1758,7 @@
             "f33cd19097d8a3b1"
         ],
         "x": 154,
-        "y": 59,
-        "w": 1572,
-        "h": 482
+        "y": 59
     },
     {
         "id": "588a107b144a078a",
@@ -1805,9 +1803,7 @@
             "9fadad95613eca54"
         ],
         "x": 154,
-        "y": 619,
-        "w": 1812,
-        "h": 382
+        "y": 619
     },
     {
         "id": "e789a1b186378ec0",
@@ -1939,9 +1935,7 @@
             "7e74b55c48b46b62"
         ],
         "x": 162,
-        "y": 2067,
-        "w": 1976,
-        "h": 1046
+        "y": 2067
     },
     {
         "id": "565f4068c450fc58",
@@ -1997,9 +1991,7 @@
             "bb7837ce.8d7338"
         ],
         "x": 154,
-        "y": 59,
-        "w": 1132,
-        "h": 82
+        "y": 59
     },
     {
         "id": "bb926706795e937c",
@@ -2160,9 +2152,7 @@
             "fbb62ed673bd505e"
         ],
         "x": 188,
-        "y": 2553,
-        "w": 1804,
-        "h": 534
+        "y": 2553
     },
     {
         "id": "7e74b55c48b46b62",
@@ -2193,9 +2183,7 @@
             "b6a28210e2d18575"
         ],
         "x": 194,
-        "y": 2093,
-        "w": 1918,
-        "h": 434
+        "y": 2093
     },
     {
         "id": "49a3f583c0875ffc",
@@ -2219,9 +2207,7 @@
             "3c3a7da04a40eff2"
         ],
         "x": 1094,
-        "y": 2579,
-        "w": 872,
-        "h": 82
+        "y": 2579
     },
     {
         "id": "1b26e93ccb3ef98b",
@@ -2242,9 +2228,7 @@
             "e031088776231fd1"
         ],
         "x": 1474,
-        "y": 2679,
-        "w": 492,
-        "h": 82
+        "y": 2679
     },
     {
         "id": "1b74ec2e93fa5123",
@@ -2268,9 +2252,7 @@
             "2f48023e49920b79"
         ],
         "x": 1094,
-        "y": 2819,
-        "w": 872,
-        "h": 82
+        "y": 2819
     },
     {
         "id": "fbb62ed673bd505e",
@@ -2295,9 +2277,7 @@
             "a9b0290f353328f3"
         ],
         "x": 214,
-        "y": 2939,
-        "w": 1372,
-        "h": 122
+        "y": 2939
     },
     {
         "id": "d78fadb84ac3a977",
@@ -2321,9 +2301,7 @@
             "7f0c7c2f1594961d"
         ],
         "x": 1194,
-        "y": 2119,
-        "w": 892,
-        "h": 82
+        "y": 2119
     },
     {
         "id": "8a54730859fd312d",
@@ -2347,9 +2325,7 @@
             "e617ce9529e5b6f6"
         ],
         "x": 1214,
-        "y": 2219,
-        "w": 872,
-        "h": 82
+        "y": 2219
     },
     {
         "id": "4bc94be4667ab860",
@@ -2375,9 +2351,7 @@
             "52e96b92ee8aa125"
         ],
         "x": 754,
-        "y": 2319,
-        "w": 1332,
-        "h": 82
+        "y": 2319
     },
     {
         "id": "b6a28210e2d18575",
@@ -2401,9 +2375,7 @@
             "f0458fb64cc43ca4"
         ],
         "x": 1194,
-        "y": 2419,
-        "w": 892,
-        "h": 82
+        "y": 2419
     },
     {
         "id": "6ad7c930.1a06b8",
@@ -11407,8 +11379,9 @@
         "z": "a614b07c28242d69",
         "g": "5cd034832a45a34a",
         "name": "initAlarmList",
-        "func": "flow.set('alarmList',[]);\nflow.set('staleSMSTimeout',300000) // 5minutes\nflow.set('databaseReadFinished',false);\nreturn null;",
+        "func": "flow.set('alarmList',[]);\nflow.set('databaseReadFinished',false);\nreturn null;",
         "outputs": 0,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -11485,7 +11458,7 @@
         "z": "a614b07c28242d69",
         "g": "5cd034832a45a34a",
         "name": "Prepare Telegram",
-        "func": "if (msg.payload.cube.alarm.notify.name.length < 1) return null;\nif (msg.payload.cube.alarm.notify.number.length < 1) return null;\nlet alarmHistory = context.get('alarmHistory');\nlet staleSMSTimeout = flow.get('staleSMSTimeout');\nlet now = new Date().getTime();\nif (alarmHistory.length > 0)\n{\n    while (alarmHistory.length > 0)\n    {\n        if ((now - alarmHistory[0].timestamp) > staleSMSTimeout)\n        {\n            alarmHistory.shift();\n        }\n        else\n        {\n            break;\n        }\n    }\n\n    if (alarmHistory.length > 0)\n    {\n        if (alarmHistory.findIndex(cube => cube.title == msg.payload.title) >= 0) return null;\n    }\n}\nalarmHistory.push({title:msg.payload.title, timestamp:now});\n\nlet type = '';\nif (msg.payload.cube.alarm.value == 1) type = 'LOW';\nif (msg.payload.cube.alarm.value == 2) type = 'HIGH';\nif (msg.payload.cube.alarm.value == 3) type = 'LOLO';\nif (msg.payload.cube.alarm.value == 4) type = 'HIHI';\nvar message = 'Alarm-' + type + ': ' + msg.payload.title;\nmessage = message + ' is at ' + msg.payload.cube.value.toString() + ' ' + msg.payload.cube.unit\n\nreturn {topic:\"telegram\", payload:{\"type\":\"message\",\"chatId\":msg.payload.cube.alarm.notify.number,\"content\":message}};\n",
+        "func": "if (msg.payload.cube.alarm.notify.name.length < 1) return null;\nif (msg.payload.cube.alarm.notify.number.length < 1) return null;\nlet alarmHistory = context.get('alarmHistory');\nlet staleSMSTimeout = env.get(\"TELEGRAM_TIMEOUT\");\nlet now = new Date().getTime();\nif (alarmHistory.length > 0)\n{\n    while (alarmHistory.length > 0)\n    {\n        if ((now - alarmHistory[0].timestamp) > staleSMSTimeout)\n        {\n            alarmHistory.shift();\n        }\n        else\n        {\n            break;\n        }\n    }\n\n    if (alarmHistory.length > 0)\n    {\n        if (alarmHistory.findIndex(cube => cube.title == msg.payload.title) >= 0) return null;\n    }\n}\nalarmHistory.push({title:msg.payload.title, timestamp:now});\n\nlet type = '';\nif (msg.payload.cube.alarm.value == 1) type = 'LOW';\nif (msg.payload.cube.alarm.value == 2) type = 'HIGH';\nif (msg.payload.cube.alarm.value == 3) type = 'LOLO';\nif (msg.payload.cube.alarm.value == 4) type = 'HIHI';\nvar message = 'Alarm-' + type + ': ' + msg.payload.title;\nmessage = message + ' is at ' + msg.payload.cube.value.toString() + ' ' + msg.payload.cube.unit\n\nreturn {topic:\"telegram\", payload:{\"type\":\"message\",\"chatId\":msg.payload.cube.alarm.notify.number,\"content\":message}};\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
