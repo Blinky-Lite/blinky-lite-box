@@ -1410,9 +1410,7 @@
             "4855b6b5352f7431"
         ],
         "x": 154,
-        "y": 899,
-        "w": 1582,
-        "h": 82
+        "y": 899
     },
     {
         "id": "4d9aee0d09b30607",
@@ -1432,9 +1430,7 @@
             "893874ffb26184f9"
         ],
         "x": 154,
-        "y": 1039,
-        "w": 932,
-        "h": 82
+        "y": 1039
     },
     {
         "id": "801fb378bac3288c",
@@ -1965,9 +1961,7 @@
             "30a4a020cf5c79ba"
         ],
         "x": 114,
-        "y": 99,
-        "w": 342,
-        "h": 422
+        "y": 99
     },
     {
         "id": "8513b8699a14012a",
@@ -2071,9 +2065,7 @@
             "1a7c9aa5910e15f6"
         ],
         "x": 154,
-        "y": 39,
-        "w": 472,
-        "h": 342
+        "y": 39
     },
     {
         "id": "eca7f29a338f593a",
@@ -2110,9 +2102,7 @@
             "6fbbca37caabe403"
         ],
         "x": 134,
-        "y": 459,
-        "w": 1652,
-        "h": 322
+        "y": 459
     },
     {
         "id": "58645e2c91cd1ed6",
@@ -2132,9 +2122,7 @@
             "537bf8b86b4354ba"
         ],
         "x": 794,
-        "y": 79,
-        "w": 712,
-        "h": 142
+        "y": 79
     },
     {
         "id": "efd09052a685f540",
@@ -2705,12 +2693,6 @@
         "id": "e86ebc65866440b1",
         "type": "websocket-listener",
         "path": "/settingsLog/websocket",
-        "wholemsg": "false"
-    },
-    {
-        "id": "7faddad4c6f5f033",
-        "type": "websocket-listener",
-        "path": "/mqttACLcontrol/websocket",
         "wholemsg": "false"
     },
     {
@@ -4981,6 +4963,268 @@
         "wires": [
             [
                 "4eb98e2d.07b03"
+            ]
+        ]
+    },
+    {
+        "id": "96d8d45f90f676f8",
+        "type": "http in",
+        "z": "401d2470458fed2d",
+        "name": "/test",
+        "url": "/test",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 340,
+        "wires": [
+            [
+                "9e735433bcf83dab"
+            ]
+        ]
+    },
+    {
+        "id": "3df2a26f1c25055e",
+        "type": "http response",
+        "z": "401d2470458fed2d",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1350,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "52f9e8761eda73a8",
+        "type": "template",
+        "z": "401d2470458fed2d",
+        "name": "body",
+        "field": "payload.body",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "    <body id=\"page-top\">\n    <nav id=\"mainNav\" class=\"navbar navbar-default navbar-fixed-top\">\n        <div class=\"container-fluid\">\n            <!-- Brand and toggle get grouped for better mobile display -->\n            <div class=\"navbar-header\">\n                <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n                    <span class=\"sr-only\">Toggle navigation</span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                </button>\n                <a class=\"navbar-brand page-scroll\" href=\"#\">Top</a>\n            </div>\n\n            <!-- Collect the nav links, forms, and other content for toggling -->\n            <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n                <ul class=\"nav navbar-nav navbar-right\">\n                    <li>\n                        <a class=\"page-scroll\" href=\"/myapps\">Internal Apps</a>\n                    </li>\n                    <li>\n                        <a class=\"page-scroll\" href=\"/myapps?external\">External Apps</a>\n                    </li>\n                    <li>\n                        <a class=\"page-scroll\" href=\"#contact\">Docs</a>\n                    </li>\n                </ul>\n            </div>\n            <!-- /.navbar-collapse -->\n        </div>\n        <!-- /.container-fluid -->\n    </nav>\n\n    <header>\n        <div class=\"header-content\">\n            <div class=\"header-content-inner\">\n                <h1>Blinky-Lite</h1>\n                <hr>\n            </div>\n            <div class=\"header-content-inner\" style=\"padding-top:30px;\">\n                <a href=\"/myapps\" class=\"btn btn-primary btn-xl page-scroll\">Internal Apps</a>\n            </div>\n            <div class=\"header-content-inner\" style=\"padding-top:30px;\">\n                <a href=\"/myapps?external\" class=\"btn btn-primary btn-xl page-scroll\">External Apps</a>\n            </div>\n    </div>\n    </div>\n    </header>\n\n    <section id=\"contact\">\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"col-lg-8 col-lg-offset-2 text-center\">\n                    <h2 class=\"section-heading\">Documentation</h2>\n                    <hr class=\"primary\">\n                </div>\n            <div class=\"col-lg-2 col-lg-offset-2 text-center\">\n                <a href=\"https://blinky-lite.github.io/\">\n                    <i class=\"fa fa-book fa-3x wow bounceIn\" data-wow-delay=\".1s\"></i>\n                    <p>Docs</p>\n                </a>\n            </div>\n            <div class=\"col-lg-2 col-lg-offset-1 text-center\">\n                <a href=\"https://hub.docker.com/u/blinkylite\">\n                <i class=\"fa fa-camera-retro fa-3x wow bounceIn\" data-wow-delay=\".1s\"></i>\n                    <p>Images</p>\n                </a>\n            </div>\n            <div class=\"col-lg-2 col-lg-offset-1 text-center\">\n                <a href=\"https://github.com/Blinky-Lite\">\n                <i class=\"fa fa-github fa-3x wow bounceIn\" data-wow-delay=\".1s\"></i>\n                    <p>Code</p>\n                </a>\n            </div>\n\n        </div>\n    </section>\n\n    <!-- jQuery -->\n    <script src=\"/homepage/js/jquery.js\"></script>\n\n    <!-- Bootstrap Core JavaScript -->\n    <script src=\"/homepage/js/bootstrap.min.js\"></script>\n\n    <!-- Plugin JavaScript -->\n    <script src=\"/homepage/js/jquery.easing.min.js\"></script>\n    <script src=\"/homepage/js/jquery.fittext.js\"></script>\n    <script src=\"/homepage/js/wow.min.js\"></script>\n\n    <!-- Custom Theme JavaScript -->\n    <script src=\"/homepage/js/creative.js\"></script>\n\n    </body>\n",
+        "output": "str",
+        "x": 950,
+        "y": 340,
+        "wires": [
+            [
+                "8d378ae2500e3a75"
+            ]
+        ]
+    },
+    {
+        "id": "8d378ae2500e3a75",
+        "type": "template",
+        "z": "401d2470458fed2d",
+        "name": "head",
+        "field": "payload.head",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <meta name=\"description\" content=\"\">\n        <meta name=\"author\" content=\"\">\n\n        <title>Blinky-Lite</title>\n        <link rel=\"icon\" href=\"/homepage/img/favicon.ico\" type=\"image/x-icon\">\n\n        <!-- Bootstrap Core CSS -->\n        <link rel=\"stylesheet\" href=\"/homepage/css/bootstrap.min.css\" type=\"text/css\">\n\n        <!-- Custom Fonts -->\n        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>\n        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>\n        <link rel=\"stylesheet\" href=\"/homepage/font-awesome/css/font-awesome.min.css\" type=\"text/css\">\n\n        <!-- Plugin CSS -->\n        <link rel=\"stylesheet\" href=\"/homepage/css/animate.min.css\" type=\"text/css\">\n\n        <!-- Custom CSS -->\n        <style>\n{{{payload.main_css}}}\n       </style>\n\n        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->\n        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n        <!--[if lt IE 9]>\n            <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>\n            <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>\n        <![endif]-->\n </head>\n\n",
+        "output": "str",
+        "x": 1090,
+        "y": 340,
+        "wires": [
+            [
+                "8e2e35f8ca07f52f"
+            ]
+        ]
+    },
+    {
+        "id": "8e2e35f8ca07f52f",
+        "type": "template",
+        "z": "401d2470458fed2d",
+        "name": "HTML",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"en\">\n{{{payload.head}}}\n{{{payload.body}}}\n</html>",
+        "output": "str",
+        "x": 1210,
+        "y": 340,
+        "wires": [
+            [
+                "3df2a26f1c25055e"
+            ]
+        ]
+    },
+    {
+        "id": "c5c7686f36092dd6",
+        "type": "mongodb3 in",
+        "z": "401d2470458fed2d",
+        "service": "_ext_",
+        "configNode": "9cd5ff5e.caf86",
+        "name": "",
+        "collection": "appStyleSheets",
+        "operation": "findOne",
+        "x": 420,
+        "y": 560,
+        "wires": [
+            [
+                "059519580fb41f61"
+            ]
+        ]
+    },
+    {
+        "id": "059519580fb41f61",
+        "type": "function",
+        "z": "401d2470458fed2d",
+        "name": "Parse css",
+        "func": "let cssObj = JSON.stringify(msg.payload);\nlet cssString = \"\";\nfor (let istyle = 0; istyle < msg.payload.sheets.length; ++istyle)\n{\n    for (let icss = 0; icss < msg.payload.sheets[istyle].css.length; ++icss)\n    {\n        cssString = cssString + jsonToCss(msg.payload.sheets[istyle].css[icss]);\n    }\n}\nmsg.payload = cssString;\nreturn msg;\n\n// From http://www.featureblend.com/css-json.html\nfunction jsonToCss(cssjson)\n{\n    var styleStr = \"\\t\\t\";\n    for(var cssClass in cssjson)\n    {\n        styleStr += cssClass + \"\\n\\t\\t{\\n\"\n        for(var cssAttr in cssjson[cssClass])\n        {\n            if (typeof cssjson[cssClass][cssAttr] != \"object\") \n            {\n                styleStr += \"\\t\\t\\t\" + cssAttr + \"\\t\\t:\\t\" + cssjson[cssClass][cssAttr] + \";\\n\"     \n            }\n            else\n            {\n               for (let subClass in cssjson[cssClass][cssAttr])\n               {\n                    styleStr += \"\\t\\t\\t\\t\" + subClass + \" \\n\\t\\t\\t\\t{\\n\";\n                    for (let subClassAttr in cssjson[cssClass][cssAttr][subClass])\n                    {\n                        styleStr += \"\\t\\t\\t\\t\\t\" + subClassAttr + \": \" + cssjson[cssClass][cssAttr][subClass][subClassAttr] + \";\\n\";\n                    }\n                    styleStr += \"\\t\\t\\t\\t}\\n\";\n               }\n            }\n       }\n        styleStr += \"\\t\\t}\\n\"  \n    }\n    return styleStr;\n}\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 600,
+        "wires": [
+            [
+                "c9e6aba795d19166",
+                "86a6ac0d326e9217"
+            ]
+        ]
+    },
+    {
+        "id": "552a45c9dab97544",
+        "type": "function",
+        "z": "401d2470458fed2d",
+        "name": "Get Stylesheet",
+        "func": "msg.payload = [{ styleSheetName: 'landingPage' }, { projection: { _id: 0 } }]\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 520,
+        "wires": [
+            [
+                "c5c7686f36092dd6"
+            ]
+        ]
+    },
+    {
+        "id": "33e2fdcaaec794a6",
+        "type": "inject",
+        "z": "401d2470458fed2d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 520,
+        "wires": [
+            [
+                "552a45c9dab97544"
+            ]
+        ]
+    },
+    {
+        "id": "c9e6aba795d19166",
+        "type": "debug",
+        "z": "401d2470458fed2d",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "86a6ac0d326e9217",
+        "type": "file",
+        "z": "401d2470458fed2d",
+        "name": "booger.css",
+        "filename": "booger.css",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 590,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9e735433bcf83dab",
+        "type": "function",
+        "z": "401d2470458fed2d",
+        "name": "Get Stylesheet",
+        "func": "msg.payload = [{ styleSheetName: 'landingPage' }, { projection: { _id: 0 } }]\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "2cd90bb9d0081ff3"
+            ]
+        ]
+    },
+    {
+        "id": "2cd90bb9d0081ff3",
+        "type": "mongodb3 in",
+        "z": "401d2470458fed2d",
+        "service": "_ext_",
+        "configNode": "9cd5ff5e.caf86",
+        "name": "",
+        "collection": "appStyleSheets",
+        "operation": "findOne",
+        "x": 600,
+        "y": 340,
+        "wires": [
+            [
+                "83680257109204cb"
+            ]
+        ]
+    },
+    {
+        "id": "83680257109204cb",
+        "type": "function",
+        "z": "401d2470458fed2d",
+        "name": "Parse css",
+        "func": "let cssObj = JSON.stringify(msg.payload);\nlet cssString = \"\";\nfor (let istyle = 0; istyle < msg.payload.sheets.length; ++istyle)\n{\n    for (let icss = 0; icss < msg.payload.sheets[istyle].css.length; ++icss)\n    {\n        cssString = cssString + jsonToCss(msg.payload.sheets[istyle].css[icss]);\n    }\n}\nmsg.payload = {main_css:cssString};\nreturn msg;\n\n// From http://www.featureblend.com/css-json.html\nfunction jsonToCss(cssjson)\n{\n    var styleStr = \"\\t\\t\";\n    for(var cssClass in cssjson)\n    {\n        styleStr += cssClass + \"\\n\\t\\t{\\n\"\n        for(var cssAttr in cssjson[cssClass])\n        {\n            if (typeof cssjson[cssClass][cssAttr] != \"object\") \n            {\n                styleStr += \"\\t\\t\\t\" + cssAttr + \"\\t\\t:\\t\" + cssjson[cssClass][cssAttr] + \";\\n\"     \n            }\n            else\n            {\n               for (let subClass in cssjson[cssClass][cssAttr])\n               {\n                    styleStr += \"\\t\\t\\t\\t\" + subClass + \" \\n\\t\\t\\t\\t{\\n\";\n                    for (let subClassAttr in cssjson[cssClass][cssAttr][subClass])\n                    {\n                        styleStr += \"\\t\\t\\t\\t\\t\" + subClassAttr + \": \" + cssjson[cssClass][cssAttr][subClass][subClassAttr] + \";\\n\";\n                    }\n                    styleStr += \"\\t\\t\\t\\t}\\n\";\n               }\n            }\n       }\n        styleStr += \"\\t\\t}\\n\"  \n    }\n    return styleStr;\n}\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 340,
+        "wires": [
+            [
+                "52f9e8761eda73a8"
             ]
         ]
     },
