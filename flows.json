@@ -1261,7 +1261,9 @@
             "57fbe797d000b43c"
         ],
         "x": 174,
-        "y": 79
+        "y": 79,
+        "w": 1072,
+        "h": 502
     },
     {
         "id": "943ba30499779d75",
@@ -1295,7 +1297,9 @@
             "7738e37c816651ac"
         ],
         "x": 154,
-        "y": 1079
+        "y": 1079,
+        "w": 1322,
+        "h": 302
     },
     {
         "id": "68d752967679bda5",
@@ -1340,7 +1344,9 @@
             "7a6b0d267f0d03ef"
         ],
         "x": 154,
-        "y": 1459
+        "y": 1459,
+        "w": 1782,
+        "h": 522
     },
     {
         "id": "cc576e0ff6a48284",
@@ -1388,7 +1394,9 @@
             "c87ec7f3f92ea7d3"
         ],
         "x": 154,
-        "y": 3199
+        "y": 3199,
+        "w": 1452,
+        "h": 602
     },
     {
         "id": "a34ee7cdaf781b79",
@@ -1752,7 +1760,9 @@
             "f33cd19097d8a3b1"
         ],
         "x": 154,
-        "y": 59
+        "y": 59,
+        "w": 1572,
+        "h": 482
     },
     {
         "id": "588a107b144a078a",
@@ -1797,7 +1807,9 @@
             "9fadad95613eca54"
         ],
         "x": 154,
-        "y": 619
+        "y": 619,
+        "w": 1812,
+        "h": 382
     },
     {
         "id": "e789a1b186378ec0",
@@ -1929,7 +1941,9 @@
             "7e74b55c48b46b62"
         ],
         "x": 162,
-        "y": 2067
+        "y": 2067,
+        "w": 1976,
+        "h": 1046
     },
     {
         "id": "565f4068c450fc58",
@@ -1961,33 +1975,9 @@
             "30a4a020cf5c79ba"
         ],
         "x": 114,
-        "y": 99
-    },
-    {
-        "id": "8513b8699a14012a",
-        "type": "group",
-        "z": "401d2470458fed2d",
-        "name": "Home Page",
-        "style": {
-            "stroke": "#ffC000",
-            "fill": "#dbcbe7",
-            "label": true,
-            "color": "#001f60"
-        },
-        "nodes": [
-            "c634a8d3.297848",
-            "9c22cdee29daadc2",
-            "eeb6f237e7b71e56",
-            "19310ace.c992d5",
-            "7bd0e32c.fe3bdc",
-            "680bc28.3fd903c",
-            "4eb98e2d.07b03",
-            "bb7837ce.8d7338"
-        ],
-        "x": 154,
-        "y": 59,
-        "w": 1132,
-        "h": 82
+        "y": 99,
+        "w": 342,
+        "h": 422
     },
     {
         "id": "bb926706795e937c",
@@ -2016,7 +2006,9 @@
             "0ae559dfc1cd42e5"
         ],
         "x": 174,
-        "y": 879
+        "y": 879,
+        "w": 1152,
+        "h": 202
     },
     {
         "id": "d6abb27829dbfb86",
@@ -2038,7 +2030,9 @@
             "22ec08a66c477512"
         ],
         "x": 174,
-        "y": 1159
+        "y": 1159,
+        "w": 1192,
+        "h": 122
     },
     {
         "id": "3d14d6dd8299469d",
@@ -2148,7 +2142,9 @@
             "fbb62ed673bd505e"
         ],
         "x": 188,
-        "y": 2553
+        "y": 2553,
+        "w": 1804,
+        "h": 534
     },
     {
         "id": "7e74b55c48b46b62",
@@ -2179,7 +2175,9 @@
             "b6a28210e2d18575"
         ],
         "x": 194,
-        "y": 2093
+        "y": 2093,
+        "w": 1918,
+        "h": 434
     },
     {
         "id": "49a3f583c0875ffc",
@@ -2203,7 +2201,9 @@
             "3c3a7da04a40eff2"
         ],
         "x": 1094,
-        "y": 2579
+        "y": 2579,
+        "w": 872,
+        "h": 82
     },
     {
         "id": "1b26e93ccb3ef98b",
@@ -2224,7 +2224,9 @@
             "e031088776231fd1"
         ],
         "x": 1474,
-        "y": 2679
+        "y": 2679,
+        "w": 492,
+        "h": 82
     },
     {
         "id": "1b74ec2e93fa5123",
@@ -2248,7 +2250,9 @@
             "2f48023e49920b79"
         ],
         "x": 1094,
-        "y": 2819
+        "y": 2819,
+        "w": 872,
+        "h": 82
     },
     {
         "id": "fbb62ed673bd505e",
@@ -2273,7 +2277,9 @@
             "a9b0290f353328f3"
         ],
         "x": 214,
-        "y": 2939
+        "y": 2939,
+        "w": 1372,
+        "h": 122
     },
     {
         "id": "d78fadb84ac3a977",
@@ -2297,7 +2303,9 @@
             "7f0c7c2f1594961d"
         ],
         "x": 1194,
-        "y": 2119
+        "y": 2119,
+        "w": 892,
+        "h": 82
     },
     {
         "id": "8a54730859fd312d",
@@ -2321,7 +2329,9 @@
             "e617ce9529e5b6f6"
         ],
         "x": 1214,
-        "y": 2219
+        "y": 2219,
+        "w": 872,
+        "h": 82
     },
     {
         "id": "4bc94be4667ab860",
@@ -2347,7 +2357,9 @@
             "52e96b92ee8aa125"
         ],
         "x": 754,
-        "y": 2319
+        "y": 2319,
+        "w": 1332,
+        "h": 82
     },
     {
         "id": "b6a28210e2d18575",
@@ -2371,7 +2383,38 @@
             "f0458fb64cc43ca4"
         ],
         "x": 1194,
-        "y": 2419
+        "y": 2419,
+        "w": 892,
+        "h": 82
+    },
+    {
+        "id": "b4e9249c0372fe12",
+        "type": "group",
+        "z": "401d2470458fed2d",
+        "name": "Home Page",
+        "style": {
+            "stroke": "#ffC000",
+            "fill": "#dbcbe7",
+            "label": true,
+            "color": "#001f60"
+        },
+        "nodes": [
+            "96d8d45f90f676f8",
+            "3df2a26f1c25055e",
+            "52f9e8761eda73a8",
+            "8d378ae2500e3a75",
+            "8e2e35f8ca07f52f",
+            "9e735433bcf83dab",
+            "b87b07f5d126de5b",
+            "21a61f0dcaefc6a5",
+            "9afdbd9fe9cf4af7",
+            "c1268b6adb294bd4",
+            "7741cd9b5c824150"
+        ],
+        "x": 54,
+        "y": 99,
+        "w": 1732,
+        "h": 82
     },
     {
         "id": "6ad7c930.1a06b8",
@@ -2731,7 +2774,7 @@
         "syntax": "mustache",
         "template": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n{{{payload.head}}}\n  </head>\n  <body>\n{{{payload.navBar}}}\n{{{payload.body}}}\n{{{payload.foot}}}\n  </body>\n</html>",
         "output": "str",
-        "x": 1790,
+        "x": 1830,
         "y": 40,
         "wires": [
             [
@@ -2784,7 +2827,7 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1910,
+        "x": 1950,
         "y": 40,
         "wires": []
     },
@@ -2842,101 +2885,8 @@
         "y": 40,
         "wires": [
             [
-                "35ffcf83.1547"
+                "801258040a954354"
             ]
-        ]
-    },
-    {
-        "id": "35ffcf83.1547",
-        "type": "function",
-        "z": "ca529822.9112f8",
-        "name": "IP filter",
-        "func": "var ipfilter = [\n    \"127.0.0.16\"];\nvar ipAddress = ( msg.req.headers['x-forwarded-for'] || '').split(',').pop() || \n          msg.req.connection.remoteAddress || \n          msg.req.socket.remoteAddress || \n          msg.req.connection.socket.remoteAddress;\nif (ipAddress==undefined) return null;\nvar ipAddressSplit = ipAddress.split(\".\");\nfor (var ii =  0; ii < ipfilter.length; ++ii)\n{\n    var ipfilterSplit = ipfilter[ii].split(\".\");\n    if (ipAddress == ipfilter[ii])\n    { \n        return null;\n    }\n    if (ipfilterSplit[2] == '*')\n    {\n        if ((ipfilterSplit[0] == ipAddressSplit[0]) && (ipfilterSplit[1] == ipAddressSplit[1]))\n        {\n            return null;\n        }\n    }\n}\n\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1650,
-        "y": 40,
-        "wires": [
-            [
-                "b9df3f26.ab53f",
-                "41efb541.ee2eec"
-            ]
-        ]
-    },
-    {
-        "id": "9ac12bdb.3cd258",
-        "type": "function",
-        "z": "ca529822.9112f8",
-        "name": "parseIpRequest",
-        "func": "var data = msg.payload.data.geo;\ndata['url'] = msg.extraInfo.url;\ndata['userID'] = msg.extraInfo.userID;\ndata['timeStamp'] = new Date().getTime();\ndata['user'] = msg.extraInfo.user;\nreturn {topic:'ipData', payload:data};\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1720,
-        "y": 180,
-        "wires": [
-            [
-                "9cea667e8eccf636"
-            ]
-        ]
-    },
-    {
-        "id": "de38cb39.638048",
-        "type": "http request",
-        "z": "ca529822.9112f8",
-        "name": "",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "https://tools.keycdn.com/geo.json?host={{{payload.ipAddress}}}",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "basic",
-        "x": 1710,
-        "y": 140,
-        "wires": [
-            [
-                "9ac12bdb.3cd258"
-            ]
-        ]
-    },
-    {
-        "id": "41efb541.ee2eec",
-        "type": "function",
-        "z": "ca529822.9112f8",
-        "name": "ClientInfo",
-        "func": "var ipAddress = ( msg.req.headers['x-forwarded-for'] || '').split(',').pop() || \n          msg.req.connection.remoteAddress || \n          msg.req.socket.remoteAddress || \n          msg.req.connection.socket.remoteAddress;\n\nvar url = msg.req.url;\nvar header = {};\nheader['User-Agent'] = 'keycdn-tools:' + global.get('ipRefWeb');\nvar user = \"anon\"\nif (msg.hasOwnProperty(\"token\"))\n{\n    user = msg.token.username;\n}\nreturn {\n    topic:'clientInfo', \n    headers: header,\n    payload:{\n        ipAddress   : ipAddress\n    },\n    extraInfo       : {url:url, userID:msg.payload.userID, user:user},\n};\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1700,
-        "y": 100,
-        "wires": [
-            [
-                "de38cb39.638048"
-            ]
-        ]
-    },
-    {
-        "id": "9cea667e8eccf636",
-        "type": "mongodb3 in",
-        "z": "ca529822.9112f8",
-        "service": "_ext_",
-        "configNode": "9cd5ff5e.caf86",
-        "name": "",
-        "collection": "accessLog",
-        "operation": "insertOne",
-        "x": 1770,
-        "y": 220,
-        "wires": [
-            []
         ]
     },
     {
@@ -2992,6 +2942,19 @@
         "wires": [
             [
                 "2a8fa19722d2e46b"
+            ]
+        ]
+    },
+    {
+        "id": "801258040a954354",
+        "type": "subflow:d1aa8cd8b6ac048e",
+        "z": "ca529822.9112f8",
+        "name": "",
+        "x": 1680,
+        "y": 40,
+        "wires": [
+            [
+                "b9df3f26.ab53f"
             ]
         ]
     },
@@ -4093,8 +4056,9 @@
         "type": "function",
         "z": "30a1fe01775ecb93",
         "name": "Parse css",
-        "func": "let cssObj = JSON.stringify(msg.payload);\nlet cssString = \"\";\nfor (let istyle = 0; istyle < msg.payload.sheets.length; ++istyle)\n{\n    for (let icss = 0; icss < msg.payload.sheets[istyle].css.length; ++icss)\n    {\n        cssString = cssString + jsonToCss(msg.payload.sheets[istyle].css[icss]);\n    }\n}\nmsg.config['css'] = cssString;\nmsg.payload = JSON.parse(JSON.stringify(msg.config));\ndelete msg.config;\nreturn msg;\n\n// From http://www.featureblend.com/css-json.html\nfunction jsonToCss(cssjson)\n{\n    var styleStr = \"\\t\\t\";\n    for(var i in cssjson)\n    {\n        styleStr += i + \"\\n\\t\\t{\\n\"\n        for(var j in cssjson[i]){\n            styleStr += \"\\t\\t\\t\" + j + \"\\t\\t:\\t\" + cssjson[i][j] + \";\\n\"     \n        }\n        styleStr += \"\\t\\t}\\n\"  \n    }\n    return styleStr;\n}\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
+        "func": "let cssObj = JSON.stringify(msg.payload);\nlet cssString = \"\";\nfor (let istyle = 0; istyle < msg.payload.sheets.length; ++istyle)\n{\n    for (let icss = 0; icss < msg.payload.sheets[istyle].css.length; ++icss)\n    {\n        cssString = cssString + jsonToCss(msg.payload.sheets[istyle].css[icss]);\n    }\n}\nmsg.config['css'] = cssString;\nmsg.payload = JSON.parse(JSON.stringify(msg.config));\ndelete msg.config;\nreturn msg;\n\n// From http://www.featureblend.com/css-json.html\nfunction jsonToCss(cssjson)\n{\n    var styleStr = \"\\t\\t\";\n    for(var cssClass in cssjson)\n    {\n        styleStr += cssClass + \"\\n\\t\\t{\\n\"\n        for(var cssAttr in cssjson[cssClass])\n        {\n            if (typeof cssjson[cssClass][cssAttr] != \"object\") \n            {\n                styleStr += \"\\t\\t\\t\" + cssAttr + \"\\t\\t:\\t\" + cssjson[cssClass][cssAttr] + \";\\n\"     \n            }\n            else\n            {\n               for (let subClass in cssjson[cssClass][cssAttr])\n               {\n                    styleStr += \"\\t\\t\\t\\t\" + subClass + \" \\n\\t\\t\\t\\t{\\n\";\n                    for (let subClassAttr in cssjson[cssClass][cssAttr][subClass])\n                    {\n                        styleStr += \"\\t\\t\\t\\t\\t\" + subClassAttr + \": \" + cssjson[cssClass][cssAttr][subClass][subClassAttr] + \";\\n\";\n                    }\n                    styleStr += \"\\t\\t\\t\\t}\\n\";\n               }\n            }\n       }\n        styleStr += \"\\t\\t}\\n\"  \n    }\n    return styleStr;\n}\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -4863,161 +4827,20 @@
         "wires": []
     },
     {
-        "id": "c634a8d3.297848",
-        "type": "http in",
-        "z": "401d2470458fed2d",
-        "g": "8513b8699a14012a",
-        "name": "/homepage",
-        "url": "/homepage",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 240,
-        "y": 100,
-        "wires": [
-            [
-                "eeb6f237e7b71e56"
-            ]
-        ]
-    },
-    {
-        "id": "9c22cdee29daadc2",
-        "type": "subflow:ca529822.9112f8",
-        "z": "401d2470458fed2d",
-        "g": "8513b8699a14012a",
-        "name": "",
-        "x": 1210,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "eeb6f237e7b71e56",
-        "type": "subflow:3fec913b325ae6ff",
-        "z": "401d2470458fed2d",
-        "g": "8513b8699a14012a",
-        "name": "",
-        "x": 420,
-        "y": 100,
-        "wires": [
-            [
-                "19310ace.c992d5"
-            ]
-        ]
-    },
-    {
-        "id": "19310ace.c992d5",
-        "type": "template",
-        "z": "401d2470458fed2d",
-        "g": "8513b8699a14012a",
-        "name": "title",
-        "field": "payload.title",
-        "fieldType": "msg",
-        "format": "html",
-        "syntax": "mustache",
-        "template": "Blinky-Lite",
-        "output": "str",
-        "x": 570,
-        "y": 100,
-        "wires": [
-            [
-                "680bc28.3fd903c"
-            ]
-        ]
-    },
-    {
-        "id": "7bd0e32c.fe3bdc",
-        "type": "template",
-        "z": "401d2470458fed2d",
-        "g": "8513b8699a14012a",
-        "name": "javascript",
-        "field": "payload.javascript",
-        "fieldType": "msg",
-        "format": "javascript",
-        "syntax": "mustache",
-        "template": "        useWebSockets(false);\n        function onDocumentReady()\n        {\n        }\n        function onWebSocketOpen()\n        {\n        }\n        function onWebSocketClose()\n        {\n            \n        }\n        function onWebSocketMessage(msg)\n        {\n        }\n\n",
-        "output": "str",
-        "x": 820,
-        "y": 100,
-        "wires": [
-            [
-                "bb7837ce.8d7338"
-            ]
-        ]
-    },
-    {
-        "id": "680bc28.3fd903c",
-        "type": "template",
-        "z": "401d2470458fed2d",
-        "g": "8513b8699a14012a",
-        "name": "body",
-        "field": "payload.body",
-        "fieldType": "msg",
-        "format": "html",
-        "syntax": "mustache",
-        "template": "<!-- Body HTML -->\n    <div width=\"100%\" >\n        <table width=\"948px\" align=\"center\">\n            <tr>\n                <td width=\"100%\">\n                    <div style=\"width: 948px; height: 533px; overflow:hidden; max-height:536px;\"  >\n                        <iframe src=\"https://docs.google.com/presentation/d/e/2PACX-1vQ2wEPbyUk207PqBLWHNtoq9ik_yF-6m0XPQe_v58KyUUb9exbtFzebh534u5F9u7UMSj74eHolqqst/embed?start=true&loop=true&delayms=10000\" frameborder=\"0\" width=\"100%\" height=\"569px\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\"></iframe>\n                    </div>\n                </td>\n            </tr>\n        </table>\n        <div class='row'>\n            <div class='col-12' align='center'>\n                <table width=\"948px\" background=\"/img/rappsSea.png\">\n                    <tr>\n                        <td width=\"286px\"></td>\n                        <td width=\"125px\" align=\"center\" style=\"padding-top:79px;padding-bottom:79px;\"></td>\n                        <td width=\"125px\" align=\"center\" style=\"padding-top:79px;padding-bottom:79px;\"></td>\n                        <td width=\"125px\" align=\"center\" style=\"padding-top:79px;padding-bottom:79px;\"></td>\n                        <td width=\"286px\"></td>\n                    </tr>\n                </table>\n            </div>\n        </div>\n        <div class='row'>\n            <div class='col-12' align='center'>\n                <p style=\"font-size: 200%;color:white;\">Contact us at <a href=\"mailto: info@bl-mc.se\" style=\"color:#fcc200;\">info@bl-mc.se</a></p>\n            </div>\n        </div>\n    </div>\n",
-        "output": "str",
-        "x": 690,
-        "y": 100,
-        "wires": [
-            [
-                "7bd0e32c.fe3bdc"
-            ]
-        ]
-    },
-    {
-        "id": "4eb98e2d.07b03",
-        "type": "template",
-        "z": "401d2470458fed2d",
-        "g": "8513b8699a14012a",
-        "name": "navBar",
-        "field": "payload.navBar",
-        "fieldType": "msg",
-        "format": "html",
-        "syntax": "mustache",
-        "template": "<!-- navBar -->\n    <div class=\"jumbotron navbar-fixed-top\" style=\"background-color:var(--color4);color: var(--color1);padding-top:10px; padding-bottom:10px;\" width=\"100%\" >\n        <div class='row'>\n            <div class='col-md-2' align='left'>\n                <img src=\"/img/project-logo.png\" height=\"100px\"/>\n            </div>\n            <div class='col-md-8' align='center'>\n                <h1 class=\"jumbotron-title big-text bold-text\">\n                    <span>Blinky-Lite<sup>TM</sup></span>\n                </h1>\n            </div>\n            <div class='col-md-2' align='right'>\n                <a href='/myapps'>\n                    <img src=\"/img/apps.png\" height=\"75px\"/>\n                </a>                \n            </div>\n        </div>\n    </div>\n",
-        "output": "str",
-        "x": 1080,
-        "y": 100,
-        "wires": [
-            [
-                "9c22cdee29daadc2"
-            ]
-        ]
-    },
-    {
-        "id": "bb7837ce.8d7338",
-        "type": "template",
-        "z": "401d2470458fed2d",
-        "g": "8513b8699a14012a",
-        "name": "CSS",
-        "field": "payload.css",
-        "fieldType": "msg",
-        "format": "css",
-        "syntax": "mustache",
-        "template": "        :root \n        {\n          --color1: #083357;\n          --color2: #487895;\n          --color3: #6b859a;\n          --color4: #fdfcfa;\n          --color5: #ffffff;\n          --big-text-size :300%;\n          --bold-text :900;\n          --vert-pad : 25px;\n          --horz-pad : 25px;\n        }\n        body \n        {\n          background-color: var(--color1) !important;\n          padding-left:25px;\n          padding-right:25px;\n        }\n        \n        img \n        {\n          object-fit: contain;\n        }\n        a\n        {\n            color: var(--color4);\n        }\n        a:visited \n        { \n            color: var(--white);\n        }\n        .btn-primary, .btn-primary:active, .btn-primary:visited \n        {\n            background-color: var(--color1) !important;\n            color : color4 !important;\n            font-size: 200% !important;\n        }\n        .btn-primary:hover \n        {\n            background-color: var(--color1) !important;\n            color : var(--color4) !important;\n            font-size: 200% !important;\n        }\n        a:hover \n        { \n            color: var(--color2);\n        }\n        .jumbotron \n        {\n          background-color: var(--color1) !important;\n          color: white;\n          padding-top:25px;\n          padding-bottom:25px;\n        }\n        .jumbotron-title\n        {\n          color:var(--color5);\n        }\n        .jumbotron-button\n        {\n          color: color4;\n          background-color: var(--color1);\n        }\n        .card\n        {\n          background-color: var(--color1) !important;\n          text-align: center;\n          padding-left:5px;\n          padding-right:5px;\n          padding-bottom:5px;\n\n        }\n        .card-body\n        {\n          background-color: color4;\n          text-align: center;\n        }\n        .card-button\n        {\n          color: var(--color4) !important;\n          background-color: var(--color1) !important;\n          font-weight: bold;\n        }\n        .card-title\n        {\n          color: color4;\n          font-size: 200%;\n          font-style:oblique;\n          font-weight: var(--bold-text);\n         }\n        .card-text\n        {\n          color: var(--color1);\n          font-size: 150%;\n        }\n       .vert-pad\n        {\n            padding-top:var(--vert-pad);;\n            padding-bottom:var(--vert-pad);;\n        }\n        .horz-pad\n        {\n            padding-left:var(--horz-pad);;\n            padding-right:var(--horz-pad);;\n        }\n        .big-text\n        {\n            font-size: var(--big-text-size);\n        }\n        .bold-text\n        {\n            font-weight: var(--bold-text);\n        }\n        .justify\n        {\n            text-align: justify;\n            text-justify: inter-word;\n        }\n",
-        "output": "str",
-        "x": 950,
-        "y": 100,
-        "wires": [
-            [
-                "4eb98e2d.07b03"
-            ]
-        ]
-    },
-    {
         "id": "96d8d45f90f676f8",
         "type": "http in",
         "z": "401d2470458fed2d",
-        "name": "/test",
-        "url": "/test",
+        "g": "b4e9249c0372fe12",
+        "name": "/",
+        "url": "/",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 210,
-        "y": 340,
+        "x": 130,
+        "y": 140,
         "wires": [
             [
-                "9e735433bcf83dab"
+                "7741cd9b5c824150"
             ]
         ]
     },
@@ -5025,26 +4848,28 @@
         "id": "3df2a26f1c25055e",
         "type": "http response",
         "z": "401d2470458fed2d",
+        "g": "b4e9249c0372fe12",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1510,
-        "y": 340,
+        "x": 1710,
+        "y": 140,
         "wires": []
     },
     {
         "id": "52f9e8761eda73a8",
         "type": "template",
         "z": "401d2470458fed2d",
+        "g": "b4e9249c0372fe12",
         "name": "body",
         "field": "payload.body",
         "fieldType": "msg",
         "format": "html",
         "syntax": "mustache",
-        "template": "    <body id=\"page-top\">\n    <nav id=\"mainNav\" class=\"navbar navbar-default navbar-fixed-top\">\n        <div class=\"container-fluid\">\n            <!-- Brand and toggle get grouped for better mobile display -->\n            <div class=\"navbar-header\">\n                <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n                    <span class=\"sr-only\">Toggle navigation</span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                </button>\n                <a class=\"navbar-brand page-scroll\" href=\"#\">Top</a>\n            </div>\n\n            <!-- Collect the nav links, forms, and other content for toggling -->\n            <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n                <ul class=\"nav navbar-nav navbar-right\">\n                    <li>\n                        <a class=\"page-scroll\" href=\"/myapps\">Internal Apps</a>\n                    </li>\n                    <li>\n                        <a class=\"page-scroll\" href=\"/myapps?external\">External Apps</a>\n                    </li>\n                    <li>\n                        <a class=\"page-scroll\" href=\"#contact\">Docs</a>\n                    </li>\n                </ul>\n            </div>\n            <!-- /.navbar-collapse -->\n        </div>\n        <!-- /.container-fluid -->\n    </nav>\n\n    <header>\n        <div class=\"header-content\">\n            <div class=\"header-content-inner\">\n                <h1>{{{payload.appConfig.mainText}}}</h1>\n                <hr>\n            </div>\n            <div class=\"header-content-inner\" style=\"padding-top:30px;\">\n                <a href=\"/myapps\" class=\"btn btn-primary btn-xl page-scroll\">Internal Apps</a>\n            </div>\n            <div class=\"header-content-inner\" style=\"padding-top:30px;\">\n                <a href=\"/myapps?external\" class=\"btn btn-primary btn-xl page-scroll\">External Apps</a>\n            </div>\n    </div>\n    </div>\n    </header>\n\n    <section id=\"contact\">\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"col-lg-8 col-lg-offset-2 text-center\">\n                    <h2 class=\"section-heading\">Documentation</h2>\n                    <hr class=\"primary\">\n                </div>\n            <div class=\"col-lg-2 col-lg-offset-2 text-center\">\n                <a href=\"https://blinky-lite.github.io/\">\n                    <i class=\"fa fa-book fa-3x wow bounceIn\" data-wow-delay=\".1s\"></i>\n                    <p>Docs</p>\n                </a>\n            </div>\n            <div class=\"col-lg-2 col-lg-offset-1 text-center\">\n                <a href=\"https://hub.docker.com/u/blinkylite\">\n                <i class=\"fa fa-camera-retro fa-3x wow bounceIn\" data-wow-delay=\".1s\"></i>\n                    <p>Images</p>\n                </a>\n            </div>\n            <div class=\"col-lg-2 col-lg-offset-1 text-center\">\n                <a href=\"https://github.com/Blinky-Lite\">\n                <i class=\"fa fa-github fa-3x wow bounceIn\" data-wow-delay=\".1s\"></i>\n                    <p>Code</p>\n                </a>\n            </div>\n\n        </div>\n    </section>\n\n    <!-- jQuery -->\n    <script src=\"/homepage/js/jquery.js\"></script>\n\n    <!-- Bootstrap Core JavaScript -->\n    <script src=\"/homepage/js/bootstrap.min.js\"></script>\n\n    <!-- Plugin JavaScript -->\n    <script src=\"/homepage/js/jquery.easing.min.js\"></script>\n    <script src=\"/homepage/js/jquery.fittext.js\"></script>\n    <script src=\"/homepage/js/wow.min.js\"></script>\n\n    <!-- Custom Theme JavaScript -->\n    <script src=\"/homepage/js/creative.js\"></script>\n\n    </body>\n",
+        "template": "    <body id=\"page-top\">\n    <nav id=\"mainNav\" class=\"navbar navbar-default navbar-fixed-top\">\n        <div class=\"container-fluid\">\n            <!-- Brand and toggle get grouped for better mobile display -->\n            <div class=\"navbar-header\">\n                <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n                    <span class=\"sr-only\">Toggle navigation</span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                </button>\n                <a class=\"navbar-brand page-scroll\" href=\"#\">Top</a>\n            </div>\n\n            <!-- Collect the nav links, forms, and other content for toggling -->\n            <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n                <ul class=\"nav navbar-nav navbar-right\">\n                    <li>\n                        <a class=\"page-scroll\" href=\"{{{payload.appConfig.choice1.url}}}\">{{{payload.appConfig.choice1.text}}}</a>\n                    </li>\n                    <li>\n                        <a class=\"page-scroll\" href=\"{{{payload.appConfig.choice2.url}}}\">{{{payload.appConfig.choice2.text}}}</a>\n                    </li>\n                    <li>\n                        <a class=\"page-scroll\" href=\"#contact\">Links</a>\n                    </li>\n                </ul>\n            </div>\n            <!-- /.navbar-collapse -->\n        </div>\n        <!-- /.container-fluid -->\n    </nav>\n\n    <header>\n        <div class=\"header-content\">\n            <div class=\"header-content-inner\">\n                <h1>{{{payload.appConfig.mainText}}}</h1>\n                <hr>\n            </div>\n            <div class=\"header-content-inner\" style=\"padding-top:30px;\">\n                <a href=\"{{{payload.appConfig.choice1.url}}}\" class=\"btn btn-primary btn-xl page-scroll\">{{{payload.appConfig.choice1.text}}}</a>\n            </div>\n            <div class=\"header-content-inner\" style=\"padding-top:30px;\">\n                <a href=\"{{{payload.appConfig.choice2.url}}}\" class=\"btn btn-primary btn-xl page-scroll\">{{{payload.appConfig.choice2.text}}}</a>\n            </div>\n    </div>\n    </div>\n    </header>\n\n    <section id=\"contact\">\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"col-lg-8 col-lg-offset-2 text-center\">\n                    <h2 class=\"section-heading\">Links</h2>\n                    <hr class=\"primary\">\n                </div>\n            <div class=\"col-lg-2 col-lg-offset-2 text-center\">\n                <a href=\"{{{payload.appConfig.link1.url}}}\">\n                    <i class=\"fa fa-{{{payload.appConfig.link1.fa}}} fa-3x wow bounceIn\" data-wow-delay=\".1s\"></i>\n                    <p>{{{payload.appConfig.link1.text}}}</p>\n                </a>\n            </div>\n            <div class=\"col-lg-2 col-lg-offset-1 text-center\">\n                <a href=\"{{{payload.appConfig.link2.url}}}\">\n                <i class=\"fa fa-{{{payload.appConfig.link2.fa}}} fa-3x wow bounceIn\" data-wow-delay=\".1s\"></i>\n                    <p>{{{payload.appConfig.link2.text}}}</p>\n                </a>\n            </div>\n            <div class=\"col-lg-2 col-lg-offset-1 text-center\">\n                <a href=\"{{{payload.appConfig.link3.url}}}\">\n                <i class=\"fa fa-{{{payload.appConfig.link3.fa}}} fa-3x wow bounceIn\" data-wow-delay=\".1s\"></i>\n                    <p>{{{payload.appConfig.link3.text}}}</p>\n                </a>\n            </div>\n\n        </div>\n    </section>\n\n    <!-- jQuery -->\n    <script src=\"/homepage/js/jquery.js\"></script>\n\n    <!-- Bootstrap Core JavaScript -->\n    <script src=\"/homepage/js/bootstrap.min.js\"></script>\n\n    <!-- Plugin JavaScript -->\n    <script src=\"/homepage/js/jquery.easing.min.js\"></script>\n    <script src=\"/homepage/js/jquery.fittext.js\"></script>\n    <script src=\"/homepage/js/wow.min.js\"></script>\n\n    <!-- Custom Theme JavaScript -->\n    <script src=\"/homepage/js/creative.js\"></script>\n\n    </body>\n",
         "output": "str",
-        "x": 1110,
-        "y": 340,
+        "x": 1170,
+        "y": 140,
         "wires": [
             [
                 "8d378ae2500e3a75"
@@ -5055,18 +4880,19 @@
         "id": "8d378ae2500e3a75",
         "type": "template",
         "z": "401d2470458fed2d",
+        "g": "b4e9249c0372fe12",
         "name": "head",
         "field": "payload.head",
         "fieldType": "msg",
         "format": "html",
         "syntax": "mustache",
-        "template": "    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <meta name=\"description\" content=\"\">\n        <meta name=\"author\" content=\"\">\n\n        <title>{{{payload.appConfig.title}}}</title>\n        <link rel=\"icon\" href=\"/homepage/img/favicon.ico\" type=\"image/x-icon\">\n\n        <!-- Bootstrap Core CSS -->\n        <link rel=\"stylesheet\" href=\"/homepage/css/bootstrap.min.css\" type=\"text/css\">\n\n        <!-- Custom Fonts -->\n        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>\n        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>\n        <link rel=\"stylesheet\" href=\"/homepage/font-awesome/css/font-awesome.min.css\" type=\"text/css\">\n\n        <!-- Plugin CSS -->\n        <link rel=\"stylesheet\" href=\"/homepage/css/animate.min.css\" type=\"text/css\">\n\n        <!-- Custom CSS -->\n        <style>\n{{{payload.main_css}}}\n       </style>\n\n        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->\n        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n        <!--[if lt IE 9]>\n            <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>\n            <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>\n        <![endif]-->\n </head>\n\n",
+        "template": "    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <meta name=\"description\" content=\"\">\n        <meta name=\"author\" content=\"\">\n\n        <title>{{{payload.appConfig.title}}}</title>\n        <link rel=\"icon\" href=\"{{{payload.appConfig.faviconUrl}}}\" type=\"image/x-icon\">\n\n        <!-- Bootstrap Core CSS -->\n        <link rel=\"stylesheet\" href=\"/homepage/css/bootstrap.min.css\" type=\"text/css\">\n\n        <!-- Custom Fonts -->\n        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>\n        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>\n        <link rel=\"stylesheet\" href=\"/homepage/font-awesome/css/font-awesome.min.css\" type=\"text/css\">\n\n        <!-- Plugin CSS -->\n        <link rel=\"stylesheet\" href=\"/homepage/css/animate.min.css\" type=\"text/css\">\n\n        <!-- Custom CSS -->\n        <style>\n{{{payload.main_css}}}\n       </style>\n\n        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->\n        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n        <!--[if lt IE 9]>\n            <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>\n            <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>\n        <![endif]-->\n </head>\n\n",
         "output": "str",
-        "x": 1250,
-        "y": 340,
+        "x": 1290,
+        "y": 140,
         "wires": [
             [
-                "8e2e35f8ca07f52f"
+                "c1268b6adb294bd4"
             ]
         ]
     },
@@ -5074,6 +4900,7 @@
         "id": "8e2e35f8ca07f52f",
         "type": "template",
         "z": "401d2470458fed2d",
+        "g": "b4e9249c0372fe12",
         "name": "HTML",
         "field": "payload",
         "fieldType": "msg",
@@ -5081,8 +4908,8 @@
         "syntax": "mustache",
         "template": "<!DOCTYPE html>\n<html lang=\"en\">\n{{{payload.head}}}\n{{{payload.body}}}\n</html>",
         "output": "str",
-        "x": 1370,
-        "y": 340,
+        "x": 1590,
+        "y": 140,
         "wires": [
             [
                 "3df2a26f1c25055e"
@@ -5090,129 +4917,10 @@
         ]
     },
     {
-        "id": "c5c7686f36092dd6",
-        "type": "mongodb3 in",
-        "z": "401d2470458fed2d",
-        "service": "_ext_",
-        "configNode": "9cd5ff5e.caf86",
-        "name": "",
-        "collection": "appStyleSheets",
-        "operation": "findOne",
-        "x": 420,
-        "y": 560,
-        "wires": [
-            [
-                "059519580fb41f61"
-            ]
-        ]
-    },
-    {
-        "id": "059519580fb41f61",
-        "type": "function",
-        "z": "401d2470458fed2d",
-        "name": "Parse css",
-        "func": "let cssObj = JSON.stringify(msg.payload);\nlet cssString = \"\";\nfor (let istyle = 0; istyle < msg.payload.sheets.length; ++istyle)\n{\n    for (let icss = 0; icss < msg.payload.sheets[istyle].css.length; ++icss)\n    {\n        cssString = cssString + jsonToCss(msg.payload.sheets[istyle].css[icss]);\n    }\n}\nmsg.payload = cssString;\nreturn msg;\n\n// From http://www.featureblend.com/css-json.html\nfunction jsonToCss(cssjson)\n{\n    var styleStr = \"\\t\\t\";\n    for(var cssClass in cssjson)\n    {\n        styleStr += cssClass + \"\\n\\t\\t{\\n\"\n        for(var cssAttr in cssjson[cssClass])\n        {\n            if (typeof cssjson[cssClass][cssAttr] != \"object\") \n            {\n                styleStr += \"\\t\\t\\t\" + cssAttr + \"\\t\\t:\\t\" + cssjson[cssClass][cssAttr] + \";\\n\"     \n            }\n            else\n            {\n               for (let subClass in cssjson[cssClass][cssAttr])\n               {\n                    styleStr += \"\\t\\t\\t\\t\" + subClass + \" \\n\\t\\t\\t\\t{\\n\";\n                    for (let subClassAttr in cssjson[cssClass][cssAttr][subClass])\n                    {\n                        styleStr += \"\\t\\t\\t\\t\\t\" + subClassAttr + \": \" + cssjson[cssClass][cssAttr][subClass][subClassAttr] + \";\\n\";\n                    }\n                    styleStr += \"\\t\\t\\t\\t}\\n\";\n               }\n            }\n       }\n        styleStr += \"\\t\\t}\\n\"  \n    }\n    return styleStr;\n}\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 340,
-        "y": 600,
-        "wires": [
-            [
-                "c9e6aba795d19166",
-                "86a6ac0d326e9217"
-            ]
-        ]
-    },
-    {
-        "id": "552a45c9dab97544",
-        "type": "function",
-        "z": "401d2470458fed2d",
-        "name": "Get Stylesheet",
-        "func": "msg.payload = [{ styleSheetName: 'landingPage' }, { projection: { _id: 0 } }]\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 520,
-        "wires": [
-            [
-                "c5c7686f36092dd6"
-            ]
-        ]
-    },
-    {
-        "id": "33e2fdcaaec794a6",
-        "type": "inject",
-        "z": "401d2470458fed2d",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 180,
-        "y": 520,
-        "wires": [
-            [
-                "552a45c9dab97544"
-            ]
-        ]
-    },
-    {
-        "id": "c9e6aba795d19166",
-        "type": "debug",
-        "z": "401d2470458fed2d",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 600,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "86a6ac0d326e9217",
-        "type": "file",
-        "z": "401d2470458fed2d",
-        "name": "booger.css",
-        "filename": "booger.css",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": false,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 590,
-        "y": 700,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "9e735433bcf83dab",
         "type": "function",
         "z": "401d2470458fed2d",
+        "g": "b4e9249c0372fe12",
         "name": "Get AppConfig",
         "func": "msg.payload = [{ app: 'landingPage' }, { projection: { _id: 0 } }]\nreturn msg;\n",
         "outputs": 1,
@@ -5221,8 +4929,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 340,
+        "x": 460,
+        "y": 140,
         "wires": [
             [
                 "b87b07f5d126de5b"
@@ -5233,13 +4941,14 @@
         "id": "b87b07f5d126de5b",
         "type": "mongodb3 in",
         "z": "401d2470458fed2d",
+        "g": "b4e9249c0372fe12",
         "service": "_ext_",
         "configNode": "9cd5ff5e.caf86",
         "name": "",
         "collection": "appConfig",
         "operation": "findOne",
-        "x": 580,
-        "y": 340,
+        "x": 680,
+        "y": 140,
         "wires": [
             [
                 "21a61f0dcaefc6a5"
@@ -5250,6 +4959,7 @@
         "id": "21a61f0dcaefc6a5",
         "type": "function",
         "z": "401d2470458fed2d",
+        "g": "b4e9249c0372fe12",
         "name": "parse appConfig",
         "func": "let appConfig = JSON.parse(JSON.stringify(msg.payload));\nmsg.payload = {appConfig:appConfig};\nreturn msg;",
         "outputs": 1,
@@ -5258,8 +4968,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
-        "y": 340,
+        "x": 900,
+        "y": 140,
         "wires": [
             [
                 "9afdbd9fe9cf4af7"
@@ -5267,44 +4977,10 @@
         ]
     },
     {
-        "id": "2cd90bb9d0081ff3",
-        "type": "mongodb3 in",
-        "z": "401d2470458fed2d",
-        "service": "_ext_",
-        "configNode": "9cd5ff5e.caf86",
-        "name": "",
-        "collection": "appStyleSheets",
-        "operation": "findOne",
-        "x": 920,
-        "y": 620,
-        "wires": [
-            [
-                "83680257109204cb"
-            ]
-        ]
-    },
-    {
-        "id": "83680257109204cb",
-        "type": "function",
-        "z": "401d2470458fed2d",
-        "name": "Parse css",
-        "func": "let cssObj = JSON.stringify(msg.payload);\nlet cssString = \"\";\nfor (let istyle = 0; istyle < msg.payload.sheets.length; ++istyle)\n{\n    for (let icss = 0; icss < msg.payload.sheets[istyle].css.length; ++icss)\n    {\n        cssString = cssString + jsonToCss(msg.payload.sheets[istyle].css[icss]);\n    }\n}\nmsg['css'] = cssString;\nmsg.payload = [{ app: 'landingPage' }, { projection: { _id: 0 } }]\nreturn msg;\n\n// From http://www.featureblend.com/css-json.html\nfunction jsonToCss(cssjson)\n{\n    var styleStr = \"\\t\\t\";\n    for(var cssClass in cssjson)\n    {\n        styleStr += cssClass + \"\\n\\t\\t{\\n\"\n        for(var cssAttr in cssjson[cssClass])\n        {\n            if (typeof cssjson[cssClass][cssAttr] != \"object\") \n            {\n                styleStr += \"\\t\\t\\t\" + cssAttr + \"\\t\\t:\\t\" + cssjson[cssClass][cssAttr] + \";\\n\"     \n            }\n            else\n            {\n               for (let subClass in cssjson[cssClass][cssAttr])\n               {\n                    styleStr += \"\\t\\t\\t\\t\" + subClass + \" \\n\\t\\t\\t\\t{\\n\";\n                    for (let subClassAttr in cssjson[cssClass][cssAttr][subClass])\n                    {\n                        styleStr += \"\\t\\t\\t\\t\\t\" + subClassAttr + \": \" + cssjson[cssClass][cssAttr][subClass][subClassAttr] + \";\\n\";\n                    }\n                    styleStr += \"\\t\\t\\t\\t}\\n\";\n               }\n            }\n       }\n        styleStr += \"\\t\\t}\\n\"  \n    }\n    return styleStr;\n}\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1140,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "9afdbd9fe9cf4af7",
         "type": "template",
         "z": "401d2470458fed2d",
+        "g": "b4e9249c0372fe12",
         "name": "CSS",
         "field": "payload.main_css",
         "fieldType": "msg",
@@ -5312,11 +4988,39 @@
         "syntax": "mustache",
         "template": "html,\nbody {\n  height: 100%;\n  width: 100%;\n  background-color: {{{payload.appConfig.bodyBackgroundColor}}};\n}\n\nbody {\n  font-family: \"Merriweather\", \"Helvetica Neue\", Arial, sans-serif;\n}\n\nhr {\n  border-color: {{{payload.appConfig.highlightColor}}};\n  border-width: 3px;\n  max-width: 50px;\n}\n\nhr.light {\n  border-color: {{{payload.appConfig.mainTextColor}}};\n}\n\na {\n  -webkit-transition: all 0.35s;\n  -moz-transition: all 0.35s;\n  transition: all 0.35s;\n  color: {{{payload.appConfig.highlightColor}}};\n}\na:hover, a:focus {\n  color: {{{payload.appConfig.linkHoverColor}}};\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: \"Open Sans\", \"Helvetica Neue\", Arial, sans-serif;\n}\n\np {\n  font-size: 16px;\n  line-height: 1.5;\n  margin-bottom: 20px;\n}\n\n.bg-primary {\n  background-color: {{{payload.appConfig.highlightColor}}};\n}\n\n.bg-dark {\n  background-color: {{{payload.appConfig.darkColor}}};\n  color: {{{payload.appConfig.mainTextColor}}};\n}\n\n.text-faded {\n  color: {{{payload.appConfig.mainTextColor}}}b2;\n}\n\nsection {\n  padding: 100px 0;\n}\n\naside {\n  padding: 50px 0;\n}\n\n.no-padding {\n  padding: 0;\n}\n\n.navbar-default {\n  background-color: {{{payload.appConfig.mainTextColor}}};\n  border-color: {{{payload.appConfig.darkColor}}}80;\n  font-family: \"Open Sans\", \"Helvetica Neue\", Arial, sans-serif;\n  -webkit-transition: all 0.35s;\n  -moz-transition: all 0.35s;\n  transition: all 0.35s;\n}\n.navbar-default .navbar-header .navbar-brand {\n  color: {{{payload.appConfig.highlightColor}}};\n  font-family: \"Open Sans\", \"Helvetica Neue\", Arial, sans-serif;\n  font-weight: 700;\n  text-transform: uppercase;\n}\n.navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {\n  color: {{{payload.appConfig.linkHoverColor}}};\n}\n.navbar-default .nav > li > a,\n.navbar-default .nav > li > a:focus {\n  text-transform: uppercase;\n  font-weight: 700;\n  font-size: 13px;\n  color: {{{payload.appConfig.darkColor}}};\n}\n.navbar-default .nav > li > a:hover,\n.navbar-default .nav > li > a:focus:hover {\n  color: {{{payload.appConfig.highlightColor}}};\n}\n.navbar-default .nav > li.active > a,\n.navbar-default .nav > li.active > a:focus {\n  color: {{{payload.appConfig.highlightColor}}} !important;\n  background-color: transparent;\n}\n.navbar-default .nav > li.active > a:hover,\n.navbar-default .nav > li.active > a:focus:hover {\n  background-color: transparent;\n}\n@media (min-width: 768px) {\n  .navbar-default {\n    background-color: transparent;\n    border-color: {{{payload.appConfig.mainTextColor}}}4c;\n  }\n  .navbar-default .navbar-header .navbar-brand {\n    color: {{{payload.appConfig.mainTextColor}}}b2;\n  }\n  .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {\n    color: {{{payload.appConfig.mainTextColor}}};\n  }\n  .navbar-default .nav > li > a,\n  .navbar-default .nav > li > a:focus {\n    color: {{{payload.appConfig.mainTextColor}}}b2;\n  }\n  .navbar-default .nav > li > a:hover,\n  .navbar-default .nav > li > a:focus:hover {\n    color: {{{payload.appConfig.mainTextColor}}};\n  }\n  .navbar-default.affix {\n    background-color: {{{payload.appConfig.mainTextColor}}};\n    border-color: {{{payload.appConfig.darkColor}}}80;\n  }\n  .navbar-default.affix .navbar-header .navbar-brand {\n    color: {{{payload.appConfig.highlightColor}}};\n    font-size: 14px;\n  }\n  .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand:focus {\n    color: {{{payload.appConfig.linkHoverColor}}};\n  }\n  .navbar-default.affix .nav > li > a,\n  .navbar-default.affix .nav > li > a:focus {\n    color: {{{payload.appConfig.darkColor}}};\n  }\n  .navbar-default.affix .nav > li > a:hover,\n  .navbar-default.affix .nav > li > a:focus:hover {\n    color: {{{payload.appConfig.highlightColor}}};\n  }\n}\n\nheader {\n  position: relative;\n  width: 100%;\n  min-height: auto;\n  -webkit-background-size: cover;\n  -moz-background-size: cover;\n  background-size: cover;\n  -o-background-size: cover;\n  background-position: center;\n  background-image: url(\"{{{payload.appConfig.backgroundUrl}}}\");\n  text-align: center;\n  color: {{{payload.appConfig.mainTextColor}}};\n}\nheader .header-content {\n  position: relative;\n  text-align: center;\n  padding: 100px 15px 100px;\n  width: 100%;\n}\nheader .header-content .header-content-inner h1 {\n  font-weight: 700;\n  text-transform: uppercase;\n  margin-top: 0;\n  margin-bottom: 0;\n}\nheader .header-content .header-content-inner hr {\n  margin: 30px auto;\n}\nheader .header-content .header-content-inner p {\n  font-weight: 300;\n  color: {{{payload.appConfig.mainTextColor}}}b2;\n  font-size: 16px;\n  margin-bottom: 50px;\n}\n@media (min-width: 768px) {\n  header {\n    min-height: 100%;\n  }\n  header .header-content {\n    position: absolute;\n    top: 50%;\n    -webkit-transform: translateY(-50%);\n    -ms-transform: translateY(-50%);\n    transform: translateY(-50%);\n    padding: 0 50px;\n  }\n  header .header-content .header-content-inner {\n    max-width: 1000px;\n    margin-left: auto;\n    margin-right: auto;\n  }\n  header .header-content .header-content-inner p {\n    font-size: 18px;\n    max-width: 80%;\n    margin-left: auto;\n    margin-right: auto;\n  }\n}\n\n.section-heading {\n  margin-top: 0;\n  color: {{{payload.appConfig.darkColor}}};\n}\n\n.service-box {\n  max-width: 400px;\n  margin: 50px auto 0;\n}\n@media (min-width: 992px) {\n  .service-box {\n    margin: 20px auto 0;\n  }\n}\n.service-box p {\n  margin-bottom: 0;\n}\n\n.portfolio-box {\n  position: relative;\n  display: block;\n  max-width: 650px;\n  margin: 0 auto;\n}\n.portfolio-box .portfolio-box-caption {\n  color: {{{payload.appConfig.mainTextColor}}};\n  opacity: 0;\n  display: block;\n  background: {{{payload.appConfig.highlightColor}}}e5;\n  position: absolute;\n  bottom: 0;\n  text-align: center;\n  width: 100%;\n  height: 100%;\n  -webkit-transition: all 0.35s;\n  -moz-transition: all 0.35s;\n  transition: all 0.35s;\n}\n.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {\n  width: 100%;\n  text-align: center;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,\n.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {\n  font-family: \"Open Sans\", \"Helvetica Neue\", Arial, sans-serif;\n  padding: 0 15px;\n}\n.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {\n  text-transform: uppercase;\n  font-weight: 600;\n  font-size: 14px;\n}\n.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {\n  font-size: 18px;\n}\n.portfolio-box:hover .portfolio-box-caption {\n  opacity: 1;\n}\n@media (min-width: 768px) {\n  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {\n    font-size: 16px;\n  }\n  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {\n    font-size: 22px;\n  }\n}\n\n.call-to-action h2 {\n  margin: 0 auto 20px;\n}\n\n.text-primary {\n  color: {{{payload.appConfig.highlightColor}}};\n}\n\n.no-gutter > [class*=col-] {\n  padding-right: 0;\n  padding-left: 0;\n}\n\n.btn-default {\n  color: {{{payload.appConfig.darkColor}}};\n  background-color: {{{payload.appConfig.mainTextColor}}};\n  border-color: {{{payload.appConfig.mainTextColor}}};\n  -webkit-transition: all 0.35s;\n  -moz-transition: all 0.35s;\n  transition: all 0.35s;\n}\n.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle .btn-default {\n  color: {{{payload.appConfig.darkColor}}};\n  background-color: {{{payload.appConfig.mainTextColor}}};\n  border-color: {{{payload.appConfig.mainTextColor}}};\n}\n.btn-default:active, .btn-default.active, .open > .dropdown-toggle .btn-default {\n  background-image: none;\n}\n.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {\n  background-color: {{{payload.appConfig.mainTextColor}}};\n  border-color: {{{payload.appConfig.mainTextColor}}};\n}\n.btn-default .badge {\n  color: {{{payload.appConfig.mainTextColor}}};\n  background-color: {{{payload.appConfig.darkColor}}};\n}\n\n.btn-primary {\n  color: {{{payload.appConfig.mainTextColor}}};\n  background-color: {{{payload.appConfig.highlightColor}}};\n  border-color: {{{payload.appConfig.highlightColor}}};\n  -webkit-transition: all 0.35s;\n  -moz-transition: all 0.35s;\n  transition: all 0.35s;\n}\n.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle .btn-primary {\n  color: {{{payload.appConfig.mainTextColor}}};\n  background-color: {{{payload.appConfig.highlightHoverColor}}};\n  border-color: {{{payload.appConfig.highlightHoverColor}}};\n}\n.btn-primary:active, .btn-primary.active, .open > .dropdown-toggle .btn-primary {\n  background-image: none;\n}\n.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {\n  background-color: {{{payload.appConfig.highlightColor}}};\n  border-color: {{{payload.appConfig.highlightColor}}};\n}\n.btn-primary .badge {\n  color: {{{payload.appConfig.highlightColor}}};\n  background-color: {{{payload.appConfig.mainTextColor}}};\n}\n\n.btn {\n  font-family: \"Open Sans\", \"Helvetica Neue\", Arial, sans-serif;\n  border: none;\n  border-radius: 300px;\n  font-weight: 700;\n  text-transform: uppercase;\n}\n\n.btn-xl {\n  padding: 15px 30px;\n}\n\n#contact .fa {\n  color: {{{payload.appConfig.darkColor}}};\n  font-size: 4em;\n}\n\n::-moz-selection {\n  color: {{{payload.appConfig.mainTextColor}}};\n  text-shadow: none;\n  background: {{{payload.appConfig.darkColor}}};\n}\n\n::selection {\n  color: {{{payload.appConfig.mainTextColor}}};\n  text-shadow: none;\n  background: {{{payload.appConfig.darkColor}}};\n}\n\nimg::selection {\n  color: {{{payload.appConfig.mainTextColor}}};\n  background: transparent;\n}\n\nimg::-moz-selection {\n  color: {{{payload.appConfig.mainTextColor}}};\n  background: transparent;\n}\n\nbody {\n  -webkit-tap-highlight-color: {{{payload.appConfig.darkColor}}};\n}\n\n/*# sourceMappingURL=main.css.map */",
         "output": "str",
-        "x": 970,
-        "y": 340,
+        "x": 1050,
+        "y": 140,
         "wires": [
             [
                 "52f9e8761eda73a8"
+            ]
+        ]
+    },
+    {
+        "id": "c1268b6adb294bd4",
+        "type": "subflow:d1aa8cd8b6ac048e",
+        "z": "401d2470458fed2d",
+        "g": "b4e9249c0372fe12",
+        "name": "",
+        "x": 1440,
+        "y": 140,
+        "wires": [
+            [
+                "8e2e35f8ca07f52f"
+            ]
+        ]
+    },
+    {
+        "id": "7741cd9b5c824150",
+        "type": "subflow:3fec913b325ae6ff",
+        "z": "401d2470458fed2d",
+        "g": "b4e9249c0372fe12",
+        "name": "",
+        "x": 280,
+        "y": 140,
+        "wires": [
+            [
+                "9e735433bcf83dab"
             ]
         ]
     },
@@ -6701,8 +6405,9 @@
         "z": "a858ad3a.95706",
         "g": "410a9f1e572e2cb6",
         "name": "Parse MyApps",
-        "func": "if (!msg.payload.hasOwnProperty(\"validPassword\"))\n{\n    return[null, msg];\n}\nif (!msg.payload.validPassword)\n{\n    return[null, msg];\n}\n\nmsg.payload['config'] = JSON.stringify(msg.payload.myapps);\nmsg.payload['title'] = msg.payload.myapps.title;\nmsg.payload['icon'] = msg.payload.myapps.icon;\n\nreturn [msg,null];\n",
+        "func": "if (!msg.payload.hasOwnProperty(\"validPassword\"))\n{\n    return[null, msg];\n}\nif (!msg.payload.validPassword)\n{\n    return[null, msg];\n}\n\nmsg.payload['config'] = JSON.stringify(msg.payload.myapps);\nmsg.payload['title'] = msg.payload.myapps.title;\nmsg.payload['icon'] = msg.payload.myapps.icon;\nif (\"logo\" in msg.payload.myapps)\n{\n    msg.payload['logo'] = msg.payload.myapps.logo\n}\nelse\n{\n    msg.payload['logo'] = \"/img/project-logo.png\";\n}\n\nreturn [msg,null];\n",
         "outputs": 2,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -6898,7 +6603,7 @@
         "fieldType": "msg",
         "format": "html",
         "syntax": "mustache",
-        "template": "<!-- navBar -->\n    <div class=\"jumbotron\" width=\"100%\">\n        <table width=\"100%\">\n            <tr>\n                <td style=\"text-align:left; vertical-align:middle;\"  width=\"20%\">\n                    <a href='/' >\n                        <img src=\"/img/project-logo.png\" height=\"75px\"/>\n                    </a>                \n                </td>\n                <td width=\"60%\" style=\"text-align:center; vertical-align:middle;\">\n                    <h1 class=\"jumbotron-title\">\n                        <span>{{{payload.title}}}</span>\n                    </h1>\n                </td>\n                <td style=\"text-align:right; vertical-align:middle;\" width=\"20%\">\n                    <img src=\"{{payload.icon}}\" height=\"75px\"/>\n                </td>\n            </tr>\n        </table>\n    </div>",
+        "template": "<!-- navBar -->\n    <div class=\"jumbotron\" width=\"100%\">\n        <table width=\"100%\">\n            <tr>\n                <td style=\"text-align:left; vertical-align:middle;\"  width=\"20%\">\n                    <a href='/' >\n                        <img src=\"{{{payload.logo}}}\" height=\"75px\"/>\n                    </a>                \n                </td>\n                <td width=\"60%\" style=\"text-align:center; vertical-align:middle;\">\n                    <h1 class=\"jumbotron-title\">\n                        <span>{{{payload.title}}}</span>\n                    </h1>\n                </td>\n                <td style=\"text-align:right; vertical-align:middle;\" width=\"20%\">\n                    <img src=\"{{payload.icon}}\" height=\"75px\"/>\n                </td>\n            </tr>\n        </table>\n    </div>",
         "output": "str",
         "x": 800,
         "y": 320,
@@ -9527,8 +9232,9 @@
         "z": "90f83725.6dae08",
         "g": "af622659deabdbdd",
         "name": "Parse css",
-        "func": "let cssObj = JSON.stringify(msg.payload);\nlet cssString = \"\";\nfor (let istyle = 0; istyle < msg.payload.sheets.length; ++istyle)\n{\n    for (let icss = 0; icss < msg.payload.sheets[istyle].css.length; ++icss)\n    {\n        cssString = cssString + jsonToCss(msg.payload.sheets[istyle].css[icss]);\n    }\n}\nmsg.config['css'] = cssString;\nmsg.payload = JSON.parse(JSON.stringify(msg.config));\ndelete msg.config;\nreturn msg;\n\n// From http://www.featureblend.com/css-json.html\nfunction jsonToCss(cssjson)\n{\n    var styleStr = \"\\t\\t\";\n    for(var i in cssjson)\n    {\n        styleStr += i + \"\\n\\t\\t{\\n\"\n        for(var j in cssjson[i]){\n            styleStr += \"\\t\\t\\t\" + j + \"\\t\\t:\\t\" + cssjson[i][j] + \";\\n\"     \n        }\n        styleStr += \"\\t\\t}\\n\"  \n    }\n    return styleStr;\n}\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
+        "func": "let cssObj = JSON.stringify(msg.payload);\nlet cssString = \"\";\nfor (let istyle = 0; istyle < msg.payload.sheets.length; ++istyle)\n{\n    for (let icss = 0; icss < msg.payload.sheets[istyle].css.length; ++icss)\n    {\n        cssString = cssString + jsonToCss(msg.payload.sheets[istyle].css[icss]);\n    }\n}\nmsg.config['css'] = cssString;\nmsg.payload = JSON.parse(JSON.stringify(msg.config));\ndelete msg.config;\nreturn msg;\n\n// From http://www.featureblend.com/css-json.html\nfunction jsonToCss(cssjson)\n{\n    var styleStr = \"\\t\\t\";\n    for(var cssClass in cssjson)\n    {\n        styleStr += cssClass + \"\\n\\t\\t{\\n\"\n        for(var cssAttr in cssjson[cssClass])\n        {\n            if (typeof cssjson[cssClass][cssAttr] != \"object\") \n            {\n                styleStr += \"\\t\\t\\t\" + cssAttr + \"\\t\\t:\\t\" + cssjson[cssClass][cssAttr] + \";\\n\"     \n            }\n            else\n            {\n               for (let subClass in cssjson[cssClass][cssAttr])\n               {\n                    styleStr += \"\\t\\t\\t\\t\" + subClass + \" \\n\\t\\t\\t\\t{\\n\";\n                    for (let subClassAttr in cssjson[cssClass][cssAttr][subClass])\n                    {\n                        styleStr += \"\\t\\t\\t\\t\\t\" + subClassAttr + \": \" + cssjson[cssClass][cssAttr][subClass][subClassAttr] + \";\\n\";\n                    }\n                    styleStr += \"\\t\\t\\t\\t}\\n\";\n               }\n            }\n       }\n        styleStr += \"\\t\\t}\\n\"  \n    }\n    return styleStr;\n}\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -11451,8 +11157,9 @@
         "z": "a614b07c28242d69",
         "g": "e7108cefde0d37c6",
         "name": "Parse css",
-        "func": "let cssObj = JSON.stringify(msg.payload);\nlet cssString = \"\";\nfor (let istyle = 0; istyle < msg.payload.sheets.length; ++istyle)\n{\n    for (let icss = 0; icss < msg.payload.sheets[istyle].css.length; ++icss)\n    {\n        cssString = cssString + jsonToCss(msg.payload.sheets[istyle].css[icss]);\n    }\n}\nmsg.config['css'] = cssString;\nmsg.payload = JSON.parse(JSON.stringify(msg.config));\ndelete msg.config;\nreturn msg;\n\n// From http://www.featureblend.com/css-json.html\nfunction jsonToCss(cssjson)\n{\n    var styleStr = \"\\t\\t\";\n    for(var i in cssjson)\n    {\n        styleStr += i + \"\\n\\t\\t{\\n\"\n        for(var j in cssjson[i]){\n            styleStr += \"\\t\\t\\t\" + j + \"\\t\\t:\\t\" + cssjson[i][j] + \";\\n\"     \n        }\n        styleStr += \"\\t\\t}\\n\"  \n    }\n    return styleStr;\n}\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
+        "func": "let cssObj = JSON.stringify(msg.payload);\nlet cssString = \"\";\nfor (let istyle = 0; istyle < msg.payload.sheets.length; ++istyle)\n{\n    for (let icss = 0; icss < msg.payload.sheets[istyle].css.length; ++icss)\n    {\n        cssString = cssString + jsonToCss(msg.payload.sheets[istyle].css[icss]);\n    }\n}\nmsg.config['css'] = cssString;\nmsg.payload = JSON.parse(JSON.stringify(msg.config));\ndelete msg.config;\nreturn msg;\n\n// From http://www.featureblend.com/css-json.html\nfunction jsonToCss(cssjson)\n{\n    var styleStr = \"\\t\\t\";\n    for(var cssClass in cssjson)\n    {\n        styleStr += cssClass + \"\\n\\t\\t{\\n\"\n        for(var cssAttr in cssjson[cssClass])\n        {\n            if (typeof cssjson[cssClass][cssAttr] != \"object\") \n            {\n                styleStr += \"\\t\\t\\t\" + cssAttr + \"\\t\\t:\\t\" + cssjson[cssClass][cssAttr] + \";\\n\"     \n            }\n            else\n            {\n               for (let subClass in cssjson[cssClass][cssAttr])\n               {\n                    styleStr += \"\\t\\t\\t\\t\" + subClass + \" \\n\\t\\t\\t\\t{\\n\";\n                    for (let subClassAttr in cssjson[cssClass][cssAttr][subClass])\n                    {\n                        styleStr += \"\\t\\t\\t\\t\\t\" + subClassAttr + \": \" + cssjson[cssClass][cssAttr][subClass][subClassAttr] + \";\\n\";\n                    }\n                    styleStr += \"\\t\\t\\t\\t}\\n\";\n               }\n            }\n       }\n        styleStr += \"\\t\\t}\\n\"  \n    }\n    return styleStr;\n}\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -16789,8 +16496,9 @@
         "z": "ba3fb0cdebbe63be",
         "g": "e789a1b186378ec0",
         "name": "Parse css",
-        "func": "let cssObj = JSON.stringify(msg.payload);\nlet cssString = \"\";\nfor (let istyle = 0; istyle < msg.payload.sheets.length; ++istyle)\n{\n    for (let icss = 0; icss < msg.payload.sheets[istyle].css.length; ++icss)\n    {\n        cssString = cssString + jsonToCss(msg.payload.sheets[istyle].css[icss]);\n    }\n}\nmsg.config['css'] = cssString;\nmsg.payload = JSON.parse(JSON.stringify(msg.config));\ndelete msg.config;\nreturn msg;\n\n// From http://www.featureblend.com/css-json.html\nfunction jsonToCss(cssjson)\n{\n    var styleStr = \"\\t\\t\";\n    for(var i in cssjson)\n    {\n        styleStr += i + \"\\n\\t\\t{\\n\"\n        for(var j in cssjson[i]){\n            styleStr += \"\\t\\t\\t\" + j + \"\\t\\t:\\t\" + cssjson[i][j] + \";\\n\"     \n        }\n        styleStr += \"\\t\\t}\\n\"  \n    }\n    return styleStr;\n}\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
+        "func": "let cssObj = JSON.stringify(msg.payload);\nlet cssString = \"\";\nfor (let istyle = 0; istyle < msg.payload.sheets.length; ++istyle)\n{\n    for (let icss = 0; icss < msg.payload.sheets[istyle].css.length; ++icss)\n    {\n        cssString = cssString + jsonToCss(msg.payload.sheets[istyle].css[icss]);\n    }\n}\nmsg.config['css'] = cssString;\nmsg.payload = JSON.parse(JSON.stringify(msg.config));\ndelete msg.config;\nreturn msg;\n\n// From http://www.featureblend.com/css-json.html\nfunction jsonToCss(cssjson)\n{\n    var styleStr = \"\\t\\t\";\n    for(var cssClass in cssjson)\n    {\n        styleStr += cssClass + \"\\n\\t\\t{\\n\"\n        for(var cssAttr in cssjson[cssClass])\n        {\n            if (typeof cssjson[cssClass][cssAttr] != \"object\") \n            {\n                styleStr += \"\\t\\t\\t\" + cssAttr + \"\\t\\t:\\t\" + cssjson[cssClass][cssAttr] + \";\\n\"     \n            }\n            else\n            {\n               for (let subClass in cssjson[cssClass][cssAttr])\n               {\n                    styleStr += \"\\t\\t\\t\\t\" + subClass + \" \\n\\t\\t\\t\\t{\\n\";\n                    for (let subClassAttr in cssjson[cssClass][cssAttr][subClass])\n                    {\n                        styleStr += \"\\t\\t\\t\\t\\t\" + subClassAttr + \": \" + cssjson[cssClass][cssAttr][subClass][subClassAttr] + \";\\n\";\n                    }\n                    styleStr += \"\\t\\t\\t\\t}\\n\";\n               }\n            }\n       }\n        styleStr += \"\\t\\t}\\n\"  \n    }\n    return styleStr;\n}\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
