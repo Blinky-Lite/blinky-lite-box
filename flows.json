@@ -2731,7 +2731,7 @@
         "syntax": "mustache",
         "template": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n{{{payload.head}}}\n  </head>\n  <body>\n{{{payload.navBar}}}\n{{{payload.body}}}\n{{{payload.foot}}}\n  </body>\n</html>",
         "output": "str",
-        "x": 1230,
+        "x": 1790,
         "y": 40,
         "wires": [
             [
@@ -2750,7 +2750,7 @@
         "syntax": "mustache",
         "template": "    <div id=\"acknowledgeDialog\" title=\"Acknowledge\" class='card'>\n        <p class='card-title' id='acknowledgeDialogTitle'>Warning</p>\n        <div class='card-body'>\n            <p class='tableText' id='acknowledgeDialogText'>Text</p>\n        </div>\n    </div>\n    <div id=\"optionDialog\" title=\"Option\" class='card'>\n        <p class='card-title' id='optionDialogTitle'>Choice</p>\n        <div class='card-body'>\n            <p class='tableText' id='optionDialogText'>Text</p>\n        </div>\n    </div>\n    <div id=\"messageDialog\" title=\"Message\" class='card'>\n        <p class='card-title' id='messageDialogTitle'>Warning</p>\n        <div class='card-body'>\n            <p class='tableText' id='messageDialogText'>Text</p>\n        </div>\n    </div>\n    <script src=\"/scripts/popper.js\"></script>\n    <script src=\"/scripts/bootstrap.js\"></script>",
         "output": "str",
-        "x": 790,
+        "x": 1350,
         "y": 40,
         "wires": [
             [
@@ -2767,9 +2767,9 @@
         "fieldType": "msg",
         "format": "html",
         "syntax": "mustache",
-        "template": "    <meta charset=\"UTF-8\">\n    <link rel=\"icon\" href=\"/img/favicon.ico?v=4\" type=\"image/x-icon\"/>\n    <title>{{payload.title}}</title>\n    <link rel=\"stylesheet\" href=\"/css/bootstrap.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui-timepicker-addon.css\"/>\n    <link rel=\"stylesheet\" href=\"/css/boxColorScheme.css\"/>\n    <script src=\"/jquery/jquery.js\"></script>\n    <script src=\"/jquery/jquery-ui.js\"></script>\n    <script src=\"/jquery/jquery-ui-timepicker-addon.js\"></script>\n    <script src=\"/scripts/plotly-latest.min.js\"></script>\n    <script src=\"/scripts/pako.min.js\"></script>\n    <style>\n{{{payload.css}}}\n    </style>\n{{{payload.extraScripts}}}\n    <script>\n{{{payload.utilityScripts}}}\n    </script>\n    <script>\n{{{payload.javascript}}}\n    </script>\n",
+        "template": "    <meta charset=\"UTF-8\">\n    <link rel=\"icon\" href=\"/img/favicon.ico?v=4\" type=\"image/x-icon\"/>\n    <title>{{payload.title}}</title>\n    <link rel=\"stylesheet\" href=\"/css/bootstrap.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui-timepicker-addon.css\"/>\n    <style>\n{{{payload.colorScheme_css}}}\n    </style>\n    <script src=\"/jquery/jquery.js\"></script>\n    <script src=\"/jquery/jquery-ui.js\"></script>\n    <script src=\"/jquery/jquery-ui-timepicker-addon.js\"></script>\n    <script src=\"/scripts/plotly-latest.min.js\"></script>\n    <script src=\"/scripts/pako.min.js\"></script>\n    <style>\n{{{payload.css}}}\n    </style>\n{{{payload.extraScripts}}}\n    <script>\n{{{payload.utilityScripts}}}\n    </script>\n    <script>\n{{{payload.javascript}}}\n    </script>\n",
         "output": "str",
-        "x": 670,
+        "x": 1230,
         "y": 40,
         "wires": [
             [
@@ -2784,7 +2784,7 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1350,
+        "x": 1910,
         "y": 40,
         "wires": []
     },
@@ -2799,7 +2799,7 @@
         "syntax": "mustache",
         "template": "        var remoteApp = true;\n        var ws;\n        var userID = -1;\n        var useWebSocketsFlag = true;\n        var box = '{{{payload.box}}}';\n        var heartBeatImage = false;\n        var wsUri = '';\n        var wsConnected = false;\n        let route = '';\n\n        function setRemoteApp(remoteAppSet)\n        {\n            remoteApp  = remoteAppSet;\n        }\n        function webSocketConnected()\n        {\n            return wsConnected;\n        }\n        function useWebSockets(webSocketsFlag)\n        {\n            useWebSocketsFlag = webSocketsFlag;\n        }\n        function wsConnectC()\n        {\n            if (!useWebSocketsFlag)\n            {\n                return;\n            }\n            if (wsUri.length < 1)\n            {\n                var uri = window.location.href.split('://');\n                var wslead = 'ws://';\n                if (uri[0] == 'https') wslead = 'wss://';\n                var questionLocation = uri[1].indexOf('?');\n                if (questionLocation >= 0)\n                {\n                    uri[1] = uri[1].substring(0,questionLocation);\n//                    console.log(uri[1]);\n                }\n                route = uri[1].split('/')[1];\n                if (uri[1].indexOf('/') < (uri[1].length - 1))\n                {\n                    wsUri = wslead + uri[1] + '/websocket';\n                }\n                else\n                {\n                    wsUri = wslead + uri[1] + 'websocket';\n                }\n            }\n            ws = new WebSocket(wsUri);\n            ws.onmessage = function(event)\n            {\n                onWebSocketMessage(JSON.parse(event.data));\n        \n            };\n            ws.onopen = function()\n            {\n                console.log(\"Websocket connected\");\n                wsConnected = true;\n                $('#webSocketStatus').html('Open');\n                $('#reOpenWebSocketButton').hide();\n                $('#webSocketStatusRow').css('padding-bottom','0px');\n                $('#webSocketStatusCard').hide();\n                onWebSocketOpen();\n            };\n            ws.onclose = function()\n            {\n                console.log(\"Websocket closed\");\n                wsConnected = false;\n                $('#webSocketStatus').html('Closed');\n                $('#reOpenWebSocketButton').show();\n                $('#webSocketStatusCard').show();\n                $('#webSocketStatusRow').css('padding-bottom','25px');\n                onWebSocketClose();\n                wsConnectC();\n            };\n        }\n\n        function getRandomInt(max)\n        {\n          return Math.floor(Math.random() * Math.floor(max));\n        }\n        $( document ).ready(function()\n        {\n            userID  = {{{payload.userID}}};\n            if (!useWebSocketsFlag)\n            {\n                $('#webSocketStatusRow').css('padding-bottom','0px');\n                $('#webSocketStatusCard').hide();\n            }\n            wsConnectC();\n            onDocumentReady();\n       });\n        $( function() \n        {\n            $( \"#acknowledgeDialog\" ).dialog(\n                {\n                    width:    500,\n                    autoOpen: false,\n                    buttons:\n                    [\n                        {\n                            text: \"Ok\",\n                            click: function() { $( this ).dialog( \"close\" );},\n                            showText: false\n                        },\n                   ]\n                });\n            $( \"#messageDialog\" ).dialog(\n                {\n                    width:    500,\n                    autoOpen: false,\n                    buttons:[]\n                });\n        } );\n        function optionDialog(headerText, title, text, buttonTexts, buttonFunctions)\n        {\n            var buttonDefinitions = [];\n            for (var ii = 0; ii < buttonTexts.length; ++ii)\n            {\n                buttonDefinitions[ii] = \n                    {\n                        text: buttonTexts[ii],\n                        click: buttonFunctions[ii],\n                        showText: false\n                    };\n            }\n            $( \"#optionDialog\" ).dialog( \"option\", \"title\", headerText );   \n            $( \"#optionDialog\" ).dialog( \"option\", \"buttons\", buttonDefinitions);\n            $( \"#optionDialogTitle\" ).html(title);\n            $( \"#optionDialogText\" ).html(text);\n            $( \"#optionDialog\" ).dialog( \"open\" );\n        }\n        $( function() \n        {\n            $( \"#optionDialog\" ).dialog(\n                {\n                    width:    500,\n                    autoOpen: false,\n                    buttons:\n                    [\n                        {\n                            text: \"Ok\",\n                            click: function() {$( this ).dialog( \"close\" );},\n                            showText: false\n                        },\n                        {\n                            text: \"Cancel\",\n                            click: function() {$( this ).dialog( \"close\" );},\n                            showText: false\n                        },\n                   ]\n                });\n        } );\n        function acknowledgeDialog(headerText, title, text)\n        {\n            $( \"#acknowledgeDialog\" ).dialog( \"option\", \"title\", headerText );    \n            $( \"#acknowledgeDialogTitle\" ).html(title);\n            $( \"#acknowledgeDialogText\" ).html(text);\n            $( \"#acknowledgeDialog\" ).dialog( \"open\" );\n        }\n        function messageDialog(headerText, title, text)\n        {\n            $( \"#messageDialog\" ).dialog( \"option\", \"title\", headerText );    \n            $( \"#messageDialogTitle\" ).html(title);\n            $( \"#messageDialogText\" ).html(text);\n            $( \"#messageDialog\" ).dialog( \"open\" );\n        }\n        function heartbeat()\n        {\n            heartBeatImage = !heartBeatImage;\n            var heartBeatImageSrc = '/img/heartRed.png';\n            if (heartBeatImage) heartBeatImageSrc = '/img/heartPink.png';\n            $('#heartBeatID').attr('src',heartBeatImageSrc);\n        }\n        function getCookie(extension)\n        {\n            var cookies = document.cookie.split(';');\n            var token = null;\n            var cookieName = box + extension + \"=\";\n            for (var icookie = 0; icookie < cookies.length; ++icookie)\n            {\n                var index = cookies[icookie].indexOf(cookieName);\n                if (index >= 0)\n                {\n                    token = cookies[icookie].substring(index + cookieName.length);\n                }\n            }\n            return token;\n        }\n        function sendActionMsg(topic,role,actionMsg)\n        {\n            var roleToken = \"\";\n            if (remoteApp) roleToken  = getCookie('Role');\n            if (roleToken == null)\n            {\n                location.reload();\n                return;\n            }\n            var webSocketMsg = \n            {\n                topic     : topic,\n                payload   : actionMsg,\n                route     : route,\n                userID    : userID,\n                token     : getCookie('Role'),\n                role      : role\n            };\n            ws.send(JSON.stringify(webSocketMsg));\n        }\n",
         "output": "str",
-        "x": 530,
+        "x": 1090,
         "y": 40,
         "wires": [
             [
@@ -2812,8 +2812,9 @@
         "type": "function",
         "z": "ca529822.9112f8",
         "name": "Get box name and userID",
-        "func": "function getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\nmsg.payload['box'] = global.get('box')\nmsg.payload['userID'] = getRandomInt(32768);\nreturn msg;",
+        "func": "function getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\nmsg.payload['box'] = global.get('box')\nmsg.payload['userID'] = getRandomInt(32768);\nmsg['webpage'] = JSON.parse(JSON.stringify(msg.payload));\nmsg.payload = [{ styleSheetName: 'boxColorScheme' }, { projection: { _id: 0 } }];\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -2822,7 +2823,7 @@
         "y": 40,
         "wires": [
             [
-                "2a8fa19722d2e46b"
+                "140eccdf4bc99615"
             ]
         ]
     },
@@ -2837,7 +2838,7 @@
         "syntax": "mustache",
         "template": "<!-- websocket status HTML -->\n    <div width=\"100%\">\n        <div class='row' id='webSocketStatusRow' style='padding-bottom: 0px;'>\n            <div class='col-md-12' align='center'>\n\n                <div class='card' id='webSocketStatusCard' >\n                    <p class='card-title'>Web Socket Status</p>\n                    <div class='card-body' align=\"center\">\n                        <div class='row'  style='padding-top: 0px;'>\n                            <table width='100%'>\n                                <tr>\n                                    <td width='60%' >\n                                        <span class='card-text' >Websocket Status</span>\n                                    </td>\n                                    <td width='20%' align='center'>\n                                        <button class='btn card-button btn-block big-text' id='reOpenWebSocketButton' onclick=\"wsConnectC()\">Re-open</button>\n                                    </td>\n                                    <td width='20%' align='center'>\n                                        <span class='card-text' id='webSocketStatus' >Closed</span>\n                                   </td>\n                                </tr>\n                            </table>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n",
         "output": "str",
-        "x": 940,
+        "x": 1500,
         "y": 40,
         "wires": [
             [
@@ -2855,7 +2856,7 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1090,
+        "x": 1650,
         "y": 40,
         "wires": [
             [
@@ -2875,7 +2876,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1160,
+        "x": 1720,
         "y": 180,
         "wires": [
             [
@@ -2896,7 +2897,7 @@
         "persist": false,
         "proxy": "",
         "authType": "basic",
-        "x": 1150,
+        "x": 1710,
         "y": 140,
         "wires": [
             [
@@ -2915,7 +2916,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1140,
+        "x": 1700,
         "y": 100,
         "wires": [
             [
@@ -2932,7 +2933,7 @@
         "name": "",
         "collection": "accessLog",
         "operation": "insertOne",
-        "x": 1210,
+        "x": 1770,
         "y": 220,
         "wires": [
             []
@@ -2949,11 +2950,48 @@
         "syntax": "mustache",
         "template": "        :root \n        {\n          --color1: #415c71;\n          --color2: #547792;\n          --color3: #9eb5c7;\n          --color4: #c6c2bb;\n          --color5: #fdc300;\n          --big-text-size :300%;\n          --bold-text :900;\n          --vert-pad : 25px;\n          --horz-pad : 25px;\n        }\n        body \n        {\n          background-color: white;\n          padding-left:25px;\n          padding-right:25px;\n        }\n        img \n        {\n          object-fit: contain;\n        }\n        a\n        {\n            color: white;\n        }\n        a:visited \n        { \n            color: var(--white);\n        }\n        a:hover \n        { \n            color: var(--color5);\n        }\n        .jumbotron \n        {\n          background-color: var(--color2) !important;\n          color:var(--white);\n          padding-bottom: 10px;\n          padding-top: 10px;\n        }\n        .jumbotron-title\n        {\n          color:var(--color5);\n        }\n        .jumbotron-button\n        {\n          color: white;\n          background-color: var(--color1);\n          font-weight: 900;\n        }\n        .card\n        {\n          background-color: var(--color2) !important;\n          text-align: center;\n          padding: 10px;\n        }\n        .card-body\n        {\n          background-color: var(--color3);\n        }\n        .card-button\n        {\n          color: var(--color5);\n          background-color: var(--color1) !important;\n          font-weight: bold;\n        }\n        .card-title\n        {\n          color: var(--color5);\n          font-weight: bold;\n        }\n        .card-text\n        {\n          color: white;\n          text-align: left;\n        }\n        .tableHeading\n        {\n          color:var(--color1);\n          font-weight: 900;\n        }\n        .tableText\n        {\n          color:var(--color1);\n          font-weight: 900;\n        }\n        .custom-select\n        {\n          color: white;\n          background-color: var(--color3);\n        \n        }\n        .form-control\n        {\n          text-align: center;\n        }\n        .checkbox-align\n        {\n          vertical-align: middle;\n          text-align: center;\n        }\n        .csv-linked\n        {\n            color: blue;\n        }\n        .csv-unlinked\n        {\n            color: red;\n        }\n        .vert-pad\n        {\n            padding-top:var(--vert-pad);;\n            padding-bottom:var(--vert-pad);;\n        }\n        .horz-pad\n        {\n            padding-left:var(--horz-pad);;\n            padding-right:var(--horz-pad);;\n        }\n        .big-text\n        {\n            font-size: var(--big-text-size);\n        }\n        .bold-text\n        {\n            font-weight: var(--bold-text);\n        }\n        .ui-dialog-titlebar-close \n        {\n            visibility: hidden;\n        }\n        div.ui-datepicker\n        {\n            font-size:30px;\n        }",
         "output": "str",
-        "x": 380,
+        "x": 940,
         "y": 40,
         "wires": [
             [
                 "c4ed2505.8c07e8"
+            ]
+        ]
+    },
+    {
+        "id": "140eccdf4bc99615",
+        "type": "mongodb3 in",
+        "z": "ca529822.9112f8",
+        "service": "_ext_",
+        "configNode": "9cd5ff5e.caf86",
+        "name": "",
+        "collection": "appStyleSheets",
+        "operation": "findOne",
+        "x": 460,
+        "y": 40,
+        "wires": [
+            [
+                "55798103d61b843c"
+            ]
+        ]
+    },
+    {
+        "id": "55798103d61b843c",
+        "type": "function",
+        "z": "ca529822.9112f8",
+        "name": "Parse box color scheme css",
+        "func": "let cssObj = JSON.stringify(msg.payload);\nlet cssString = \"\";\nfor (let istyle = 0; istyle < msg.payload.sheets.length; ++istyle)\n{\n    for (let icss = 0; icss < msg.payload.sheets[istyle].css.length; ++icss)\n    {\n        cssString = cssString + jsonToCss(msg.payload.sheets[istyle].css[icss]);\n    }\n}\nmsg.payload = JSON.parse(JSON.stringify(msg.webpage));\nmsg.payload['colorScheme_css'] = cssString;\ndelete msg.webpage;\nreturn msg;\n\n// From http://www.featureblend.com/css-json.html\nfunction jsonToCss(cssjson)\n{\n    var styleStr = \"\\t\\t\";\n    for(var cssClass in cssjson)\n    {\n        styleStr += cssClass + \"\\n\\t\\t{\\n\"\n        for(var cssAttr in cssjson[cssClass])\n        {\n            if (typeof cssjson[cssClass][cssAttr] != \"object\") \n            {\n                styleStr += \"\\t\\t\\t\" + cssAttr + \"\\t\\t:\\t\" + cssjson[cssClass][cssAttr] + \";\\n\"     \n            }\n            else\n            {\n               for (let subClass in cssjson[cssClass][cssAttr])\n               {\n                    styleStr += \"\\t\\t\\t\\t\" + subClass + \" \\n\\t\\t\\t\\t{\\n\";\n                    for (let subClassAttr in cssjson[cssClass][cssAttr][subClass])\n                    {\n                        styleStr += \"\\t\\t\\t\\t\\t\" + subClassAttr + \": \" + cssjson[cssClass][cssAttr][subClass][subClassAttr] + \";\\n\";\n                    }\n                    styleStr += \"\\t\\t\\t\\t}\\n\";\n               }\n            }\n       }\n        styleStr += \"\\t\\t}\\n\"  \n    }\n    return styleStr;\n}\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 40,
+        "wires": [
+            [
+                "2a8fa19722d2e46b"
             ]
         ]
     },
@@ -4990,7 +5028,7 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1350,
+        "x": 1510,
         "y": 340,
         "wires": []
     },
@@ -5003,9 +5041,9 @@
         "fieldType": "msg",
         "format": "html",
         "syntax": "mustache",
-        "template": "    <body id=\"page-top\">\n    <nav id=\"mainNav\" class=\"navbar navbar-default navbar-fixed-top\">\n        <div class=\"container-fluid\">\n            <!-- Brand and toggle get grouped for better mobile display -->\n            <div class=\"navbar-header\">\n                <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n                    <span class=\"sr-only\">Toggle navigation</span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                </button>\n                <a class=\"navbar-brand page-scroll\" href=\"#\">Top</a>\n            </div>\n\n            <!-- Collect the nav links, forms, and other content for toggling -->\n            <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n                <ul class=\"nav navbar-nav navbar-right\">\n                    <li>\n                        <a class=\"page-scroll\" href=\"/myapps\">Internal Apps</a>\n                    </li>\n                    <li>\n                        <a class=\"page-scroll\" href=\"/myapps?external\">External Apps</a>\n                    </li>\n                    <li>\n                        <a class=\"page-scroll\" href=\"#contact\">Docs</a>\n                    </li>\n                </ul>\n            </div>\n            <!-- /.navbar-collapse -->\n        </div>\n        <!-- /.container-fluid -->\n    </nav>\n\n    <header>\n        <div class=\"header-content\">\n            <div class=\"header-content-inner\">\n                <h1>Blinky-Lite</h1>\n                <hr>\n            </div>\n            <div class=\"header-content-inner\" style=\"padding-top:30px;\">\n                <a href=\"/myapps\" class=\"btn btn-primary btn-xl page-scroll\">Internal Apps</a>\n            </div>\n            <div class=\"header-content-inner\" style=\"padding-top:30px;\">\n                <a href=\"/myapps?external\" class=\"btn btn-primary btn-xl page-scroll\">External Apps</a>\n            </div>\n    </div>\n    </div>\n    </header>\n\n    <section id=\"contact\">\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"col-lg-8 col-lg-offset-2 text-center\">\n                    <h2 class=\"section-heading\">Documentation</h2>\n                    <hr class=\"primary\">\n                </div>\n            <div class=\"col-lg-2 col-lg-offset-2 text-center\">\n                <a href=\"https://blinky-lite.github.io/\">\n                    <i class=\"fa fa-book fa-3x wow bounceIn\" data-wow-delay=\".1s\"></i>\n                    <p>Docs</p>\n                </a>\n            </div>\n            <div class=\"col-lg-2 col-lg-offset-1 text-center\">\n                <a href=\"https://hub.docker.com/u/blinkylite\">\n                <i class=\"fa fa-camera-retro fa-3x wow bounceIn\" data-wow-delay=\".1s\"></i>\n                    <p>Images</p>\n                </a>\n            </div>\n            <div class=\"col-lg-2 col-lg-offset-1 text-center\">\n                <a href=\"https://github.com/Blinky-Lite\">\n                <i class=\"fa fa-github fa-3x wow bounceIn\" data-wow-delay=\".1s\"></i>\n                    <p>Code</p>\n                </a>\n            </div>\n\n        </div>\n    </section>\n\n    <!-- jQuery -->\n    <script src=\"/homepage/js/jquery.js\"></script>\n\n    <!-- Bootstrap Core JavaScript -->\n    <script src=\"/homepage/js/bootstrap.min.js\"></script>\n\n    <!-- Plugin JavaScript -->\n    <script src=\"/homepage/js/jquery.easing.min.js\"></script>\n    <script src=\"/homepage/js/jquery.fittext.js\"></script>\n    <script src=\"/homepage/js/wow.min.js\"></script>\n\n    <!-- Custom Theme JavaScript -->\n    <script src=\"/homepage/js/creative.js\"></script>\n\n    </body>\n",
+        "template": "    <body id=\"page-top\">\n    <nav id=\"mainNav\" class=\"navbar navbar-default navbar-fixed-top\">\n        <div class=\"container-fluid\">\n            <!-- Brand and toggle get grouped for better mobile display -->\n            <div class=\"navbar-header\">\n                <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n                    <span class=\"sr-only\">Toggle navigation</span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                </button>\n                <a class=\"navbar-brand page-scroll\" href=\"#\">Top</a>\n            </div>\n\n            <!-- Collect the nav links, forms, and other content for toggling -->\n            <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n                <ul class=\"nav navbar-nav navbar-right\">\n                    <li>\n                        <a class=\"page-scroll\" href=\"/myapps\">Internal Apps</a>\n                    </li>\n                    <li>\n                        <a class=\"page-scroll\" href=\"/myapps?external\">External Apps</a>\n                    </li>\n                    <li>\n                        <a class=\"page-scroll\" href=\"#contact\">Docs</a>\n                    </li>\n                </ul>\n            </div>\n            <!-- /.navbar-collapse -->\n        </div>\n        <!-- /.container-fluid -->\n    </nav>\n\n    <header>\n        <div class=\"header-content\">\n            <div class=\"header-content-inner\">\n                <h1>{{{payload.appConfig.mainText}}}</h1>\n                <hr>\n            </div>\n            <div class=\"header-content-inner\" style=\"padding-top:30px;\">\n                <a href=\"/myapps\" class=\"btn btn-primary btn-xl page-scroll\">Internal Apps</a>\n            </div>\n            <div class=\"header-content-inner\" style=\"padding-top:30px;\">\n                <a href=\"/myapps?external\" class=\"btn btn-primary btn-xl page-scroll\">External Apps</a>\n            </div>\n    </div>\n    </div>\n    </header>\n\n    <section id=\"contact\">\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"col-lg-8 col-lg-offset-2 text-center\">\n                    <h2 class=\"section-heading\">Documentation</h2>\n                    <hr class=\"primary\">\n                </div>\n            <div class=\"col-lg-2 col-lg-offset-2 text-center\">\n                <a href=\"https://blinky-lite.github.io/\">\n                    <i class=\"fa fa-book fa-3x wow bounceIn\" data-wow-delay=\".1s\"></i>\n                    <p>Docs</p>\n                </a>\n            </div>\n            <div class=\"col-lg-2 col-lg-offset-1 text-center\">\n                <a href=\"https://hub.docker.com/u/blinkylite\">\n                <i class=\"fa fa-camera-retro fa-3x wow bounceIn\" data-wow-delay=\".1s\"></i>\n                    <p>Images</p>\n                </a>\n            </div>\n            <div class=\"col-lg-2 col-lg-offset-1 text-center\">\n                <a href=\"https://github.com/Blinky-Lite\">\n                <i class=\"fa fa-github fa-3x wow bounceIn\" data-wow-delay=\".1s\"></i>\n                    <p>Code</p>\n                </a>\n            </div>\n\n        </div>\n    </section>\n\n    <!-- jQuery -->\n    <script src=\"/homepage/js/jquery.js\"></script>\n\n    <!-- Bootstrap Core JavaScript -->\n    <script src=\"/homepage/js/bootstrap.min.js\"></script>\n\n    <!-- Plugin JavaScript -->\n    <script src=\"/homepage/js/jquery.easing.min.js\"></script>\n    <script src=\"/homepage/js/jquery.fittext.js\"></script>\n    <script src=\"/homepage/js/wow.min.js\"></script>\n\n    <!-- Custom Theme JavaScript -->\n    <script src=\"/homepage/js/creative.js\"></script>\n\n    </body>\n",
         "output": "str",
-        "x": 950,
+        "x": 1110,
         "y": 340,
         "wires": [
             [
@@ -5022,9 +5060,9 @@
         "fieldType": "msg",
         "format": "html",
         "syntax": "mustache",
-        "template": "    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <meta name=\"description\" content=\"\">\n        <meta name=\"author\" content=\"\">\n\n        <title>Blinky-Lite</title>\n        <link rel=\"icon\" href=\"/homepage/img/favicon.ico\" type=\"image/x-icon\">\n\n        <!-- Bootstrap Core CSS -->\n        <link rel=\"stylesheet\" href=\"/homepage/css/bootstrap.min.css\" type=\"text/css\">\n\n        <!-- Custom Fonts -->\n        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>\n        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>\n        <link rel=\"stylesheet\" href=\"/homepage/font-awesome/css/font-awesome.min.css\" type=\"text/css\">\n\n        <!-- Plugin CSS -->\n        <link rel=\"stylesheet\" href=\"/homepage/css/animate.min.css\" type=\"text/css\">\n\n        <!-- Custom CSS -->\n        <style>\n{{{payload.main_css}}}\n       </style>\n\n        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->\n        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n        <!--[if lt IE 9]>\n            <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>\n            <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>\n        <![endif]-->\n </head>\n\n",
+        "template": "    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <meta name=\"description\" content=\"\">\n        <meta name=\"author\" content=\"\">\n\n        <title>{{{payload.appConfig.title}}}</title>\n        <link rel=\"icon\" href=\"/homepage/img/favicon.ico\" type=\"image/x-icon\">\n\n        <!-- Bootstrap Core CSS -->\n        <link rel=\"stylesheet\" href=\"/homepage/css/bootstrap.min.css\" type=\"text/css\">\n\n        <!-- Custom Fonts -->\n        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>\n        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>\n        <link rel=\"stylesheet\" href=\"/homepage/font-awesome/css/font-awesome.min.css\" type=\"text/css\">\n\n        <!-- Plugin CSS -->\n        <link rel=\"stylesheet\" href=\"/homepage/css/animate.min.css\" type=\"text/css\">\n\n        <!-- Custom CSS -->\n        <style>\n{{{payload.main_css}}}\n       </style>\n\n        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->\n        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n        <!--[if lt IE 9]>\n            <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>\n            <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>\n        <![endif]-->\n </head>\n\n",
         "output": "str",
-        "x": 1090,
+        "x": 1250,
         "y": 340,
         "wires": [
             [
@@ -5043,7 +5081,7 @@
         "syntax": "mustache",
         "template": "<!DOCTYPE html>\n<html lang=\"en\">\n{{{payload.head}}}\n{{{payload.body}}}\n</html>",
         "output": "str",
-        "x": 1210,
+        "x": 1370,
         "y": 340,
         "wires": [
             [
@@ -5175,8 +5213,8 @@
         "id": "9e735433bcf83dab",
         "type": "function",
         "z": "401d2470458fed2d",
-        "name": "Get Stylesheet",
-        "func": "msg.payload = [{ styleSheetName: 'landingPage' }, { projection: { _id: 0 } }]\nreturn msg;\n",
+        "name": "Get AppConfig",
+        "func": "msg.payload = [{ app: 'landingPage' }, { projection: { _id: 0 } }]\nreturn msg;\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -5187,7 +5225,44 @@
         "y": 340,
         "wires": [
             [
-                "2cd90bb9d0081ff3"
+                "b87b07f5d126de5b"
+            ]
+        ]
+    },
+    {
+        "id": "b87b07f5d126de5b",
+        "type": "mongodb3 in",
+        "z": "401d2470458fed2d",
+        "service": "_ext_",
+        "configNode": "9cd5ff5e.caf86",
+        "name": "",
+        "collection": "appConfig",
+        "operation": "findOne",
+        "x": 580,
+        "y": 340,
+        "wires": [
+            [
+                "21a61f0dcaefc6a5"
+            ]
+        ]
+    },
+    {
+        "id": "21a61f0dcaefc6a5",
+        "type": "function",
+        "z": "401d2470458fed2d",
+        "name": "parse appConfig",
+        "func": "let appConfig = JSON.parse(JSON.stringify(msg.payload));\nmsg.payload = {appConfig:appConfig};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 340,
+        "wires": [
+            [
+                "9afdbd9fe9cf4af7"
             ]
         ]
     },
@@ -5200,8 +5275,8 @@
         "name": "",
         "collection": "appStyleSheets",
         "operation": "findOne",
-        "x": 600,
-        "y": 340,
+        "x": 920,
+        "y": 620,
         "wires": [
             [
                 "83680257109204cb"
@@ -5213,14 +5288,31 @@
         "type": "function",
         "z": "401d2470458fed2d",
         "name": "Parse css",
-        "func": "let cssObj = JSON.stringify(msg.payload);\nlet cssString = \"\";\nfor (let istyle = 0; istyle < msg.payload.sheets.length; ++istyle)\n{\n    for (let icss = 0; icss < msg.payload.sheets[istyle].css.length; ++icss)\n    {\n        cssString = cssString + jsonToCss(msg.payload.sheets[istyle].css[icss]);\n    }\n}\nmsg.payload = {main_css:cssString};\nreturn msg;\n\n// From http://www.featureblend.com/css-json.html\nfunction jsonToCss(cssjson)\n{\n    var styleStr = \"\\t\\t\";\n    for(var cssClass in cssjson)\n    {\n        styleStr += cssClass + \"\\n\\t\\t{\\n\"\n        for(var cssAttr in cssjson[cssClass])\n        {\n            if (typeof cssjson[cssClass][cssAttr] != \"object\") \n            {\n                styleStr += \"\\t\\t\\t\" + cssAttr + \"\\t\\t:\\t\" + cssjson[cssClass][cssAttr] + \";\\n\"     \n            }\n            else\n            {\n               for (let subClass in cssjson[cssClass][cssAttr])\n               {\n                    styleStr += \"\\t\\t\\t\\t\" + subClass + \" \\n\\t\\t\\t\\t{\\n\";\n                    for (let subClassAttr in cssjson[cssClass][cssAttr][subClass])\n                    {\n                        styleStr += \"\\t\\t\\t\\t\\t\" + subClassAttr + \": \" + cssjson[cssClass][cssAttr][subClass][subClassAttr] + \";\\n\";\n                    }\n                    styleStr += \"\\t\\t\\t\\t}\\n\";\n               }\n            }\n       }\n        styleStr += \"\\t\\t}\\n\"  \n    }\n    return styleStr;\n}\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
+        "func": "let cssObj = JSON.stringify(msg.payload);\nlet cssString = \"\";\nfor (let istyle = 0; istyle < msg.payload.sheets.length; ++istyle)\n{\n    for (let icss = 0; icss < msg.payload.sheets[istyle].css.length; ++icss)\n    {\n        cssString = cssString + jsonToCss(msg.payload.sheets[istyle].css[icss]);\n    }\n}\nmsg['css'] = cssString;\nmsg.payload = [{ app: 'landingPage' }, { projection: { _id: 0 } }]\nreturn msg;\n\n// From http://www.featureblend.com/css-json.html\nfunction jsonToCss(cssjson)\n{\n    var styleStr = \"\\t\\t\";\n    for(var cssClass in cssjson)\n    {\n        styleStr += cssClass + \"\\n\\t\\t{\\n\"\n        for(var cssAttr in cssjson[cssClass])\n        {\n            if (typeof cssjson[cssClass][cssAttr] != \"object\") \n            {\n                styleStr += \"\\t\\t\\t\" + cssAttr + \"\\t\\t:\\t\" + cssjson[cssClass][cssAttr] + \";\\n\"     \n            }\n            else\n            {\n               for (let subClass in cssjson[cssClass][cssAttr])\n               {\n                    styleStr += \"\\t\\t\\t\\t\" + subClass + \" \\n\\t\\t\\t\\t{\\n\";\n                    for (let subClassAttr in cssjson[cssClass][cssAttr][subClass])\n                    {\n                        styleStr += \"\\t\\t\\t\\t\\t\" + subClassAttr + \": \" + cssjson[cssClass][cssAttr][subClass][subClassAttr] + \";\\n\";\n                    }\n                    styleStr += \"\\t\\t\\t\\t}\\n\";\n               }\n            }\n       }\n        styleStr += \"\\t\\t}\\n\"  \n    }\n    return styleStr;\n}\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
+        "x": 1140,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9afdbd9fe9cf4af7",
+        "type": "template",
+        "z": "401d2470458fed2d",
+        "name": "CSS",
+        "field": "payload.main_css",
+        "fieldType": "msg",
+        "format": "css",
+        "syntax": "mustache",
+        "template": "html,\nbody {\n  height: 100%;\n  width: 100%;\n  background-color: {{{payload.appConfig.bodyBackgroundColor}}};\n}\n\nbody {\n  font-family: \"Merriweather\", \"Helvetica Neue\", Arial, sans-serif;\n}\n\nhr {\n  border-color: {{{payload.appConfig.highlightColor}}};\n  border-width: 3px;\n  max-width: 50px;\n}\n\nhr.light {\n  border-color: {{{payload.appConfig.mainTextColor}}};\n}\n\na {\n  -webkit-transition: all 0.35s;\n  -moz-transition: all 0.35s;\n  transition: all 0.35s;\n  color: {{{payload.appConfig.highlightColor}}};\n}\na:hover, a:focus {\n  color: {{{payload.appConfig.linkHoverColor}}};\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: \"Open Sans\", \"Helvetica Neue\", Arial, sans-serif;\n}\n\np {\n  font-size: 16px;\n  line-height: 1.5;\n  margin-bottom: 20px;\n}\n\n.bg-primary {\n  background-color: {{{payload.appConfig.highlightColor}}};\n}\n\n.bg-dark {\n  background-color: {{{payload.appConfig.darkColor}}};\n  color: {{{payload.appConfig.mainTextColor}}};\n}\n\n.text-faded {\n  color: {{{payload.appConfig.mainTextColor}}}b2;\n}\n\nsection {\n  padding: 100px 0;\n}\n\naside {\n  padding: 50px 0;\n}\n\n.no-padding {\n  padding: 0;\n}\n\n.navbar-default {\n  background-color: {{{payload.appConfig.mainTextColor}}};\n  border-color: {{{payload.appConfig.darkColor}}}80;\n  font-family: \"Open Sans\", \"Helvetica Neue\", Arial, sans-serif;\n  -webkit-transition: all 0.35s;\n  -moz-transition: all 0.35s;\n  transition: all 0.35s;\n}\n.navbar-default .navbar-header .navbar-brand {\n  color: {{{payload.appConfig.highlightColor}}};\n  font-family: \"Open Sans\", \"Helvetica Neue\", Arial, sans-serif;\n  font-weight: 700;\n  text-transform: uppercase;\n}\n.navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {\n  color: {{{payload.appConfig.linkHoverColor}}};\n}\n.navbar-default .nav > li > a,\n.navbar-default .nav > li > a:focus {\n  text-transform: uppercase;\n  font-weight: 700;\n  font-size: 13px;\n  color: {{{payload.appConfig.darkColor}}};\n}\n.navbar-default .nav > li > a:hover,\n.navbar-default .nav > li > a:focus:hover {\n  color: {{{payload.appConfig.highlightColor}}};\n}\n.navbar-default .nav > li.active > a,\n.navbar-default .nav > li.active > a:focus {\n  color: {{{payload.appConfig.highlightColor}}} !important;\n  background-color: transparent;\n}\n.navbar-default .nav > li.active > a:hover,\n.navbar-default .nav > li.active > a:focus:hover {\n  background-color: transparent;\n}\n@media (min-width: 768px) {\n  .navbar-default {\n    background-color: transparent;\n    border-color: {{{payload.appConfig.mainTextColor}}}4c;\n  }\n  .navbar-default .navbar-header .navbar-brand {\n    color: {{{payload.appConfig.mainTextColor}}}b2;\n  }\n  .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {\n    color: {{{payload.appConfig.mainTextColor}}};\n  }\n  .navbar-default .nav > li > a,\n  .navbar-default .nav > li > a:focus {\n    color: {{{payload.appConfig.mainTextColor}}}b2;\n  }\n  .navbar-default .nav > li > a:hover,\n  .navbar-default .nav > li > a:focus:hover {\n    color: {{{payload.appConfig.mainTextColor}}};\n  }\n  .navbar-default.affix {\n    background-color: {{{payload.appConfig.mainTextColor}}};\n    border-color: {{{payload.appConfig.darkColor}}}80;\n  }\n  .navbar-default.affix .navbar-header .navbar-brand {\n    color: {{{payload.appConfig.highlightColor}}};\n    font-size: 14px;\n  }\n  .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand:focus {\n    color: {{{payload.appConfig.linkHoverColor}}};\n  }\n  .navbar-default.affix .nav > li > a,\n  .navbar-default.affix .nav > li > a:focus {\n    color: {{{payload.appConfig.darkColor}}};\n  }\n  .navbar-default.affix .nav > li > a:hover,\n  .navbar-default.affix .nav > li > a:focus:hover {\n    color: {{{payload.appConfig.highlightColor}}};\n  }\n}\n\nheader {\n  position: relative;\n  width: 100%;\n  min-height: auto;\n  -webkit-background-size: cover;\n  -moz-background-size: cover;\n  background-size: cover;\n  -o-background-size: cover;\n  background-position: center;\n  background-image: url(\"{{{payload.appConfig.backgroundUrl}}}\");\n  text-align: center;\n  color: {{{payload.appConfig.mainTextColor}}};\n}\nheader .header-content {\n  position: relative;\n  text-align: center;\n  padding: 100px 15px 100px;\n  width: 100%;\n}\nheader .header-content .header-content-inner h1 {\n  font-weight: 700;\n  text-transform: uppercase;\n  margin-top: 0;\n  margin-bottom: 0;\n}\nheader .header-content .header-content-inner hr {\n  margin: 30px auto;\n}\nheader .header-content .header-content-inner p {\n  font-weight: 300;\n  color: {{{payload.appConfig.mainTextColor}}}b2;\n  font-size: 16px;\n  margin-bottom: 50px;\n}\n@media (min-width: 768px) {\n  header {\n    min-height: 100%;\n  }\n  header .header-content {\n    position: absolute;\n    top: 50%;\n    -webkit-transform: translateY(-50%);\n    -ms-transform: translateY(-50%);\n    transform: translateY(-50%);\n    padding: 0 50px;\n  }\n  header .header-content .header-content-inner {\n    max-width: 1000px;\n    margin-left: auto;\n    margin-right: auto;\n  }\n  header .header-content .header-content-inner p {\n    font-size: 18px;\n    max-width: 80%;\n    margin-left: auto;\n    margin-right: auto;\n  }\n}\n\n.section-heading {\n  margin-top: 0;\n  color: {{{payload.appConfig.darkColor}}};\n}\n\n.service-box {\n  max-width: 400px;\n  margin: 50px auto 0;\n}\n@media (min-width: 992px) {\n  .service-box {\n    margin: 20px auto 0;\n  }\n}\n.service-box p {\n  margin-bottom: 0;\n}\n\n.portfolio-box {\n  position: relative;\n  display: block;\n  max-width: 650px;\n  margin: 0 auto;\n}\n.portfolio-box .portfolio-box-caption {\n  color: {{{payload.appConfig.mainTextColor}}};\n  opacity: 0;\n  display: block;\n  background: {{{payload.appConfig.highlightColor}}}e5;\n  position: absolute;\n  bottom: 0;\n  text-align: center;\n  width: 100%;\n  height: 100%;\n  -webkit-transition: all 0.35s;\n  -moz-transition: all 0.35s;\n  transition: all 0.35s;\n}\n.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {\n  width: 100%;\n  text-align: center;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,\n.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {\n  font-family: \"Open Sans\", \"Helvetica Neue\", Arial, sans-serif;\n  padding: 0 15px;\n}\n.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {\n  text-transform: uppercase;\n  font-weight: 600;\n  font-size: 14px;\n}\n.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {\n  font-size: 18px;\n}\n.portfolio-box:hover .portfolio-box-caption {\n  opacity: 1;\n}\n@media (min-width: 768px) {\n  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {\n    font-size: 16px;\n  }\n  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {\n    font-size: 22px;\n  }\n}\n\n.call-to-action h2 {\n  margin: 0 auto 20px;\n}\n\n.text-primary {\n  color: {{{payload.appConfig.highlightColor}}};\n}\n\n.no-gutter > [class*=col-] {\n  padding-right: 0;\n  padding-left: 0;\n}\n\n.btn-default {\n  color: {{{payload.appConfig.darkColor}}};\n  background-color: {{{payload.appConfig.mainTextColor}}};\n  border-color: {{{payload.appConfig.mainTextColor}}};\n  -webkit-transition: all 0.35s;\n  -moz-transition: all 0.35s;\n  transition: all 0.35s;\n}\n.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle .btn-default {\n  color: {{{payload.appConfig.darkColor}}};\n  background-color: {{{payload.appConfig.mainTextColor}}};\n  border-color: {{{payload.appConfig.mainTextColor}}};\n}\n.btn-default:active, .btn-default.active, .open > .dropdown-toggle .btn-default {\n  background-image: none;\n}\n.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {\n  background-color: {{{payload.appConfig.mainTextColor}}};\n  border-color: {{{payload.appConfig.mainTextColor}}};\n}\n.btn-default .badge {\n  color: {{{payload.appConfig.mainTextColor}}};\n  background-color: {{{payload.appConfig.darkColor}}};\n}\n\n.btn-primary {\n  color: {{{payload.appConfig.mainTextColor}}};\n  background-color: {{{payload.appConfig.highlightColor}}};\n  border-color: {{{payload.appConfig.highlightColor}}};\n  -webkit-transition: all 0.35s;\n  -moz-transition: all 0.35s;\n  transition: all 0.35s;\n}\n.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle .btn-primary {\n  color: {{{payload.appConfig.mainTextColor}}};\n  background-color: {{{payload.appConfig.highlightHoverColor}}};\n  border-color: {{{payload.appConfig.highlightHoverColor}}};\n}\n.btn-primary:active, .btn-primary.active, .open > .dropdown-toggle .btn-primary {\n  background-image: none;\n}\n.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {\n  background-color: {{{payload.appConfig.highlightColor}}};\n  border-color: {{{payload.appConfig.highlightColor}}};\n}\n.btn-primary .badge {\n  color: {{{payload.appConfig.highlightColor}}};\n  background-color: {{{payload.appConfig.mainTextColor}}};\n}\n\n.btn {\n  font-family: \"Open Sans\", \"Helvetica Neue\", Arial, sans-serif;\n  border: none;\n  border-radius: 300px;\n  font-weight: 700;\n  text-transform: uppercase;\n}\n\n.btn-xl {\n  padding: 15px 30px;\n}\n\n#contact .fa {\n  color: {{{payload.appConfig.darkColor}}};\n  font-size: 4em;\n}\n\n::-moz-selection {\n  color: {{{payload.appConfig.mainTextColor}}};\n  text-shadow: none;\n  background: {{{payload.appConfig.darkColor}}};\n}\n\n::selection {\n  color: {{{payload.appConfig.mainTextColor}}};\n  text-shadow: none;\n  background: {{{payload.appConfig.darkColor}}};\n}\n\nimg::selection {\n  color: {{{payload.appConfig.mainTextColor}}};\n  background: transparent;\n}\n\nimg::-moz-selection {\n  color: {{{payload.appConfig.mainTextColor}}};\n  background: transparent;\n}\n\nbody {\n  -webkit-tap-highlight-color: {{{payload.appConfig.darkColor}}};\n}\n\n/*# sourceMappingURL=main.css.map */",
+        "output": "str",
+        "x": 970,
         "y": 340,
         "wires": [
             [
