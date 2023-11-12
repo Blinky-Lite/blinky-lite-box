@@ -3,8 +3,5 @@
         "user": "$(MQTTUSERNAME)",
         "password": "$(MQTTPASSWORD)"
     },
-    "9cd5ff5e.caf86": {},
-    "e0737e12da5aa7cd": {
-        "token": "$(TELBOT)"
-    }
+    "9cd5ff5e.caf86": {}
 }

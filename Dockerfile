@@ -10,7 +10,6 @@ RUN npm install node-red-dashboard@3.4.0
 RUN npm install node-red-contrib-auth@0.1.7
 RUN npm install node-red-contrib-bcrypt@0.1.6
 RUN npm install node-red-contrib-mongodb3@2.0.1
-RUN npm install node-red-contrib-telegrambot@15.1.7
 RUN npm install otplib@12.0.1
 RUN npm install qrcode@1.5.1
 USER node-red
