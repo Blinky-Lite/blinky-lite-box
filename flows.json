@@ -1180,7 +1180,9 @@
             "fde9ebb813946ce5"
         ],
         "x": 174,
-        "y": 79
+        "y": 79,
+        "w": 1072,
+        "h": 502
     },
     {
         "id": "943ba30499779d75",
@@ -1215,7 +1217,9 @@
             "2ffca8a85ddb15b2"
         ],
         "x": 154,
-        "y": 1079
+        "y": 1079,
+        "w": 1322,
+        "h": 302
     },
     {
         "id": "68d752967679bda5",
@@ -1261,7 +1265,9 @@
             "0648bb5153b812a2"
         ],
         "x": 154,
-        "y": 1459
+        "y": 1459,
+        "w": 1782,
+        "h": 522
     },
     {
         "id": "cc576e0ff6a48284",
@@ -1310,7 +1316,9 @@
             "d65bf9206c01a2de"
         ],
         "x": 154,
-        "y": 3199
+        "y": 3199,
+        "w": 1452,
+        "h": 602
     },
     {
         "id": "a34ee7cdaf781b79",
@@ -1681,7 +1689,9 @@
             "d45cc4190558d0b5"
         ],
         "x": 154,
-        "y": 59
+        "y": 59,
+        "w": 1812,
+        "h": 442
     },
     {
         "id": "588a107b144a078a",
@@ -1726,7 +1736,9 @@
             "9fadad95613eca54"
         ],
         "x": 154,
-        "y": 619
+        "y": 619,
+        "w": 1812,
+        "h": 382
     },
     {
         "id": "e789a1b186378ec0",
@@ -1768,9 +1780,7 @@
             "0cbfa745085223ce"
         ],
         "x": 174,
-        "y": 59,
-        "w": 1532,
-        "h": 322
+        "y": 59
     },
     {
         "id": "9a451502d1c0caed",
@@ -1815,9 +1825,7 @@
             "f6c83af80fbf9931"
         ],
         "x": 174,
-        "y": 479,
-        "w": 1952,
-        "h": 362
+        "y": 479
     },
     {
         "id": "b972aa3ee60fa207",
@@ -1844,9 +1852,7 @@
             "d387c14850e4b2de"
         ],
         "x": 74,
-        "y": 519,
-        "w": 952,
-        "h": 302
+        "y": 519
     },
     {
         "id": "7046efa6cee97ff7",
@@ -1864,7 +1870,9 @@
             "7e74b55c48b46b62"
         ],
         "x": 162,
-        "y": 2067
+        "y": 2067,
+        "w": 2116,
+        "h": 1046
     },
     {
         "id": "565f4068c450fc58",
@@ -1926,7 +1934,9 @@
             "9c92871f1bdad6c4"
         ],
         "x": 174,
-        "y": 879
+        "y": 879,
+        "w": 1152,
+        "h": 242
     },
     {
         "id": "d6abb27829dbfb86",
@@ -1948,7 +1958,9 @@
             "22ec08a66c477512"
         ],
         "x": 174,
-        "y": 1159
+        "y": 1159,
+        "w": 1192,
+        "h": 122
     },
     {
         "id": "3d14d6dd8299469d",
@@ -2087,7 +2099,9 @@
             "fbb62ed673bd505e"
         ],
         "x": 188,
-        "y": 2553
+        "y": 2553,
+        "w": 2064,
+        "h": 534
     },
     {
         "id": "7e74b55c48b46b62",
@@ -2118,7 +2132,9 @@
             "b6a28210e2d18575"
         ],
         "x": 194,
-        "y": 2093
+        "y": 2093,
+        "w": 2058,
+        "h": 434
     },
     {
         "id": "49a3f583c0875ffc",
@@ -2143,7 +2159,9 @@
             "ae84d64667e17d86"
         ],
         "x": 1154,
-        "y": 2579
+        "y": 2579,
+        "w": 1072,
+        "h": 82
     },
     {
         "id": "1b26e93ccb3ef98b",
@@ -2164,7 +2182,9 @@
             "e031088776231fd1"
         ],
         "x": 1474,
-        "y": 2679
+        "y": 2679,
+        "w": 492,
+        "h": 82
     },
     {
         "id": "1b74ec2e93fa5123",
@@ -2189,7 +2209,9 @@
             "fd1633926703f8ca"
         ],
         "x": 1154,
-        "y": 2819
+        "y": 2819,
+        "w": 1072,
+        "h": 82
     },
     {
         "id": "fbb62ed673bd505e",
@@ -2214,7 +2236,9 @@
             "a9b0290f353328f3"
         ],
         "x": 214,
-        "y": 2939
+        "y": 2939,
+        "w": 1372,
+        "h": 122
     },
     {
         "id": "d78fadb84ac3a977",
@@ -2239,7 +2263,9 @@
             "c77a4f4fc3ce79be"
         ],
         "x": 1154,
-        "y": 2119
+        "y": 2119,
+        "w": 1072,
+        "h": 82
     },
     {
         "id": "8a54730859fd312d",
@@ -2264,7 +2290,9 @@
             "6652d8af2310b091"
         ],
         "x": 1154,
-        "y": 2219
+        "y": 2219,
+        "w": 1072,
+        "h": 82
     },
     {
         "id": "4bc94be4667ab860",
@@ -2291,7 +2319,9 @@
             "d65b3e352039f137"
         ],
         "x": 694,
-        "y": 2319
+        "y": 2319,
+        "w": 1532,
+        "h": 82
     },
     {
         "id": "b6a28210e2d18575",
@@ -2316,7 +2346,9 @@
             "5787450c2f761aa0"
         ],
         "x": 1154,
-        "y": 2419
+        "y": 2419,
+        "w": 1072,
+        "h": 82
     },
     {
         "id": "6ad7c930.1a06b8",
@@ -7002,7 +7034,7 @@
         "fieldType": "msg",
         "format": "html",
         "syntax": "mustache",
-        "template": "<!-- Body HTML -->\n    <div width=\"100%\" style='padding-bottom:25px;'>\n        <div class='card'>\n            <div class='card-body' align=\"center\">\n                <div id='querySetup'>\n                    <div class='row'>\n                        <div class='col-md-12'>\n                            <table id='plotSetupTable'>\n                                <tr>\n                                    <td align=\"center\">\n                                        <span>Start Date</span>\n                                    </td>\n                                    <td align=\"center\">\n                                        <span>Stop Date</span>\n                                    </td>\n                                    <td align=\"center\">\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <td align=\"center\">\n                                        <input class=\"form-control\" id=\"startDate\" type=\"text\"/>\n                                    </td>\n                                    <td align=\"center\">\n                                        <input class=\"form-control\" id=\"stopDate\" type=\"text\"/>\n                                    </td>\n                                    <td align=\"center\">\n                                        <button width=100% class=\"btn jumbotron-button\" id=\"getDataButton\" type=\"button\" onclick=\"getData()\">Get Data</button>\n                                    </td>\n                                </tr>\n                            </table>\n                            <table width='100%' id='accessLogTable'>\n                                <thead>\n                                    <tr>\n                                        <th width='10%'>url</th>\n                                        <th width='10%'>ip</th>\n                                        <th width='10%' >user</th>\n                                        <th width='10%' >city</th>\n                                        <th width='20%'>rdns</th>\n                                        <th width='10%'>isp</th>\n                                        <th width='10%'>Date</th>\n                                        <th width='10%'>Time</th>\n                                    </tr>\n                                </thead>\n                                <tbody id=\"accessLogTableBody\"></tbody>\n                            </table>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n",
+        "template": "<!-- Body HTML -->\n    <div width=\"100%\" style='padding-bottom:25px;'>\n        <div class='card'>\n            <div class='card-body' align=\"center\">\n                <div id='querySetup'>\n                    <div class='row'>\n                        <div class='col-md-12'>\n                            <table id='plotSetupTable'>\n                                <tr>\n                                    <td align=\"center\">\n                                        <span>Start Date</span>\n                                    </td>\n                                    <td align=\"center\">\n                                        <span>Stop Date</span>\n                                    </td>\n                                    <td align=\"center\">\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <td align=\"center\">\n                                        <input class=\"form-control\" id=\"startDate\" type=\"text\"/>\n                                    </td>\n                                    <td align=\"center\">\n                                        <input class=\"form-control\" id=\"stopDate\" type=\"text\"/>\n                                    </td>\n                                    <td align=\"center\">\n                                        <button width=100% class=\"btn jumbotron-button\" id=\"getDataButton\" type=\"button\" onclick=\"getData()\">Get Data</button>\n                                    </td>\n                                </tr>\n                            </table>\n                            <table width='100%' id='accessLogTable'>\n                                <thead>\n                                    <tr>\n                                        <th width='20%'>url</th>\n                                        <th width='14%'>ip</th>\n                                        <th width='10%' >user</th>\n                                        <th width='10%' >city</th>\n                                        <th width='15%'>rdns</th>\n                                        <th width='10%'>isp</th>\n                                        <th width='10%'>Date</th>\n                                        <th width='11%'>Time</th>\n                                    </tr>\n                                </thead>\n                                <tbody id=\"accessLogTableBody\"></tbody>\n                            </table>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n",
         "output": "str",
         "x": 1310,
         "y": 100,
@@ -7042,7 +7074,7 @@
         "fieldType": "msg",
         "format": "javascript",
         "syntax": "mustache",
-        "template": "        useWebSockets(true);\n        function onDocumentReady()\n        {\n            var now = new Date();\n//            console.log(now.toLocaleString('en-US',{year: 'numeric', month: '2-digit', day : '2-digit', hour12:false, hour: '2-digit', minute: '2-digit'}).replace(',', ''));\n            var then = new Date(now.getTime() - 3600 * 24 * 1000);\n            $( \"#startDate\" ).val(then.toLocaleString('en-US',{year: 'numeric', month: '2-digit', day : '2-digit', hour12:false, hour: '2-digit', minute: '2-digit'}).replace(',', ''));\n            $( \"#stopDate\" ).val(now.toLocaleString('en-US',{year: 'numeric', month: '2-digit', day : '2-digit', hour12:false, hour: '2-digit', minute: '2-digit'}).replace(',', ''));\n            $( function()\n            {\n                $('#startDate').datetimepicker();\n            } );\n            $( function()\n            {\n                $('#stopDate').datetimepicker();\n            } );\n        }\n        function onWebSocketOpen()\n        {\n        }\n        function onWebSocketClose()\n        {\n            \n        }\n        function onWebSocketMessage(msg)\n        {\n            if (msg.userID == userID)\n            {\n                switch(msg.topic)\n                {\n                    case 'getAccessLog':\n                        displayData(msg);\n                        break;\n                    case 'permissionError':\n                        acknowledgeDialog('Permission', 'Error', msg.payload);\n                        break;\n                    case 'loginExpired':\n                        location.reload();\n                        break;\n                    default:\n                    // code block\n                }\n            }\n        }\n        function getData()\n        {\n            var startDate = new Date($( \"#startDate\" ).val()).getTime();\n            var stopDate = new Date($( \"#stopDate\" ).val()).getTime();\n            $(\"#accessLogTableBody\").remove();\n            var actionMsg = \n                {\n                    startDate   : startDate,\n                    stopDate    : stopDate,\n                };\n            sendActionMsg('getAccessLog', 'readDatabase', actionMsg);\n\n        }\n        function displayData(msg)\n        {\n            var markup = '<tbody id=\"accessLogTableBody\">';\n            for (var ii = 0; ii < msg.payload.length; ++ii)\n            {\n                markup = markup + addRow(msg.payload[ii]);\n            }\n            markup = markup + '</tbody>';\n            $(\"#accessLogTable\").append(markup);\n        }\n\n        function addRow(record)\n        {\n            var markup = '<tr>';\n            markup = markup + '<td>' + record.url + '</td>';\n            markup = markup + '<td>' + record.ip + '</td>';\n            markup = markup + '<td>' + record.user + '</td>';\n            markup = markup + '<td>' + record.city + '</td>';\n            markup = markup + '<td>' + record.rdns + '</td>';\n            markup = markup + '<td>' + record.isp + '</td>';\n            markup = markup + '<td>' + new Date(record.timeStamp).toLocaleDateString() + '</td>';\n            markup = markup + '<td>' + new Date(record.timeStamp).toLocaleTimeString() + '</td>';\n            markup = markup + '</tr>';\n            return markup;\n            \n        }\n",
+        "template": "        useWebSockets(true);\n        function onDocumentReady()\n        {\n            var now = new Date();\n//            console.log(now.toLocaleString('en-US',{year: 'numeric', month: '2-digit', day : '2-digit', hour12:false, hour: '2-digit', minute: '2-digit'}).replace(',', ''));\n            var then = new Date(now.getTime() - 3600 * 24 * 1000);\n            $( \"#startDate\" ).val(then.toLocaleString('en-US',{year: 'numeric', month: '2-digit', day : '2-digit', hour12:false, hour: '2-digit', minute: '2-digit'}).replace(',', ''));\n            $( \"#stopDate\" ).val(now.toLocaleString('en-US',{year: 'numeric', month: '2-digit', day : '2-digit', hour12:false, hour: '2-digit', minute: '2-digit'}).replace(',', ''));\n            $( function()\n            {\n                $('#startDate').datetimepicker();\n            } );\n            $( function()\n            {\n                $('#stopDate').datetimepicker();\n            } );\n        }\n        function onWebSocketOpen()\n        {\n        }\n        function onWebSocketClose()\n        {\n            \n        }\n        function onWebSocketMessage(msg)\n        {\n            if (msg.userID == userID)\n            {\n                switch(msg.topic)\n                {\n                    case 'getAccessLog':\n                        displayData(msg);\n                        break;\n                    case 'permissionError':\n                        acknowledgeDialog('Permission', 'Error', msg.payload);\n                        break;\n                    case 'loginExpired':\n                        location.reload();\n                        break;\n                    default:\n                    // code block\n                }\n            }\n        }\n        function getData()\n        {\n            var startDate = new Date($( \"#startDate\" ).val()).getTime();\n            var stopDate = new Date($( \"#stopDate\" ).val()).getTime();\n            $(\"#accessLogTableBody\").remove();\n            var actionMsg = \n                {\n                    startDate   : startDate,\n                    stopDate    : stopDate,\n                };\n            sendActionMsg('getAccessLog', 'readDatabase', actionMsg);\n\n        }\n        function displayData(msg)\n        {\n            var markup = '<tbody id=\"accessLogTableBody\">';\n            for (var ii = 0; ii < msg.payload.length; ++ii)\n            {\n                markup = markup + addRow(msg.payload[ii]);\n            }\n            markup = markup + '</tbody>';\n            $(\"#accessLogTable\").append(markup);\n        }\n\n        function addRow(record)\n        {\n            let colStyle = \" style='max-width: 0;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;'\";\n            var markup = '<tr>';\n            markup = markup + \"<td width='20%' \" + colStyle + \">\" + record.url + '</td>';\n            markup = markup + \"<td width='14%' \" + colStyle + \">\" + record.ip + '</td>';\n            markup = markup + \"<td width='10%' \" + colStyle + \">\" + record.user + '</td>';\n            markup = markup + \"<td width='10%' \" + colStyle + \">\" + record.city + '</td>';\n            markup = markup + \"<td width='15%' \" + colStyle + \">\" + record.rdns + '</td>';\n            markup = markup + \"<td width='10%' \" + colStyle + \">\" + record.isp + '</td>';\n            markup = markup + \"<td width='10%' \" + colStyle + \">\" + new Date(record.timeStamp).toLocaleDateString() + '</td>';\n            markup = markup + \"<td width='11%' \" + colStyle + \">\" + new Date(record.timeStamp).toLocaleTimeString() + '</td>';\n            markup = markup + '</tr>';\n            return markup;\n            \n        }\n",
         "output": "str",
         "x": 1170,
         "y": 100,
