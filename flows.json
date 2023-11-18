@@ -74,6 +74,14 @@
         "info": ""
     },
     {
+        "id": "8795b06cf51cbca9",
+        "type": "tab",
+        "label": "logbook",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "ca529822.9112f8",
         "type": "subflow",
         "name": "HTML",
@@ -628,7 +636,9 @@
             "6e5fe8f4665ee2fd"
         ],
         "x": 134,
-        "y": 139
+        "y": 139,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "222f7527456f431b",
@@ -653,7 +663,9 @@
             "c4e92c75751127a2"
         ],
         "x": 134,
-        "y": 319
+        "y": 319,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "8513d2368ac7161f",
@@ -678,7 +690,9 @@
             "b690e92951ea57f3"
         ],
         "x": 134,
-        "y": 499
+        "y": 499,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "e02813d59f160a5c",
@@ -703,7 +717,9 @@
             "4f5138b1c21ad771"
         ],
         "x": 134,
-        "y": 679
+        "y": 679,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "e0c14b4f190836c9",
@@ -728,7 +744,9 @@
             "66ce09a4d677808a"
         ],
         "x": 134,
-        "y": 859
+        "y": 859,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "674af16debdd8f0f",
@@ -753,7 +771,9 @@
             "6ab0f551657f68ec"
         ],
         "x": 134,
-        "y": 1039
+        "y": 1039,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "9e9aab81c0c1e479",
@@ -778,7 +798,9 @@
             "25f8c290f03f8dce"
         ],
         "x": 134,
-        "y": 1219
+        "y": 1219,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "ff1586c44763ab25",
@@ -803,7 +825,9 @@
             "bb3bc9ccb4b7ccfa"
         ],
         "x": 134,
-        "y": 1399
+        "y": 1399,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "e61434d43b450009",
@@ -828,7 +852,9 @@
             "ddd27203e99450e3"
         ],
         "x": 134,
-        "y": 1579
+        "y": 1579,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "8b1ca40e143d36e4",
@@ -853,7 +879,9 @@
             "17ea133e78cd791e"
         ],
         "x": 134,
-        "y": 1759
+        "y": 1759,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "64d7785b86bd0e78",
@@ -878,7 +906,9 @@
             "e1806fc6647b30e4"
         ],
         "x": 134,
-        "y": 1939
+        "y": 1939,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "17d8aee66ef5f14b",
@@ -903,7 +933,9 @@
             "9ee70b7f7567a0d3"
         ],
         "x": 134,
-        "y": 2119
+        "y": 2119,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "6c2db529cbe5190a",
@@ -928,7 +960,9 @@
             "14fc94d6d31cb660"
         ],
         "x": 134,
-        "y": 2299
+        "y": 2299,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "a732e8657f5583e1",
@@ -953,7 +987,9 @@
             "989ba4dd6a4ca183"
         ],
         "x": 134,
-        "y": 2479
+        "y": 2479,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "16d44c3cfa3101e4",
@@ -978,7 +1014,9 @@
             "e879f75c0e5c3ca1"
         ],
         "x": 134,
-        "y": 2659
+        "y": 2659,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "1ea74c70db7a8d4c",
@@ -1003,7 +1041,9 @@
             "d9e2848941f56361"
         ],
         "x": 134,
-        "y": 2839
+        "y": 2839,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "52e9056d6e8207fb",
@@ -1028,7 +1068,9 @@
             "59f2b833ab020772"
         ],
         "x": 134,
-        "y": 3019
+        "y": 3019,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "09dbbd36ba9b70c2",
@@ -1053,7 +1095,9 @@
             "273db2592695c0d2"
         ],
         "x": 134,
-        "y": 3199
+        "y": 3199,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "727f4fbbc86c2387",
@@ -1078,7 +1122,9 @@
             "9438da355fd08b18"
         ],
         "x": 134,
-        "y": 3379
+        "y": 3379,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "49dd55f9fc61ca4b",
@@ -1103,7 +1149,9 @@
             "3621238135f38bc8"
         ],
         "x": 134,
-        "y": 3559
+        "y": 3559,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "c3a9f56445acb1b2",
@@ -1134,7 +1182,9 @@
             "a9bfa7132c055cbb"
         ],
         "x": 174,
-        "y": 319
+        "y": 319,
+        "w": 1052,
+        "h": 342
     },
     {
         "id": "410a9f1e572e2cb6",
@@ -1180,9 +1230,7 @@
             "fde9ebb813946ce5"
         ],
         "x": 174,
-        "y": 79,
-        "w": 1072,
-        "h": 502
+        "y": 79
     },
     {
         "id": "943ba30499779d75",
@@ -1217,9 +1265,7 @@
             "2ffca8a85ddb15b2"
         ],
         "x": 154,
-        "y": 1079,
-        "w": 1322,
-        "h": 302
+        "y": 1079
     },
     {
         "id": "68d752967679bda5",
@@ -1265,9 +1311,7 @@
             "0648bb5153b812a2"
         ],
         "x": 154,
-        "y": 1459,
-        "w": 1782,
-        "h": 522
+        "y": 1459
     },
     {
         "id": "cc576e0ff6a48284",
@@ -1316,9 +1360,7 @@
             "d65bf9206c01a2de"
         ],
         "x": 154,
-        "y": 3199,
-        "w": 1452,
-        "h": 602
+        "y": 3199
     },
     {
         "id": "a34ee7cdaf781b79",
@@ -1340,7 +1382,9 @@
             "4855b6b5352f7431"
         ],
         "x": 154,
-        "y": 899
+        "y": 899,
+        "w": 1582,
+        "h": 82
     },
     {
         "id": "4d9aee0d09b30607",
@@ -1360,7 +1404,9 @@
             "893874ffb26184f9"
         ],
         "x": 154,
-        "y": 1039
+        "y": 1039,
+        "w": 932,
+        "h": 82
     },
     {
         "id": "801fb378bac3288c",
@@ -1484,7 +1530,9 @@
             "bf4cd7e5aa7b7c58"
         ],
         "x": 174,
-        "y": 699
+        "y": 699,
+        "w": 1102,
+        "h": 842
     },
     {
         "id": "b47ef8a5f938f683",
@@ -1525,7 +1573,9 @@
             "09c74c5d6613d881"
         ],
         "x": 174,
-        "y": 1579
+        "y": 1579,
+        "w": 802,
+        "h": 842
     },
     {
         "id": "e7108cefde0d37c6",
@@ -1689,9 +1739,7 @@
             "d45cc4190558d0b5"
         ],
         "x": 154,
-        "y": 59,
-        "w": 1812,
-        "h": 442
+        "y": 59
     },
     {
         "id": "588a107b144a078a",
@@ -1736,9 +1784,7 @@
             "9fadad95613eca54"
         ],
         "x": 154,
-        "y": 619,
-        "w": 1812,
-        "h": 382
+        "y": 619
     },
     {
         "id": "e789a1b186378ec0",
@@ -1780,7 +1826,9 @@
             "0cbfa745085223ce"
         ],
         "x": 174,
-        "y": 59
+        "y": 59,
+        "w": 1532,
+        "h": 322
     },
     {
         "id": "9a451502d1c0caed",
@@ -1825,7 +1873,9 @@
             "f6c83af80fbf9931"
         ],
         "x": 174,
-        "y": 479
+        "y": 479,
+        "w": 1952,
+        "h": 362
     },
     {
         "id": "b972aa3ee60fa207",
@@ -1852,7 +1902,9 @@
             "d387c14850e4b2de"
         ],
         "x": 74,
-        "y": 519
+        "y": 519,
+        "w": 952,
+        "h": 302
     },
     {
         "id": "7046efa6cee97ff7",
@@ -1870,9 +1922,7 @@
             "7e74b55c48b46b62"
         ],
         "x": 162,
-        "y": 2067,
-        "w": 2116,
-        "h": 1046
+        "y": 2067
     },
     {
         "id": "565f4068c450fc58",
@@ -1904,7 +1954,9 @@
             "30a4a020cf5c79ba"
         ],
         "x": 114,
-        "y": 99
+        "y": 99,
+        "w": 342,
+        "h": 422
     },
     {
         "id": "bb926706795e937c",
@@ -1934,9 +1986,7 @@
             "9c92871f1bdad6c4"
         ],
         "x": 174,
-        "y": 879,
-        "w": 1152,
-        "h": 242
+        "y": 879
     },
     {
         "id": "d6abb27829dbfb86",
@@ -1958,9 +2008,7 @@
             "22ec08a66c477512"
         ],
         "x": 174,
-        "y": 1159,
-        "w": 1192,
-        "h": 122
+        "y": 1159
     },
     {
         "id": "3d14d6dd8299469d",
@@ -1987,7 +2035,9 @@
             "1a7c9aa5910e15f6"
         ],
         "x": 154,
-        "y": 39
+        "y": 39,
+        "w": 472,
+        "h": 342
     },
     {
         "id": "eca7f29a338f593a",
@@ -2024,7 +2074,9 @@
             "6fbbca37caabe403"
         ],
         "x": 134,
-        "y": 459
+        "y": 459,
+        "w": 1652,
+        "h": 322
     },
     {
         "id": "58645e2c91cd1ed6",
@@ -2044,7 +2096,9 @@
             "537bf8b86b4354ba"
         ],
         "x": 794,
-        "y": 79
+        "y": 79,
+        "w": 712,
+        "h": 142
     },
     {
         "id": "b4e9249c0372fe12",
@@ -2099,9 +2153,7 @@
             "fbb62ed673bd505e"
         ],
         "x": 188,
-        "y": 2553,
-        "w": 2064,
-        "h": 534
+        "y": 2553
     },
     {
         "id": "7e74b55c48b46b62",
@@ -2132,9 +2184,7 @@
             "b6a28210e2d18575"
         ],
         "x": 194,
-        "y": 2093,
-        "w": 2058,
-        "h": 434
+        "y": 2093
     },
     {
         "id": "49a3f583c0875ffc",
@@ -2159,9 +2209,7 @@
             "ae84d64667e17d86"
         ],
         "x": 1154,
-        "y": 2579,
-        "w": 1072,
-        "h": 82
+        "y": 2579
     },
     {
         "id": "1b26e93ccb3ef98b",
@@ -2182,9 +2230,7 @@
             "e031088776231fd1"
         ],
         "x": 1474,
-        "y": 2679,
-        "w": 492,
-        "h": 82
+        "y": 2679
     },
     {
         "id": "1b74ec2e93fa5123",
@@ -2209,9 +2255,7 @@
             "fd1633926703f8ca"
         ],
         "x": 1154,
-        "y": 2819,
-        "w": 1072,
-        "h": 82
+        "y": 2819
     },
     {
         "id": "fbb62ed673bd505e",
@@ -2236,9 +2280,7 @@
             "a9b0290f353328f3"
         ],
         "x": 214,
-        "y": 2939,
-        "w": 1372,
-        "h": 122
+        "y": 2939
     },
     {
         "id": "d78fadb84ac3a977",
@@ -2263,9 +2305,7 @@
             "c77a4f4fc3ce79be"
         ],
         "x": 1154,
-        "y": 2119,
-        "w": 1072,
-        "h": 82
+        "y": 2119
     },
     {
         "id": "8a54730859fd312d",
@@ -2290,9 +2330,7 @@
             "6652d8af2310b091"
         ],
         "x": 1154,
-        "y": 2219,
-        "w": 1072,
-        "h": 82
+        "y": 2219
     },
     {
         "id": "4bc94be4667ab860",
@@ -2319,9 +2357,7 @@
             "d65b3e352039f137"
         ],
         "x": 694,
-        "y": 2319,
-        "w": 1532,
-        "h": 82
+        "y": 2319
     },
     {
         "id": "b6a28210e2d18575",
@@ -2346,9 +2382,7 @@
             "5787450c2f761aa0"
         ],
         "x": 1154,
-        "y": 2419,
-        "w": 1072,
-        "h": 82
+        "y": 2419
     },
     {
         "id": "6ad7c930.1a06b8",
@@ -2670,6 +2704,12 @@
         "id": "e86ebc65866440b1",
         "type": "websocket-listener",
         "path": "/settingsLog/websocket",
+        "wholemsg": "false"
+    },
+    {
+        "id": "9411b416214c06d7",
+        "type": "websocket-listener",
+        "path": "/logbook/websocket",
         "wholemsg": "false"
     },
     {
@@ -3185,11 +3225,13 @@
         "type": "function",
         "z": "fee416c.fb205e8",
         "name": "Check Role",
-        "func": "var errMsg = null;\nvar tokenError = msg.error;\nif (tokenError != undefined)\n{\n    errMsg = \n    {\n        topic : msg.topic, \n        payload:\n        {\n            topic:'badToken', \n            payload: msg.topic + \" badToken\",\n            userID : msg.userID,\n            role   : msg.role\n        }\n    };\n    return [null,errMsg];\n}\nif (msg.token.expDate > 0)\n{\n    if (msg.token.expDate < new Date().getTime())\n    {\n        errMsg = \n        {\n            topic : msg.topic, \n            payload:\n            {\n                topic:'loginExpired', \n                payload: msg.topic + \" login expired\",\n                userID : msg.userID,\n                role   : msg.role\n            }\n        };\n        return [null,errMsg];\n    }\n}\npermittedRole = false;\nfor (itoken = 0; itoken < msg.token.roles.length; ++itoken)\n{\n    if (msg.token.roles[itoken] == msg.role) permittedRole = true;\n}\nif (permittedRole) return [msg,null];\n\nerrMsg = \n{\n    topic : msg.topic, \n    payload:\n    {\n        topic  : 'permissionError', \n        payload: msg.topic + \" not permitted\",\n        userID : msg.userID,\n        role   : msg.role\n    }\n};\n\nreturn [null,errMsg];",
+        "func": "var errMsg = null;\nvar tokenError = msg.error;\nif (tokenError != undefined)\n{\n    errMsg = \n    {\n        topic : msg.topic, \n        payload:\n        {\n            topic:'badToken', \n            payload: msg.topic + \" badToken\",\n            userID : msg.userID,\n            role   : msg.role\n        }\n    };\n    return [null,errMsg];\n}\nif (msg.token.expDate > 0)\n{\n    if (msg.token.expDate < new Date().getTime())\n    {\n        errMsg = \n        {\n            topic : msg.topic, \n            payload:\n            {\n                topic:'loginExpired', \n                payload: msg.topic + \" login expired\",\n                userID : msg.userID,\n                role   : msg.role\n            }\n        };\n        return [null,errMsg];\n    }\n}\nlet permittedRole = false;\nfor (let itoken = 0; itoken < msg.token.roles.length; ++itoken)\n{\n    if (msg.token.roles[itoken] == msg.role) permittedRole = true;\n}\nif (permittedRole) return [msg,null];\n\nerrMsg = \n{\n    topic : msg.topic, \n    payload:\n    {\n        topic  : 'permissionError', \n        payload: msg.topic + \" not permitted\",\n        userID : msg.userID,\n        role   : msg.role\n    }\n};\n\nreturn [null,errMsg];",
         "outputs": 2,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
+        "libs": [],
         "x": 630,
         "y": 80,
         "wires": [
@@ -4252,7 +4294,7 @@
         "fieldType": "msg",
         "format": "css",
         "syntax": "mustache",
-        "template": "\t\t:root\n\t\t{\n\t\t\t--color1\t\t:\t{{{generalAppConfig.backgroundColor}}};\n\t\t\t--color2\t\t:\t{{{generalAppConfig.cardBackgroundColor}}};\n\t\t\t--color3\t\t:\t{{{generalAppConfig.cardBorderColor}}};\n\t\t\t--color4\t\t:\t{{{generalAppConfig.spareColor}}};\n\t\t\t--color5\t\t:\t{{{generalAppConfig.textColor}}};\n\t\t\t--color6\t\t:\t{{{generalAppConfig.specialTextColor}}};\n\t\t\t--big-text\t\t: \t300%;\n\t\t\t--medium-text\t: \t200%;\n\t\t\t--bold-text\t\t: \t900;\n\t\t\t--vert-pad\t\t: \t25px;\n\t\t\t--horz-pad\t\t: \t25px;\n\t\t}\n\t\tbody\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tpadding-left\t\t:\t25px;\n\t\t\tpadding-right\t\t:\t25px;\n\t\t}\n\t\timg\n\t\t{\n\t\t\tobject-fit\t\t:\tcontain;\n\t\t}\n        a\n        {\n            color: white;\n        }\n        a:visited \n        { \n            color: white;\n        }\n        a:hover \n        { \n            color: var(--color5);\n        }\n\n        .jumbotron \n        {\n          background-color: var(--color1) !important;\n          color: white;\n          padding-top:25px;\n          padding-bottom:25px;\n        }\n        .jumbotron-title\n        {\n          color:var(--color5);\n        }\n        .jumbotron-button\n        {\n          color: white;\n          background-color: var(--color1);\n       }\n        .card\n        {\n          background-color: var(--color1) !important;\n          text-align: center;\n          border-style: solid;\n          border-width: 2px;\n          border-color: var(--color3);\n        }\n        .card-body\n        {\n          background-color: var(--color2);;\n        }\n        .card-button\n        {\n          color: var(--color5) !important;\n          background-color: var(--color1) !important;\n          font-weight: bold;\n        }\n        .card-title\n        {\n            color             :   var(--color5);\n            font-weight       :   900;\n            font-size         :   300%;\n        }\n        .card-title-button\n        {\n            color             :   var(--color5) !important;\n            background-color  :   var(--color1) !important;\n            font-weight       :   900;\n            font-size         :   300%;\n            font-style        :   italic;        \n        }\n        .card-text\n        {\n          color: var(--color6);\n          text-align: left;\n          font-size: var(--big-text);\n        }\n        .tableHeading\n        {\n          color:var(--container-title-color);\n        }\n        .tableText\n        {\n          color:var(--container-text-color);\n          font-size: var(--big-text);\n        }\n       .vert-pad\n        {\n            padding-top:var(--vert-pad);;\n            padding-bottom:var(--vert-pad);;\n        }\n        .horz-pad\n        {\n            padding-left:var(--horz-pad);;\n            padding-right:var(--horz-pad);;\n        }\n        .big-text\n        {\n            font-size: var(--big-text);\n        }\n        .medium-text\n        {\n            font-size: var(--medium-text);\n        }\n        .bold-text\n        {\n            font-weight: var(--bold-text);\n        }\n\t\t.dialog-modal\n\t\t{\n\t\t\tdisplay\t\t:\tnone;\n\t\t\tposition\t\t:\tfixed;\n\t\t\tz-index\t\t:\t1;\n\t\t\tleft\t\t:\t0;\n\t\t\ttop\t\t:\t0;\n\t\t\twidth\t\t:\t100%;\n\t\t\theight\t\t:\t100%;\n\t\t\toverflow\t\t:\tauto;\n\t\t\tbackground-color\t\t:\trgba(0,0,0,0.4);\n\t\t}\n\t\t.dialog-modal-content\n\t\t{\n\t\t\tmargin\t\t:\t15% auto;\n\t\t\tpadding\t\t:\t20px;\n\t\t\tborder\t\t:\t1px solid #888;\n\t\t\twidth\t\t:\t80%;\n\t\t}\n\t\t.navbar\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tpadding-top\t\t:\t25px;\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.navbar-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t}\n\t\t.alarmLimit-card\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.alarmLimit-card-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.alarmLimit-card-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.alarmLimit-label-text\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color6);\n\t\t\ttext-align\t\t:\tleft;\n\t\t\tfont-size\t\t:\t300%;\n\t\t}\n\t\t.alarmLimit-input-text\n\t\t{\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\twidth\t\t:\t100%;\n\t\t}\n\t\t.alarmLimit-button\n\t\t{\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\twidth\t\t:\t80%  !important;\n\t\t}\n\t\t.archivePlotCard-containerRow\n\t\t{\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.archivePlotCard\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.archivePlotCard-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.archivePlotCard-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.archivePlotCard-title-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.archiveCard-timeType-span\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t300%;\n\t\t}\n\t\t.archive-button\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1);\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-size\t\t:\t200%;\n\t\t}\n\t\t.archive-button-pressed\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color5);\n\t\t\tcolor\t\t:\tvar(--color1);\n\t\t\tfont-size\t\t:\t200%;\n\t\t}\n\t\t.timePlotCard-containerRow\n\t\t{\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.timePlotCard\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.timePlotCard-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.timePlotCard-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.timePlotCard-title-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.vectorPlotCard-containerRow\n\t\t{\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.vectorPlotCard\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.vectorPlotCard-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.vectorPlotCard-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.vectorPlotCard-title-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.iframeCard-containerRow\n\t\t{\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.iframeCard\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.iframeCard-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.iframeCard-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.iframeCard-title-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.cubeRowCard-containerRow\n\t\t{\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.cubeRowCard\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.cubeRowCard-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.cubeRowCard-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.cubeRowCard-title-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.cubeRowParameterView-label-column\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t200%;\n\t\t\ttext-align\t\t:\tleft;\n\t\t\twidth\t\t:\t50%;\n\t\t}\n\t\t.cubeRowParameterView-widget-column-1\n\t\t{\n\t\t\twidth\t\t:\t30%;\n\t\t\talign\t\t:\tcenter;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tfont-size\t\t:\t200%;\n\t\t}\n\t\t.cubeRowParameterView-widget-column-2\n\t\t{\n\t\t\twidth\t\t:\t10%;\n\t\t\talign\t\t:\tcenter;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tfont-size\t\t:\t200%;\n\t\t}\n\t\t.cubeRowParameterView-widget-column-3\n\t\t{\n\t\t\twidth\t\t:\t10%;\n\t\t\talign\t\t:\tcenter;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tfont-size\t\t:\t200%;\n\t\t}\n\t\t.cubeRowParameterView-alarmConfig-column\n\t\t{\n\t\t\twidth\t\t:\t10%;\n\t\t\ttext-align\t\t:\tright;\n\t\t}\n\t\t.cubeRowParameterView-alarmConfig-button\n\t\t{\n\t\t\twidth\t\t:\t40px;\n\t\t\theight\t\t:\t40px;\n\t\t}\n\t\t.cubeRowParameterView-unit-span\n\t\t{\n\t\t\tfont-size\t\t:\t100%;\n\t\t\tcolor\t\t:\tblack;\n\t\t}\n\t\t.onOffSetCube-button\n\t\t{\n\t\t\tfont-size\t\t:\t100%;\n\t\t\tcolor\t\t:\tblack;\n\t\t}\n\t\t.numberSetCube-inputbox\n\t\t{\n\t\t\tfont-size\t\t:\t100%;\n\t\t\twidth\t\t:\t100%;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t}\n\t\t.numberSetCube-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t100%;\n\t\t}\n\t\t.dropChoiceCube-select\n\t\t{\n\t\t\tfont-size\t\t:\t100%;\n\t\t\twidth\t\t:\t100%;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tpadding-top\t\t:\t10px;\n\t\t\tpadding-bottom\t\t:\t10px;\n\t\t}\n\t\t.dropChoiceSetCube-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t100%;\n\t\t}\n\t\t.numberReadCube-span\n\t\t{\n\t\t\tfont-size\t\t:\t100%;\n\t\t\tcolor\t\t:\tblack;\n\t\t}\n\t\t.imageReadCube\n\t\t{\n\t\t\theight\t\t:\t40px;\n\t\t}\n\t\t.stateChoiceCube-stateColumn-column\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t200%;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tpadding-left\t\t:\t20%;\n\t\t\twidth\t\t:\t50%;\n\t\t}\n\t\t.stateChoiceCube-button\n\t\t{\n\t\t\tfont-size\t\t:\t100%;\n\t\t\tcolor\t\t:\tblack;\n\t\t}\n\t\t.stateChoiceCube-alarmConfig-column\n\t\t{\n\t\t\twidth\t\t:\t10%;\n\t\t\ttext-align\t\t:\tright;\n\t\t}\n\t\t.stateChoiceCube-alarmConfig-button\n\t\t{\n\t\t\twidth\t\t:\t40px;\n\t\t\theight\t\t:\t40px;\n\t\t}\n\t\t.gaugeCube-label\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t200%;\n\t\t}\n\t\t.gaugeCube-column\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t200%;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tpadding-left\t\t:\t10%;\n\t\t\twidth\t\t:\t90%;\n\t\t}\n\t\t.gaugeCube-div\n\t\t{\n\t\t\toverflow\t\t:\thidden;\n\t\t\twidth\t\t:\t100%;\n\t\t\tdisplay\t\t:\tflex;\n\t\t\tjustify-content\t\t:\tcenter;\n\t\t}\n\t\t.gaugeCube-alarmConfig-column\n\t\t{\n\t\t\twidth\t\t:\t10%;\n\t\t\ttext-align\t\t:\tright;\n\t\t}\n\t\t.gaugeCube-alarmConfig-button\n\t\t{\n\t\t\twidth\t\t:\t40px;\n\t\t\theight\t\t:\t40px;\n\t\t}\n\t\t.hbarCube-label\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t200%;\n\t\t}\n\t\t.hbarCube-column\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t200%;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tpadding-left\t\t:\t10%;\n\t\t\twidth\t\t:\t90%;\n\t\t}\n\t\t.hbarCube-div\n\t\t{\n\t\t\toverflow\t\t:\thidden;\n\t\t\twidth\t\t:\t100%;\n\t\t\tdisplay\t\t:\tflex;\n\t\t\tjustify-content\t\t:\tcenter;\n\t\t}\n\t\t.hbarCube-alarmConfig-column\n\t\t{\n\t\t\twidth\t\t:\t10%;\n\t\t\ttext-align\t\t:\tright;\n\t\t}\n\t\t.hbarCube-alarmConfig-button\n\t\t{\n\t\t\twidth\t\t:\t40px;\n\t\t\theight\t\t:\t40px;\n\t\t}\n\t\t.userCard-containerRow\n\t\t{\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.userCard\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color5);\n\t\t}\n\t\t.userCard-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.userCard-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.userCard-title-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.userCard-label\n\t\t{\n\t\t\ttext-align\t\t:\tleft;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tcolor\t\t:\tblack;\n\t\t}\n\t\t.userCard-data\n\t\t{\n\t\t\ttext-align\t\t:\tleft;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tcolor\t\t:\tvar(--color6);\n\t\t}\n\t\t.userCard-button\n\t\t{\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\twidth\t\t:\t80%  !important;\n\t\t}\n\t\t.okCancelCard\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color5);\n\t\t}\n\t\t.okCancelCard-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.okCancelCard-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.okCancelCard-button\n\t\t{\n\t\t\tfont-size\t\t:\t200%;\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\twidth\t\t:\t60%  !important;\n\t\t}\n\t\t.okCancelCard-text\n\t\t{\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tcolor\t\t:\tvar(--color6);\n\t\t}\n\t\t.okCancelCard-inputbox\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\twidth\t\t:\t80%;\n\t\t\tpadding-top\t\t:\t2px;\n\t\t\tpadding-bottom\t\t:\t2px;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t}\n\t\t.cubeListChooser-containerRow\n\t\t{\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.cubeListChooser\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.cubeListChooser-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.cubeListChooser-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.cubeListChooser-title-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.cubeListChooser-tableHeading\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color1) !important;\n\t\t\tfont-size\t\t:\t125%;\n\t\t}\n\t\t.cubeListChooser-csv-linked\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color1)  !important;\n\t\t\tfont-size\t\t:\t125%;\n\t\t\ttext-decoration\t\t:\tunderline   !important;\n\t\t}\n\t\t.cubeListChooser-select\n\t\t{\n\t\t\tcolor\t\t:\tblack  !important;\n\t\t\tbackground-color\t\t:\tvar(--color5)  !important;\n\t\t\tfont-size\t\t:\t125%;\n\t\t\twidth\t\t:\t100%;\n\t\t\tpadding-top\t\t:\t5px;\n\t\t\tpadding-bottom\t\t:\t5px;\n\t\t}\n\t\t.cubeListChooser-tableText\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t100%;\n\t\t\twidth\t\t:\t100%;\n\t\t}\n\t\t.cubeListChooser-tableText2\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t125%;\n\t\t\twidth\t\t:\t100%;\n\t\t}\n\t\t.cubeListChooser-tableText3\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t200%;\n\t\t\twidth\t\t:\t100%;\n\t\t}\n\t\t.cubeListChooser-alarmConfig-column\n\t\t{\n\t\t\ttext-align\t\t:\tright;\n\t\t}\n\t\t.cubeListChooser-alarmConfig-button\n\t\t{\n\t\t\twidth\t\t:\t30px;\n\t\t}\n\t\t.cubeListChooser-inputbox\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t125%;\n\t\t\twidth\t\t:\t100%;\n\t\t\tpadding-top\t\t:\t2px;\n\t\t\tpadding-bottom\t\t:\t2px;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t}\n\t\t.cubeListChooser-button\n\t\t{\n\t\t\tfont-size\t\t:\t125%;\n\t\t\tpadding-top\t\t:\t10px;\n\t\t\tpadding-bottom\t\t:\t10px;\n\t\t}\n\t\t.cubeListChooser-radio\n\t\t{\n\t\t\twidth\t\t:\t25px;\n\t\t\theight\t\t:\t25px;\n\t\t}\n    ",
+        "template": "\t\t:root\n\t\t{\n\t\t\t--color1\t\t:\t{{{generalAppConfig.backgroundColor}}};\n\t\t\t--color2\t\t:\t{{{generalAppConfig.cardBackgroundColor}}};\n\t\t\t--color3\t\t:\t{{{generalAppConfig.cardBorderColor}}};\n\t\t\t--color4\t\t:\t{{{generalAppConfig.spareColor}}};\n\t\t\t--color5\t\t:\t{{{generalAppConfig.textColor}}};\n\t\t\t--color6\t\t:\t{{{generalAppConfig.specialTextColor}}};\n\t\t\t--big-text\t\t: \t300%;\n\t\t\t--medium-text\t: \t200%;\n\t\t\t--bold-text\t\t: \t900;\n\t\t\t--vert-pad\t\t: \t25px;\n\t\t\t--horz-pad\t\t: \t25px;\n\t\t}\n\t\tbody\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tpadding-left\t\t:\t25px;\n\t\t\tpadding-right\t\t:\t25px;\n\t\t}\n\t\timg\n\t\t{\n\t\t\tobject-fit\t\t:\tcontain;\n\t\t}\n        a\n        {\n            color: white;\n        }\n        a:visited \n        { \n            color: white;\n        }\n        a:hover \n        { \n            color: var(--color5);\n        }\n\n        .jumbotron \n        {\n          background-color: var(--color1) !important;\n          color: white;\n          padding-top:25px;\n          padding-bottom:25px;\n        }\n        .jumbotron-title\n        {\n          color:var(--color5);\n        }\n        .jumbotron-button\n        {\n          color: white;\n          background-color: var(--color1);\n       }\n        .card\n        {\n          background-color: var(--color1) !important;\n          text-align: center;\n          border-style: solid;\n          border-width: 2px;\n          border-color: var(--color3);\n        }\n        .card-body\n        {\n          background-color: var(--color2);;\n        }\n        .card-button\n        {\n          color: var(--color5) !important;\n          background-color: var(--color1) !important;\n          font-weight: bold;\n        }\n        .card-title\n        {\n            color             :   var(--color5);\n            font-weight       :   900;\n            font-size         :   300%;\n        }\n        .card-title-button\n        {\n            color             :   var(--color5) !important;\n            background-color  :   var(--color1) !important;\n            font-weight       :   900;\n            font-size         :   300%;\n            font-style        :   italic;        \n        }\n        .card-text\n        {\n          color: var(--color6);\n          text-align: left;\n          font-size: var(--big-text);\n        }\n        .tableHeading\n        {\n          color:var(--container-title-color);\n        }\n        .tableText\n        {\n          color:var(--container-text-color);\n          font-size: var(--big-text);\n        }\n       .vert-pad\n        {\n            padding-top:var(--vert-pad);;\n            padding-bottom:var(--vert-pad);;\n        }\n        .horz-pad\n        {\n            padding-left:var(--horz-pad);;\n            padding-right:var(--horz-pad);;\n        }\n        .big-text\n        {\n            font-size: var(--big-text);\n        }\n        .medium-text\n        {\n            font-size: var(--medium-text);\n        }\n        .bold-text\n        {\n            font-weight: var(--bold-text);\n        }\n\t\t.dialog-modal\n\t\t{\n\t\t\tdisplay\t\t:\tnone;\n\t\t\tposition\t\t:\tfixed;\n\t\t\tz-index\t\t:\t1;\n\t\t\tleft\t\t:\t0;\n\t\t\ttop\t\t:\t0;\n\t\t\twidth\t\t:\t100%;\n\t\t\theight\t\t:\t100%;\n\t\t\toverflow\t\t:\tauto;\n\t\t\tbackground-color\t\t:\trgba(0,0,0,0.4);\n\t\t}\n\t\t.dialog-modal-content\n\t\t{\n\t\t\tmargin\t\t:\t15% auto;\n\t\t\tpadding\t\t:\t20px;\n\t\t\tborder\t\t:\t1px solid #888;\n\t\t\twidth\t\t:\t80%;\n\t\t}\n\t\t.navbar\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tpadding-top\t\t:\t25px;\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.navbar-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t}\n\t\t.alarmLimit-card\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.alarmLimit-card-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.alarmLimit-card-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.alarmLimit-label-text\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color6);\n\t\t\ttext-align\t\t:\tleft;\n\t\t\tfont-size\t\t:\t300%;\n\t\t}\n\t\t.alarmLimit-input-text\n\t\t{\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\twidth\t\t:\t100%;\n\t\t}\n\t\t.alarmLimit-button\n\t\t{\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\twidth\t\t:\t80%  !important;\n\t\t}\n\t\t.archivePlotCard-containerRow\n\t\t{\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.archivePlotCard\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.archivePlotCard-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.archivePlotCard-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.archivePlotCard-title-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.archiveCard-timeType-span\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t300%;\n\t\t}\n\t\t.archive-button\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1);\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-size\t\t:\t200%;\n\t\t}\n\t\t.archive-button-pressed\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color5);\n\t\t\tcolor\t\t:\tvar(--color1);\n\t\t\tfont-size\t\t:\t200%;\n\t\t}\n\t\t.timePlotCard-containerRow\n\t\t{\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.timePlotCard\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.timePlotCard-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.timePlotCard-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.timePlotCard-title-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.vectorPlotCard-containerRow\n\t\t{\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.vectorPlotCard\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.vectorPlotCard-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.vectorPlotCard-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.vectorPlotCard-title-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.iframeCard-containerRow\n\t\t{\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.iframeCard\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.iframeCard-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.iframeCard-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.iframeCard-title-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.cubeRowCard-containerRow\n\t\t{\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.cubeRowCard\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.cubeRowCard-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.cubeRowCard-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.cubeRowCard-title-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.cubeRowParameterView-label-column\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t200%;\n\t\t\ttext-align\t\t:\tleft;\n\t\t\twidth\t\t:\t50%;\n\t\t}\n\t\t.cubeRowParameterView-widget-column-1\n\t\t{\n\t\t\twidth\t\t:\t30%;\n\t\t\talign\t\t:\tcenter;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tfont-size\t\t:\t200%;\n\t\t}\n\t\t.cubeRowParameterView-widget-column-2\n\t\t{\n\t\t\twidth\t\t:\t10%;\n\t\t\talign\t\t:\tcenter;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tfont-size\t\t:\t200%;\n\t\t}\n\t\t.cubeRowParameterView-widget-column-3\n\t\t{\n\t\t\twidth\t\t:\t10%;\n\t\t\talign\t\t:\tcenter;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tfont-size\t\t:\t200%;\n\t\t}\n\t\t.cubeRowParameterView-alarmConfig-column\n\t\t{\n\t\t\twidth\t\t:\t10%;\n\t\t\ttext-align\t\t:\tright;\n\t\t}\n\t\t.cubeRowParameterView-alarmConfig-button\n\t\t{\n\t\t\twidth\t\t:\t40px;\n\t\t\theight\t\t:\t40px;\n\t\t}\n\t\t.cubeRowParameterView-unit-span\n\t\t{\n\t\t\tfont-size\t\t:\t100%;\n\t\t\tcolor\t\t:\tblack;\n\t\t}\n\t\t.onOffSetCube-button\n\t\t{\n\t\t\tfont-size\t\t:\t100%;\n\t\t\tcolor\t\t:\tblack;\n\t\t}\n\t\t.numberSetCube-inputbox\n\t\t{\n\t\t\tfont-size\t\t:\t100%;\n\t\t\twidth\t\t:\t100%;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t}\n\t\t.numberSetCube-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t100%;\n\t\t}\n\t\t.dropChoiceCube-select\n\t\t{\n\t\t\tfont-size\t\t:\t100%;\n\t\t\twidth\t\t:\t100%;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tpadding-top\t\t:\t10px;\n\t\t\tpadding-bottom\t\t:\t10px;\n\t\t}\n\t\t.dropChoiceSetCube-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t100%;\n\t\t}\n\t\t.numberReadCube-span\n\t\t{\n\t\t\tfont-size\t\t:\t100%;\n\t\t\tcolor\t\t:\tblack;\n\t\t}\n\t\t.imageReadCube\n\t\t{\n\t\t\theight\t\t:\t40px;\n\t\t}\n\t\t.stateChoiceCube-stateColumn-column\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t200%;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tpadding-left\t\t:\t20%;\n\t\t\twidth\t\t:\t50%;\n\t\t}\n\t\t.stateChoiceCube-button\n\t\t{\n\t\t\tfont-size\t\t:\t100%;\n\t\t\tcolor\t\t:\tblack;\n\t\t}\n\t\t.stateChoiceCube-alarmConfig-column\n\t\t{\n\t\t\twidth\t\t:\t10%;\n\t\t\ttext-align\t\t:\tright;\n\t\t}\n\t\t.stateChoiceCube-alarmConfig-button\n\t\t{\n\t\t\twidth\t\t:\t40px;\n\t\t\theight\t\t:\t40px;\n\t\t}\n\t\t.gaugeCube-label\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t200%;\n\t\t}\n\t\t.gaugeCube-column\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t200%;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tpadding-left\t\t:\t10%;\n\t\t\twidth\t\t:\t90%;\n\t\t}\n\t\t.gaugeCube-div\n\t\t{\n\t\t\toverflow\t\t:\thidden;\n\t\t\twidth\t\t:\t100%;\n\t\t\tdisplay\t\t:\tflex;\n\t\t\tjustify-content\t\t:\tcenter;\n\t\t}\n\t\t.gaugeCube-alarmConfig-column\n\t\t{\n\t\t\twidth\t\t:\t10%;\n\t\t\ttext-align\t\t:\tright;\n\t\t}\n\t\t.gaugeCube-alarmConfig-button\n\t\t{\n\t\t\twidth\t\t:\t40px;\n\t\t\theight\t\t:\t40px;\n\t\t}\n\t\t.hbarCube-label\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t200%;\n\t\t}\n\t\t.hbarCube-column\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t200%;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tpadding-left\t\t:\t10%;\n\t\t\twidth\t\t:\t90%;\n\t\t}\n\t\t.hbarCube-div\n\t\t{\n\t\t\toverflow\t\t:\thidden;\n\t\t\twidth\t\t:\t100%;\n\t\t\tdisplay\t\t:\tflex;\n\t\t\tjustify-content\t\t:\tcenter;\n\t\t}\n\t\t.hbarCube-alarmConfig-column\n\t\t{\n\t\t\twidth\t\t:\t10%;\n\t\t\ttext-align\t\t:\tright;\n\t\t}\n\t\t.hbarCube-alarmConfig-button\n\t\t{\n\t\t\twidth\t\t:\t40px;\n\t\t\theight\t\t:\t40px;\n\t\t}\n\t\t.userCard-containerRow\n\t\t{\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.userCard\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color5);\n\t\t}\n\t\t.userCard-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.userCard-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.userCard-title-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.userCard-label\n\t\t{\n\t\t\ttext-align\t\t:\tleft;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tcolor\t\t:\tblack;\n\t\t}\n\t\t.userCard-data\n\t\t{\n\t\t\ttext-align\t\t:\tleft;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tcolor\t\t:\tvar(--color6);\n\t\t}\n\t\t.userCard-button\n\t\t{\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\twidth\t\t:\t80%  !important;\n\t\t}\n\t\t.okCancelCard\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color5);\n\t\t}\n\t\t.okCancelCard-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.okCancelCard-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.okCancelCard-button\n\t\t{\n\t\t\tfont-size\t\t:\t200%;\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\twidth\t\t:\t60%  !important;\n\t\t}\n\t\t.okCancelCard-text\n\t\t{\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tcolor\t\t:\tvar(--color6);\n\t\t}\n\t\t.okCancelCard-inputbox\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\twidth\t\t:\t80%;\n\t\t\tpadding-top\t\t:\t2px;\n\t\t\tpadding-bottom\t\t:\t2px;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t}\n\t\t.cubeListChooser-containerRow\n\t\t{\n\t\t\tpadding-bottom\t\t:\t25px;\n\t\t}\n\t\t.cubeListChooser\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.cubeListChooser-body\n\t\t{\n\t\t\tbackground-color\t\t:\tvar(--color2);\n\t\t}\n\t\t.cubeListChooser-title\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5);\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tfont-style\t\t:\titalic;\n\t\t}\n\t\t.cubeListChooser-title-button\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color5) !important;\n\t\t\tbackground-color\t\t:\tvar(--color1) !important;\n\t\t\tfont-weight\t\t:\t900;\n\t\t\tfont-size\t\t:\t300%;\n\t\t\tborder-style\t\t:\tsolid;\n\t\t\tborder-width\t\t:\t2px;\n\t\t\tborder-color\t\t:\tvar(--color3);\n\t\t}\n\t\t.cubeListChooser-tableHeading\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color1) !important;\n\t\t\tfont-size\t\t:\t125%;\n\t\t}\n\t\t.cubeListChooser-csv-linked\n\t\t{\n\t\t\tcolor\t\t:\tvar(--color1)  !important;\n\t\t\tfont-size\t\t:\t125%;\n\t\t\ttext-decoration\t\t:\tunderline   !important;\n\t\t}\n\t\t.cubeListChooser-select\n\t\t{\n\t\t\tcolor\t\t:\tblack  !important;\n\t\t\tbackground-color\t\t:\tvar(--color5)  !important;\n\t\t\tfont-size\t\t:\t125%;\n\t\t\twidth\t\t:\t100%;\n\t\t\tpadding-top\t\t:\t5px;\n\t\t\tpadding-bottom\t\t:\t5px;\n\t\t}\n\t\t.cubeListChooser-tableText\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t100%;\n\t\t\twidth\t\t:\t100%;\n\t\t}\n\t\t.cubeListChooser-tableText2\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t125%;\n\t\t\twidth\t\t:\t100%;\n\t\t}\n\t\t.cubeListChooser-tableText3\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t200%;\n\t\t\twidth\t\t:\t100%;\n\t\t}\n\t\t.cubeListChooser-alarmConfig-column\n\t\t{\n\t\t\ttext-align\t\t:\tright;\n\t\t}\n\t\t.cubeListChooser-alarmConfig-button\n\t\t{\n\t\t\twidth\t\t:\t30px;\n\t\t}\n\t\t.cubeListChooser-inputbox\n\t\t{\n\t\t\tcolor\t\t:\tblack;\n\t\t\tfont-size\t\t:\t125%;\n\t\t\twidth\t\t:\t100%;\n\t\t\tpadding-top\t\t:\t2px;\n\t\t\tpadding-bottom\t\t:\t2px;\n\t\t\ttext-align\t\t:\tcenter;\n\t\t}\n\t\t.cubeListChooser-button\n\t\t{\n\t\t\tfont-size\t\t:\t125%;\n\t\t\tpadding-top\t\t:\t10px;\n\t\t\tpadding-bottom\t\t:\t10px;\n\t\t}\n\t\t.cubeListChooser-radio\n\t\t{\n\t\t\twidth\t\t:\t25px;\n\t\t\theight\t\t:\t25px;\n\t\t}\n \t\t.logbookHeader\n\t\t{\n\t\t\tfont-size\t\t:\t200%;\n\t\t\tcolor : var(--color6);\n\t\t\tfont-weight: bold;\n\t\t}\n \t\t.logbookEntry\n\t\t{\n\t\t\tfont-size\t\t:\t150%;\n\t\t\tcolor : var(--color1);\n\t\t}\n \t\t.logEntryDisplayHeader\n\t\t{\n\t\t\tfont-size\t\t:\t150%;\n\t\t\tcolor : var(--color1);\n\t\t}\n\t\t.logEntryDisplayTextArea \n\t\t{\n\t\t\tfont-size\t\t:\t150%;\n\t\t\twidth\t\t\t:   95%;\n\t\t}\n   ",
         "output": "str",
         "x": 190,
         "y": 80,
@@ -5690,6 +5732,7 @@
         "name": "Save Box Name",
         "func": "global.set(msg.topic, msg.payload);\nreturn msg;",
         "outputs": 0,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -11982,6 +12025,7 @@
         "name": "Setup Archive Query",
         "func": "var projectionFilter =  \n{\n    projection:\n    {\n        _id                         :   0, \n        type                        :   1,  \n        name                        :   1,  \n        timeStamp                   :   1 \n    } \n};\nfor (var ii = 0; ii < msg.payload.tray.cube.length; ++ii)\n{\n    projectionFilter.projection[msg.payload.tray.cube[ii]] = 1;\n}\nvar queryFilter = \n{\n    $and :\n    [\n        {\n            type: msg.payload.tray.type\n        },\n        {\n            name: msg.payload.tray.name\n        },\n        {\n            timeStamp :\n            {\n                $gte: msg.payload.tray.startDate,\n                $lte: msg.payload.tray.stopDate\n            }\n        }\n    ] \n    \n}\nvar newMsg = \n{\n    topic           : msg.topic,\n    userID          : msg.userID,\n    route           : msg.route,\n    payload         : [queryFilter, projectionFilter],\n    tray            : msg.payload.tray,\n};\nreturn newMsg;\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -18280,6 +18324,766 @@
         "wires": [
             [
                 "50b5b5d7.93c8ac"
+            ]
+        ]
+    },
+    {
+        "id": "030e87ec3ce3bd4d",
+        "type": "http in",
+        "z": "8795b06cf51cbca9",
+        "name": "/logbook",
+        "url": "/logbook",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "357f52c5f7c3cae8"
+            ]
+        ]
+    },
+    {
+        "id": "233bbff8ffb71b6b",
+        "type": "function",
+        "z": "8795b06cf51cbca9",
+        "name": "Allowed Roles",
+        "func": "msg.payload.allowedRoles = ['logbook','appView','coreView'];\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 200,
+        "wires": [
+            [
+                "4d3ae88475db5994"
+            ]
+        ]
+    },
+    {
+        "id": "86070d26f19917ae",
+        "type": "websocket in",
+        "z": "8795b06cf51cbca9",
+        "name": "/logbook/websocket",
+        "server": "9411b416214c06d7",
+        "client": "",
+        "x": 190,
+        "y": 720,
+        "wires": [
+            [
+                "056d00e3a05649fe"
+            ]
+        ]
+    },
+    {
+        "id": "2a4e6c845c0521d7",
+        "type": "function",
+        "z": "8795b06cf51cbca9",
+        "name": "Renew Token",
+        "func": "msg.token.expDate = new Date().getTime() + msg.token.timeoutMin * 60000;\ndelete msg.token['iat']\nmsg.payload = JSON.parse(JSON.stringify(msg.token));\ndelete msg['token'];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 800,
+        "y": 440,
+        "wires": [
+            [
+                "0a3c8d5b379a8fd9"
+            ]
+        ]
+    },
+    {
+        "id": "0a3c8d5b379a8fd9",
+        "type": "JsonWebToken",
+        "z": "8795b06cf51cbca9",
+        "name": "encrypt token",
+        "tokenconfig": "6acefdd9.69f124",
+        "x": 1020,
+        "y": 440,
+        "wires": [
+            [
+                "45b197d8b8fb49d8"
+            ]
+        ]
+    },
+    {
+        "id": "45b197d8b8fb49d8",
+        "type": "function",
+        "z": "8795b06cf51cbca9",
+        "name": "Renew Cookies",
+        "func": "var newMsg = \n{\n    topic : 'renew',\n    payload: \n    {\n        topic       : 'renew',\n        userID      : msg.userID,\n        role        : msg.token,\n        expDate     : msg.payload.expDate.toString(),\n        username    : msg.payload.username\n    }\n}\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1300,
+        "y": 440,
+        "wires": [
+            [
+                "e5cbbcc312b3a70d"
+            ]
+        ]
+    },
+    {
+        "id": "e5cbbcc312b3a70d",
+        "type": "websocket out",
+        "z": "8795b06cf51cbca9",
+        "name": "/logbook/websocket",
+        "server": "9411b416214c06d7",
+        "client": "",
+        "x": 1630,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "7e2ad96836b00c5b",
+        "type": "switch",
+        "z": "8795b06cf51cbca9",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "renew",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "addLogBookEntry",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "getLogBook",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "editLogBookEntry",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "deleteLogBookEntry",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 610,
+        "y": 560,
+        "wires": [
+            [
+                "2a4e6c845c0521d7"
+            ],
+            [
+                "53c11caae084f267"
+            ],
+            [
+                "7f3c284606f8b621"
+            ],
+            [
+                "f9a76a31dc1bdd56"
+            ],
+            [
+                "4962ab19c6cc0b6a"
+            ]
+        ]
+    },
+    {
+        "id": "53c11caae084f267",
+        "type": "function",
+        "z": "8795b06cf51cbca9",
+        "name": "Add author",
+        "func": "let newMsg = msg.payload;\nnewMsg.payload.author = msg.token.username;\nnewMsg['userID'] = msg.userID;\nnewMsg['route'] = msg.route;\nreturn newMsg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 500,
+        "wires": [
+            [
+                "f24a96325f113e35"
+            ]
+        ]
+    },
+    {
+        "id": "f24a96325f113e35",
+        "type": "mongodb3 in",
+        "z": "8795b06cf51cbca9",
+        "service": "_ext_",
+        "configNode": "9cd5ff5e.caf86",
+        "name": "",
+        "collection": "logbook",
+        "operation": "insert",
+        "x": 1050,
+        "y": 500,
+        "wires": [
+            [
+                "d2960a2c9f36d6f4"
+            ]
+        ]
+    },
+    {
+        "id": "7f3c284606f8b621",
+        "type": "function",
+        "z": "8795b06cf51cbca9",
+        "name": "Get Logbook entries",
+        "func": "var queryFilter = \n{\n    timeStamp :\n    {\n        $gte: msg.payload.payload.startTime,\n        $lte: msg.payload.payload.stopTime\n    }\n}\nvar newMsg = \n{\n    topic           : msg.topic,\n    userID          : msg.userID,\n    route           : msg.route,\n    payload         : [queryFilter, null],\n};\nreturn newMsg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 560,
+        "wires": [
+            [
+                "fd76d33b5b72633b"
+            ]
+        ]
+    },
+    {
+        "id": "fd76d33b5b72633b",
+        "type": "mongodb3 in",
+        "z": "8795b06cf51cbca9",
+        "service": "_ext_",
+        "configNode": "9cd5ff5e.caf86",
+        "name": "",
+        "collection": "logbook",
+        "operation": "find.toArray",
+        "x": 1070,
+        "y": 560,
+        "wires": [
+            [
+                "ea04ec80e7cb4b0b"
+            ]
+        ]
+    },
+    {
+        "id": "ea04ec80e7cb4b0b",
+        "type": "function",
+        "z": "8795b06cf51cbca9",
+        "name": "Sort Archive Data",
+        "func": "function objectLength( object ) {\n    var length = 0;\n    for( var key in object ) {\n        if( object.hasOwnProperty(key) ) {\n            ++length;\n        }\n    }\n    return length;\n}\n\nfunction sortByKey(arr, key) \n{\n    return arr.sort( function(a, b) \n        {\n            var x = a[key]; \n            var y = b[key];\n            return ((x < y) ? -1 : ((x > y) ? 1 : 0));\n        } );\n}\n\nvar numRecords = objectLength(msg.payload);\nif (numRecords < 1)\n{\n    return {\n        topic : msg.route,\n        payload:{\n            topic           : msg.topic,\n            payload         : null,\n            userID          : msg.userID,\n        }\n    };\n}\nvar records = [];\nfor (var ii = 0; ii < numRecords; ++ii) \n{\n    records[ii] = msg.payload[ii]; \n    delete records[ii]._id;\n}\nsortByKey(records, 'timeStamp');\n\nreturn {\n    topic : 'getLogBook',\n    payload:{\n        topic           : 'getLogBook',\n        payload         : records,\n        userID          : msg.userID,\n    }\n};\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 560,
+        "wires": [
+            [
+                "e5cbbcc312b3a70d"
+            ]
+        ]
+    },
+    {
+        "id": "f9a76a31dc1bdd56",
+        "type": "function",
+        "z": "8795b06cf51cbca9",
+        "name": "Check Author",
+        "func": "if (msg.payload.payload.author != msg.token.username)\n{\n    return [null,{topic:'permissionError',payload:{topic:'permissionError', payload:'You are not the author.', userID:  msg.userID}}];\n}\nvar projectionFilter =  null;\nvar queryFilter = \n{\n    timeStamp : msg.payload.payload.origTimeStamp\n}\ndelete msg.payload.payload.origTimeStamp;\nvar newMsg = \n{\n    topic           : msg.topic,\n    userID          : msg.userID,\n    payload         : [queryFilter, msg.payload.payload],\n};\nreturn [newMsg,null];",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 620,
+        "wires": [
+            [
+                "f823125de9a78e35"
+            ],
+            [
+                "e5cbbcc312b3a70d"
+            ]
+        ]
+    },
+    {
+        "id": "f823125de9a78e35",
+        "type": "mongodb3 in",
+        "z": "8795b06cf51cbca9",
+        "service": "_ext_",
+        "configNode": "9cd5ff5e.caf86",
+        "name": "",
+        "collection": "logbook",
+        "operation": "update",
+        "x": 1050,
+        "y": 620,
+        "wires": [
+            [
+                "29ec49ade2f56418"
+            ]
+        ]
+    },
+    {
+        "id": "4962ab19c6cc0b6a",
+        "type": "function",
+        "z": "8795b06cf51cbca9",
+        "name": "Check Author",
+        "func": "if (msg.payload.payload.author != msg.token.username)\n{\n    return [null,{topic:'permissionError',payload:{topic:'permissionError', payload:'You are not the author.', userID:  msg.userID}}];\n}\nvar projectionFilter =  null;\nvar queryFilter = \n{\n    timeStamp : msg.payload.payload.timeStamp\n}\nvar newMsg = \n{\n    topic           : msg.topic,\n    userID          : msg.userID,\n    payload         : [queryFilter, msg.payload.payload],\n};\nreturn [newMsg,null];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 680,
+        "wires": [
+            [
+                "6df6b30eadfac1ca"
+            ],
+            [
+                "e5cbbcc312b3a70d"
+            ]
+        ]
+    },
+    {
+        "id": "6df6b30eadfac1ca",
+        "type": "mongodb3 in",
+        "z": "8795b06cf51cbca9",
+        "service": "_ext_",
+        "configNode": "9cd5ff5e.caf86",
+        "name": "",
+        "collection": "logbook",
+        "operation": "remove",
+        "x": 1050,
+        "y": 680,
+        "wires": [
+            [
+                "bedd404e06531409"
+            ]
+        ]
+    },
+    {
+        "id": "357f52c5f7c3cae8",
+        "type": "subflow:3fec913b325ae6ff",
+        "z": "8795b06cf51cbca9",
+        "name": "",
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "2e329335317a88f2"
+            ]
+        ]
+    },
+    {
+        "id": "2e329335317a88f2",
+        "type": "subflow:e0ef21f5c45ba4bc",
+        "z": "8795b06cf51cbca9",
+        "name": "",
+        "x": 180,
+        "y": 160,
+        "wires": [
+            [
+                "233bbff8ffb71b6b"
+            ]
+        ]
+    },
+    {
+        "id": "056d00e3a05649fe",
+        "type": "subflow:fee416c.fb205e8",
+        "z": "8795b06cf51cbca9",
+        "name": "",
+        "x": 410,
+        "y": 720,
+        "wires": [
+            [
+                "7e2ad96836b00c5b"
+            ],
+            [
+                "e5cbbcc312b3a70d"
+            ]
+        ]
+    },
+    {
+        "id": "09a8dadd23343177",
+        "type": "function",
+        "z": "8795b06cf51cbca9",
+        "name": "get Appconfig",
+        "func": "let app = msg.req['_parsedUrl'].pathname.split('/')[1];\nmsg['urlInput'] = JSON.stringify( {box:global.get('box')});\nmsg.payload = [{ app: app},{projection  :{_id : 0} }]\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 80,
+        "wires": [
+            [
+                "ad3184600ac8373a"
+            ]
+        ]
+    },
+    {
+        "id": "ad3184600ac8373a",
+        "type": "mongodb3 in",
+        "z": "8795b06cf51cbca9",
+        "service": "_ext_",
+        "configNode": "9cd5ff5e.caf86",
+        "name": "",
+        "collection": "appConfig",
+        "operation": "findOne",
+        "x": 500,
+        "y": 120,
+        "wires": [
+            [
+                "3a11312cd40aa541"
+            ]
+        ]
+    },
+    {
+        "id": "3a11312cd40aa541",
+        "type": "function",
+        "z": "8795b06cf51cbca9",
+        "name": "Parse config",
+        "func": "let app = msg.req['_parsedUrl'].pathname.split('/')[1];\nlet config = JSON.stringify(msg.payload);\nmsg.payload = { config: config, urlInput: msg.urlInput, title:msg.payload.title, userID:getRandomInt(32768)};\nreturn msg;\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 160,
+        "wires": [
+            [
+                "b708ae887281ac5a"
+            ]
+        ]
+    },
+    {
+        "id": "b708ae887281ac5a",
+        "type": "subflow:74b74739cc6e49af",
+        "z": "8795b06cf51cbca9",
+        "name": "",
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "a2fab18301bb7e3b"
+            ]
+        ]
+    },
+    {
+        "id": "a2fab18301bb7e3b",
+        "type": "template",
+        "z": "8795b06cf51cbca9",
+        "name": "logbook",
+        "field": "payload.logbook",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "// Logbook\n        class Logbook\n        {\n            constructor(urlInput, config, userID)\n            {\n                this.config = config;\n                this.box = urlInput.box;\n                this.ws = null;\n                this.userID = userID;\n                this.wsUri = '';\n                this.wsConnected = false;\n                this.connectionTrys = 0;\n                this.route = '';\n                this.navBar = null;\n                this.cardOrder = [];\n                this.appConnectedOnce = false;\n                this.searchCard = null;\n                this.logEntryCard = null;\n                this.userCard = null;\n                this.messageDialog     = new OkCancelDialog(this, 'Message', 0);\n                this.acknowledgeDialog = new OkCancelDialog(this, 'Acknowledge', 1);\n                this.okCancelDialog    = new OkCancelDialog(this, 'Acknowledge', 2);\n                this.inputDialog    = new OkCancelDialog(this, 'Input', 3);\n                this.displayEntryDialog    = new DisplayEntryDialog(this);\n                this.editEntryDialog    = new EditEntryDialog(this);\n                this.recordToDelete = \"\";\n                \n                if (\"navbar\" in this.config)\n                {\n                    this.navBar = new NavBar(this,this.config.navbar.config);\n                }\n\n                for (let icard = 0; icard < config.cards.length; ++icard)\n                {\n                    switch (this.config.cards[icard].type)\n                    {\n                        case 'SearchCard':\n                            let searchCard = new SearchCard(this, this.config.cards[icard].config);\n                            this.searchCard = searchCard;\n                            this.cardOrder.push(this.searchCard);\n                            break;\n                        case 'LogEntryCard':\n                            let logEntryCard = new LogEntryCard(this, this.config.cards[icard].config);\n                            this.logEntryCard = logEntryCard;\n                            this.cardOrder.push(this.logEntryCard);\n                            break;\n                        case 'UserCard':\n                            let userCard = new UserCard(this, this.config.cards[icard].config);\n                            this.userCard = userCard;\n                            this.cardOrder.push(this.userCard);\n                            break;\n                        default:\n                            break;\n                    }\n                }\n            }\n            webSocketConnected()\n            {\n                return this.wsConnected;\n            }\n            wsConnectC()\n            {\n                if (this.wsUri.length < 1)\n                {\n                    let uri = window.location.href.split('://');\n                    let wslead = 'ws://';\n                    if (uri[0] == 'https') wslead = 'wss://';\n                    let questionLocation = uri[1].indexOf('?');\n                    if (questionLocation >= 0)\n                    {\n                        uri[1] = uri[1].substring(0,questionLocation);\n                    }\n                    this.route = uri[1].split('/')[1];\n                    if (uri[1].indexOf('/') < (uri[1].length - 1))\n                    {\n                        this.wsUri = wslead + uri[1] + '/websocket';\n                    }\n                    else\n                    {\n                        this.wsUri = wslead + uri[1] + 'websocket';\n                    }\n                }\n                \n                this.ws = new WebSocket(this.wsUri);\n                this.ws.onmessage  = event => {this.onWebSocketMessage(JSON.parse(event.data))};\n                this.ws.onopen     = event => \n                {\n                    this.onWebsocketOpen();\n                };\n                this.ws.onclose    = event => \n                {\n                    this.connectionTrys = this.connectionTrys + 1;\n                    console.log(\"Websocket closed\");\n                    this.wsConnected = false;\n                    if (this.connectionTrys < 20000)\n                    {\n                        console.log('Trying to reconnect...');\n                        setTimeout(()=>this.wsConnectC(),2000);\n                    }\n                    else\n                    {\n                        this.acknowledgeDialog.showDialog('Error: Websocket disconnect.',() => \n                        {\n                            this.connectionTrys = 0;\n                            console.log('Trying to reconnect...');\n                            setTimeout(()=>this.wsConnectC(),2000);\n                        });\n                    }\n                };\n            }\n            onWebsocketOpen()\n            {\n                console.log(\"Websocket connected\");\n                this.wsConnected = true;\n                if (!this.appConnectedOnce)\n                {\n                    this.searchCard.getArchiveData();\n                }\n                this.appConnectedOnce = true;\n            }\n            onWebSocketMessage(msg)\n            {\n                let stopTime = new Date().getTime() + 70000;\n                let startTime = new Date(stopTime - 3600 * 24 * 7 * 1000).getTime();\n                switch(msg.topic)\n                {\n                    case 'getLogBook':\n                        if (msg.userID != this.userID) return;\n                        this.logEntryCard.displayLogBook(msg.payload);\n                        break;\n                    case 'addLogBookEntry':\n                        if (msg.userID != this.userID) return;\n                        this.searchCard.setStartString(startTime)\n                        this.searchCard.setStopString(stopTime)\n                        this.searchCard.getArchiveData();\n                        break;\n                    case 'editLogBookEntry':\n                        if (msg.userID != this.userID) return;\n                        this.searchCard.setStartString(startTime)\n                        this.searchCard.setStopString(stopTime)\n                        this.searchCard.getArchiveData();\n                        break;\n                    case 'deleteLogBookEntry':\n                        if (msg.userID != this.userID) return;\n                        this.searchCard.getArchiveData();\n                        break;\n                    case 'renew':\n                        if (msg.userID != this.userID) return;\n                        this.updateCookie(msg);\n                        break;\n                    case 'permissionError':\n                        if (msg.userID != this.userID) return;\n                        this.acknowledgeDialog.showDialog('Error: You do not have permission.',function(){});\n                        break;\n                    case 'loginExpired':\n                        if (msg.userID != this.userID) return;\n                         location.reload();\n                        break;\n                    default:\n                        break;\n                }\n            }\n            docReady()\n            {\n                if (this.navBar != null) this.navBar.onDocumentReady();\n                for (let ic = 0; ic < this.cardOrder.length; ++ic)\n                {\n                    this.cardOrder[ic].onDocumentReady();\n                }\n                this.messageDialog.onDocumentReady('messageCardContainer');\n                this.acknowledgeDialog.onDocumentReady('acknowledgeCardContainer');\n                this.okCancelDialog.onDocumentReady('okCancelCardContainer');\n                this.inputDialog.onDocumentReady('inputCardContainer');\n                this.displayEntryDialog.onDocumentReady('displayEntryCardContainer');\n                this.editEntryDialog.onDocumentReady('editEntryCardContainer');\n                this.wsConnectC();\n                \n            }\n            getCookie(extension)\n            {\n                let cookies = document.cookie.split(';');\n                let token = null;\n                let cookieName = this.box + extension + \"=\";\n                for (let icookie = 0; icookie < cookies.length; ++icookie)\n                {\n                    let index = cookies[icookie].indexOf(cookieName);\n                    if (index >= 0)\n                    {\n                        token = cookies[icookie].substring(index + cookieName.length);\n                    }\n                }\n                return token;\n            }\n            updateCookie(msg)\n            {\n                let expTimeout = Math.round((Number(msg.expDate) - new Date().getTime()) / 1000).toString();\n                if (Number(msg.expDate) < 0)\n                {\n                    document.cookie = this.box + \"Role=\" + msg.role;\n                    document.cookie = this.box + \"ExpDate=\" + msg.expDate;\n                    document.cookie = this.box + \"Username=\" + msg.username;\n                }\n                else\n                {\n                    let expDateString = \"; max-age=\" + expTimeout;\n                    document.cookie = this.box + \"Role=\" + msg.role + expDateString;\n                    document.cookie = this.box + \"ExpDate=\" + msg.expDate + expDateString;\n                    document.cookie = this.box + \"Username=\" + msg.username + expDateString;\n                }\n            }\n            sendActionMsg(topic,role,actionMsg)\n            {\n                let roleToken = \"\";\n                roleToken  = this.getCookie('Role');\n                if (roleToken == null)\n                {\n                    location.reload();\n                    return;\n                }\n                let webSocketMsg = \n                {\n                    topic     : topic,\n                    payload   : actionMsg,\n                    route     : this.route,\n                    userID    : this.userID,\n                    token     : this.getCookie('Role'),\n                    role      : role\n                };\n                this.ws.send(JSON.stringify(webSocketMsg));\n            }\n        }\n",
+        "output": "str",
+        "x": 780,
+        "y": 80,
+        "wires": [
+            [
+                "8f607e8bfc4e76c0"
+            ]
+        ]
+    },
+    {
+        "id": "8f607e8bfc4e76c0",
+        "type": "subflow:20ef9328fc8e1b3a",
+        "z": "8795b06cf51cbca9",
+        "x": 800,
+        "y": 120,
+        "wires": [
+            [
+                "b13c99ae9ab30d4e"
+            ]
+        ]
+    },
+    {
+        "id": "b13c99ae9ab30d4e",
+        "type": "subflow:383adc69a3a4d2bd",
+        "z": "8795b06cf51cbca9",
+        "name": "",
+        "x": 800,
+        "y": 160,
+        "wires": [
+            [
+                "94c735e43e4a0a9c"
+            ]
+        ]
+    },
+    {
+        "id": "94c735e43e4a0a9c",
+        "type": "subflow:8bdf46498bb71b57",
+        "z": "8795b06cf51cbca9",
+        "name": "",
+        "x": 800,
+        "y": 200,
+        "wires": [
+            [
+                "e3ef99aa92ec62d4"
+            ]
+        ]
+    },
+    {
+        "id": "599a9b0d4e4dfa16",
+        "type": "template",
+        "z": "8795b06cf51cbca9",
+        "name": "init",
+        "field": "payload.init",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "// init\n        let app = new Logbook(JSON.parse('{{{payload.urlInput}}}'), JSON.parse('{{{payload.config}}}') , JSON.parse('{{{payload.userID}}}'));\n\n        docReady(function() \n        {\n            app.docReady();\n            $( function() {$('#archiveStartDateInput').datetimepicker();} );\n            $( function() {$('#archiveStopDateInput').datetimepicker();} );\n        });\n        function docReady(fn) \n        {\n            // see if DOM is already available\n            if (document.readyState === \"complete\" || document.readyState === \"interactive\") {\n                // call on next available tick\n                setTimeout(fn, 1);\n            } else {\n                document.addEventListener(\"DOMContentLoaded\", fn);\n            }\n        }            \n        var _dummyNode;\n        function destroyNode(node)\n        {\n            if(!_dummyNode) _dummyNode = document.createElement('div');\n            _dummyNode.appendChild(node.parentNode.removeChild(node));\n            _dummyNode.innerHTML = \"\";\n        }\n//Finished Init App",
+        "output": "str",
+        "x": 1030,
+        "y": 160,
+        "wires": [
+            [
+                "4f29d7d126982da5"
+            ]
+        ]
+    },
+    {
+        "id": "4f29d7d126982da5",
+        "type": "template",
+        "z": "8795b06cf51cbca9",
+        "name": "script",
+        "field": "payload.script",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "// script\n{{{payload.logbook}}}\n{{{payload.navbar}}}\n{{{payload.okCancelDialog}}}\n{{{payload.searchCard}}}\n{{{payload.logEntryCard}}}\n{{{payload.userCard}}}\n{{{payload.displayEntryDialog}}}\n{{{payload.editEntryDialog}}}\n{{{payload.init}}}\n",
+        "output": "str",
+        "x": 1030,
+        "y": 200,
+        "wires": [
+            [
+                "47f405c251136295"
+            ]
+        ]
+    },
+    {
+        "id": "47f405c251136295",
+        "type": "template",
+        "z": "8795b06cf51cbca9",
+        "name": "appContent",
+        "field": "payload.appContent",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "    <div id=\"appContent\" width=\"100%\"></div>\n    <div id=\"messageCardContainer\" class=\"row dialog-modal\"></div>\n    <div id=\"acknowledgeCardContainer\" class=\"row dialog-modal\"></div>\n    <div id=\"okCancelCardContainer\" class=\"row dialog-modal\"></div>\n    <div id=\"inputCardContainer\" class=\"row dialog-modal\"></div>\n    <div id=\"displayEntryCardContainer\" class=\"row dialog-modal\"></div>\n    <div id=\"editEntryCardContainer\" class=\"row dialog-modal\"></div>\n\n",
+        "output": "str",
+        "x": 1050,
+        "y": 240,
+        "wires": [
+            [
+                "336c402e0cfa1db7"
+            ]
+        ]
+    },
+    {
+        "id": "336c402e0cfa1db7",
+        "type": "subflow:d1aa8cd8b6ac048e",
+        "z": "8795b06cf51cbca9",
+        "name": "",
+        "x": 1240,
+        "y": 240,
+        "wires": [
+            [
+                "e3e231e918f4cf40"
+            ]
+        ]
+    },
+    {
+        "id": "e3e231e918f4cf40",
+        "type": "template",
+        "z": "8795b06cf51cbca9",
+        "name": "HTML",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <link rel=\"icon\" href=\"{{{generalAppConfig.faviconUrl}}}?v=4\" type=\"image/x-icon\"/>\n    <title>{{payload.title}}</title>\n    <link rel=\"stylesheet\" href=\"/css/bootstrap.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui-timepicker-addon.css\"/>\n    <script src=\"/jquery/jquery.js\"></script>\n    <script src=\"/jquery/jquery-ui.js\"></script>\n    <script src=\"/jquery/jquery-ui-timepicker-addon.js\"></script>\n    <script src=\"/scripts/plotly-latest.min.js\"></script>\n    <style>\n{{{payload.css}}}\n    </style>\n    <script>\n{{{payload.script}}}\n    </script>\n  </head>\n  <body>\n{{{payload.appContent}}}\n    <script src=\"/scripts/popper.js\"></script>\n    <script src=\"/scripts/bootstrap.js\"></script>\n  </body>\n</html>",
+        "output": "str",
+        "x": 1410,
+        "y": 240,
+        "wires": [
+            [
+                "87f03d2160d9c170"
+            ]
+        ]
+    },
+    {
+        "id": "87f03d2160d9c170",
+        "type": "http response",
+        "z": "8795b06cf51cbca9",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1550,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "4d3ae88475db5994",
+        "type": "subflow:2d027d69.1fdeb2",
+        "z": "8795b06cf51cbca9",
+        "x": 180,
+        "y": 240,
+        "wires": [
+            [
+                "09a8dadd23343177"
+            ]
+        ]
+    },
+    {
+        "id": "1e3bab4fcaf727aa",
+        "type": "template",
+        "z": "8795b06cf51cbca9",
+        "name": "logEntryCard",
+        "field": "payload.logEntryCard",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "//logEntryCard\n        class LogEntryCard \n        {\n            constructor(app, config)\n            {\n                this.app = app;\n                this.config = config;\n                this.entryRows = [];\n                \n            }\n            onDocumentReady()\n            {\n                let containerRowDiv = document.createElement('div');\n                containerRowDiv.setAttribute('class', 'row cubeRowCard-containerRow');\n                document.getElementById('appContent').appendChild(containerRowDiv);\n                \n                let containerColDiv = document.createElement('div');\n                containerColDiv.setAttribute('class', 'col-md-12');\n                containerColDiv.setAttribute('align', 'center');\n                containerRowDiv.appendChild(containerColDiv);\n                \n                let cardDiv = document.createElement('div');\n                cardDiv.setAttribute('class', 'card cubeRowCard');\n                containerColDiv.appendChild(cardDiv);\n\n                let titleTable = document.createElement('table');\n                titleTable.setAttribute('width', '100%');\n                let titleRow  = document.createElement('tr');\n                let titleCol  = document.createElement('td');\n                titleCol.setAttribute('width', '85%');\n                titleCol.setAttribute('align', 'left');\n                let titleSpan  = document.createElement('span');\n                titleSpan.setAttribute('class', 'cubeRowCard-title');\n                titleSpan.innerHTML = this.config.title;\n                titleCol.appendChild(titleSpan);\n                titleRow.appendChild(titleCol);\n                let buttonCol  = document.createElement('td');\n                buttonCol.setAttribute('width', '15%');\n\n                this.displayButton = document.createElement('button');\n                this.displayButton.setAttribute('class', 'btn btn-block cubeRowCard-title-button');\n                this.displayButton.innerHTML = 'Add';\n                this.displayButton.onclick = event => {this.app.editEntryDialog.showDialog(null);};\n                buttonCol.appendChild(this.displayButton);\n                titleRow.appendChild(buttonCol);\n\n                this.cardBodyDiv = document.createElement('div');\n                this.cardBodyDiv.setAttribute('class', 'cubeRowCard-body');\n                this.cardBodyDiv.setAttribute('align', 'center');\n                this.cardBodyTable = document.createElement('table');\n                this.cardBodyTable.setAttribute('width', '100%');\n                this.cardBodyDiv.appendChild(this.cardBodyTable);\n                \n                titleTable.appendChild(titleRow);\n                cardDiv.appendChild(titleTable);\n                cardDiv.appendChild(this.cardBodyDiv);\n            }\n\n            displayLogBook(records)\n            {\n                let logBookContainer = this.cardBodyTable;\n\n                while (logBookContainer.firstChild) \n                {\n                    while(logBookContainer.lastChild.firstChild)\n                    {\n                        logBookContainer.lastChild.removeChild(logBookContainer.lastChild.lastChild);\n                    }\n                    logBookContainer.removeChild(logBookContainer.lastChild);\n                }\n \n                let logTable = document.createElement('table');\n                logTable.setAttribute('width', '100%');\n                let headerRow  = document.createElement('tr');\n                let headerDateCol  = document.createElement('td');\n                headerDateCol.setAttribute('width', '17%');\n                headerDateCol.setAttribute('align', 'left');\n                let  headerDateColSpan  = document.createElement('span');\n                headerDateColSpan.classList.add('logbookHeader');\n                headerDateColSpan.innerHTML = 'Date';\n                headerDateCol.appendChild(headerDateColSpan);\n                headerRow.appendChild(headerDateCol);\n            \n                let headerNameCol  = document.createElement('td');\n                headerNameCol.setAttribute('width', '17%');\n                headerNameCol.setAttribute('align', 'left');\n                let  headerNameColSpan  = document.createElement('span');\n                headerNameColSpan.classList.add('logbookHeader');\n                headerNameColSpan.innerHTML = 'Author';\n                headerNameCol.appendChild(headerNameColSpan);\n                headerRow.appendChild(headerNameCol);\n\n                let headerTitleCol  = document.createElement('td');\n                headerTitleCol.setAttribute('width', '50%');\n                headerTitleCol.setAttribute('align', 'left');\n                let  headerTitleColSpan  = document.createElement('span');\n                headerTitleColSpan.classList.add('logbookHeader');\n                headerTitleColSpan.innerHTML = 'Title';\n                headerTitleCol.appendChild(headerTitleColSpan);\n                headerRow.appendChild(headerTitleCol);\n\n\n                let headerActionCol  = document.createElement('td');\n                headerActionCol.setAttribute('width', '16%');\n                headerActionCol.setAttribute('align', 'center');\n                let  headerActionColSpan  = document.createElement('span');\n                headerActionColSpan.classList.add('logbookHeader');\n                headerActionColSpan.innerHTML = 'Action';\n                headerActionCol.appendChild(headerActionColSpan);\n                headerRow.appendChild(headerActionCol);\n            \n                logBookContainer.appendChild(headerRow);\n                if (records == null) return;\n                                \n                for (let ii = 0; ii < records.length; ++ii)\n                {\n                    let irec = records.length - 1 - ii;\n                    let recRow  = document.createElement('tr');\n                    let recDateCol  = document.createElement('td');\n                    recDateCol.setAttribute('align', 'left');\n                    let  recDateColSpan  = document.createElement('span');\n                    recDateColSpan.classList.add('logbookEntry');\n                    let time =  new Date(records[irec].timeStamp).toLocaleString('en-SE',{year: '2-digit', month: '2-digit', day : '2-digit', hour12:false, hour: '2-digit', minute: '2-digit'}).replace(',', '');\n                    recDateColSpan.innerHTML = time;\n                    recDateCol.appendChild(recDateColSpan);\n                    recRow.appendChild(recDateCol);\n\n                    let recNameCol  = document.createElement('td');\n                    recNameCol.setAttribute('align', 'left');\n                    let  recNameColSpan  = document.createElement('span');\n                    recNameColSpan.classList.add('logbookEntry');\n                    recNameColSpan.innerHTML = records[irec].author;\n                    recNameCol.appendChild(recNameColSpan);\n                    recRow.appendChild(recNameCol);\n\n                    let recTitleCol  = document.createElement('td');\n                    recTitleCol.setAttribute('align', 'left');\n                    let  recTitleColSpan  = document.createElement('span');\n                    recTitleColSpan.classList.add('logbookEntry');\n                    recTitleColSpan.innerHTML = records[irec].title;\n                    recTitleCol.appendChild(recTitleColSpan);\n                    recRow.appendChild(recTitleCol);\n\n                    let recActionCol  = document.createElement('td');\n                    recActionCol.setAttribute('align', 'center');\n                    let  recActionColTable  = document.createElement('table');\n                    recActionColTable.setAttribute('width', '100%');\n                    let  recActionColTableRow  = document.createElement('tr');\n                    let  recActionColTableRowCol1  = document.createElement('td');\n                    recActionColTableRowCol1.setAttribute('width', '33%');\n                    let  recActionColTableRowCol2  = document.createElement('td');\n                    recActionColTableRowCol2.setAttribute('width', '33%');\n                    let  recActionColTableRowCol3  = document.createElement('td');\n                    recActionColTableRowCol3.setAttribute('width', '33%');\n                    recActionColTableRow.appendChild(recActionColTableRowCol1);\n                    recActionColTableRow.appendChild(recActionColTableRowCol2);\n                    recActionColTableRow.appendChild(recActionColTableRowCol3);\n                    \n                    let recActionColTableRowCol1Button = document.createElement('button');\n                    recActionColTableRowCol1Button.setAttribute('class', 'btn btn-primary btn-block');\n                    recActionColTableRowCol1Button.innerHTML = 'Display';\n                    recActionColTableRowCol1Button.onclick = event => {this.app.displayEntryDialog.showDialog(records[irec]);};\n                    recActionColTableRowCol1.appendChild(recActionColTableRowCol1Button);\n\n                    let recActionColTableRowCol2Button = document.createElement('button');\n                    recActionColTableRowCol2Button.setAttribute('class', 'btn btn-warning btn-block');\n                    recActionColTableRowCol2Button.innerHTML = 'Edit';\n                    recActionColTableRowCol2Button.onclick = event => {this.app.editEntryDialog.showDialog(records[irec]);};\n                    recActionColTableRowCol2.appendChild(recActionColTableRowCol2Button);\n                    \n                    let recActionColTableRowCol3Button = document.createElement('button');\n                    recActionColTableRowCol3Button.setAttribute('class', 'btn btn-danger btn-block');\n                    recActionColTableRowCol3Button.innerHTML = 'Delete';\n                    recActionColTableRowCol3Button.onclick = event => {this.initDeleteRecord(records[irec])};\n                    recActionColTableRowCol3.appendChild(recActionColTableRowCol3Button);\n\n                    recActionColTable.appendChild(recActionColTableRow);\n                    recActionCol.appendChild(recActionColTable);\n                    recRow.appendChild(recActionCol);\n                    \n                    logBookContainer.appendChild(recRow);\n\n                }\n            }\n            initDeleteRecord(record)\n            {\n                this.app.recordToDelete = JSON.stringify(record);\n                this.app.okCancelDialog.showDialog('Deleting \"' + record.title + '\"',this.deleteRecord);;\n            }\n            deleteRecord(ok)\n            {\n                if (ok)\n                {\n                    let actionMsg = \n                    {\n                        topic   : 'deleteLogBookEntry',\n                        payload : JSON.parse(this.app.recordToDelete)\n                    };\n                    this.app.sendActionMsg('deleteLogBookEntry','writeDatabase',actionMsg);\n                }\n            }\n        }\n",
+        "output": "str",
+        "x": 1050,
+        "y": 120,
+        "wires": [
+            [
+                "599a9b0d4e4dfa16"
+            ]
+        ]
+    },
+    {
+        "id": "5f0e6064e48bf311",
+        "type": "template",
+        "z": "8795b06cf51cbca9",
+        "name": "displayEntryDialog",
+        "field": "payload.displayEntryDialog",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "// displayEntryDialog\n        class DisplayEntryDialog\n        {\n            constructor(app) //type 0 message, 1 ok, 2 ok-cancel\n            {\n                this.app = app;\n                this.callback = null;\n                this.title = \"logEntry\";\n            }\n            onDocumentReady(cardContainerId)\n            {\n                \n                let messageTable = document.createElement('table');\n                messageTable.setAttribute('width', '100%');\n                let messageTableTr1 = document.createElement('tr');\n                let messageTableTd1 = document.createElement('td');\n                messageTableTd1.setAttribute('width', '100%');\n                messageTableTr1.appendChild(messageTableTd1);\n                messageTable.appendChild(messageTableTr1);\n\n                this.messageSpan  = document.createElement('span');\n                this.messageSpan.setAttribute('class', 'okCancelCard-text');\n                this.messageSpan.innerHTML = '';\n                messageTableTd1.appendChild(this.messageSpan);\n \n                let logEntryHeaderTable = document.createElement('table');\n                messageTableTd1.appendChild(logEntryHeaderTable);\n                logEntryHeaderTable.setAttribute('width', '100%');\n\n                this.recordHeaderSpanList = [];\n                let recordHeaderLabel = [\"Date:\", \"Author:\", \"Title\"];\n                for (let irow = 0; irow < 3; ++ irow)\n                {\n                    logEntryHeaderTable.append(document.createElement('tr'));\n                    logEntryHeaderTable.lastChild.append(document.createElement('td'));\n                    logEntryHeaderTable.lastChild.lastChild.setAttribute('width', '30%');\n                    logEntryHeaderTable.lastChild.lastChild.setAttribute('align', 'left');\n                    logEntryHeaderTable.lastChild.lastChild.append(document.createElement('span'));\n                    logEntryHeaderTable.lastChild.lastChild.lastChild.classList.add('logEntryDisplayHeader');\n                    logEntryHeaderTable.lastChild.lastChild.lastChild.innerHTML = recordHeaderLabel[irow];\n                    logEntryHeaderTable.lastChild.append(document.createElement('td'));\n                    logEntryHeaderTable.lastChild.lastChild.setAttribute('width', '70%');\n                    logEntryHeaderTable.lastChild.lastChild.setAttribute('align', 'left');\n                    let recordHeaderSpan = document.createElement('span');\n                    logEntryHeaderTable.lastChild.lastChild.append(recordHeaderSpan);\n                    recordHeaderSpan.classList.add('logEntryDisplayHeader');\n                    this.recordHeaderSpanList.push(recordHeaderSpan)\n\n                }\n\n                let logEntryTextTable = document.createElement('table');\n                messageTableTd1.appendChild(logEntryTextTable);\n                logEntryTextTable.setAttribute('width', '100%');\n                logEntryTextTable.append(document.createElement('tr'));\n                logEntryTextTable.lastChild.append(document.createElement('td'));\n                logEntryTextTable.lastChild.lastChild.setAttribute('width', '100%');\n                logEntryTextTable.lastChild.lastChild.setAttribute('align', 'center');\n                this.logEntryTextArea = document.createElement('textarea');\n                logEntryTextTable.lastChild.lastChild.append(this.logEntryTextArea)\n                this.logEntryTextArea.classList.add('logEntryDisplayTextArea');\n                this.logEntryTextArea.setAttribute('rows', '10');\n                \n                let messageTableTr3 = document.createElement('tr');\n                let messageTableTd3 = document.createElement('td');\n                messageTableTd3.setAttribute('width', '100%');\n                messageTableTr3.appendChild(messageTableTd3);\n\n                let buttonTable = document.createElement('table');\n                buttonTable.setAttribute('width', '100%');\n                let buttonTableTr1 = document.createElement('tr');\n                let buttonTableTd1 = document.createElement('td');\n                let buttonWidth = '100%';\n                messageTable.appendChild(messageTableTr3);\n\n                buttonTableTd1.setAttribute('width', buttonWidth);\n                buttonTableTd1.setAttribute('align', 'center');\n                buttonTableTd1.setAttribute('style', 'padding-top:20px;');\n                buttonTableTr1.appendChild(buttonTableTd1);\n                buttonTable.appendChild(buttonTableTr1);\n                messageTableTd3.appendChild(buttonTable);\n\n                let setButton = document.createElement('button');\n                setButton.setAttribute('class', 'btn okCancelCard-button');\n                setButton.innerHTML = 'Close';\n                setButton.onclick = event => {this.okButtonPressed(true)};\n                buttonTableTd1.appendChild(setButton);\n\n                this.cardTitle = document.createElement('p');\n                this.cardTitle.setAttribute('class', 'okCancelCard-title');\n                \n                let cardBody = document.createElement('div');\n                cardBody.setAttribute('class', 'okCancelCard-body');\n                cardBody.appendChild(messageTable);\n\n                let card = document.createElement('div');\n                card.setAttribute('class', 'dialog-modal-content card okCancelCard');\n                card.appendChild(this.cardTitle);\n                card.appendChild(cardBody);\n\n                this.cardContainer = document.getElementById(cardContainerId);\n                this.cardContainer.appendChild(card);\n            }\n            showDialog(record)\n            {\n                let time =  new Date(record.timeStamp).toLocaleString('en-SE',{year: '2-digit', month: '2-digit', day : '2-digit', hour12:false, hour: '2-digit', minute: '2-digit'}).replace(',', '');\n\n                this.recordHeaderSpanList[0].innerText = time;\n                this.recordHeaderSpanList[1].innerText = record.author;\n                this.recordHeaderSpanList[2].innerText = record.title;\n                this.logEntryTextArea.value = record.text;\n                this.cardTitle.innerHTML = record.title;\n//            $( \"#showEntryDialogText\" ).val(record.text);\n                this.cardContainer.style.display = \"block\";\n            }\n            closeDialog()\n            {\n                this.cardContainer.style.display = \"none\";\n            }\n            okButtonPressed(okchoice)\n            {\n                this.cardContainer.style.display = \"none\";\n            }\n        }",
+        "output": "str",
+        "x": 1070,
+        "y": 80,
+        "wires": [
+            [
+                "1e3bab4fcaf727aa"
+            ]
+        ]
+    },
+    {
+        "id": "e3ef99aa92ec62d4",
+        "type": "template",
+        "z": "8795b06cf51cbca9",
+        "name": "editEntryDialog",
+        "field": "payload.editEntryDialog",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "// editEntryDialog\n        class EditEntryDialog\n        {\n            constructor(app) \n            {\n                this.app = app;\n                this.callback = null;\n                this.title = \"\";\n            }\n            onDocumentReady(cardContainerId)\n            {\n                \n                let messageTable = document.createElement('table');\n                messageTable.setAttribute('width', '100%');\n                let messageTableTr1 = document.createElement('tr');\n                let messageTableTd1 = document.createElement('td');\n                messageTableTd1.setAttribute('width', '100%');\n                messageTableTr1.appendChild(messageTableTd1);\n                messageTable.appendChild(messageTableTr1);\n\n                this.messageSpan  = document.createElement('span');\n                this.messageSpan.setAttribute('class', 'okCancelCard-text');\n                this.messageSpan.innerHTML = '';\n                messageTableTd1.appendChild(this.messageSpan);\n \n                let logEntryHeaderTable = document.createElement('table');\n                messageTableTd1.appendChild(logEntryHeaderTable);\n                logEntryHeaderTable.setAttribute('width', '100%');\n\n                logEntryHeaderTable.append(document.createElement('tr'));\n                logEntryHeaderTable.lastChild.append(document.createElement('td'));\n                logEntryHeaderTable.lastChild.lastChild.setAttribute('width', '100%');\n                logEntryHeaderTable.lastChild.lastChild.setAttribute('align', 'left');\n                logEntryHeaderTable.lastChild.lastChild.append(document.createElement('span'));\n                logEntryHeaderTable.lastChild.lastChild.lastChild.classList.add('logEntryDisplayHeader');\n                logEntryHeaderTable.lastChild.lastChild.lastChild.innerHTML = \"Title:\";\n\n                logEntryHeaderTable.append(document.createElement('tr'));\n                logEntryHeaderTable.lastChild.append(document.createElement('td'));\n                logEntryHeaderTable.lastChild.lastChild.setAttribute('width', '100%');\n                logEntryHeaderTable.lastChild.lastChild.setAttribute('align', 'center');\n                this.editTitleInput = document.createElement('input');\n                logEntryHeaderTable.lastChild.lastChild.append(this.editTitleInput);\n                this.editTitleInput.classList.add('logEntryDisplayTextArea');\n                this.editTitleInput.setAttribute(\"type\",\"text\");\n//               this.editTitleInput.setAttribute(\"size\",\"49\");\n\n                logEntryHeaderTable.append(document.createElement('tr'));\n                logEntryHeaderTable.lastChild.append(document.createElement('td'));\n                logEntryHeaderTable.lastChild.lastChild.setAttribute('width', '100%');\n                logEntryHeaderTable.lastChild.lastChild.setAttribute('align', 'left');\n                logEntryHeaderTable.lastChild.lastChild.append(document.createElement('span'));\n                logEntryHeaderTable.lastChild.lastChild.lastChild.classList.add('logEntryDisplayHeader');\n                logEntryHeaderTable.lastChild.lastChild.lastChild.innerHTML = \"Text:\";\n\n\n                logEntryHeaderTable.append(document.createElement('tr'));\n                logEntryHeaderTable.lastChild.append(document.createElement('td'));\n                logEntryHeaderTable.lastChild.lastChild.setAttribute('width', '100%');\n                logEntryHeaderTable.lastChild.lastChild.setAttribute('align', 'center');\n                this.logEntryTextArea = document.createElement('textarea');\n                logEntryHeaderTable.lastChild.lastChild.append(this.logEntryTextArea)\n                this.logEntryTextArea.classList.add('logEntryDisplayTextArea');\n                this.logEntryTextArea.setAttribute('rows', '10');\n                \n                let messageTableTr3 = document.createElement('tr');\n                let messageTableTd3 = document.createElement('td');\n                messageTableTd3.setAttribute('width', '100%');\n                messageTableTr3.appendChild(messageTableTd3);\n\n                let buttonTable = document.createElement('table');\n                buttonTable.setAttribute('width', '100%');\n                let buttonTableTr1 = document.createElement('tr');\n                let buttonTableTd1 = document.createElement('td');\n                let buttonWidth = '50%';\n                messageTable.appendChild(messageTableTr3);\n\n                buttonTableTd1.setAttribute('width', buttonWidth);\n                buttonTableTd1.setAttribute('align', 'center');\n                buttonTableTd1.setAttribute('style', 'padding-top:20px;');\n                buttonTableTr1.appendChild(buttonTableTd1);\n                buttonTable.appendChild(buttonTableTr1);\n                messageTableTd3.appendChild(buttonTable);\n\n                let setButton = document.createElement('button');\n                setButton.setAttribute('class', 'btn okCancelCard-button');\n                setButton.innerHTML = 'Enter';\n                setButton.onclick = event => {this.okButtonPressed(true)};\n                buttonTableTd1.appendChild(setButton);\n\n                messageTable.appendChild(messageTableTr3);\n                let buttonTableTd2 = document.createElement('td');\n                buttonTableTd2.setAttribute('width', '50%');\n                buttonTableTd2.setAttribute('style', 'padding-top:20px;');\n                buttonTableTd2.setAttribute('align', 'center');\n                buttonTableTr1.appendChild(buttonTableTd2);\n\n                let cancelButton = document.createElement('button');\n                cancelButton.setAttribute('class', 'btn okCancelCard-button');\n                cancelButton.innerHTML = 'Cancel';\n                cancelButton.onclick = event => {this.okButtonPressed(false)};\n                buttonTableTd2.appendChild(cancelButton);\n\n                this.cardTitle = document.createElement('p');\n                this.cardTitle.setAttribute('class', 'okCancelCard-title');\n                \n                let cardBody = document.createElement('div');\n                cardBody.setAttribute('class', 'okCancelCard-body');\n                cardBody.appendChild(messageTable);\n\n                let card = document.createElement('div');\n                card.setAttribute('class', 'dialog-modal-content card okCancelCard');\n                card.appendChild(this.cardTitle);\n                card.appendChild(cardBody);\n\n                this.cardContainer = document.getElementById(cardContainerId);\n                this.cardContainer.appendChild(card);\n            }\n            showDialog(record)\n            {\n                if (record == null)\n                {\n                    this.editTitleInput.value = \"\";\n                    this.logEntryTextArea.value = \"\";\n                    this.record = null;\n                }\n                else\n                {\n                    this.editTitleInput.value = record.title;\n                    this.logEntryTextArea.value = record.text;\n                    this.record = record;\n                }\n                this.cardContainer.style.display = \"block\";\n            }\n            closeDialog()\n            {\n                this.cardContainer.style.display = \"none\";\n            }\n            okButtonPressed(okchoice)\n            {\n                if (okchoice)\n                {\n                    if (this.record == null)\n                    {\n                        let entry = \n                        {\n                            timeStamp : new Date().getTime(),\n                            author    : '',\n                            title     : this.editTitleInput.value,\n                            text      : this.logEntryTextArea.value\n                        };\n                        let actionMsg = \n                        {\n                            topic   : 'addLogBookEntry',\n                            payload : entry\n                        };\n                        this.app.sendActionMsg('addLogBookEntry','writeDatabase',actionMsg);\n                    }\n                    else\n                    {\n                        let entry = \n                        {\n                            timeStamp : new Date().getTime(),\n                            origTimeStamp : this.record.timeStamp,\n                            author    : this.record.author,\n                            title     : this.editTitleInput.value,\n                            text      : this.logEntryTextArea.value\n                        };\n\n                        let actionMsg = \n                        {\n                            topic   : 'editLogBookEntry',\n                            payload : entry\n                        };\n                        this.app.sendActionMsg('editLogBookEntry','writeDatabase',actionMsg);\n                    }\n                }\n                this.cardContainer.style.display = \"none\";\n            }\n        }",
+        "output": "str",
+        "x": 800,
+        "y": 240,
+        "wires": [
+            [
+                "df14e42f859110df"
+            ]
+        ]
+    },
+    {
+        "id": "df14e42f859110df",
+        "type": "template",
+        "z": "8795b06cf51cbca9",
+        "name": "searchCard",
+        "field": "payload.searchCard",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "//searchCard\n        class SearchCard \n        {\n            constructor(app, config)\n            {\n                this.app = app;\n                this.config = config;\n                \n            }\n            onDocumentReady()\n            {\n\n                let stopTime = new Date().getTime();\n                let startTime = new Date(stopTime - 3600 * 24 * 7 * 1000).getTime();\n\n                let containerRowDiv = document.createElement('div');\n                containerRowDiv.setAttribute('class', 'row cubeRowCard-containerRow');\n                document.getElementById('appContent').appendChild(containerRowDiv);\n                \n                let containerColDiv = document.createElement('div');\n                containerColDiv.setAttribute('class', 'col-md-12');\n                containerColDiv.setAttribute('align', 'center');\n                containerRowDiv.appendChild(containerColDiv);\n                \n                let cardDiv = document.createElement('div');\n                cardDiv.setAttribute('class', 'card cubeRowCard');\n                containerColDiv.appendChild(cardDiv);\n\n                let titleTable = document.createElement('table');\n                titleTable.setAttribute('width', '100%');\n                let titleRow  = document.createElement('tr');\n                let titleCol  = document.createElement('td');\n                titleCol.setAttribute('width', '85%');\n                titleCol.setAttribute('align', 'left');\n                let titleSpan  = document.createElement('span');\n                titleSpan.setAttribute('class', 'cubeRowCard-title');\n                titleSpan.innerHTML = this.config.title;\n                titleCol.appendChild(titleSpan);\n                titleRow.appendChild(titleCol);\n                let buttonCol  = document.createElement('td');\n                buttonCol.setAttribute('width', '15%');\n\n                this.displayButton = document.createElement('button');\n                this.displayButton.setAttribute('class', 'btn btn-block cubeRowCard-title-button');\n                this.displayButton.innerHTML = '-';\n                this.displayButton.onclick = event => {this.toggle()};;\n//                buttonCol.appendChild(this.displayButton);\n                titleRow.appendChild(buttonCol);\n\n                this.cardBodyDiv = document.createElement('div');\n                this.cardBodyDiv.setAttribute('class', 'cubeRowCard-body');\n                this.cardBodyDiv.setAttribute('align', 'center');\n                this.cardBodyTable = document.createElement('table');\n                this.cardBodyTable.setAttribute('width', '100%');\n                this.cardBodyDiv.appendChild(this.cardBodyTable);\n                \n                titleTable.appendChild(titleRow);\n                cardDiv.appendChild(titleTable);\n                cardDiv.appendChild(this.cardBodyDiv);\n\n                let cardBodyTable = document.createElement('table');\n                this.cardBodyDiv.appendChild(cardBodyTable);\n\n                cardBodyTable.setAttribute('width', '100%');\n                let cardBodyR1 = document.createElement('tr');\n                cardBodyTable.appendChild(cardBodyR1);\n                let cardBodyR1C1 = document.createElement('td');\n                cardBodyR1C1.setAttribute('width', '100%');\n                cardBodyR1.appendChild(cardBodyR1C1);\n\n                let controlButtonTable = document.createElement('table');\n                controlButtonTable.setAttribute('width', '100%');\n                cardBodyR1C1.appendChild(controlButtonTable);\n\n                let controlButtonTableR1 = document.createElement('tr');\n                controlButtonTable.appendChild(controlButtonTableR1);\n\n                let controlButtonTableR1C1 = document.createElement('td');\n                controlButtonTableR1.appendChild(controlButtonTableR1C1);\n                controlButtonTableR1C1.style.width = \"10%\";\n                controlButtonTableR1C1.style.textAlign = \"right\";\n\n                let startLabel = document.createElement('span');\n                controlButtonTableR1C1.appendChild(startLabel);\n                startLabel.classList.add(\"cubeListChooser-tableHeading\");\n                startLabel.innerHTML = \"Start\"\n\n                let controlButtonTableR1C2 = document.createElement('td');\n                controlButtonTableR1.appendChild(controlButtonTableR1C2);\n                controlButtonTableR1C2.style.width = \"30%\";\n\n                this.startDateInputWidget =  document.createElement('input');\n                this.startDateInputWidget.classList.add(\"cubeListChooser-inputbox\");\n                this.startDateInputWidget.id = 'archiveStartDateInput';\n                this.startDateInputWidget.type = 'text';\n                this.setStartString(startTime);\n                controlButtonTableR1C2.appendChild(this.startDateInputWidget);\n\n                let controlButtonTableR1C3 = document.createElement('td');\n                controlButtonTableR1.appendChild(controlButtonTableR1C3);\n                controlButtonTableR1C3.style.width = \"10%\";\n                controlButtonTableR1C3.style.textAlign = \"right\";\n\n                let stopLabel = document.createElement('span');\n                controlButtonTableR1C3.appendChild(stopLabel);\n                stopLabel.classList.add(\"cubeListChooser-tableHeading\");\n                stopLabel.innerHTML = \"Stop\"\n\n                let controlButtonTableR1C4 = document.createElement('td');\n                controlButtonTableR1.appendChild(controlButtonTableR1C4);\n                controlButtonTableR1C4.style.width = \"30%\"\n\n                this.stopDateInputWidget =  document.createElement('input');\n                this.stopDateInputWidget.classList.add(\"cubeListChooser-inputbox\");\n                this.stopDateInputWidget.id = 'archiveStopDateInput';\n                this.stopDateInputWidget.type = 'text';\n                this.setStopString(stopTime);\n                controlButtonTableR1C4.appendChild(this.stopDateInputWidget);\n\n                let controlButtonTableR1C5 = document.createElement('td');\n                controlButtonTableR1.appendChild(controlButtonTableR1C5);\n                controlButtonTableR1C5.style.width = \"20%\";\n                controlButtonTableR1C5.style.textAlign = \"right\";\n\n                this.getDataButtonWidget =  document.createElement('button');\n                this.getDataButtonWidget.classList.add('btn-primary');\n                this.getDataButtonWidget.classList.add('cubeListChooser-button');\n                this.getDataButtonWidget.innerHTML = 'Get Data';\n                this.getDataButtonWidget.onclick = event => {this.getArchiveData()};\n                controlButtonTableR1C5.appendChild(this.getDataButtonWidget);\n\n                if (this.config.displayOnOpen)\n                {\n                    this.cardBodyDiv.style.display = \"block\";\n                    this.displayButton.innerHTML = '-';\n                }\n                else\n                {\n                    this.cardBodyDiv.style.display = \"none\";\n                    this.displayButton.innerHTML = '+';\n                }\n            }\n            toggle()\n            {\n                if (this.cardBodyDiv.style.display === \"none\") \n                {\n                    this.cardBodyDiv.style.display = \"block\";\n                    this.displayButton.innerHTML = '-';\n                } \n                else \n                {\n                    this.cardBodyDiv.style.display = \"none\";\n                    this.displayButton.innerHTML = '+';\n                }\n                \n            }\n            getArchiveData()\n            {\n                let startTime = new Date(this.startDateInputWidget.value).getTime();\n                let stopTime  = new Date(this.stopDateInputWidget.value).getTime();\n                if ((stopTime - startTime) < 1 ) return;\n                let actionMsg = \n                {\n                    topic   : 'getLogBook',\n                    payload : {startTime: startTime, stopTime: stopTime}\n                };\n                this.app.sendActionMsg('getLogBook','readDatabase',actionMsg);\n            }\n            setStartString(startTime)\n            {\n                this.startDateInputWidget.value = new Date(startTime).toLocaleString('en-US',{year: 'numeric', month: '2-digit', day : '2-digit', hour12:false, hour: '2-digit', minute: '2-digit'}).replace(',', '');\n            }\n            setStopString(stopTime)\n            {\n                this.stopDateInputWidget.value = new Date(stopTime).toLocaleString('en-US',{year: 'numeric', month: '2-digit', day : '2-digit', hour12:false, hour: '2-digit', minute: '2-digit'}).replace(',', '');\n            }\n\n        }\n",
+        "output": "str",
+        "x": 1050,
+        "y": 40,
+        "wires": [
+            [
+                "5f0e6064e48bf311"
+            ]
+        ]
+    },
+    {
+        "id": "d2960a2c9f36d6f4",
+        "type": "function",
+        "z": "8795b06cf51cbca9",
+        "name": "Insert complete",
+        "func": "return {\n    topic : msg.topic,\n    payload:{\n        topic           : msg.topic,\n        payload         : true,\n        userID          : msg.userID,\n    }\n};\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 500,
+        "wires": [
+            [
+                "e5cbbcc312b3a70d"
+            ]
+        ]
+    },
+    {
+        "id": "bedd404e06531409",
+        "type": "function",
+        "z": "8795b06cf51cbca9",
+        "name": "remove complete",
+        "func": "return {\n    topic : msg.topic,\n    payload:{\n        topic           : msg.topic,\n        payload         : true,\n        userID          : msg.userID,\n    }\n};\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 680,
+        "wires": [
+            [
+                "e5cbbcc312b3a70d"
+            ]
+        ]
+    },
+    {
+        "id": "29ec49ade2f56418",
+        "type": "function",
+        "z": "8795b06cf51cbca9",
+        "name": "Update complete",
+        "func": "return {\n    topic : msg.topic,\n    payload:{\n        topic           : msg.topic,\n        payload         : true,\n        userID          : msg.userID,\n    }\n};\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 620,
+        "wires": [
+            [
+                "e5cbbcc312b3a70d"
             ]
         ]
     }

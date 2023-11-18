@@ -1,4 +1,4 @@
-OX=blinky-lite-box-01
+BOX=blinky-lite-box-01
 MONGODBIP=mongodb://admin:xxxx@192.168.1.201:27017/blinky-lite?retryWrites=true&serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-256
 MQTTCLIENTID=blinky-lite-box-01
 MQTTSERVERIP=192.168.1.201
