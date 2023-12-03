@@ -636,9 +636,7 @@
             "6e5fe8f4665ee2fd"
         ],
         "x": 134,
-        "y": 139,
-        "w": 1312,
-        "h": 142
+        "y": 139
     },
     {
         "id": "222f7527456f431b",
@@ -663,9 +661,7 @@
             "c4e92c75751127a2"
         ],
         "x": 134,
-        "y": 319,
-        "w": 1312,
-        "h": 142
+        "y": 319
     },
     {
         "id": "8513d2368ac7161f",
@@ -690,9 +686,7 @@
             "b690e92951ea57f3"
         ],
         "x": 134,
-        "y": 499,
-        "w": 1312,
-        "h": 142
+        "y": 499
     },
     {
         "id": "e02813d59f160a5c",
@@ -717,9 +711,7 @@
             "4f5138b1c21ad771"
         ],
         "x": 134,
-        "y": 679,
-        "w": 1312,
-        "h": 142
+        "y": 679
     },
     {
         "id": "e0c14b4f190836c9",
@@ -744,9 +736,7 @@
             "66ce09a4d677808a"
         ],
         "x": 134,
-        "y": 859,
-        "w": 1312,
-        "h": 142
+        "y": 859
     },
     {
         "id": "674af16debdd8f0f",
@@ -771,9 +761,7 @@
             "6ab0f551657f68ec"
         ],
         "x": 134,
-        "y": 1039,
-        "w": 1312,
-        "h": 142
+        "y": 1039
     },
     {
         "id": "9e9aab81c0c1e479",
@@ -798,9 +786,7 @@
             "25f8c290f03f8dce"
         ],
         "x": 134,
-        "y": 1219,
-        "w": 1312,
-        "h": 142
+        "y": 1219
     },
     {
         "id": "ff1586c44763ab25",
@@ -825,9 +811,7 @@
             "bb3bc9ccb4b7ccfa"
         ],
         "x": 134,
-        "y": 1399,
-        "w": 1312,
-        "h": 142
+        "y": 1399
     },
     {
         "id": "e61434d43b450009",
@@ -852,9 +836,7 @@
             "ddd27203e99450e3"
         ],
         "x": 134,
-        "y": 1579,
-        "w": 1312,
-        "h": 142
+        "y": 1579
     },
     {
         "id": "8b1ca40e143d36e4",
@@ -879,9 +861,7 @@
             "17ea133e78cd791e"
         ],
         "x": 134,
-        "y": 1759,
-        "w": 1312,
-        "h": 142
+        "y": 1759
     },
     {
         "id": "64d7785b86bd0e78",
@@ -906,9 +886,7 @@
             "e1806fc6647b30e4"
         ],
         "x": 134,
-        "y": 1939,
-        "w": 1312,
-        "h": 142
+        "y": 1939
     },
     {
         "id": "17d8aee66ef5f14b",
@@ -933,9 +911,7 @@
             "9ee70b7f7567a0d3"
         ],
         "x": 134,
-        "y": 2119,
-        "w": 1312,
-        "h": 142
+        "y": 2119
     },
     {
         "id": "6c2db529cbe5190a",
@@ -960,9 +936,7 @@
             "14fc94d6d31cb660"
         ],
         "x": 134,
-        "y": 2299,
-        "w": 1312,
-        "h": 142
+        "y": 2299
     },
     {
         "id": "a732e8657f5583e1",
@@ -987,9 +961,7 @@
             "989ba4dd6a4ca183"
         ],
         "x": 134,
-        "y": 2479,
-        "w": 1312,
-        "h": 142
+        "y": 2479
     },
     {
         "id": "16d44c3cfa3101e4",
@@ -1014,9 +986,7 @@
             "e879f75c0e5c3ca1"
         ],
         "x": 134,
-        "y": 2659,
-        "w": 1312,
-        "h": 142
+        "y": 2659
     },
     {
         "id": "1ea74c70db7a8d4c",
@@ -1041,9 +1011,7 @@
             "d9e2848941f56361"
         ],
         "x": 134,
-        "y": 2839,
-        "w": 1312,
-        "h": 142
+        "y": 2839
     },
     {
         "id": "52e9056d6e8207fb",
@@ -1068,9 +1036,7 @@
             "59f2b833ab020772"
         ],
         "x": 134,
-        "y": 3019,
-        "w": 1312,
-        "h": 142
+        "y": 3019
     },
     {
         "id": "09dbbd36ba9b70c2",
@@ -1095,9 +1061,7 @@
             "273db2592695c0d2"
         ],
         "x": 134,
-        "y": 3199,
-        "w": 1312,
-        "h": 142
+        "y": 3199
     },
     {
         "id": "727f4fbbc86c2387",
@@ -1122,9 +1086,7 @@
             "9438da355fd08b18"
         ],
         "x": 134,
-        "y": 3379,
-        "w": 1312,
-        "h": 142
+        "y": 3379
     },
     {
         "id": "49dd55f9fc61ca4b",
@@ -1149,9 +1111,7 @@
             "3621238135f38bc8"
         ],
         "x": 134,
-        "y": 3559,
-        "w": 1312,
-        "h": 142
+        "y": 3559
     },
     {
         "id": "c3a9f56445acb1b2",
@@ -1182,9 +1142,7 @@
             "a9bfa7132c055cbb"
         ],
         "x": 174,
-        "y": 319,
-        "w": 1052,
-        "h": 342
+        "y": 319
     },
     {
         "id": "410a9f1e572e2cb6",
@@ -1382,9 +1340,7 @@
             "4855b6b5352f7431"
         ],
         "x": 154,
-        "y": 899,
-        "w": 1582,
-        "h": 82
+        "y": 899
     },
     {
         "id": "4d9aee0d09b30607",
@@ -1404,9 +1360,7 @@
             "893874ffb26184f9"
         ],
         "x": 154,
-        "y": 1039,
-        "w": 932,
-        "h": 82
+        "y": 1039
     },
     {
         "id": "801fb378bac3288c",
@@ -1530,9 +1484,7 @@
             "bf4cd7e5aa7b7c58"
         ],
         "x": 174,
-        "y": 699,
-        "w": 1102,
-        "h": 842
+        "y": 699
     },
     {
         "id": "b47ef8a5f938f683",
@@ -1573,9 +1525,7 @@
             "09c74c5d6613d881"
         ],
         "x": 174,
-        "y": 1579,
-        "w": 802,
-        "h": 842
+        "y": 1579
     },
     {
         "id": "e7108cefde0d37c6",
@@ -1617,7 +1567,9 @@
             "56adc9986f0b6e4a"
         ],
         "x": 174,
-        "y": 59
+        "y": 59,
+        "w": 1532,
+        "h": 282
     },
     {
         "id": "6feaa64a0a1fa2e4",
@@ -1648,7 +1600,9 @@
             "6597cda2e4462431"
         ],
         "x": 174,
-        "y": 439
+        "y": 439,
+        "w": 1712,
+        "h": 202
     },
     {
         "id": "5cd034832a45a34a",
@@ -1679,7 +1633,9 @@
             "7a6f7f3b76d462d9"
         ],
         "x": 184,
-        "y": 719
+        "y": 719,
+        "w": 1422,
+        "h": 242
     },
     {
         "id": "af622659deabdbdd",
@@ -1826,9 +1782,7 @@
             "0cbfa745085223ce"
         ],
         "x": 174,
-        "y": 59,
-        "w": 1532,
-        "h": 322
+        "y": 59
     },
     {
         "id": "9a451502d1c0caed",
@@ -1873,9 +1827,7 @@
             "f6c83af80fbf9931"
         ],
         "x": 174,
-        "y": 479,
-        "w": 1952,
-        "h": 362
+        "y": 479
     },
     {
         "id": "b972aa3ee60fa207",
@@ -1902,9 +1854,7 @@
             "d387c14850e4b2de"
         ],
         "x": 74,
-        "y": 519,
-        "w": 952,
-        "h": 302
+        "y": 519
     },
     {
         "id": "7046efa6cee97ff7",
@@ -1954,9 +1904,7 @@
             "30a4a020cf5c79ba"
         ],
         "x": 114,
-        "y": 99,
-        "w": 342,
-        "h": 422
+        "y": 99
     },
     {
         "id": "bb926706795e937c",
@@ -2035,9 +1983,7 @@
             "1a7c9aa5910e15f6"
         ],
         "x": 154,
-        "y": 39,
-        "w": 472,
-        "h": 342
+        "y": 39
     },
     {
         "id": "eca7f29a338f593a",
@@ -2074,9 +2020,7 @@
             "6fbbca37caabe403"
         ],
         "x": 134,
-        "y": 459,
-        "w": 1652,
-        "h": 322
+        "y": 459
     },
     {
         "id": "58645e2c91cd1ed6",
@@ -2096,9 +2040,7 @@
             "537bf8b86b4354ba"
         ],
         "x": 794,
-        "y": 79,
-        "w": 712,
-        "h": 142
+        "y": 79
     },
     {
         "id": "b4e9249c0372fe12",
@@ -11083,7 +11025,7 @@
         "z": "a614b07c28242d69",
         "g": "5cd034832a45a34a",
         "name": "Prepare Alarm Notify",
-        "func": "if (msg.payload.cube.alarm.notify.name.length < 1) return null;\nif (msg.payload.cube.alarm.notify.number.length < 1) return null;\nlet alarmHistory = context.get('alarmHistory');\nlet staleSMSTimeout = env.get(\"ALARM_TIMEOUT\");\nlet now = new Date().getTime();\nif (alarmHistory.length > 0)\n{\n    while (alarmHistory.length > 0)\n    {\n        if ((now - alarmHistory[0].timestamp) > staleSMSTimeout)\n        {\n            alarmHistory.shift();\n        }\n        else\n        {\n            break;\n        }\n    }\n\n    if (alarmHistory.length > 0)\n    {\n        if (alarmHistory.findIndex(cube => cube.title == msg.payload.title) >= 0) return null;\n    }\n}\nalarmHistory.push({title:msg.payload.title, timestamp:now});\n\nlet type = '';\nif (msg.payload.cube.alarm.value == 1) type = 'LOW';\nif (msg.payload.cube.alarm.value == 2) type = 'HIGH';\nif (msg.payload.cube.alarm.value == 3) type = 'LOLO';\nif (msg.payload.cube.alarm.value == 4) type = 'HIHI';\nvar message = 'Alarm-' + type + ': ' + msg.payload.title;\nmessage = message + ' is at ' + msg.payload.cube.value.toString() + ' ' + msg.payload.cube.unit\nlet alarmTopic = env.get(\"BOX\") + \"/\" + env.get(\"HUB\") + \"/alarm\";\nreturn {topic:alarmTopic, payload:{\"type\":\"message\",\"chatId\":msg.payload.cube.alarm.notify.number,\"content\":message}};\n",
+        "func": "//if (msg.payload.cube.alarm.notify.name.length < 1) return null;\n//if (msg.payload.cube.alarm.notify.number.length < 1) return null;\nlet alarmHistory = context.get('alarmHistory');\nlet staleSMSTimeout = env.get(\"ALARM_TIMEOUT\");\nlet now = new Date().getTime();\nif (alarmHistory.length > 0)\n{\n    while (alarmHistory.length > 0)\n    {\n        if ((now - alarmHistory[0].timestamp) > staleSMSTimeout)\n        {\n            alarmHistory.shift();\n        }\n        else\n        {\n            break;\n        }\n    }\n\n    if (alarmHistory.length > 0)\n    {\n        if (alarmHistory.findIndex(cube => cube.title == msg.payload.title) >= 0) return null;\n    }\n}\nalarmHistory.push({title:msg.payload.title, timestamp:now});\n\nlet type = '';\nif (msg.payload.cube.alarm.value == 1) type = 'LOW';\nif (msg.payload.cube.alarm.value == 2) type = 'HIGH';\nif (msg.payload.cube.alarm.value == 3) type = 'LOLO';\nif (msg.payload.cube.alarm.value == 4) type = 'HIHI';\nvar message = 'Alarm-' + type + ': ' + msg.payload.title;\nmessage = message + ' is at ' + msg.payload.cube.value.toString() + ' ' + msg.payload.cube.unit\nlet alarmTopic = env.get(\"BOX\") + \"/\" + env.get(\"HUB\") + \"/alarm\";\nreturn {topic:alarmTopic, payload:{\"type\":\"message\",\"chatId\":msg.payload.cube.alarm.notify.number,\"content\":message,\"topic\":msg.payload.title}};\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
