@@ -2076,7 +2076,9 @@
             "7741cd9b5c824150"
         ],
         "x": 54,
-        "y": 99
+        "y": 99,
+        "w": 1732,
+        "h": 82
     },
     {
         "id": "efd09052a685f540",
@@ -5998,7 +6000,7 @@
         "z": "e17f7487.2a78e8",
         "g": "eca7f29a338f593a",
         "name": "parse tray echo",
-        "func": "let box = msg.topic.split('/')[0];\nlet trayArray = [];\nlet customRoute = msg.tray.topic.split('/')[5];\nfor(let key in msg.payload) \n{\n    trayArray.push( {\n        topic : box + '/tray/' + msg.payload[key].type + '/' + msg.payload[key].name + '/setting/' + customRoute,\n        payload: JSON.stringify(msg.payload[key])\n    });\n}\nreturn {topic:'trays',payload:trayArray};\n//topic : box + '/tray/' + msg.payload[key].type + '/' + msg.payload[key].name + '/setting/echo',\n",
+        "func": "let box = msg.topic.split('/')[0];\nlet trayArray = [];\nfor(let key in msg.payload) \n{\n    trayArray.push( {\n        topic : msg.tray.topic,\n        payload: JSON.stringify(msg.payload[key])\n    });\n}\nreturn {topic:'trays',payload:trayArray};\n//topic : box + '/tray/' + msg.payload[key].type + '/' + msg.payload[key].name + '/setting/echo',\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
