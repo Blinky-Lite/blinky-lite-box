@@ -327,7 +327,7 @@
         "out": [
             {
                 "x": 2000,
-                "y": 440,
+                "y": 480,
                 "wires": [
                     {
                         "id": "7f6f0675815e73bb",
@@ -1341,9 +1341,7 @@
             "4855b6b5352f7431"
         ],
         "x": 154,
-        "y": 899,
-        "w": 1582,
-        "h": 82
+        "y": 899
     },
     {
         "id": "4d9aee0d09b30607",
@@ -1363,9 +1361,7 @@
             "893874ffb26184f9"
         ],
         "x": 154,
-        "y": 1039,
-        "w": 932,
-        "h": 82
+        "y": 1039
     },
     {
         "id": "801fb378bac3288c",
@@ -1857,7 +1853,9 @@
             "d387c14850e4b2de"
         ],
         "x": 74,
-        "y": 519
+        "y": 519,
+        "w": 952,
+        "h": 302
     },
     {
         "id": "7046efa6cee97ff7",
@@ -1986,9 +1984,7 @@
             "1a7c9aa5910e15f6"
         ],
         "x": 154,
-        "y": 39,
-        "w": 472,
-        "h": 342
+        "y": 39
     },
     {
         "id": "eca7f29a338f593a",
@@ -2025,9 +2021,7 @@
             "6fbbca37caabe403"
         ],
         "x": 134,
-        "y": 459,
-        "w": 1652,
-        "h": 322
+        "y": 459
     },
     {
         "id": "58645e2c91cd1ed6",
@@ -2047,9 +2041,7 @@
             "537bf8b86b4354ba"
         ],
         "x": 794,
-        "y": 79,
-        "w": 712,
-        "h": 142
+        "y": 79
     },
     {
         "id": "b4e9249c0372fe12",
@@ -3485,10 +3477,10 @@
         "fieldType": "msg",
         "format": "javascript",
         "syntax": "mustache",
-        "template": "// script\n{{{payload.cubeControlApp}}}\n{{{payload.navbar}}}\n{{{payload.alarmLimitDialog}}}\n{{{payload.okCancelDialog}}}\n{{{payload.cubeRowCard}}}\n{{{payload.cubeRowParameterView}}}\n{{{payload.onOffSetCube}}}\n{{{payload.numberSetCube}}}\n{{{payload.textSetCube}}}\n{{{payload.numberReadCube}}}\n{{{payload.timeStampReadCube}}}\n{{{payload.textReadCube}}}\n{{{payload.imageReadCube}}}\n{{{payload.labelReadCube}}}\n{{{payload.stateChoiceCube}}}\n{{{payload.dropChoiceCube}}}\n{{{payload.gaugeCube}}}\n{{{payload.hbarCube}}}\n{{{payload.archivePlotCard}}}\n{{{payload.timePlotCard}}}\n{{{payload.vectorPlotCard}}}\n{{{payload.iframeCard}}}\n{{{payload.customCard}}}\n{{{payload.userCard}}}\n{{{payload.dictionary}}}\n{{{payload.init}}}",
+        "template": "// script\n{{{payload.cubeControlApp}}}\n{{{payload.navbar}}}\n{{{payload.alarmLimitDialog}}}\n{{{payload.okCancelDialog}}}\n{{{payload.cubeRowCard}}}\n{{{payload.cubeRowParameterView}}}\n{{{payload.onOffSetCube}}}\n{{{payload.numberSetCube}}}\n{{{payload.textSetCube}}}\n{{{payload.numberReadCube}}}\n{{{payload.timeStampReadCube}}}\n{{{payload.textReadCube}}}\n{{{payload.imageReadCube}}}\n{{{payload.labelReadCube}}}\n{{{payload.stateChoiceCube}}}\n{{{payload.dropChoiceCube}}}\n{{{payload.settingIncrCube}}}\n{{{payload.gaugeCube}}}\n{{{payload.hbarCube}}}\n{{{payload.archivePlotCard}}}\n{{{payload.timePlotCard}}}\n{{{payload.vectorPlotCard}}}\n{{{payload.iframeCard}}}\n{{{payload.customCard}}}\n{{{payload.userCard}}}\n{{{payload.dictionary}}}\n{{{payload.init}}}",
         "output": "str",
         "x": 1510,
-        "y": 400,
+        "y": 440,
         "wires": [
             [
                 "9014c7a9a5d27c4b"
@@ -3504,7 +3496,7 @@
         "fieldType": "msg",
         "format": "javascript",
         "syntax": "mustache",
-        "template": "//numberSetCube\n        class NumberSetCube   extends CubeRowParameterView\n        {\n            addComponents(widgetColumns)\n            {\n                this.inputBox = document.createElement('input');\n                this.inputBox.setAttribute('class', 'numberSetCube-inputbox');\n                this.inputBox.setAttribute('type', 'text');\n                this.inputBox.setAttribute('value', '0');\n                this.inputBox.oninput = event => {this.inputChange()};\n                widgetColumns[0].appendChild(this.inputBox);\n\n                this.unitSpan  = document.createElement('span');\n                this.unitSpan.setAttribute('class', 'cubeRowParameterView-unit-span');\n                this.unitSpan.innerHTML = '';\n                widgetColumns[1].appendChild(this.unitSpan);\n\n                this.settingButton = document.createElement('button');\n                this.settingButton.setAttribute('class', 'btn btn-block numberSetCube-button');\n                this.settingButton.innerHTML = '&#10003;';\n                this.settingButton.onclick = event => {this.changeSetting()};\n                widgetColumns[2].appendChild(this.settingButton);\n\n                this.showSettingButton(false);\n            }\n\n            showSettingButton(showButton)\n            {\n                if (showButton)\n                {\n                    this.settingButton.style.display='block';\n                }\n                else\n                {\n                    this.settingButton.style.display='none';\n                }\n            }\n            inputChange()\n            {\n                this.changed = true;\n                this.showSettingButton(true);\n            }\n            changeSetting()\n            {\n                this.showSettingButton(false);\n                if (isNaN(this.inputBox.value))\n                {\n                    this.changed = false;\n                    return;\n                }\n                let payload = {'cube': this.config.cubeName, 'value':Number(this.inputBox.value)};\n                let actionMsg = \n                    {\n                        topic   : this.card.app.box + '/tray/' +  this.tray.type + '/' +  this.tray.name + '/setting/setting',\n                        payload : payload\n                    };\n                this.card.app.sendActionMsg('setting','setting',actionMsg);\n                this.changed = false;\n            }\n            updateCubeValue()\n            {\n                if (!this.changed) \n                {\n                    if ( \"round\" in this.config)\n                    {\n                        this.inputBox.value = this.tray[this.config.cubeName].value.toFixed(this.config.round);\n                    }\n                    else\n                    {\n                        this.inputBox.value = this.tray[this.config.cubeName].value.toString();\n                    }\n                    this.unitSpan.innerHTML    = this.tray[this.config.cubeName].unit;\n                }\n\n            }\n        }",
+        "template": "//numberSetCube\n        class NumberSetCube   extends CubeRowParameterView\n        {\n            addComponents(widgetColumns)\n            {\n                this.startingValueText = \"0\";\n                this.inputBox = document.createElement('input');\n                this.inputBox.setAttribute('class', 'numberSetCube-inputbox');\n                this.inputBox.setAttribute('type', 'text');\n                this.inputBox.setAttribute('value', '0');\n                this.inputBox.oninput = event => {this.inputChange()};\n                widgetColumns[0].appendChild(this.inputBox);\n\n                this.unitSpan  = document.createElement('span');\n                this.unitSpan.setAttribute('class', 'cubeRowParameterView-unit-span');\n                this.unitSpan.innerHTML = '';\n                widgetColumns[1].appendChild(this.unitSpan);\n\n                this.settingButton = document.createElement('button');\n                this.settingButton.setAttribute('class', 'btn btn-block numberSetCube-button');\n                this.settingButton.innerHTML = '&#10003;';\n                this.settingButton.onclick = event => {this.changeSetting()};\n                widgetColumns[2].appendChild(this.settingButton);\n\n                this.showSettingButton(false);\n            }\n\n            showSettingButton(showButton)\n            {\n                if (showButton)\n                {\n                    this.settingButton.style.display='block';\n                }\n                else\n                {\n                    this.settingButton.style.display='none';\n                }\n            }\n            inputChange()\n            {\n                this.changed = true;\n                this.showSettingButton(true);\n            }\n            changeSetting()\n            {\n                this.showSettingButton(false);\n                if (isNaN(this.inputBox.value))\n                {\n                    this.changed = false;\n                    return;\n                }\n                let lolo = this.tray[this.config.cubeName].alarm.limits.lolo;\n                let hihi = this.tray[this.config.cubeName].alarm.limits.hihi;\n                let newSetting = Number(this.inputBox.value);\n                if ((newSetting <= lolo) || (newSetting >= hihi))\n                {\n                    this.inputBox.value = this.startingValueText;\n                    this.card.app.acknowledgeDialog.showDialog('Error: Setting outside range',() => {});\n                }\n                let payload = {'cube': this.config.cubeName, 'value':Number(this.inputBox.value)};\n                let actionMsg = \n                    {\n                        topic   : this.card.app.box + '/tray/' +  this.tray.type + '/' +  this.tray.name + '/setting/setting',\n                        payload : payload\n                    };\n                this.card.app.sendActionMsg('setting','setting',actionMsg);\n                this.changed = false;\n            }\n            updateCubeValue()\n            {\n                if (!this.changed) \n                {\n                    if ( \"round\" in this.config)\n                    {\n                        this.inputBox.value = this.tray[this.config.cubeName].value.toFixed(this.config.round);\n                    }\n                    else\n                    {\n                        this.inputBox.value = this.tray[this.config.cubeName].value.toString();\n                    }\n                    this.startingValueText = this.inputBox.value;\n                    this.unitSpan.innerHTML    = this.tray[this.config.cubeName].unit;\n                }\n\n            }\n        }",
         "output": "str",
         "x": 1240,
         "y": 160,
@@ -3599,10 +3591,10 @@
         "fieldType": "msg",
         "format": "javascript",
         "syntax": "mustache",
-        "template": "// dictionary\n        const dict = new Map([\n            ['NavBar',              NavBar              ],\n            ['CubeRowCard',         CubeRowCard         ],\n            ['OnOffSetCube',        OnOffSetCube        ],\n            ['NumberSetCube',       NumberSetCube       ],\n            ['TextSetCube',         TextSetCube         ],\n            ['NumberReadCube',      NumberReadCube      ],\n            ['TimeStampReadCube',   TimeStampReadCube   ],\n            ['TextReadCube',        TextReadCube        ],\n            ['ImageReadCube',       ImageReadCube       ],\n            ['LabelReadCube',       LabelReadCube       ],\n            ['StateChoiceCube',     StateChoiceCube     ],\n            ['DropChoiceCube',      DropChoiceCube      ],\n            ['GaugeCube',           GaugeCube           ],\n            ['HbarCube',            HbarCube            ],\n            ['ArchivePlotCard',     ArchivePlotCard     ],\n            ['TimePlotCard',        TimePlotCard        ],\n            ['VectorPlotCard',      VectorPlotCard      ],\n            ['IframeCard',          IframeCard          ],\n            ['CustomCard',          CustomCard          ],\n            ['UserCard',            UserCard            ]]);\n",
+        "template": "// dictionary\n        const dict = new Map([\n            ['NavBar',              NavBar              ],\n            ['CubeRowCard',         CubeRowCard         ],\n            ['OnOffSetCube',        OnOffSetCube        ],\n            ['NumberSetCube',       NumberSetCube       ],\n            ['TextSetCube',         TextSetCube         ],\n            ['NumberReadCube',      NumberReadCube      ],\n            ['TimeStampReadCube',   TimeStampReadCube   ],\n            ['TextReadCube',        TextReadCube        ],\n            ['ImageReadCube',       ImageReadCube       ],\n            ['LabelReadCube',       LabelReadCube       ],\n            ['StateChoiceCube',     StateChoiceCube     ],\n            ['DropChoiceCube',      DropChoiceCube      ],\n            ['SettingIncrCube',     SettingIncrCube     ],\n            ['GaugeCube',           GaugeCube           ],\n            ['HbarCube',            HbarCube            ],\n            ['ArchivePlotCard',     ArchivePlotCard     ],\n            ['TimePlotCard',        TimePlotCard        ],\n            ['VectorPlotCard',      VectorPlotCard      ],\n            ['IframeCard',          IframeCard          ],\n            ['CustomCard',          CustomCard          ],\n            ['UserCard',            UserCard            ]]);\n",
         "output": "str",
         "x": 1520,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "b1e1a1fcc7d8bcec"
@@ -3621,7 +3613,7 @@
         "template": "// init\n        let app = new CubeControlApp(JSON.parse('{{{payload.urlInput}}}'), JSON.parse('{{{payload.config}}}') , JSON.parse('{{{payload.userID}}}') );\n\n        docReady(function() \n        {\n            app.docReady();\n            $( function() {$('#archiveStartDateInput').datetimepicker();} );\n            $( function() {$('#archiveStopDateInput').datetimepicker();} );\n\n        });\n        function docReady(fn) \n        {\n            // see if DOM is already available\n            if (document.readyState === \"complete\" || document.readyState === \"interactive\") {\n                // call on next available tick\n                setTimeout(fn, 1);\n            } else {\n                document.addEventListener(\"DOMContentLoaded\", fn);\n            }\n        }            \n        var _dummyNode;\n        function destroyNode(node)\n        {\n            if(!_dummyNode) _dummyNode = document.createElement('div');\n            _dummyNode.appendChild(node.parentNode.removeChild(node));\n            _dummyNode.innerHTML = \"\";\n        }\n//Finished Init App",
         "output": "str",
         "x": 1510,
-        "y": 360,
+        "y": 400,
         "wires": [
             [
                 "0a86ebd27d99d1a6"
@@ -3640,7 +3632,7 @@
         "template": "    <div id=\"appContent\" width=\"100%\"></div>\n    <div id=\"alarmLimitCardContainer\" class=\"row dialog-modal\"></div>\n    <div id=\"messageCardContainer\" class=\"row dialog-modal\"></div>\n    <div id=\"acknowledgeCardContainer\" class=\"row dialog-modal\"></div>\n    <div id=\"okCancelCardContainer\" class=\"row dialog-modal\"></div>",
         "output": "str",
         "x": 1530,
-        "y": 440,
+        "y": 480,
         "wires": [
             [
                 "131017e057624086"
@@ -3792,7 +3784,7 @@
         "template": "//iframeCard\n        class IframeCard \n        {\n            constructor(app, config)\n            {\n                this.app = app;\n                this.config = config;\n            }\n            onDocumentReady()\n            {\n                let containerRowDiv = document.createElement('div');\n                containerRowDiv.setAttribute('class', 'row iframeCard-containerRow');\n                document.getElementById('appContent').appendChild(containerRowDiv);\n                \n                let containerColDiv = document.createElement('div');\n                containerColDiv.setAttribute('class', 'col-md-12');\n                containerColDiv.setAttribute('align', 'center');\n                containerRowDiv.appendChild(containerColDiv);\n\n                let cardDiv = document.createElement('div');\n                cardDiv.setAttribute('class', 'card iframeCard');\n                containerColDiv.appendChild(cardDiv);\n                \n                let titleTable = document.createElement('table');\n                titleTable.setAttribute('width', '100%');\n                let titleRow  = document.createElement('tr');\n                let titleCol  = document.createElement('td');\n                titleCol.setAttribute('width', '85%');\n                titleCol.setAttribute('align', 'left');\n                let titleSpan  = document.createElement('span');\n                titleSpan.setAttribute('class', 'iframeCard-title');\n                titleSpan.innerHTML = this.config.title;\n                titleCol.appendChild(titleSpan);\n                titleRow.appendChild(titleCol);\n                let buttonCol  = document.createElement('td');\n                buttonCol.setAttribute('width', '15%');\n\n                this.displayButton = document.createElement('button');\n                this.displayButton.setAttribute('class', 'btn btn-block iframeCard-title-button');\n                this.displayButton.innerHTML = 'Close';\n                this.displayButton.onclick = event => {this.toggle()};\n                buttonCol.appendChild(this.displayButton);\n                titleRow.appendChild(buttonCol);\n\n                this.cardBodyDiv = document.createElement('div');\n\n                titleTable.appendChild(titleRow);\n                cardDiv.appendChild(titleTable);\n                cardDiv.appendChild(this.cardBodyDiv);\n\n                this.cardBodyDiv.setAttribute('style', \"width:100%; height: \" + this.config.height +  \";\");\n                this.iframe = document.createElement('iframe');\n                let keys = Object.keys(this.config.extraAttr);\n                for (var ii = 0; ii < keys.length; ++ii)\n                {\n                    this.iframe.setAttribute(keys[ii], this.config.extraAttr[keys[ii]]);\n                }\n\n                this.cardBodyDiv.appendChild(this.iframe);\n\n                if (this.config.displayOnOpen)\n                {\n                    let tsText = \"ts=\" + new Date().getTime().toString();\n                    if (this.config.url.indexOf(\"?\") > -1) \n                    {\n                        this.iframe.src = this.config.url + \"&\" + tsText;\n                    }\n                    else \n                    {\n                        this.iframe.src = this.config.url + \"?\" + tsText;\n                    }\n                    this.cardBodyDiv.style.display = \"block\";\n                    this.displayButton.innerHTML = 'Close';\n                }\n                else\n                {\n                    this.iframe.src = '/img/project-logo.png';\n                    this.cardBodyDiv.style.display = \"none\";\n                    this.displayButton.innerHTML = 'Open';\n                }\n            }\n            toggle()\n            {\n                if (this.cardBodyDiv.style.display === \"none\") \n                {\n                    let tsText = \"ts=\" + new Date().getTime().toString();\n                    if (this.config.url.indexOf(\"?\") > -1)\n                    {\n                        this.iframe.src = this.config.url + \"&\" + tsText;\n                    }\n                    else\n                    {\n                        this.iframe.src = this.config.url + \"?\" + tsText;\n                    }\n                    this.cardBodyDiv.style.display = \"block\";\n                    this.displayButton.innerHTML = 'Close';\n                } \n                else \n                {\n                    this.iframe.src = '/img/project-logo.png';\n                    this.cardBodyDiv.style.display = \"none\";\n                    this.displayButton.innerHTML = 'Open';\n                }\n                \n            }\n        }\n",
         "output": "str",
         "x": 1530,
-        "y": 240,
+        "y": 280,
         "wires": [
             [
                 "68088b8ecf2b2526"
@@ -3846,7 +3838,7 @@
         "y": 200,
         "wires": [
             [
-                "6c3ba5e52620f7d6"
+                "3ca47a19beb577b3"
             ]
         ]
     },
@@ -3862,7 +3854,7 @@
         "template": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <link rel=\"icon\" href=\"{{{generalAppConfig.faviconUrl}}}?v=4\" type=\"image/x-icon\"/>\n    <title>{{payload.title}}</title>\n    <link rel=\"stylesheet\" href=\"/css/bootstrap.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui-timepicker-addon.css\"/>\n    <script src=\"/jquery/jquery.js\"></script>\n    <script src=\"/jquery/jquery-ui.js\"></script>\n    <script src=\"/jquery/jquery-ui-timepicker-addon.js\"></script>\n    <script src=\"/scripts/plotly-latest.min.js\"></script>\n    <style>\n{{{payload.css}}}\n    </style>\n    <script>\n{{{payload.script}}}\n    </script>\n  </head>\n  <body>\n{{{payload.appContent}}}\n    <script src=\"/scripts/popper.js\"></script>\n    <script src=\"/scripts/bootstrap.js\"></script>\n  </body>\n</html>",
         "output": "str",
         "x": 1890,
-        "y": 440,
+        "y": 480,
         "wires": [
             []
         ]
@@ -4122,7 +4114,7 @@
         "type": "subflow:d1aa8cd8b6ac048e",
         "z": "30a1fe01775ecb93",
         "x": 1720,
-        "y": 440,
+        "y": 480,
         "wires": [
             [
                 "7f6f0675815e73bb"
@@ -4249,7 +4241,7 @@
         "template": "//customCard\n        class CustomCard \n        {\n            constructor(app, config)\n            {\n                this.app = app;\n                this.config = config;\n            }\n            onDocumentReady()\n            {\n                let containerRowDiv = document.createElement('div');\n                document.getElementById('appContent').appendChild(containerRowDiv);\n                containerRowDiv.setAttribute('class', 'row cubeRowCard-containerRow');\n                \n                let containerColDiv = document.createElement('div');\n                containerRowDiv.appendChild(containerColDiv);\n                containerColDiv.setAttribute('class', 'col-md-12');\n                containerColDiv.setAttribute('align', 'center');\n                \n                let cardDiv = document.createElement('div');\n                containerColDiv.appendChild(cardDiv);\n                cardDiv.setAttribute('class', 'card cubeRowCard');\n\n                let titleTable = document.createElement('table');\n                cardDiv.appendChild(titleTable);\n                titleTable.setAttribute('width', '100%');\n                let titleRow  = document.createElement('tr');\n                titleTable.appendChild(titleRow)\n                let titleCol  = document.createElement('td');\n                titleCol.setAttribute('width', '85%');\n                titleCol.setAttribute('align', 'left');\n                let titleSpan  = document.createElement('span');\n                titleSpan.setAttribute('class', 'cubeRowCard-title');\n                titleSpan.innerHTML = this.config.title;\n                titleCol.appendChild(titleSpan);\n                titleRow.appendChild(titleCol);\n                let buttonCol  = document.createElement('td');\n                buttonCol.setAttribute('width', '15%');\n\n                this.displayButton = document.createElement('button');\n                this.displayButton.setAttribute('class', 'btn btn-block cubeRowCard-title-button');\n                this.displayButton.innerHTML = 'Close';\n                this.displayButton.onclick = event => {this.toggle()};\n                buttonCol.appendChild(this.displayButton);\n                titleRow.appendChild(buttonCol);\n\n                this.cardBodyDiv = document.createElement('div');\n                cardDiv.appendChild(this.cardBodyDiv);\n                this.cardBodyDiv.setAttribute('class', 'cubeRowCard-body');\n                this.cardBodyDiv.setAttribute('align', 'center');\n\n{{{customCard.domSetup}}}        \n\n                if (this.config.displayOnOpen)\n                {\n                    this.cardBodyDiv.style.display = \"block\";\n                    this.displayButton.innerHTML = 'Close';\n                }\n                else\n                {\n                    this.cardBodyDiv.style.display = \"none\";\n                    this.displayButton.innerHTML = 'Open';\n                }\n            }\n{{{customCard.classMethods}}}                 \n            toggle()\n            {\n                if (this.cardBodyDiv.style.display === \"none\") \n                {\n                    this.cardBodyDiv.style.display = \"block\";\n                    this.displayButton.innerHTML = 'Close';\n                } \n                else \n                {\n                    this.cardBodyDiv.style.display = \"none\";\n                    this.displayButton.innerHTML = 'Open';\n                }\n                \n            }\n\n         }\n",
         "output": "str",
         "x": 1530,
-        "y": 280,
+        "y": 320,
         "wires": [
             [
                 "c397f4613dec0684"
@@ -4290,6 +4282,25 @@
         "y": 640,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "3ca47a19beb577b3",
+        "type": "template",
+        "z": "30a1fe01775ecb93",
+        "name": "settingIncrCube",
+        "field": "payload.settingIncrCube",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "//settingIncrCube\n        class SettingIncrCube   extends CubeRowParameterView\n        {\n            addComponents(widgetColumns)\n            {\n                this.setting = 0;\n                this.newSetting = 0;\n                let incrTable = document.createElement(\"table\");\n                incrTable.width = \"100%\"\n                let incrTableRow = document.createElement(\"tr\");\n                incrTable.appendChild(incrTableRow)\n\n                let incTableRowCol1 = document.createElement(\"td\");\n                incrTableRow.appendChild(incTableRowCol1);\n                incTableRowCol1.width = \"20%\";\n                incTableRowCol1.align = \"center\";\n\n                this.minusButton = document.createElement(\"button\");\n                incTableRowCol1.appendChild(this.minusButton);\n                this.minusButton.classList.add(\"btn\");\n                this.minusButton.classList.add(\"btn-block\");\n                this.minusButton.classList.add(\"dropChoiceSetCube-button\");\n                this.minusButton.innerHTML = \"-\";\n                this.minusButton.onclick = event => {this.increment(-this.config.increment)};\n\n                let incTableRowCol2 = document.createElement(\"td\");\n                incrTableRow.appendChild(incTableRowCol2);\n                incTableRowCol2.width = \"60%\";\n                incTableRowCol2.align = \"center\";\n\n                this.readingSpan  = document.createElement(\"span\");\n                incTableRowCol2.appendChild(this.readingSpan);\n                this.readingSpan.setAttribute(\"class\", \"numberReadCube-span\");\n                this.readingSpan.innerHTML = \"?\";\n \n                let incTableRowCol3 = document.createElement(\"td\");\n                incrTableRow.appendChild(incTableRowCol3);\n                incTableRowCol3.width = \"20%\";\n                incTableRowCol3.align = \"center\";\n\n                this.plusButton = document.createElement(\"button\");\n                incTableRowCol3.appendChild(this.plusButton);\n                this.plusButton.classList.add(\"btn\");\n                this.plusButton.classList.add(\"btn-block\");\n                this.plusButton.classList.add(\"dropChoiceSetCube-button\");\n                this.plusButton.innerHTML = \"+\";\n                this.plusButton.onclick = event => {this.increment(this.config.increment)};\n\n                widgetColumns[0].appendChild(incrTable);\n\n                this.unitSpan  = document.createElement(\"span\");\n                this.unitSpan.setAttribute(\"class\", \"cubeRowParameterView-unit-span\");\n                this.unitSpan.innerHTML = \"\";\n                widgetColumns[1].appendChild(this.unitSpan);\n\n\n            }\n            increment(deltaInc)\n            {\n                this.newSetting = Math.round(this.setting + deltaInc);\n                this.changeSetting();\n            }\n            changeSetting()\n            {\n                let lolo = this.tray[this.config.cubeName].alarm.limits.lolo;\n                let hihi = this.tray[this.config.cubeName].alarm.limits.hihi;\n                if ((this.newSetting <= lolo) || (this.newSetting >= hihi))\n                {\n                    this.newSetting = this.setting;\n                    this.card.app.acknowledgeDialog.showDialog('Error: Setting outside range',() => {});\n                }\n                let payload = {\"cube\": this.config.cubeName, \"value\":this.newSetting};\n                let actionMsg = \n                    {\n                        topic   : this.card.app.box + \"/tray/\" +  this.tray.type + \"/\" +  this.tray.name + \"/setting/setting\",\n                        payload : payload\n                    };\n                this.card.app.sendActionMsg(\"setting\",\"setting\",actionMsg);\n            }\n            updateCubeValue()\n            {\n                this.setting = Number(this.tray[this.config.cubeName].value);\n                this.newSetting = this.setting;\n                this.readingSpan.innerHTML = this.tray[this.config.cubeName].value.toString();\n                this.unitSpan.innerHTML    = this.tray[this.config.cubeName].unit;\n            }\n        }",
+        "output": "str",
+        "x": 1540,
+        "y": 240,
+        "wires": [
+            [
+                "6c3ba5e52620f7d6"
+            ]
         ]
     },
     {
