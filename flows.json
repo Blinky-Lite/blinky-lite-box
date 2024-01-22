@@ -636,7 +636,9 @@
             "6e5fe8f4665ee2fd"
         ],
         "x": 134,
-        "y": 139
+        "y": 139,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "222f7527456f431b",
@@ -661,7 +663,9 @@
             "c4e92c75751127a2"
         ],
         "x": 134,
-        "y": 319
+        "y": 319,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "8513d2368ac7161f",
@@ -686,7 +690,9 @@
             "b690e92951ea57f3"
         ],
         "x": 134,
-        "y": 499
+        "y": 499,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "e02813d59f160a5c",
@@ -711,7 +717,9 @@
             "4f5138b1c21ad771"
         ],
         "x": 134,
-        "y": 679
+        "y": 679,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "e0c14b4f190836c9",
@@ -736,7 +744,9 @@
             "66ce09a4d677808a"
         ],
         "x": 134,
-        "y": 859
+        "y": 859,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "674af16debdd8f0f",
@@ -761,7 +771,9 @@
             "6ab0f551657f68ec"
         ],
         "x": 134,
-        "y": 1039
+        "y": 1039,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "9e9aab81c0c1e479",
@@ -786,7 +798,9 @@
             "25f8c290f03f8dce"
         ],
         "x": 134,
-        "y": 1219
+        "y": 1219,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "ff1586c44763ab25",
@@ -811,7 +825,9 @@
             "bb3bc9ccb4b7ccfa"
         ],
         "x": 134,
-        "y": 1399
+        "y": 1399,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "e61434d43b450009",
@@ -836,7 +852,9 @@
             "ddd27203e99450e3"
         ],
         "x": 134,
-        "y": 1579
+        "y": 1579,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "8b1ca40e143d36e4",
@@ -861,7 +879,9 @@
             "17ea133e78cd791e"
         ],
         "x": 134,
-        "y": 1759
+        "y": 1759,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "64d7785b86bd0e78",
@@ -886,7 +906,9 @@
             "e1806fc6647b30e4"
         ],
         "x": 134,
-        "y": 1939
+        "y": 1939,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "17d8aee66ef5f14b",
@@ -911,7 +933,9 @@
             "9ee70b7f7567a0d3"
         ],
         "x": 134,
-        "y": 2119
+        "y": 2119,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "6c2db529cbe5190a",
@@ -936,7 +960,9 @@
             "14fc94d6d31cb660"
         ],
         "x": 134,
-        "y": 2299
+        "y": 2299,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "a732e8657f5583e1",
@@ -961,7 +987,9 @@
             "989ba4dd6a4ca183"
         ],
         "x": 134,
-        "y": 2479
+        "y": 2479,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "16d44c3cfa3101e4",
@@ -986,7 +1014,9 @@
             "e879f75c0e5c3ca1"
         ],
         "x": 134,
-        "y": 2659
+        "y": 2659,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "1ea74c70db7a8d4c",
@@ -1011,7 +1041,9 @@
             "d9e2848941f56361"
         ],
         "x": 134,
-        "y": 2839
+        "y": 2839,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "52e9056d6e8207fb",
@@ -1036,7 +1068,9 @@
             "59f2b833ab020772"
         ],
         "x": 134,
-        "y": 3019
+        "y": 3019,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "09dbbd36ba9b70c2",
@@ -1061,7 +1095,9 @@
             "273db2592695c0d2"
         ],
         "x": 134,
-        "y": 3199
+        "y": 3199,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "727f4fbbc86c2387",
@@ -1086,7 +1122,9 @@
             "9438da355fd08b18"
         ],
         "x": 134,
-        "y": 3379
+        "y": 3379,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "49dd55f9fc61ca4b",
@@ -1111,7 +1149,9 @@
             "bfdbfc38d971170c"
         ],
         "x": 134,
-        "y": 3559
+        "y": 3559,
+        "w": 1312,
+        "h": 142
     },
     {
         "id": "c3a9f56445acb1b2",
@@ -1143,9 +1183,7 @@
             "75f7bdd6c0b43d13"
         ],
         "x": 174,
-        "y": 239,
-        "w": 1052,
-        "h": 382
+        "y": 239
     },
     {
         "id": "410a9f1e572e2cb6",
@@ -1191,7 +1229,9 @@
             "fde9ebb813946ce5"
         ],
         "x": 174,
-        "y": 79
+        "y": 79,
+        "w": 1072,
+        "h": 502
     },
     {
         "id": "943ba30499779d75",
@@ -1491,9 +1531,7 @@
             "edb9c86fc3461c78"
         ],
         "x": 174,
-        "y": 699,
-        "w": 1102,
-        "h": 842
+        "y": 699
     },
     {
         "id": "b47ef8a5f938f683",
@@ -1534,9 +1572,7 @@
             "09c74c5d6613d881"
         ],
         "x": 174,
-        "y": 1579,
-        "w": 802,
-        "h": 842
+        "y": 1579
     },
     {
         "id": "e7108cefde0d37c6",
@@ -1578,9 +1614,7 @@
             "56adc9986f0b6e4a"
         ],
         "x": 174,
-        "y": 59,
-        "w": 1532,
-        "h": 282
+        "y": 59
     },
     {
         "id": "6feaa64a0a1fa2e4",
@@ -1611,9 +1645,7 @@
             "6597cda2e4462431"
         ],
         "x": 174,
-        "y": 439,
-        "w": 1712,
-        "h": 202
+        "y": 439
     },
     {
         "id": "5cd034832a45a34a",
@@ -1644,9 +1676,7 @@
             "7a6f7f3b76d462d9"
         ],
         "x": 184,
-        "y": 719,
-        "w": 1422,
-        "h": 242
+        "y": 719
     },
     {
         "id": "af622659deabdbdd",
@@ -1865,9 +1895,7 @@
             "d387c14850e4b2de"
         ],
         "x": 74,
-        "y": 519,
-        "w": 952,
-        "h": 302
+        "y": 519
     },
     {
         "id": "7046efa6cee97ff7",
@@ -1917,7 +1945,9 @@
             "30a4a020cf5c79ba"
         ],
         "x": 114,
-        "y": 99
+        "y": 99,
+        "w": 342,
+        "h": 422
     },
     {
         "id": "bb926706795e937c",
@@ -1947,7 +1977,9 @@
             "9c92871f1bdad6c4"
         ],
         "x": 174,
-        "y": 879
+        "y": 879,
+        "w": 1152,
+        "h": 242
     },
     {
         "id": "d6abb27829dbfb86",
@@ -1969,7 +2001,9 @@
             "22ec08a66c477512"
         ],
         "x": 174,
-        "y": 1159
+        "y": 1159,
+        "w": 1192,
+        "h": 122
     },
     {
         "id": "3d14d6dd8299469d",
@@ -2340,6 +2374,54 @@
         "y": 2419
     },
     {
+        "id": "272ada917337fc22",
+        "type": "group",
+        "z": "a858ad3a.95706",
+        "name": "App Launcher",
+        "style": {
+            "fill": "#dbcbe7",
+            "label": true,
+            "stroke": "#ffC000",
+            "color": "#001f60"
+        },
+        "nodes": [
+            "e06f2e7083e34a62",
+            "a565db501648ef93",
+            "91a44ba736dabf9f",
+            "de66a26b84e7c19d",
+            "d620f00b1f3d50bc",
+            "e729d5b38baaa75b",
+            "e9f5c7f3743eb261",
+            "1692891f46624918",
+            "fed34443aa955144",
+            "78b72c3564adfbfb",
+            "4ec1c4927790a486",
+            "ca34b114ab596311",
+            "6438227cccc6643e",
+            "74bfb404cd0618bc",
+            "e6e93c82b6b0d67d",
+            "f15434693115f3c7",
+            "fd0562a10cc9d52d",
+            "b5db1988d49156a1",
+            "c1b1650de323c294",
+            "b14b9cda7b885e62",
+            "78c8ad085d5982fc",
+            "6bb59ca230953af8",
+            "2f0891d98b571fc7",
+            "6feb37fb0b078369",
+            "73a4a162c4317de3",
+            "444c02df25c8d6f0",
+            "8650ba2829f27c4c",
+            "9c23d34d5e839ebc",
+            "3677d2ce4dae3dc0",
+            "1bd719f334aafd82"
+        ],
+        "x": 174,
+        "y": 1399,
+        "w": 1072,
+        "h": 502
+    },
+    {
         "id": "6ad7c930.1a06b8",
         "type": "ui_base",
         "theme": {
@@ -2665,6 +2747,12 @@
         "id": "9411b416214c06d7",
         "type": "websocket-listener",
         "path": "/logbook/websocket",
+        "wholemsg": "false"
+    },
+    {
+        "id": "fa0cfa36f42ed27b",
+        "type": "websocket-listener",
+        "path": "/launch/websocket",
         "wholemsg": "false"
     },
     {
@@ -7078,6 +7166,535 @@
         "wires": [
             [
                 "36b3529f9403ec99"
+            ]
+        ]
+    },
+    {
+        "id": "e06f2e7083e34a62",
+        "type": "subflow:3fec913b325ae6ff",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "",
+        "x": 280,
+        "y": 1500,
+        "wires": [
+            [
+                "1bd719f334aafd82"
+            ]
+        ]
+    },
+    {
+        "id": "a565db501648ef93",
+        "type": "http in",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "/launch",
+        "url": "/launch",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 250,
+        "y": 1440,
+        "wires": [
+            [
+                "e06f2e7083e34a62"
+            ]
+        ]
+    },
+    {
+        "id": "91a44ba736dabf9f",
+        "type": "function",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "Allowed Roles",
+        "func": "let external = false;\nif (\"external\" in msg.payload) external = true;\nmsg.payload.allowedRoles = ['myapps'];\nif (external)\n{\n    return [null,msg];\n}\nreturn [msg,null];\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 1620,
+        "wires": [
+            [
+                "c1b1650de323c294"
+            ],
+            [
+                "3677d2ce4dae3dc0"
+            ]
+        ]
+    },
+    {
+        "id": "de66a26b84e7c19d",
+        "type": "mongodb3 in",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "service": "_ext_",
+        "configNode": "9cd5ff5e.caf86",
+        "name": "Find myapps",
+        "collection": "appLauncher",
+        "operation": "findOne",
+        "x": 530,
+        "y": 1500,
+        "wires": [
+            [
+                "e729d5b38baaa75b"
+            ]
+        ]
+    },
+    {
+        "id": "d620f00b1f3d50bc",
+        "type": "function",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "Get MyApp config",
+        "func": "msg.payload = [{name:msg.payload.name}];\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1440,
+        "wires": [
+            [
+                "de66a26b84e7c19d"
+            ]
+        ]
+    },
+    {
+        "id": "e729d5b38baaa75b",
+        "type": "function",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "Parse MyApps",
+        "func": "if (!msg.payload.hasOwnProperty(\"name\"))\n{\n     return[null, msg];\n}\n\nmsg.payload['config'] = JSON.stringify(msg.payload);\nmsg.payload['title'] = msg.payload.title;\nmsg.payload['icon'] = msg.payload.icon;\n\nreturn [msg,null];\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 1560,
+        "wires": [
+            [
+                "74bfb404cd0618bc"
+            ],
+            [
+                "8650ba2829f27c4c"
+            ]
+        ]
+    },
+    {
+        "id": "e9f5c7f3743eb261",
+        "type": "websocket in",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "/launch/websocket",
+        "server": "fa0cfa36f42ed27b",
+        "client": "",
+        "x": 290,
+        "y": 1820,
+        "wires": [
+            [
+                "fed34443aa955144"
+            ]
+        ]
+    },
+    {
+        "id": "1692891f46624918",
+        "type": "websocket out",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "/launch/websocket",
+        "server": "fa0cfa36f42ed27b",
+        "client": "",
+        "x": 510,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "fed34443aa955144",
+        "type": "link out",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "myapps websocket out",
+        "mode": "link",
+        "links": [
+            "be962d884f5fbb6e"
+        ],
+        "x": 415,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "78b72c3564adfbfb",
+        "type": "link in",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "myapps websocket out",
+        "links": [
+            "224d9b05.f92104",
+            "1e710224.de723e"
+        ],
+        "x": 375,
+        "y": 1860,
+        "wires": [
+            [
+                "1692891f46624918"
+            ]
+        ]
+    },
+    {
+        "id": "4ec1c4927790a486",
+        "type": "template",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "body",
+        "field": "payload.body",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!-- Body HTML -->\n    <div width=\"100%\"  style='padding-bottom:25px;'>\n        <div class='card'>\n            <div class='card-body' align=\"center\" id='menuCardBody'>\n            </div>\n        </div>\n    </div>\n{{{payload.html.user}}}\n",
+        "output": "str",
+        "x": 790,
+        "y": 1600,
+        "wires": [
+            [
+                "fd0562a10cc9d52d"
+            ]
+        ]
+    },
+    {
+        "id": "ca34b114ab596311",
+        "type": "template",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "javascript",
+        "field": "payload.javascript",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "{{{payload.script.global}}}\n{{{payload.script.user}}}\n",
+        "output": "str",
+        "x": 800,
+        "y": 1520,
+        "wires": [
+            [
+                "6438227cccc6643e"
+            ]
+        ]
+    },
+    {
+        "id": "6438227cccc6643e",
+        "type": "template",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "html.user",
+        "field": "payload.html.user",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "    <div class='card' id='userCardId'>\n        <div class='card-body' align=\"center\">\n            <table width=\"100%\">\n                <tr>\n                    <td  align=\"left\">\n                         <span class='card-text' style='color:black;'>User:</span>\n                    </td>\n                    <td  align=\"right\">\n                         <span class='card-text' id='usernameId'></span>\n                    </td>\n                </tr>\n                <tr>\n                    <td  align=\"left\">\n                        <span class='card-text' style='color:black;'>Time left:</span>\n                    </td>\n                    <td  align=\"right\">\n                         <span class='card-text' id='expTimeId'></span>\n                    </td>\n                </tr>\n            </table>\n            <table width=\"100%\">\n                <tr>\n                    <td width=\"30%\">\n                        <button class='btn btn-block card-button big-text' id='logoutButton' onclick=\"renew()\" >Renew</button>\n                    </td>\n                    <td width=\"5%\"></td>\n                    <td width=\"30%\">\n                    </td>\n                    <td width=\"5%\"></td>\n                    <td width=\"30%\">\n                        <button class='btn btn-block card-button big-text' id='logoutButton' onclick=\"logout()\" >Logout</button>\n                    </td>\n                </tr>\n            </table>\n        </div>\n    </div>\n",
+        "output": "str",
+        "x": 800,
+        "y": 1560,
+        "wires": [
+            [
+                "4ec1c4927790a486"
+            ]
+        ]
+    },
+    {
+        "id": "74bfb404cd0618bc",
+        "type": "template",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "script.global",
+        "field": "payload.script.global",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "        useWebSockets(true);\n        function onDocumentReady()\n        {\n            getCreds();\n            setInterval(function(){getCreds();}, 1000);\n            let config = JSON.parse('{{{payload.config}}}')\n            let menuCardBody = document.getElementById('menuCardBody')\n            for (let ii = 0; ii < config.apps.length; ++ii)\n            {\n                let rowDiv = document.createElement('div');\n                rowDiv.setAttribute('class', 'row');\n                if (ii > 0) rowDiv.setAttribute('style', 'padding-top:25px;');\n                menuCardBody.appendChild(rowDiv);\n\n                let colDiv = document.createElement('div');\n                colDiv.setAttribute('class', 'col-md-12');\n                rowDiv.appendChild(colDiv);\n\n                let link = document.createElement('a');\n                link.setAttribute('class', 'btn btn-block card-button medium-text');\n                link.setAttribute('href', config.apps[ii].url);\n                colDiv.appendChild(link);\n\n                let table = document.createElement('table');\n                table.setAttribute('width', '100%');\n                link.appendChild(table);\n\n                let tableRow = document.createElement('tr');\n                table.appendChild(tableRow);\n\n                let tableRowCol1 =  document.createElement('td');\n                tableRowCol1.setAttribute('width', '10%');\n                tableRowCol1.setAttribute('align', 'left%');\n                tableRow.appendChild(tableRowCol1);\n\n                let tableRowCol1Img = document.createElement('img');\n                tableRowCol1Img.setAttribute('src', config.apps[ii].icon);\n                tableRowCol1Img.setAttribute('height', '50px');\n                tableRowCol1Img.setAttribute('width', '50px');\n                tableRowCol1.appendChild(tableRowCol1Img); \n\n                let tableRowCol2 =  document.createElement('td');\n                tableRowCol2.setAttribute('width', '90%');\n                tableRowCol2.setAttribute('align', 'center%');\n                tableRowCol2.innerHTML = config.apps[ii].title\n                tableRow.appendChild(tableRowCol2);\n            }\n            \n        }\n\n        function onWebSocketOpen()\n        {\n        }\n        function onWebSocketClose()\n        {\n            \n        }\n        function onWebSocketMessage(msg)\n        {\n            switch(msg.topic)\n            {\n                case 'renew':\n                    if (msg.userID == userID)\n                    {\n                        updateCookie(msg);\n                    }\n                    break;\n                case 'permissionError':\n                    if (msg.userID == userID)\n                    {\n                        acknowledgeDialog('Permission', 'Error', msg.payload);\n                    }\n                    break;\n                case 'loginExpired':\n                    if (msg.userID == userID)\n                    {\n                       location.reload();\n                    }\n                    break;\n                default:\n                    break;\n            }\n        }\n",
+        "output": "str",
+        "x": 810,
+        "y": 1440,
+        "wires": [
+            [
+                "e6e93c82b6b0d67d"
+            ]
+        ]
+    },
+    {
+        "id": "e6e93c82b6b0d67d",
+        "type": "template",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "script.user",
+        "field": "payload.script.user",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "        function getCreds()\n        {\n            var now = new Date().getTime();\n            var expDate = Number(getCookie('ExpDate'));\n            if (expDate > 0)\n            {\n                expDate = expDate - now;\n                if(expDate < 0)\n                {\n                    logout();\n                }\n                else\n                {\n                    var hours = Math.floor(expDate / 3600000);\n                    var minutes = expDate - hours * 3600000;\n                    minutes = Math.floor(minutes / 60000);\n                    var seconds = expDate - (hours * 3600000) - (minutes * 60000);\n                    seconds = Math.floor(seconds / 1000);\n                    hours = hours.toString();\n                    if (hours.length == 1) hours = '0' + hours; \n                    minutes = minutes.toString();\n                    if (minutes.length == 1) minutes = '0' + minutes; \n                    seconds = seconds.toString();\n                    if (seconds.length == 1) seconds = '0' + seconds; \n                    var timeString = hours + ':' + minutes + ':' + seconds;\n                    $('#usernameId').text(getCookie('Username'));\n                    $('#expTimeId').text(timeString);\n                }\n            }\n            else\n            {\n                $('#usernameId').text(getCookie('Username'));\n                $('#expTimeId').text('Forever');\n            }\n        }\n        function logout()\n        {\n            document.cookie = box + \"Role= ; expires = Thu, 01 Jan 1970 00:00:00 GMT\";\n            document.cookie = box + \"ExpDate= ; expires = Thu, 01 Jan 1970 00:00:00 GMT\";\n            document.cookie = box + \"Username= ; expires = Thu, 01 Jan 1970 00:00:00 GMT\";\n            window.location.href = \"/\";\n        }\n        function renew()\n        {\n            var actionMsg = {};\n            sendActionMsg('renew', 'renew', actionMsg);\n        }\n        function updateCookie(msg)\n        {\n            let expTimeout = Math.round((Number(msg.expDate) - new Date().getTime()) / 1000).toString();\n            if (Number(msg.expDate) < 0)\n            {\n                document.cookie = box + \"Role=\" + msg.role;\n                document.cookie = box + \"ExpDate=\" + msg.expDate;\n                document.cookie = box + \"Username=\" + msg.username;\n            }\n            else\n            {\n                let expDateString = \"; max-age=\" + expTimeout;\n                document.cookie = box + \"Role=\" + msg.role + expDateString;\n                document.cookie = box + \"ExpDate=\" + msg.expDate + expDateString;\n                document.cookie = box + \"Username=\" + msg.username + expDateString;\n            }\n        }\n",
+        "output": "str",
+        "x": 810,
+        "y": 1480,
+        "wires": [
+            [
+                "ca34b114ab596311"
+            ]
+        ]
+    },
+    {
+        "id": "f15434693115f3c7",
+        "type": "subflow:ca529822.9112f8",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "",
+        "x": 1110,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "fd0562a10cc9d52d",
+        "type": "template",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "navBar",
+        "field": "payload.navBar",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!-- navBar -->\n    <div class=\"jumbotron\" width=\"100%\">\n        <table width=\"100%\">\n            <tr>\n                <td style=\"text-align:left; vertical-align:middle;\"  width=\"20%\">\n                    <a href='/' >\n                        <img src=\"{{{generalAppConfig.projectLogo}}}\" height=\"75px\"/>\n                    </a>                \n                </td>\n                <td width=\"60%\" style=\"text-align:center; vertical-align:middle;\">\n                    <h1 class=\"jumbotron-title\">\n                        <img src=\"{{payload.icon}}\" height=\"75px\"/><span style=\"padding-left:20px;\">{{{payload.title}}}</span>\n                    </h1>\n                </td>\n                <td style=\"text-align:right; vertical-align:middle;\" width=\"20%\">\n                    <a href='/myapps' >\n                        <img src=\"/img/home.png\" height=\"75px\"/>\n                    </a>\n                </td>\n            </tr>\n        </table>\n    </div>",
+        "output": "str",
+        "x": 800,
+        "y": 1640,
+        "wires": [
+            [
+                "b5db1988d49156a1"
+            ]
+        ]
+    },
+    {
+        "id": "b5db1988d49156a1",
+        "type": "subflow:74b74739cc6e49af",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "",
+        "x": 960,
+        "y": 1640,
+        "wires": [
+            [
+                "f15434693115f3c7"
+            ]
+        ]
+    },
+    {
+        "id": "c1b1650de323c294",
+        "type": "subflow:2d027d69.1fdeb2",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "x": 280,
+        "y": 1760,
+        "wires": [
+            [
+                "d620f00b1f3d50bc"
+            ]
+        ]
+    },
+    {
+        "id": "b14b9cda7b885e62",
+        "type": "template",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "Body",
+        "field": "payload.body",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!-- Body HTML -->\n   <p></p>\n   <h1 style=\"text-align:center;color:white\"></h1>\n",
+        "output": "str",
+        "x": 790,
+        "y": 1860,
+        "wires": [
+            [
+                "9c23d34d5e839ebc"
+            ]
+        ]
+    },
+    {
+        "id": "78c8ad085d5982fc",
+        "type": "template",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "Title",
+        "field": "payload.title",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "App Launcher not found",
+        "output": "str",
+        "x": 790,
+        "y": 1780,
+        "wires": [
+            [
+                "6bb59ca230953af8"
+            ]
+        ]
+    },
+    {
+        "id": "6bb59ca230953af8",
+        "type": "template",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "navBarIcon",
+        "field": "payload.navBarIcon",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "alert.png",
+        "output": "str",
+        "x": 810,
+        "y": 1820,
+        "wires": [
+            [
+                "b14b9cda7b885e62"
+            ]
+        ]
+    },
+    {
+        "id": "2f0891d98b571fc7",
+        "type": "template",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "HTML",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n{{{payload.head}}}\n  </head>\n  <body>\n{{{payload.navBar}}}\n{{{payload.body}}}\n{{{payload.foot}}}\n  </body>\n</html>",
+        "output": "str",
+        "x": 1010,
+        "y": 1860,
+        "wires": [
+            [
+                "444c02df25c8d6f0"
+            ]
+        ]
+    },
+    {
+        "id": "6feb37fb0b078369",
+        "type": "template",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "Foot",
+        "field": "payload.foot",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "    <script src=\"/scripts/popper.js\"></script>\n    <script src=\"/scripts/bootstrap.js\"></script>",
+        "output": "str",
+        "x": 1010,
+        "y": 1820,
+        "wires": [
+            [
+                "2f0891d98b571fc7"
+            ]
+        ]
+    },
+    {
+        "id": "73a4a162c4317de3",
+        "type": "template",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "Head",
+        "field": "payload.head",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "    <meta charset=\"UTF-8\">\n    <link rel=\"icon\" href=\"{{{generalAppConfig.faviconUrl}}}?v=4\" type=\"image/x-icon\"/>\n    <title>{{payload.title}}</title>\n    <link rel=\"stylesheet\" href=\"/css/bootstrap.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui-timepicker-addon.css\"/>\n    <script src=\"/jquery/jquery.js\"></script>\n    <script src=\"/jquery/jquery-ui.js\"></script>\n    <script src=\"/jquery/jquery-ui-timepicker-addon.js\"></script>\n    <script src=\"/scripts/plotly-latest.min.js\"></script>\n    <script src=\"/scripts/pako.min.js\"></script>\n    <style>\n{{{payload.css}}}\n    </style>\n    <script>\n    </script>\n    <script>\n{{{payload.javascript}}}\n    </script>\n",
+        "output": "str",
+        "x": 1010,
+        "y": 1780,
+        "wires": [
+            [
+                "6feb37fb0b078369"
+            ]
+        ]
+    },
+    {
+        "id": "444c02df25c8d6f0",
+        "type": "http response",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1170,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "8650ba2829f27c4c",
+        "type": "template",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "JavaScript",
+        "field": "payload.javascript",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "        $( document ).ready(function()\n        {\n//            setTimeout(function(){location.replace(\"/newCreds\");}, 3000);\n        });\n \n",
+        "output": "str",
+        "x": 810,
+        "y": 1740,
+        "wires": [
+            [
+                "78c8ad085d5982fc"
+            ]
+        ]
+    },
+    {
+        "id": "9c23d34d5e839ebc",
+        "type": "subflow:c57c2f9e65e6cb70",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "",
+        "x": 1030,
+        "y": 1740,
+        "wires": [
+            [
+                "73a4a162c4317de3"
+            ]
+        ]
+    },
+    {
+        "id": "3677d2ce4dae3dc0",
+        "type": "subflow:1574c43a12dad595",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "name": "",
+        "x": 280,
+        "y": 1680,
+        "wires": [
+            [
+                "c1b1650de323c294"
+            ]
+        ]
+    },
+    {
+        "id": "1bd719f334aafd82",
+        "type": "subflow:e0ef21f5c45ba4bc",
+        "z": "a858ad3a.95706",
+        "g": "272ada917337fc22",
+        "x": 280,
+        "y": 1560,
+        "wires": [
+            [
+                "91a44ba736dabf9f"
             ]
         ]
     },
@@ -12392,7 +13009,8 @@
             "e9b81d60792d4436",
             "f2cd4d12b66320a4",
             "f9bb75fa3e0a41d6",
-            "b93a0ae30af50fd8"
+            "b93a0ae30af50fd8",
+            "78b72c3564adfbfb"
         ],
         "x": 815,
         "y": 580,
@@ -12576,7 +13194,8 @@
             "e9b81d60792d4436",
             "f2cd4d12b66320a4",
             "f9bb75fa3e0a41d6",
-            "b93a0ae30af50fd8"
+            "b93a0ae30af50fd8",
+            "78b72c3564adfbfb"
         ],
         "x": 815,
         "y": 1160,
@@ -12654,7 +13273,8 @@
             "ca97d41d99a6b5df",
             "cc72650eba9a8cf5",
             "d2e21cd7ddfe525b",
-            "2a72f4a96a010d33"
+            "2a72f4a96a010d33",
+            "fed34443aa955144"
         ],
         "x": 215,
         "y": 460,
