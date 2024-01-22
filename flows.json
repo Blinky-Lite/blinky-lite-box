@@ -1266,7 +1266,9 @@
             "2ffca8a85ddb15b2"
         ],
         "x": 154,
-        "y": 1079
+        "y": 1079,
+        "w": 1322,
+        "h": 302
     },
     {
         "id": "68d752967679bda5",
@@ -1312,7 +1314,9 @@
             "0648bb5153b812a2"
         ],
         "x": 154,
-        "y": 1459
+        "y": 1459,
+        "w": 1782,
+        "h": 522
     },
     {
         "id": "cc576e0ff6a48284",
@@ -1361,7 +1365,9 @@
             "d65bf9206c01a2de"
         ],
         "x": 154,
-        "y": 3199
+        "y": 3199,
+        "w": 1452,
+        "h": 602
     },
     {
         "id": "a34ee7cdaf781b79",
@@ -1736,7 +1742,9 @@
             "d45cc4190558d0b5"
         ],
         "x": 154,
-        "y": 59
+        "y": 59,
+        "w": 1812,
+        "h": 442
     },
     {
         "id": "588a107b144a078a",
@@ -1781,7 +1789,9 @@
             "9fadad95613eca54"
         ],
         "x": 154,
-        "y": 619
+        "y": 619,
+        "w": 1812,
+        "h": 382
     },
     {
         "id": "e789a1b186378ec0",
@@ -1913,7 +1923,9 @@
             "7e74b55c48b46b62"
         ],
         "x": 162,
-        "y": 2067
+        "y": 2067,
+        "w": 2116,
+        "h": 1046
     },
     {
         "id": "565f4068c450fc58",
@@ -2142,7 +2154,9 @@
             "fbb62ed673bd505e"
         ],
         "x": 188,
-        "y": 2553
+        "y": 2553,
+        "w": 2064,
+        "h": 534
     },
     {
         "id": "7e74b55c48b46b62",
@@ -2173,7 +2187,9 @@
             "b6a28210e2d18575"
         ],
         "x": 194,
-        "y": 2093
+        "y": 2093,
+        "w": 2058,
+        "h": 434
     },
     {
         "id": "49a3f583c0875ffc",
@@ -2198,7 +2214,9 @@
             "ae84d64667e17d86"
         ],
         "x": 1154,
-        "y": 2579
+        "y": 2579,
+        "w": 1072,
+        "h": 82
     },
     {
         "id": "1b26e93ccb3ef98b",
@@ -2219,7 +2237,9 @@
             "e031088776231fd1"
         ],
         "x": 1474,
-        "y": 2679
+        "y": 2679,
+        "w": 492,
+        "h": 82
     },
     {
         "id": "1b74ec2e93fa5123",
@@ -2244,7 +2264,9 @@
             "fd1633926703f8ca"
         ],
         "x": 1154,
-        "y": 2819
+        "y": 2819,
+        "w": 1072,
+        "h": 82
     },
     {
         "id": "fbb62ed673bd505e",
@@ -2269,7 +2291,9 @@
             "a9b0290f353328f3"
         ],
         "x": 214,
-        "y": 2939
+        "y": 2939,
+        "w": 1372,
+        "h": 122
     },
     {
         "id": "d78fadb84ac3a977",
@@ -2294,7 +2318,9 @@
             "c77a4f4fc3ce79be"
         ],
         "x": 1154,
-        "y": 2119
+        "y": 2119,
+        "w": 1072,
+        "h": 82
     },
     {
         "id": "8a54730859fd312d",
@@ -2319,7 +2345,9 @@
             "6652d8af2310b091"
         ],
         "x": 1154,
-        "y": 2219
+        "y": 2219,
+        "w": 1072,
+        "h": 82
     },
     {
         "id": "4bc94be4667ab860",
@@ -2346,7 +2374,9 @@
             "d65b3e352039f137"
         ],
         "x": 694,
-        "y": 2319
+        "y": 2319,
+        "w": 1532,
+        "h": 82
     },
     {
         "id": "b6a28210e2d18575",
@@ -2371,7 +2401,9 @@
             "5787450c2f761aa0"
         ],
         "x": 1154,
-        "y": 2419
+        "y": 2419,
+        "w": 1072,
+        "h": 82
     },
     {
         "id": "272ada917337fc22",
@@ -4610,6 +4642,7 @@
         "name": "user query",
         "func": "msg.userData = {cred : {}, url : msg.req.url};\nmsg.userData.cred = \n{\n    username : 'external' \n};\nmsg.payload =  [{username : msg.userData.cred.username },  {projection  :{_id :   0}}]\nreturn msg;\n\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -4618,7 +4651,7 @@
         "y": 180,
         "wires": [
             [
-                "f0d56c45d1a6d9d1"
+                "24276cb28b4c61f0"
             ]
         ]
     },
@@ -4631,8 +4664,8 @@
         "name": "",
         "collection": "users",
         "operation": "findOne",
-        "x": 670,
-        "y": 180,
+        "x": 730,
+        "y": 380,
         "wires": [
             [
                 "3be731259e0c7d79"
@@ -4646,12 +4679,13 @@
         "name": "Check username",
         "func": "function isEmpty(obj) {\n    for(var key in obj) {\n        if(obj.hasOwnProperty(key))\n            return false;\n    }\n    return true;\n}\nif (isEmpty(msg.payload))\n{\n    delete msg.userData['cred'];\n    msg.payload.errorMsg = 'Error: Invalid Credentials';\n    return [msg, null];\n}\nmsg.payload.profile['expDate'] = -1;\nif ( msg.payload.profile.timeoutMin > 0)\n{\n    msg.payload.profile['expDate'] = new Date().getTime() + msg.payload.profile.timeoutMin * 60000;\n}\nmsg.payload.profile['username'] = msg.payload.username;\nmsg.payload = msg.payload.profile;\nreturn [null,msg];",
         "outputs": 2,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 910,
-        "y": 180,
+        "x": 990,
+        "y": 380,
         "wires": [
             [
                 "be5eadabd2d36ed0"
@@ -4667,8 +4701,8 @@
         "z": "1574c43a12dad595",
         "name": "get Token",
         "tokenconfig": "6acefdd9.69f124",
-        "x": 1100,
-        "y": 200,
+        "x": 1180,
+        "y": 400,
         "wires": [
             [
                 "d5b5555c585ecffc"
@@ -4682,12 +4716,13 @@
         "name": "Set box cookie",
         "func": "let requireHttps = true;\nif (Number(env.get('REQUIREHTTPS')) < 1 ) requireHttps = false;\nmsg.cookies = { };\nif (msg.payload.expDate > 0)\n{\n    let maxAge = msg.payload.expDate - new Date().getTime();\n    msg.cookies[global.get('box') + 'Role'] = {value: msg.token, maxAge: maxAge, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'Username'] = {value: msg.payload.username, maxAge: maxAge, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'ExpDate'] = {value: msg.payload.expDate, maxAge: maxAge, sameSite:'strict', secure:requireHttps};\n}\nelse\n{\n    msg.cookies[global.get('box') + 'Role'] = {value: msg.token, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'Username'] = {value: msg.payload.username, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'ExpDate'] = {value: msg.payload.expDate, sameSite:'strict', secure:requireHttps};\n}\nmsg.statusCode = 302;\nmsg.headers = {};\nmsg.headers.location = '/'\nvar previousUrl = msg.userData.url;\nif(previousUrl == undefined)\n{\n    msg.headers.location = '/'\n}\nelse\n{\n    msg.headers.location = previousUrl;\n}\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1260,
-        "y": 200,
+        "x": 1340,
+        "y": 400,
         "wires": [
             [
                 "24154fa5afa81194"
@@ -4701,8 +4736,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1410,
-        "y": 200,
+        "x": 1490,
+        "y": 400,
         "wires": []
     },
     {
@@ -4712,8 +4747,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1090,
-        "y": 160,
+        "x": 1170,
+        "y": 360,
         "wires": []
     },
     {
@@ -4760,6 +4795,238 @@
         "x": 830,
         "y": 120,
         "wires": []
+    },
+    {
+        "id": "24276cb28b4c61f0",
+        "type": "subflow:e0ef21f5c45ba4bc",
+        "z": "1574c43a12dad595",
+        "name": "",
+        "x": 600,
+        "y": 180,
+        "wires": [
+            [
+                "ee77c4c4e7518483"
+            ]
+        ]
+    },
+    {
+        "id": "91cce36905a55172",
+        "type": "template",
+        "z": "1574c43a12dad595",
+        "name": "JavaScript",
+        "field": "payload.javascript",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "        useWebSockets(false);\n        function onDocumentReady()\n        {\n        }\n        function onWebSocketOpen()\n        {\n        }\n        function onWebSocketClose()\n        {\n            \n        }\n        function onWebSocketMessage(msg)\n        {\n        }\n\n",
+        "output": "str",
+        "x": 930,
+        "y": 180,
+        "wires": [
+            [
+                "8725b43a118d4aea"
+            ]
+        ]
+    },
+    {
+        "id": "8725b43a118d4aea",
+        "type": "template",
+        "z": "1574c43a12dad595",
+        "name": "Title",
+        "field": "payload.title",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "Cookie Consent",
+        "output": "str",
+        "x": 1070,
+        "y": 180,
+        "wires": [
+            [
+                "5a06a3d0c13d5a74"
+            ]
+        ]
+    },
+    {
+        "id": "5a06a3d0c13d5a74",
+        "type": "template",
+        "z": "1574c43a12dad595",
+        "name": "navBarIcon",
+        "field": "payload.navBarIcon",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "cookie.png",
+        "output": "str",
+        "x": 1210,
+        "y": 180,
+        "wires": [
+            [
+                "ec3547a889dde03a"
+            ]
+        ]
+    },
+    {
+        "id": "ec3547a889dde03a",
+        "type": "template",
+        "z": "1574c43a12dad595",
+        "name": "Body",
+        "field": "payload.body",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!-- Body HTML -->\n        <div class='card'>\n            <p class='card-title'>This site uses cookies for authentication</p>\n            <div class='card-body' align=\"center\">\n                <form action=\"/okcookies\" method=\"POST\">\n                    <div>\n                        <table width=\"90%\">\n                            <tr>\n                                <td  width=\"50%\" align=\"left\">\n                                    <input style=\"border:0px;width:30px; height:30px;\" type=\"radio\" id=\"acceptCookie\" name=\"cookieChoice\" value=\"accept\" />\n                                    <label for=\"acceptCookie\" class=\"card-text\">Accept</label>\n                                </td>\n                                <td  width=\"50%\" align=\"right\">\n                                    <input style=\"border:0px;width:30px; height:30px;\" type=\"radio\" id=\"rejectCookie\" name=\"cookieChoice\" value=\"reject\" checked/>\n                                    <label for=\"rejectCookie\" class=\"card-text\">Reject</label>\n                                </td>\n                            </tr>\n                        </table>\n                        <input type=\"submit\" class=\"btn jumbotron-button btn-block big-text bold-text\"/>\n                        <input type=\"hidden\" name=\"url\" value=\"{{{userData.url}}}\" />\n                    </div>\n                </form>\n            </div>\n        </div>\n\n\n",
+        "output": "str",
+        "x": 1350,
+        "y": 180,
+        "wires": [
+            [
+                "62e9d6e968591031"
+            ]
+        ]
+    },
+    {
+        "id": "62e9d6e968591031",
+        "type": "subflow:c57c2f9e65e6cb70",
+        "z": "1574c43a12dad595",
+        "name": "",
+        "x": 1490,
+        "y": 180,
+        "wires": [
+            [
+                "d40a3144b9cce2dc"
+            ]
+        ]
+    },
+    {
+        "id": "d40a3144b9cce2dc",
+        "type": "subflow:ca529822.9112f8",
+        "z": "1574c43a12dad595",
+        "name": "",
+        "x": 1630,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ee77c4c4e7518483",
+        "type": "function",
+        "z": "1574c43a12dad595",
+        "name": "Init payload",
+        "func": "msg.payload = {};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 180,
+        "wires": [
+            [
+                "91cce36905a55172"
+            ]
+        ]
+    },
+    {
+        "id": "da2b614a981e8c7f",
+        "type": "http in",
+        "z": "1574c43a12dad595",
+        "name": "/okcookies",
+        "url": "/okcookies",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 400,
+        "wires": [
+            [
+                "3309a06e18653c6a"
+            ]
+        ]
+    },
+    {
+        "id": "3309a06e18653c6a",
+        "type": "switch",
+        "z": "1574c43a12dad595",
+        "name": "cookieChoice",
+        "property": "payload.cookieChoice",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "accept",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "reject",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 280,
+        "y": 400,
+        "wires": [
+            [
+                "e71cc14353ba439f"
+            ],
+            [
+                "c6d9b109012d4f83"
+            ]
+        ]
+    },
+    {
+        "id": "e71cc14353ba439f",
+        "type": "function",
+        "z": "1574c43a12dad595",
+        "name": "Cookie accepted",
+        "func": "msg.userData = {cred : {}, url : msg.payload.url};\nmsg.userData.cred = \n{\n    username : 'external' \n};\nmsg.payload =  [{username : msg.userData.cred.username },  {projection  :{_id :   0}}]\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 380,
+        "wires": [
+            [
+                "f0d56c45d1a6d9d1"
+            ]
+        ]
+    },
+    {
+        "id": "ab870a254bf2fcab",
+        "type": "http response",
+        "z": "1574c43a12dad595",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 630,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "c6d9b109012d4f83",
+        "type": "function",
+        "z": "1574c43a12dad595",
+        "name": "Cookie rejected",
+        "func": "msg.statusCode = 302;\nmsg.headers = {};\nmsg.headers.location = '/'\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 440,
+        "wires": [
+            [
+                "ab870a254bf2fcab"
+            ]
+        ]
     },
     {
         "id": "c23c3e6d13b36790",
@@ -8083,6 +8350,7 @@
         "name": "Set box cookie",
         "func": "let requireHttps = true;\nif (Number(env.get('REQUIREHTTPS')) < 1 ) requireHttps = false;\nmsg.cookies = { };\nif (msg.payload.expDate > 0)\n{\n    let maxAge = msg.payload.expDate - new Date().getTime();\n    msg.cookies[global.get('box') + 'Role'] = {value: msg.token, maxAge: maxAge, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'Username'] = {value: msg.payload.username, maxAge: maxAge, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'ExpDate'] = {value: msg.payload.expDate, maxAge: maxAge, sameSite:'strict', secure:requireHttps};\n}\nelse\n{\n    msg.cookies[global.get('box') + 'Role'] = {value: msg.token, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'Username'] = {value: msg.payload.username, sameSite:'strict', secure:requireHttps};\n    msg.cookies[global.get('box') + 'ExpDate'] = {value: msg.payload.expDate, sameSite:'strict', secure:requireHttps};\n}\nmsg.statusCode = 302;\nmsg.headers = {};\nmsg.headers.location = '/'\nvar previousUrl = msg.userData.url;\nif(previousUrl == undefined)\n{\n    msg.headers.location = '/'\n}\nelse\n{\n    msg.headers.location = previousUrl;\n}\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
