@@ -1,13 +1,13 @@
-BOX=blinky-lite-box-01
-MONGODBIP=mongodb://admin:xxxx@192.168.1.201:27017/blinky-lite?retryWrites=true&serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-256
-MQTTCLIENTID=blinky-lite-box-01
-MQTTSERVERIP=192.168.1.201
-MQTTUSERNAME=blinky-lite-box-01
-MQTTPASSWORD=xxxx
+BOX=blmc-01
+MONGODBIP=mongodb://admin:xxxxx@172.17.0.1:27017/blinky-lite?retryWrites=true&serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-256
+MQTTCLIENTID=blmc-01
+MQTTSERVERIP=172.17.0.1
+MQTTUSERNAME=blmc-01
+MQTTPASSWORD=xxxxx
 MQTTPORT=1883
 HUB=blinky-hub                                    
 ALARM_TIMEOUT=60000
-JWTKEYSECRET=zzzz
+JWTKEYSECRET=xxxxx
 MAXDBSIZE=450000000
 IPREFWEB=https://www.blinky-lite.se
 TWOFA=0
@@ -16,3 +16,4 @@ NODEREDPORT=60427
 HTMLSTATICDIR=html-static
 REQUIREHTTPS=0
 ENABLE_NODERED_EDITOR=1
+CUSTOM_LAUNCH=1
