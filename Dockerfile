@@ -5,6 +5,7 @@ COPY html-static/       /data/html-static/
 COPY flows.json         /data/flows.json
 COPY flows_cred.json    /data/flows_cred.json
 COPY settings.js        /data/settings.js
+RUN chown -R node-red:node-red /data/html-static
 WORKDIR /usr/src/node-red
 RUN npm install node-red-dashboard@3.4.0
 RUN npm install node-red-contrib-auth@0.1.7

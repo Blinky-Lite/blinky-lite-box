@@ -5627,13 +5627,13 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": "2",
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 680,
-        "y": 540,
+        "x": 250,
+        "y": 500,
         "wires": [
             [
                 "a53a8b8519514569"
@@ -5645,18 +5645,16 @@
         "type": "function",
         "z": "401d2470458fed2d",
         "name": "Get env variables",
-        "func": "if (env.get(\"GIT_REPO_URL\") == \"NONE\") return null;\nif (env.get(\"GIT_STATIC_CONTENT\") == \"NONE\") return null;\nif (env.get(\"GIT_BRANCH\") == \"NONE\") return null;\nmsg.payload = 'cd ' + env.get(\"HTMLSTATICDIR\");\nmsg.payload = msg.payload + ' && git init && git remote add -f web '; \nmsg.payload = msg.payload + env.get(\"GIT_REPO_URL\");\nmsg.payload = msg.payload + '; git config core.sparsecheckout true; echo ';\nmsg.payload = msg.payload + env.get(\"GIT_STATIC_CONTENT\");\nmsg.payload = msg.payload + '/ >> .git/info/sparse-checkout; git pull web ';\nmsg.payload = msg.payload + env.get(\"GIT_BRANCH\")\nmsg.payload = msg.payload + '; cp -R ' + env.get(\"GIT_STATIC_CONTENT\") + '/* .';\nmsg.payload = msg.payload + '; rm -R ' + env.get(\"GIT_STATIC_CONTENT\");\nreturn msg;",
+        "func": "if (env.get(\"GIT_REPO_URL\") == \"NONE\") return null;\nif (env.get(\"GIT_STATIC_CONTENT\") == \"NONE\") return null;\nif (env.get(\"GIT_BRANCH\") == \"NONE\") return null;\nmsg.payload = 'cd ' + env.get(\"HTMLSTATICDIR\");\nmsg.payload = msg.payload + '; git init; git remote add -f web '; \nmsg.payload = msg.payload + env.get(\"GIT_REPO_URL\");\nmsg.payload = msg.payload + '; git config core.sparsecheckout true; echo ';\nmsg.payload = msg.payload + env.get(\"GIT_STATIC_CONTENT\");\nmsg.payload = msg.payload + '/ >> .git/info/sparse-checkout; git pull web ';\nmsg.payload = msg.payload + env.get(\"GIT_BRANCH\")\nmsg.payload = msg.payload + '; cp -R ' + env.get(\"GIT_STATIC_CONTENT\") + '/* .';\n//msg.payload = msg.payload + '; rm -R ' + env.get(\"GIT_STATIC_CONTENT\");\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 890,
-        "y": 540,
+        "x": 450,
+        "y": 500,
         "wires": [
             [
-                "2da6f14a85fead52",
                 "3451e3fe04828fd9"
             ]
         ]
@@ -5673,54 +5671,88 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 1090,
-        "y": 520,
+        "x": 630,
+        "y": 500,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "0a67c5df72bfaa91",
+        "type": "http in",
+        "z": "401d2470458fed2d",
+        "name": "/gitUpdate",
+        "url": "/gitUpdate",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 680,
         "wires": [
             [
-                "6e7315118e28373b"
-            ],
-            [
-                "c9b7d755a728bc6d"
-            ],
-            [
-                "326a1ffa146f5bfc"
+                "93deee5804d587a6"
             ]
         ]
     },
     {
-        "id": "6e7315118e28373b",
-        "type": "debug",
+        "id": "93deee5804d587a6",
+        "type": "json",
         "z": "401d2470458fed2d",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1280,
-        "y": 520,
-        "wires": []
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 350,
+        "y": 680,
+        "wires": [
+            [
+                "16c77e0a7917bf97"
+            ]
+        ]
     },
     {
-        "id": "c9b7d755a728bc6d",
-        "type": "debug",
+        "id": "16c77e0a7917bf97",
+        "type": "function",
         "z": "401d2470458fed2d",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1280,
-        "y": 560,
-        "wires": []
+        "name": "check for url",
+        "func": "if (env.get(\"GIT_REPO_URL\") == \"NONE\") return null;\nif (env.get(\"GIT_STATIC_CONTENT\") == \"NONE\") return null;\nif (env.get(\"GIT_BRANCH\") == \"NONE\") return null;\nif (!msg.payload.repository.hasOwnProperty('clone_url')) return null;\nif (msg.payload.repository.clone_url != env.get(\"GIT_REPO_URL\")) return null;\n//node.warn('Updating: ' + msg.payload.commits[0].message);\nlet newMsg = {topic:\"gitpull\", payload:\"\"};\nnewMsg.payload = 'cd ' + env.get(\"HTMLSTATICDIR\");\nnewMsg.payload = newMsg.payload + '; git pull web ';\nnewMsg.payload = newMsg.payload + env.get(\"GIT_BRANCH\")\nnewMsg.payload = newMsg.payload + '; cp -R ' + env.get(\"GIT_STATIC_CONTENT\") + '/* .';\nnewMsg.payload = newMsg.payload + '; rm -R ' + env.get(\"GIT_STATIC_CONTENT\");\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 680,
+        "wires": [
+            [
+                "96993c80c018f738"
+            ]
+        ]
     },
     {
-        "id": "326a1ffa146f5bfc",
+        "id": "96993c80c018f738",
+        "type": "exec",
+        "z": "401d2470458fed2d",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 630,
+        "y": 680,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "60b1bdc864910885",
         "type": "debug",
         "z": "401d2470458fed2d",
         "name": "debug 4",
@@ -5731,15 +5763,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1280,
-        "y": 600,
+        "x": 840,
+        "y": 500,
         "wires": []
     },
     {
-        "id": "2da6f14a85fead52",
+        "id": "cf7f9d1d2d2567e8",
         "type": "debug",
         "z": "401d2470458fed2d",
-        "name": "debug 5",
+        "name": "debug 3",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -5747,8 +5779,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1080,
-        "y": 660,
+        "x": 843,
+        "y": 682,
         "wires": []
     },
     {
