@@ -5612,6 +5612,146 @@
         ]
     },
     {
+        "id": "ee685ad9ef4a5d44",
+        "type": "inject",
+        "z": "401d2470458fed2d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 680,
+        "y": 540,
+        "wires": [
+            [
+                "a53a8b8519514569"
+            ]
+        ]
+    },
+    {
+        "id": "a53a8b8519514569",
+        "type": "function",
+        "z": "401d2470458fed2d",
+        "name": "Get env variables",
+        "func": "if (env.get(\"GIT_REPO_URL\") == \"NONE\") return null;\nif (env.get(\"GIT_STATIC_CONTENT\") == \"NONE\") return null;\nif (env.get(\"GIT_BRANCH\") == \"NONE\") return null;\nmsg.payload = 'cd ' + env.get(\"HTMLSTATICDIR\");\nmsg.payload = msg.payload + ' && git init && git remote add -f web '; \nmsg.payload = msg.payload + env.get(\"GIT_REPO_URL\");\nmsg.payload = msg.payload + '; git config core.sparsecheckout true; echo ';\nmsg.payload = msg.payload + env.get(\"GIT_STATIC_CONTENT\");\nmsg.payload = msg.payload + '/ >> .git/info/sparse-checkout; git pull web ';\nmsg.payload = msg.payload + env.get(\"GIT_BRANCH\")\nmsg.payload = msg.payload + '; cp -R ' + env.get(\"GIT_STATIC_CONTENT\") + '/* .';\nmsg.payload = msg.payload + '; rm -R ' + env.get(\"GIT_STATIC_CONTENT\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 540,
+        "wires": [
+            [
+                "2da6f14a85fead52",
+                "3451e3fe04828fd9"
+            ]
+        ]
+    },
+    {
+        "id": "3451e3fe04828fd9",
+        "type": "exec",
+        "z": "401d2470458fed2d",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1090,
+        "y": 520,
+        "wires": [
+            [
+                "6e7315118e28373b"
+            ],
+            [
+                "c9b7d755a728bc6d"
+            ],
+            [
+                "326a1ffa146f5bfc"
+            ]
+        ]
+    },
+    {
+        "id": "6e7315118e28373b",
+        "type": "debug",
+        "z": "401d2470458fed2d",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1280,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "c9b7d755a728bc6d",
+        "type": "debug",
+        "z": "401d2470458fed2d",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1280,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "326a1ffa146f5bfc",
+        "type": "debug",
+        "z": "401d2470458fed2d",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1280,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "2da6f14a85fead52",
+        "type": "debug",
+        "z": "401d2470458fed2d",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 660,
+        "wires": []
+    },
+    {
         "id": "3d2b346c0315b941",
         "type": "link out",
         "z": "fe0f6b6a59cb2a33",

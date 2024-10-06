@@ -18,3 +18,7 @@ node_modules
 mqtt-auth/aclfile
 mqtt-auth/pwfile
 mqtt-auth/pwfileclear
+
+html-static/.git
+.sessions.json
+
