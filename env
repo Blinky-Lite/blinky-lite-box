@@ -17,3 +17,6 @@ HTMLSTATICDIR=html-static
 REQUIREHTTPS=0
 ENABLE_NODERED_EDITOR=1
 CUSTOM_LAUNCH=1
+GIT_REPO_URL=https://github.com/Blinky-Lite/blmc-landingPage.git
+GIT_BRANCH=master
+GIT_STATIC_CONTENT=_site

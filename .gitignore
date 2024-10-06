@@ -21,4 +21,11 @@ mqtt-auth/pwfileclear
 
 html-static/.git
 .sessions.json
+.config.nodes.json
+.config.runtime.json
+.config.users.json
+.flows.json.backup
+
+
+
 
