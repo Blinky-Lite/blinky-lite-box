@@ -5718,7 +5718,7 @@
         "type": "function",
         "z": "401d2470458fed2d",
         "name": "check for url",
-        "func": "if (env.get(\"GIT_REPO_URL\") == \"NONE\") return null;\nif (env.get(\"GIT_STATIC_CONTENT\") == \"NONE\") return null;\nif (env.get(\"GIT_BRANCH\") == \"NONE\") return null;\nif (!msg.payload.repository.hasOwnProperty('clone_url')) return null;\nif (msg.payload.repository.clone_url != env.get(\"GIT_REPO_URL\")) return null;\nreturn newMsg;",
+        "func": "if (env.get(\"GIT_REPO_URL\") == \"NONE\") return null;\nif (env.get(\"GIT_STATIC_CONTENT\") == \"NONE\") return null;\nif (env.get(\"GIT_BRANCH\") == \"NONE\") return null;\nif (!msg.payload.repository.hasOwnProperty('clone_url')) return null;\nif (msg.payload.repository.clone_url != env.get(\"GIT_REPO_URL\")) return null;\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
