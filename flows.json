@@ -2181,6 +2181,82 @@
         "h": 502
     },
     {
+        "id": "c6a4a826e6460a55",
+        "type": "group",
+        "z": "56005496d7b431f1",
+        "name": "CubeEditor App",
+        "style": {
+            "stroke": "#fdC000",
+            "fill": "#dbcbe7",
+            "label": true,
+            "color": "#083557"
+        },
+        "nodes": [
+            "4acbfe24c50114bf",
+            "170dce49e2c92789",
+            "5d7ed32a9045a5f0",
+            "db6dc3479e829d70",
+            "f94c2d6499a76a2d",
+            "0771579c75c15437",
+            "44a7b145a7f4cf59",
+            "6e3cbd17547545be",
+            "6747a1e026a2057e",
+            "b2466b992d17f369",
+            "44f50e468bf2bb86",
+            "691298e71371722f",
+            "1cde57e291ab993b",
+            "4b532690af28b598",
+            "1d271b1424d305f8",
+            "127b856076e5bf8c",
+            "b09ca73e18da2be7",
+            "cda988bda79479ef",
+            "9491ece9d56a73f7",
+            "eb0a2a8b4ac9b0e1",
+            "ce0438aa8f6c8906"
+        ],
+        "x": 54,
+        "y": 39,
+        "w": 1532,
+        "h": 242
+    },
+    {
+        "id": "7530fd8187d89afb",
+        "type": "group",
+        "z": "56005496d7b431f1",
+        "name": "CubeEditor Router",
+        "style": {
+            "stroke": "#fdC000",
+            "label": true,
+            "color": "#083557",
+            "fill": "#dbcbe7"
+        },
+        "nodes": [
+            "774c5bb989ea854a",
+            "6ee619e2aba1a349",
+            "d99d66a736958add",
+            "505bf631d8f3b503",
+            "2ba9a141f89c2251",
+            "e2eeaf1b5b885454",
+            "99dcb5a3322a04b4",
+            "8c4eaf57a547d064",
+            "377cb44e1e5a2183",
+            "aa3fa6b0502b8885",
+            "91147dc64a98bccc",
+            "d766ad5f7663440b",
+            "a4b16481e61861a6",
+            "e390d8a9d9c2596d",
+            "2a3b089c8fa23db9",
+            "b66ab9474a68364c",
+            "0cf06a48488c9c7b",
+            "7776a2f95f259ead",
+            "b3e5d840d6218631"
+        ],
+        "x": 54,
+        "y": 379,
+        "w": 1932,
+        "h": 242
+    },
+    {
         "id": "efd09052a685f540",
         "type": "group",
         "z": "90f83725.6dae08",
@@ -2454,84 +2530,6 @@
         "y": 2419,
         "w": 1072,
         "h": 82
-    },
-    {
-        "id": "c6a4a826e6460a55",
-        "type": "group",
-        "z": "56005496d7b431f1",
-        "name": "CubeEditor App",
-        "style": {
-            "stroke": "#fdC000",
-            "fill": "#dbcbe7",
-            "label": true,
-            "color": "#083557"
-        },
-        "nodes": [
-            "4acbfe24c50114bf",
-            "170dce49e2c92789",
-            "5d7ed32a9045a5f0",
-            "db6dc3479e829d70",
-            "6a8007672fa1b361",
-            "8153b56452f30fe7",
-            "f94c2d6499a76a2d",
-            "0771579c75c15437",
-            "44a7b145a7f4cf59",
-            "6e3cbd17547545be",
-            "6747a1e026a2057e",
-            "b2466b992d17f369",
-            "44f50e468bf2bb86",
-            "691298e71371722f",
-            "1cde57e291ab993b",
-            "4b532690af28b598",
-            "1d271b1424d305f8",
-            "127b856076e5bf8c",
-            "b09ca73e18da2be7",
-            "cda988bda79479ef",
-            "9491ece9d56a73f7",
-            "eb0a2a8b4ac9b0e1",
-            "ce0438aa8f6c8906"
-        ],
-        "x": 54,
-        "y": 39,
-        "w": 1532,
-        "h": 282
-    },
-    {
-        "id": "7530fd8187d89afb",
-        "type": "group",
-        "z": "56005496d7b431f1",
-        "name": "CubeEditor Router",
-        "style": {
-            "stroke": "#fdC000",
-            "label": true,
-            "color": "#083557",
-            "fill": "#dbcbe7"
-        },
-        "nodes": [
-            "774c5bb989ea854a",
-            "6ee619e2aba1a349",
-            "d99d66a736958add",
-            "505bf631d8f3b503",
-            "2ba9a141f89c2251",
-            "e2eeaf1b5b885454",
-            "99dcb5a3322a04b4",
-            "8c4eaf57a547d064",
-            "377cb44e1e5a2183",
-            "aa3fa6b0502b8885",
-            "91147dc64a98bccc",
-            "d766ad5f7663440b",
-            "a4b16481e61861a6",
-            "e390d8a9d9c2596d",
-            "2a3b089c8fa23db9",
-            "b66ab9474a68364c",
-            "0cf06a48488c9c7b",
-            "7776a2f95f259ead",
-            "b3e5d840d6218631"
-        ],
-        "x": 54,
-        "y": 379,
-        "w": 1932,
-        "h": 242
     },
     {
         "id": "6ad7c930.1a06b8",
@@ -19345,51 +19343,12 @@
         ]
     },
     {
-        "id": "6a8007672fa1b361",
-        "type": "mongodb3 in",
-        "z": "56005496d7b431f1",
-        "g": "c6a4a826e6460a55",
-        "service": "_ext_",
-        "configNode": "9cd5ff5e.caf86",
-        "name": "",
-        "collection": "appConfig",
-        "operation": "findOne",
-        "x": 460,
-        "y": 200,
-        "wires": [
-            [
-                "8153b56452f30fe7"
-            ]
-        ]
-    },
-    {
-        "id": "8153b56452f30fe7",
-        "type": "function",
-        "z": "56005496d7b431f1",
-        "g": "c6a4a826e6460a55",
-        "name": "Parse config",
-        "func": "let app = msg.req['_parsedUrl'].pathname.split('/')[1];\nlet config = JSON.stringify(msg.payload);\nmsg.payload = { config: config, urlInput: msg.urlInput, title:msg.payload.title, userID:getRandomInt(32768)};\nreturn msg;\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 410,
-        "y": 240,
-        "wires": [
-            [
-                "9491ece9d56a73f7"
-            ]
-        ]
-    },
-    {
         "id": "f94c2d6499a76a2d",
         "type": "function",
         "z": "56005496d7b431f1",
         "g": "c6a4a826e6460a55",
         "name": "get Appconfig",
-        "func": "let trayList = []\nlet viewAllTrays = false;\nfor (let allowedTray of msg.token.trays) \n{\n    if (allowedTray.type == '*') \n    {\n        viewAllTrays = true;\n        break;\n    }\n}\nfor( let ii in msg.payload ) \n{\n    if( msg.payload.hasOwnProperty(ii) ) \n    {\n        let trayDb = msg.payload[ii];\n        if (viewAllTrays)\n        {\n            trayList.push(JSON.parse(JSON.stringify(trayDb)));\n        }\n        else\n        {\n            for (let allowedTray of msg.token.trays) \n            {\n                if (allowedTray.type == trayDb.type) \n                {\n                    if (allowedTray.name == '*')\n                    {\n                        trayList.push(JSON.parse(JSON.stringify(trayDb)));\n                    }\n                    else\n                    {\n                        if (allowedTray.name == trayDb.name)\n                        {\n                            trayList.push(JSON.parse(JSON.stringify(trayDb)));\n                        }\n                    }\n                }\n            }\n        }\n    }\n}\n\nlet trayListType = []\nlet trayListSort = [];\nfor( let ii in trayList ) \n{\n    let index = trayListType.findIndex(tray => tray.type == trayList[ii].type);\n    if (index < 0)\n    {\n        trayListType.push({type:trayList[ii].type});\n        trayListSort.push([trayList[ii]]);\n    }\n    else\n    {\n        trayListSort[index].push(trayList[ii]);\n    }\n}\ntrayListSort.sort( \n    function(a, b) \n    {\n        var x = a[0]['type'].toUpperCase(); \n        var y = b[0]['type'].toUpperCase();\n        return ((x < y) ? -1 : ((x > y) ? 1 : 0));\n    }\n);\nfor( let ii in trayListSort ) \n{\n    trayListSort[ii].sort( \n        function(a, b) \n        {\n            var x = a['name'].toUpperCase(); \n            var y = b['name'].toUpperCase();\n            return ((x < y) ? -1 : ((x > y) ? 1 : 0));\n        }\n    );\n}\n\nlet app = msg.req['_parsedUrl'].pathname.split('/')[1];\nmsg['urlInput'] = JSON.stringify( {box:global.get('box'), trayList:trayListSort});\nmsg.payload = [{ app: app},{projection  :{_id : 0} }]\n\nreturn msg;\n",
+        "func": "let trayList = []\nlet viewAllTrays = false;\nfor (let allowedTray of msg.token.trays) \n{\n    if (allowedTray.type == '*') \n    {\n        viewAllTrays = true;\n        break;\n    }\n}\nfor( let ii in msg.payload ) \n{\n    if( msg.payload.hasOwnProperty(ii) ) \n    {\n        let trayDb = msg.payload[ii];\n        if (viewAllTrays)\n        {\n            trayList.push(JSON.parse(JSON.stringify(trayDb)));\n        }\n        else\n        {\n            for (let allowedTray of msg.token.trays) \n            {\n                if (allowedTray.type == trayDb.type) \n                {\n                    if (allowedTray.name == '*')\n                    {\n                        trayList.push(JSON.parse(JSON.stringify(trayDb)));\n                    }\n                    else\n                    {\n                        if (allowedTray.name == trayDb.name)\n                        {\n                            trayList.push(JSON.parse(JSON.stringify(trayDb)));\n                        }\n                    }\n                }\n            }\n        }\n    }\n}\n\nlet trayListType = []\nlet trayListSort = [];\nfor( let ii in trayList ) \n{\n    let index = trayListType.findIndex(tray => tray.type == trayList[ii].type);\n    if (index < 0)\n    {\n        trayListType.push({type:trayList[ii].type});\n        trayListSort.push([trayList[ii]]);\n    }\n    else\n    {\n        trayListSort[index].push(trayList[ii]);\n    }\n}\ntrayListSort.sort( \n    function(a, b) \n    {\n        var x = a[0]['type'].toUpperCase(); \n        var y = b[0]['type'].toUpperCase();\n        return ((x < y) ? -1 : ((x > y) ? 1 : 0));\n    }\n);\nfor( let ii in trayListSort ) \n{\n    trayListSort[ii].sort( \n        function(a, b) \n        {\n            var x = a['name'].toUpperCase(); \n            var y = b['name'].toUpperCase();\n            return ((x < y) ? -1 : ((x > y) ? 1 : 0));\n        }\n    );\n}\nmsg['urlInput'] = JSON.stringify( {box:global.get('box'), trayList:trayListSort});\nlet config = \n{\n    multiColumns: false,\n    app: 'cubeEditor',\n    navbar: {\n        config: {\n            imageHeight: '75px',\n            centerImage: '/img/editor.png'\n        }\n    },\n    title: 'Cube Editor',\n    cards: [\n        {\n            type: 'CubeListChooser',\n            config: {\n                title: 'Cube List',\n                displayOnOpen: true,\n                dataUpdatePeriodmS: 2000\n            }\n        },\n        {\n            type: 'UserCard',\n            config: {\n                title: 'User',\n                displayOnOpen: false\n            }\n        }\n    ]\n};\nmsg.payload = { config: JSON.stringify(config), urlInput: msg.urlInput, title:msg.payload.title, userID:getRandomInt(32768)};\nreturn msg;\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}\n\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -19400,7 +19359,7 @@
         "y": 160,
         "wires": [
             [
-                "6a8007672fa1b361"
+                "9491ece9d56a73f7"
             ]
         ]
     },
@@ -19636,7 +19595,7 @@
         "g": "c6a4a826e6460a55",
         "name": "",
         "x": 400,
-        "y": 280,
+        "y": 200,
         "wires": [
             [
                 "6747a1e026a2057e"
