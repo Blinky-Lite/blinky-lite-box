@@ -2113,12 +2113,13 @@
             "728ad7f9f6163931",
             "11bf8bdbb65e0b19",
             "a1ac9e631b1c38ed",
-            "6fbbca37caabe403"
+            "6fbbca37caabe403",
+            "721a9df33321ea07"
         ],
         "x": 134,
-        "y": 459,
-        "w": 1652,
-        "h": 322
+        "y": 439,
+        "w": 1672,
+        "h": 342
     },
     {
         "id": "58645e2c91cd1ed6",
@@ -6101,7 +6102,7 @@
         "name": "",
         "collection": "trays",
         "operation": "update",
-        "x": 1600,
+        "x": 1680,
         "y": 560,
         "wires": [
             []
@@ -6190,8 +6191,8 @@
             "410760b7c1cdbc31",
             "4df00f1e3ab2a9ef"
         ],
-        "x": 1345,
-        "y": 500,
+        "x": 1555,
+        "y": 480,
         "wires": []
     },
     {
@@ -6322,8 +6323,7 @@
         "y": 620,
         "wires": [
             [
-                "a190426bb07ca2a4",
-                "4ffc61b266cd720c"
+                "721a9df33321ea07"
             ],
             [
                 "2641ddb623e2304e"
@@ -6339,15 +6339,15 @@
         "z": "e17f7487.2a78e8",
         "g": "eca7f29a338f593a",
         "name": "update reading",
-        "func": "if (!global.get('enableArchive')) return null;\n//needed to do this in case tray forgot to update timestamp\nlet now = new Date().getTime();\nif (now > msg.tray.timeStamp)\n{\n    if ((now - msg.tray.timeStamp) > msg.tray.arcPeriod) msg.tray.timeStamp = now;\n}\nelse\n{\n    if ((msg.tray.timeStamp - now) > msg.tray.arcPeriod) msg.tray.timeStamp = now;\n}\n//msg.tray.timeStamp = new Date().getTime();\nvar keys = Object.keys(msg.tray);\nfor (var ii = 0; ii < keys.length; ++ii) msg.payload[keys[ii]] = msg.tray[keys[ii]];\n\nvar updateTrayMsg = \n{\n    topic:'updateTray',\n    payload:\n    [\n        {\n            $and   :    \n            [\n                {\n                    type : msg.payload.type\n                },\n                {\n                    name : msg.payload.name\n                }\n            ]\n        }, \n        msg.payload\n    ]\n};\nreturn updateTrayMsg\n",
+        "func": "if (!global.get('enableArchive')) return null;\nvar keys = Object.keys(msg.tray);\nfor (var ii = 0; ii < keys.length; ++ii) msg.payload[keys[ii]] = msg.tray[keys[ii]];\n\nvar updateTrayMsg = \n{\n    topic:'updateTray',\n    payload:\n    [\n        {\n            $and   :    \n            [\n                {\n                    type : msg.payload.type\n                },\n                {\n                    name : msg.payload.name\n                }\n            ]\n        }, \n        msg.payload\n    ]\n};\nreturn updateTrayMsg\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1400,
-        "y": 560,
+        "x": 1620,
+        "y": 520,
         "wires": [
             [
                 "f20b241f2c715e8e"
@@ -6997,6 +6997,28 @@
         "wires": [
             [
                 "64c995f0808eef31"
+            ]
+        ]
+    },
+    {
+        "id": "721a9df33321ea07",
+        "type": "function",
+        "z": "e17f7487.2a78e8",
+        "g": "eca7f29a338f593a",
+        "name": "update Timestamp",
+        "func": "//needed to do this in case tray forgot to update timestamp\nmsg.tray.timeStamp = new Date().getTime();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1410,
+        "y": 560,
+        "wires": [
+            [
+                "a190426bb07ca2a4",
+                "4ffc61b266cd720c"
             ]
         ]
     },
