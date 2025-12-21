@@ -24,7 +24,7 @@ module.exports = {
     externalModules: {},
     disableEditor: (process.env.ENABLE_NODERED_EDITOR === '0'),
     editorTheme: {
-//        theme: "dark-scroll",
+        theme: "dark-scroll",
         tours: false,
         page: {title: "blinky-lite-box"},
         header: {title: "blinky-lite-box"},

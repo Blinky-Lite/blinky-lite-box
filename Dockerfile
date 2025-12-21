@@ -7,7 +7,7 @@ COPY flows_cred.json    /data/flows_cred.json
 COPY settings.js        /data/settings.js
 RUN chown -R node-red:node-red /data/html-static
 WORKDIR /usr/src/node-red
-RUN npm install node-red-dashboard@3.4.0
+RUN npm install @node-red-contrib-themes/theme-collection@3.1.8
 RUN npm install node-red-contrib-auth@0.1.7
 RUN npm install node-red-contrib-bcrypt@0.1.6
 RUN npm install node-red-contrib-mongodb3@2.0.1

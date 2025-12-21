@@ -90,6 +90,14 @@
         "env": []
     },
     {
+        "id": "64497cdd071a6487",
+        "type": "tab",
+        "label": "picobusTrayEditor",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "ca529822.9112f8",
         "type": "subflow",
         "name": "HTML",
@@ -2543,101 +2551,6 @@
         "h": 82
     },
     {
-        "id": "6ad7c930.1a06b8",
-        "type": "ui_base",
-        "theme": {
-            "name": "theme-dark",
-            "lightTheme": {
-                "default": "#0094CE",
-                "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "darkTheme": {
-                "default": "#097479",
-                "baseColor": "#097479",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "customTheme": {
-                "name": "Untitled Theme 1",
-                "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-            },
-            "themeState": {
-                "base-color": {
-                    "default": "#097479",
-                    "value": "#097479",
-                    "edited": false
-                },
-                "page-titlebar-backgroundColor": {
-                    "value": "#097479",
-                    "edited": false
-                },
-                "page-backgroundColor": {
-                    "value": "#111111",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#000000",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#0eb8c0",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#555555",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#333333",
-                    "edited": false
-                },
-                "widget-textColor": {
-                    "value": "#eeeeee",
-                    "edited": false
-                },
-                "widget-backgroundColor": {
-                    "value": "#097479",
-                    "edited": false
-                },
-                "widget-borderColor": {
-                    "value": "#333333",
-                    "edited": false
-                },
-                "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                }
-            },
-            "angularTheme": {
-                "primary": "indigo",
-                "accents": "blue",
-                "warn": "red",
-                "background": "grey"
-            }
-        },
-        "site": {
-            "name": "Chill Detector",
-            "hideToolbar": "false",
-            "allowSwipe": "false",
-            "dateFormat": "DD/MM/YYYY",
-            "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
-            }
-        }
-    },
-    {
         "id": "3c933d8a.80b7a2",
         "type": "websocket-listener",
         "path": "/vectorPlotter/websocket",
@@ -2880,6 +2793,12 @@
         "id": "3da1e39ae6f348f5",
         "type": "websocket-listener",
         "path": "/cubeEditor/websocket",
+        "wholemsg": "false"
+    },
+    {
+        "id": "2bbdb3d1d3fc5054",
+        "type": "websocket-listener",
+        "path": "/picobusTrayEditor/websocket",
         "wholemsg": "false"
     },
     {
@@ -4708,66 +4627,7 @@
         "y": 80,
         "wires": [
             [
-                "5d902b1df5c99c69"
-            ]
-        ]
-    },
-    {
-        "id": "176adeb96b9237b0",
-        "type": "function",
-        "z": "d1aa8cd8b6ac048e",
-        "name": "parseIpRequest",
-        "func": "var data = msg.payload.data.geo;\ndata['url'] = msg.extraInfo.url;\ndata['userID'] = msg.extraInfo.userID;\ndata['timeStamp'] = new Date().getTime();\ndata['user'] = msg.extraInfo.user;\nreturn {topic:'ipData', payload:data};\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 220,
-        "y": 200,
-        "wires": [
-            [
-                "dde9f21e727b41e0"
-            ]
-        ]
-    },
-    {
-        "id": "3e7577fc68373d2a",
-        "type": "http request",
-        "z": "d1aa8cd8b6ac048e",
-        "name": "",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "https://tools.keycdn.com/geo.json?host={{{payload.ipAddress}}}",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "basic",
-        "x": 210,
-        "y": 160,
-        "wires": [
-            [
-                "176adeb96b9237b0"
-            ]
-        ]
-    },
-    {
-        "id": "5d902b1df5c99c69",
-        "type": "function",
-        "z": "d1aa8cd8b6ac048e",
-        "name": "ClientInfo",
-        "func": "var ipAddress = ( msg.req.headers['x-forwarded-for'] || '').split(',').pop() || \n          msg.req.connection.remoteAddress || \n          msg.req.socket.remoteAddress || \n          msg.req.connection.socket.remoteAddress;\nvar url = msg.req.url;\nvar header = {};\nheader['User-Agent'] = 'keycdn-tools:' + global.get('ipRefWeb');\nvar user = \"anon\"\nif (msg.hasOwnProperty(\"token\"))\n{\n    user = msg.token.username;\n}\nreturn {\n    topic:'clientInfo', \n    headers: header,\n    payload:{\n        ipAddress   : ipAddress\n    },\n    extraInfo       : {url:url, userID:msg.payload.userID, user:user},\n};\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 200,
-        "y": 120,
-        "wires": [
-            [
-                "3e7577fc68373d2a"
+                "0b35db85242994d2"
             ]
         ]
     },
@@ -4784,6 +4644,105 @@
         "y": 240,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "9a80914b2c79bae1",
+        "type": "function",
+        "z": "d1aa8cd8b6ac048e",
+        "name": "parseIpRequest",
+        "func": "var data = msg.payload.data.geo;\ndata['url'] = msg.extraInfo.url;\ndata['userID'] = msg.extraInfo.userID;\ndata['timeStamp'] = new Date().getTime();\ndata['user'] = msg.extraInfo.user;\nreturn {topic:'ipData', payload:data};\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 200,
+        "wires": [
+            [
+                "dde9f21e727b41e0"
+            ]
+        ]
+    },
+    {
+        "id": "f73b2838d2edb5e6",
+        "type": "http request",
+        "z": "d1aa8cd8b6ac048e",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://tools.keycdn.com/geo.json?host={{{payload.ipAddress}}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 210,
+        "y": 160,
+        "wires": [
+            [
+                "9a80914b2c79bae1"
+            ]
+        ]
+    },
+    {
+        "id": "0b35db85242994d2",
+        "type": "function",
+        "z": "d1aa8cd8b6ac048e",
+        "name": "ClientInfo",
+        "func": "var ipAddress = ( msg.req.headers['x-forwarded-for'] || '').split(',').pop() || \n          msg.req.connection.remoteAddress || \n          msg.req.socket.remoteAddress || \n          msg.req.connection.socket.remoteAddress;\nvar url = msg.req.url;\nvar header = {};\nheader['User-Agent'] = 'keycdn-tools:' + global.get('ipRefWeb');\nvar user = \"anon\"\nif (msg.hasOwnProperty(\"token\"))\n{\n    user = msg.token.username;\n}\nreturn {\n    topic:'clientInfo', \n    headers: header,\n    payload:{\n        ipAddress   : ipAddress\n    },\n    extraInfo       : {url:url, userID:msg.payload.userID, user:user, ipAddress : ipAddress},\n};\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 120,
+        "wires": [
+            [
+                "f73b2838d2edb5e6"
+            ]
+        ]
+    },
+    {
+        "id": "80ab44adb1a076f4",
+        "type": "catch",
+        "z": "d1aa8cd8b6ac048e",
+        "name": "",
+        "scope": [
+            "9a80914b2c79bae1",
+            "f73b2838d2edb5e6"
+        ],
+        "uncaught": false,
+        "x": 470,
+        "y": 200,
+        "wires": [
+            [
+                "26b7d1443a167da9"
+            ]
+        ]
+    },
+    {
+        "id": "26b7d1443a167da9",
+        "type": "function",
+        "z": "d1aa8cd8b6ac048e",
+        "name": "fill in missing ip data",
+        "func": "if (msg.error.source.name != 'parseIpRequest') return null;\nlet  data =\n{\n    host: msg.extraInfo.ipAddress,\n    ip: msg.extraInfo.ipAddress,\n    rdns: msg.extraInfo.ipAddress,\n    asn: '',\n    isp: '',\n    country_name: '',\n    country_code: '',\n    region_name: '',\n    region_code: '',\n    city: '',\n    postal_code: '',\n    continent_name: '',\n    continent_code: '',\n    latitude: '',\n    longitude: '',\n    metro_code: '',\n    timezone: '',\n    datetime: '',\n}\ndata['url'] = msg.extraInfo.url;\ndata['userID'] = msg.extraInfo.userID;\ndata['timeStamp'] = new Date().getTime();\ndata['user'] = msg.extraInfo.user;\nreturn {topic:'ipData', payload:data};\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 200,
+        "wires": [
+            [
+                "dde9f21e727b41e0"
+            ]
         ]
     },
     {
@@ -21667,5 +21626,889 @@
         "x": 1870,
         "y": 440,
         "wires": []
+    },
+    {
+        "id": "ecc8ce3c2320e42d",
+        "type": "http in",
+        "z": "64497cdd071a6487",
+        "name": "/picobusTrayEditor",
+        "url": "/picobusTrayEditor",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "788784a1a3210d8b"
+            ]
+        ]
+    },
+    {
+        "id": "21d5c460e08b41c9",
+        "type": "function",
+        "z": "64497cdd071a6487",
+        "name": "Allowed Roles",
+        "func": "msg.payload.allowedRoles = ['appView'];\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 180,
+        "wires": [
+            [
+                "306f22b586850cc0"
+            ]
+        ]
+    },
+    {
+        "id": "371f0f5a35bc022f",
+        "type": "websocket in",
+        "z": "64497cdd071a6487",
+        "name": "/picobusTrayEditor/websocket",
+        "server": "2bbdb3d1d3fc5054",
+        "client": "",
+        "x": 140,
+        "y": 800,
+        "wires": [
+            [
+                "2a1748af1ce333b7"
+            ]
+        ]
+    },
+    {
+        "id": "e13b8737a6b6be01",
+        "type": "function",
+        "z": "64497cdd071a6487",
+        "name": "Renew Token",
+        "func": "msg.token.expDate = new Date().getTime() + msg.token.timeoutMin * 60000;\ndelete msg.token['iat']\nmsg.payload = JSON.parse(JSON.stringify(msg.token));\ndelete msg['token'];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 780,
+        "y": 420,
+        "wires": [
+            [
+                "9acc909e79eb3238"
+            ]
+        ]
+    },
+    {
+        "id": "9acc909e79eb3238",
+        "type": "JsonWebToken",
+        "z": "64497cdd071a6487",
+        "name": "encrypt token",
+        "tokenconfig": "6acefdd9.69f124",
+        "x": 980,
+        "y": 420,
+        "wires": [
+            [
+                "233706a37254d43c"
+            ]
+        ]
+    },
+    {
+        "id": "233706a37254d43c",
+        "type": "function",
+        "z": "64497cdd071a6487",
+        "name": "Renew Cookies",
+        "func": "var newMsg = \n{\n    topic : 'renew',\n    payload: \n    {\n        topic       : 'renew',\n        userID      : msg.userID,\n        role        : msg.token,\n        expDate     : msg.payload.expDate.toString(),\n        username    : msg.payload.username\n    }\n}\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1240,
+        "y": 420,
+        "wires": [
+            [
+                "4acb75789901ee16"
+            ]
+        ]
+    },
+    {
+        "id": "35111b293da59443",
+        "type": "websocket out",
+        "z": "64497cdd071a6487",
+        "name": "/picobusTrayEditor/websocket",
+        "server": "2bbdb3d1d3fc5054",
+        "client": "",
+        "x": 1730,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "cce88e73cf47cc82",
+        "type": "switch",
+        "z": "64497cdd071a6487",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "renew",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "getPicobusTrays",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "insertPicobusTray",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "pauseTray",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "deleteTray",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "saveTray",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "updateTray",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 7,
+        "x": 570,
+        "y": 540,
+        "wires": [
+            [
+                "e13b8737a6b6be01"
+            ],
+            [
+                "9bb22ff31b636b80"
+            ],
+            [
+                "c570dfa2702d44e5"
+            ],
+            [
+                "455479ccc0d1070c"
+            ],
+            [
+                "5a059d5259b23b38"
+            ],
+            [
+                "f1db7dcf167f3b7d"
+            ],
+            [
+                "f1db7dcf167f3b7d"
+            ]
+        ]
+    },
+    {
+        "id": "788784a1a3210d8b",
+        "type": "subflow:3fec913b325ae6ff",
+        "z": "64497cdd071a6487",
+        "name": "",
+        "x": 180,
+        "y": 100,
+        "wires": [
+            [
+                "fd7ba5fb6b2d5e10"
+            ]
+        ]
+    },
+    {
+        "id": "fd7ba5fb6b2d5e10",
+        "type": "subflow:e0ef21f5c45ba4bc",
+        "z": "64497cdd071a6487",
+        "name": "",
+        "x": 180,
+        "y": 140,
+        "wires": [
+            [
+                "21d5c460e08b41c9"
+            ]
+        ]
+    },
+    {
+        "id": "2a1748af1ce333b7",
+        "type": "subflow:fee416c.fb205e8",
+        "z": "64497cdd071a6487",
+        "name": "",
+        "x": 410,
+        "y": 800,
+        "wires": [
+            [
+                "cce88e73cf47cc82"
+            ],
+            [
+                "3ec7c8f3862537d5"
+            ]
+        ]
+    },
+    {
+        "id": "42d70ebfaa7e651c",
+        "type": "function",
+        "z": "64497cdd071a6487",
+        "name": "get Appconfig",
+        "func": "let app = msg.req['_parsedUrl'].pathname.split('/')[1];\nlet title = msg.payload.type + \" Tray Editor\"\nlet userID = getRandomInt(32768);\nlet urlInput = {box:global.get('box'), title:title, userID:userID, type: msg.payload.type}\nmsg.payload = { urlInput: JSON.stringify(urlInput),  title:title, userID:userID}; // need to have separate userid for access logging\nreturn msg;\nfunction getRandomInt(max)\n{\n  return Math.floor(Math.random() * Math.floor(max));\n}  \n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 140,
+        "wires": [
+            [
+                "746e8ab1cf19d04f"
+            ]
+        ]
+    },
+    {
+        "id": "6a2192d9b21d80eb",
+        "type": "subflow:74b74739cc6e49af",
+        "z": "64497cdd071a6487",
+        "name": "",
+        "x": 440,
+        "y": 220,
+        "wires": [
+            [
+                "8971e30dfab3f391"
+            ]
+        ]
+    },
+    {
+        "id": "8971e30dfab3f391",
+        "type": "template",
+        "z": "64497cdd071a6487",
+        "name": "picobusTrayEditor",
+        "field": "payload.picobusTrayEditor",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "// picobusTrayEditor\n        class PicobusTrayEditor\n        {\n            constructor(urlInput)\n            {\n                this.config = {title: urlInput.title, type: urlInput.type};\n                this.box = urlInput.box;\n                this.ws = null;\n                this.userID = urlInput.userID;\n                this.wsUri = '';\n                this.wsConnected = false;\n                this.connectionTrys = 0;\n                this.route = '';\n                this.navBar = null;\n                this.cardOrder = [];\n                this.appConnectedOnce = false;\n                this.userCard = null;\n                this.messageDialog     = new OkCancelDialog(this, 'Message', 0);\n                this.acknowledgeDialog = new OkCancelDialog(this, 'Acknowledge', 1);\n                this.okCancelDialog    = new OkCancelDialog(this, 'Acknowledge', 2);\n                this.inputDialog    = new OkCancelDialog(this, 'Input', 3);\n\n                this.navBar = new NavBar(this,{imageHeight: '75px',centerImage: '/img/logbook.png'});\n                this.trayChooserCard  = new TrayChooserCard(this, {title: \"Choose Tray\", displayOnOpen: true});\n                this.trayEditorCard  = new TrayEditorCard(this, {title: \"Edit Tray\", displayOnOpen: true});\n                this.cubeListManager = new CubeListManager(this.trayEditorCard );\n                \n                this.userCard = new UserCard(this, {title: 'User', displayOnOpen: true});\n                this.cardOrder.push(this.trayChooserCard);\n                this.cardOrder.push(this.trayEditorCard);\n                this.cardOrder.push(this.userCard);\n                this.trays = [];\n                this.acknowledgeMsg = '';\n            }\n            webSocketConnected()\n            {\n                return this.wsConnected;\n            }\n            wsConnectC()\n            {\n                if (this.wsUri.length < 1)\n                {\n                    let uri = window.location.href.split('://');\n                    let wslead = 'ws://';\n                    if (uri[0] == 'https') wslead = 'wss://';\n                    let questionLocation = uri[1].indexOf('?');\n                    if (questionLocation >= 0)\n                    {\n                        uri[1] = uri[1].substring(0,questionLocation);\n                    }\n                    this.route = uri[1].split('/')[1];\n                    if (uri[1].indexOf('/') < (uri[1].length - 1))\n                    {\n                        this.wsUri = wslead + uri[1] + '/websocket';\n                    }\n                    else\n                    {\n                        this.wsUri = wslead + uri[1] + 'websocket';\n                    }\n                }\n                \n                this.ws = new WebSocket(this.wsUri);\n                this.ws.onmessage  = event => {this.onWebSocketMessage(JSON.parse(event.data))};\n                this.ws.onopen     = event => \n                {\n                    this.onWebsocketOpen();\n                };\n                this.ws.onclose    = event => \n                {\n                    this.connectionTrys = this.connectionTrys + 1;\n                    console.log(\"Websocket closed\");\n                    this.wsConnected = false;\n                    if (this.connectionTrys < 20000)\n                    {\n                        console.log('Trying to reconnect...');\n                        setTimeout(()=>this.wsConnectC(),2000);\n                    }\n                    else\n                    {\n                        this.acknowledgeDialog.showDialog('Error: Websocket disconnect.',() => \n                        {\n                            this.connectionTrys = 0;\n                            console.log('Trying to reconnect...');\n                            setTimeout(()=>this.wsConnectC(),2000);\n                        });\n                    }\n                };\n            }\n            onWebsocketOpen()\n            {\n                console.log(\"Websocket connected\");\n                this.wsConnected = true;\n                if (!this.appConnectedOnce)\n                {\n                    let actionMsg = \n                    {\n                        topic   : 'getPicobusTrays',\n                        payload : [{ type: this.config.type}, { projection: { _id: 0 } }]\n                    };\n                    this.sendActionMsg('getPicobusTrays','readDatabase',actionMsg);\n               }\n                this.appConnectedOnce = true;\n            }\n            onWebSocketMessage(msg)\n            {\n                switch(msg.topic)\n                {\n                    case 'getPicobusTrays':\n                        if (msg.userID != this.userID) return;\n                        this.trays = JSON.parse(JSON.stringify(msg.payload));\n                        this.trayChooserCard.loadTrays();\n                        break;\n                    case 'insertPicobusTray':\n                        if (msg.userID != this.userID) return;\n                        this.trays = JSON.parse(JSON.stringify(msg.payload));\n                        this.trayChooserCard.loadTrays();\n                        let iindex1 = '-1';\n                        for (let itray in this.trays)\n                            if (this.trays[itray].name == msg.name) iindex1 = itray;\n                        if (iindex1 == '-1') break;\n                        this.trayChooserCard.select.value = iindex1;\n                        this.trayChooserCard.selectChange();\n                        break;\n                    case 'pauseTray':\n                        if (msg.userID != this.userID) return;\n                        this.trayEditorCard.trayPaused(msg.payload);\n                        break;\n                    case 'deleteTray':\n                        if (msg.userID != this.userID) return;\n                        this.trays = JSON.parse(JSON.stringify(msg.payload));\n                        this.trayChooserCard.loadTrays();\n                        break;\n                    case 'saveTray':\n                        if (msg.userID != this.userID) return;\n                        this.trays = JSON.parse(JSON.stringify(msg.payload));\n                        this.trayChooserCard.loadTrays();\n                        break;\n                    case 'updateTray':\n                        if (msg.userID != this.userID) return;\n                        this.trays = JSON.parse(JSON.stringify(msg.payload));\n                        this.trayChooserCard.loadTrays();\n                        let iindex2 = '-1';\n                        for (let itray in this.trays)\n                            if (this.trays[itray].name == this.trayEditorCard.updateTrayName) iindex2 = itray;\n                        if (iindex2 == '-1') break;\n                        this.trayChooserCard.select.value = iindex2;\n                        this.trayChooserCard.selectChange();\n                        this.trayEditorCard.updateTrayName = '';\n                        break;\n                    case 'renew':\n                        if (msg.userID != this.userID) return;\n                        this.updateCookie(msg);\n                        break;\n                    case 'permissionError':\n                        if (msg.userID != this.userID) return;\n                        this.acknowledgeDialog.showDialog('Error: You do not have permission.',function(){});\n                        break;\n                    case 'loginExpired':\n                        if (msg.userID != this.userID) return;\n                         location.reload();\n                        break;\n                    default:\n                        break;\n                }\n            }\n            docReady()\n            {\n                if (this.navBar != null) this.navBar.onDocumentReady();\n                for (let ic = 0; ic < this.cardOrder.length; ++ic)\n                {\n                    this.cardOrder[ic].onDocumentReady();\n                }\n                this.messageDialog.onDocumentReady('messageCardContainer');\n                this.acknowledgeDialog.onDocumentReady('acknowledgeCardContainer');\n                this.okCancelDialog.onDocumentReady('okCancelCardContainer');\n                this.inputDialog.onDocumentReady('inputCardContainer');\n                this.wsConnectC();\n                \n            }\n            getCookie(extension)\n            {\n                let cookies = document.cookie.split(';');\n                let token = null;\n                let cookieName = this.box + extension + \"=\";\n                for (let icookie = 0; icookie < cookies.length; ++icookie)\n                {\n                    let index = cookies[icookie].indexOf(cookieName);\n                    if (index >= 0)\n                    {\n                        token = cookies[icookie].substring(index + cookieName.length);\n                    }\n                }\n                return token;\n            }\n            updateCookie(msg)\n            {\n                let expTimeout = Math.round((Number(msg.expDate) - new Date().getTime()) / 1000).toString();\n                if (Number(msg.expDate) < 0)\n                {\n                    document.cookie = this.box + \"Role=\" + msg.role;\n                    document.cookie = this.box + \"ExpDate=\" + msg.expDate;\n                    document.cookie = this.box + \"Username=\" + msg.username;\n                }\n                else\n                {\n                    let expDateString = \"; max-age=\" + expTimeout;\n                    document.cookie = this.box + \"Role=\" + msg.role + expDateString;\n                    document.cookie = this.box + \"ExpDate=\" + msg.expDate + expDateString;\n                    document.cookie = this.box + \"Username=\" + msg.username + expDateString;\n                }\n            }\n            sendActionMsg(topic,role,actionMsg)\n            {\n                let roleToken = \"\";\n                roleToken  = this.getCookie('Role');\n                if (roleToken == null)\n                {\n                    location.reload();\n                    return;\n                }\n                let webSocketMsg = \n                {\n                    topic     : topic,\n                    payload   : actionMsg,\n                    route     : this.route,\n                    userID    : this.userID,\n                    token     : this.getCookie('Role'),\n                    role      : role\n                };\n                this.ws.send(JSON.stringify(webSocketMsg));\n            }\n        }\n",
+        "output": "str",
+        "x": 810,
+        "y": 60,
+        "wires": [
+            [
+                "2e836069775bb739"
+            ]
+        ]
+    },
+    {
+        "id": "2e836069775bb739",
+        "type": "subflow:20ef9328fc8e1b3a",
+        "z": "64497cdd071a6487",
+        "x": 800,
+        "y": 100,
+        "wires": [
+            [
+                "064b6097822a3da5"
+            ]
+        ]
+    },
+    {
+        "id": "064b6097822a3da5",
+        "type": "subflow:383adc69a3a4d2bd",
+        "z": "64497cdd071a6487",
+        "name": "",
+        "x": 800,
+        "y": 140,
+        "wires": [
+            [
+                "3d31bc7e31235127"
+            ]
+        ]
+    },
+    {
+        "id": "3d31bc7e31235127",
+        "type": "subflow:8bdf46498bb71b57",
+        "z": "64497cdd071a6487",
+        "name": "",
+        "x": 800,
+        "y": 180,
+        "wires": [
+            [
+                "3c532e3d0a513846"
+            ]
+        ]
+    },
+    {
+        "id": "e3b38227769ae406",
+        "type": "template",
+        "z": "64497cdd071a6487",
+        "name": "init",
+        "field": "payload.init",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "// init\n        let app = new PicobusTrayEditor(JSON.parse('{{{payload.urlInput}}}') );\n\n        docReady(function() \n        {\n            app.docReady();\n        });\n        function docReady(fn) \n        {\n            // see if DOM is already available\n            if (document.readyState === \"complete\" || document.readyState === \"interactive\") {\n                // call on next available tick\n                setTimeout(fn, 1);\n            } else {\n                document.addEventListener(\"DOMContentLoaded\", fn);\n            }\n        }            \n        var _dummyNode;\n        function destroyNode(node)\n        {\n            if(!_dummyNode) _dummyNode = document.createElement('div');\n            _dummyNode.appendChild(node.parentNode.removeChild(node));\n            _dummyNode.innerHTML = \"\";\n        }\n//Finished Init App",
+        "output": "str",
+        "x": 1030,
+        "y": 180,
+        "wires": [
+            [
+                "dcbcbfe73468a12c"
+            ]
+        ]
+    },
+    {
+        "id": "dcbcbfe73468a12c",
+        "type": "template",
+        "z": "64497cdd071a6487",
+        "name": "script",
+        "field": "payload.script",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "// script\n{{{payload.picobusTrayEditor}}}\n{{{payload.navbar}}}\n{{{payload.appCard}}}\n{{{payload.trayChooserCard}}}\n{{{payload.trayEditorCard}}}\n{{{payload.cubeListManager}}}\n{{{payload.cubeItem}}}\n{{{payload.okCancelDialog}}}\n{{{payload.userCard}}}\n{{{payload.init}}}\n",
+        "output": "str",
+        "x": 1030,
+        "y": 220,
+        "wires": [
+            [
+                "4bf0d7a5eb0dd0f7"
+            ]
+        ]
+    },
+    {
+        "id": "4bf0d7a5eb0dd0f7",
+        "type": "template",
+        "z": "64497cdd071a6487",
+        "name": "appContent",
+        "field": "payload.appContent",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "    <div id=\"appContent\" width=\"100%\"></div>\n    <div id=\"messageCardContainer\" class=\"row dialog-modal\"></div>\n    <div id=\"acknowledgeCardContainer\" class=\"row dialog-modal\"></div>\n    <div id=\"okCancelCardContainer\" class=\"row dialog-modal\"></div>\n    <div id=\"inputCardContainer\" class=\"row dialog-modal\"></div>\n\n",
+        "output": "str",
+        "x": 1050,
+        "y": 260,
+        "wires": [
+            [
+                "56862b7835471d6c"
+            ]
+        ]
+    },
+    {
+        "id": "56862b7835471d6c",
+        "type": "subflow:d1aa8cd8b6ac048e",
+        "z": "64497cdd071a6487",
+        "name": "",
+        "x": 1240,
+        "y": 260,
+        "wires": [
+            [
+                "6644b1e59c2cf7ba"
+            ]
+        ]
+    },
+    {
+        "id": "6644b1e59c2cf7ba",
+        "type": "template",
+        "z": "64497cdd071a6487",
+        "name": "HTML",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <link rel=\"icon\" href=\"{{{generalAppConfig.faviconUrl}}}?v=4\" type=\"image/x-icon\"/>\n    <title>{{payload.title}}</title>\n    <link rel=\"stylesheet\" href=\"/css/bootstrap.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui.css\"/>\n    <link rel=\"stylesheet\" href=\"/jquery/jquery-ui-timepicker-addon.css\"/>\n    <script src=\"/jquery/jquery.js\"></script>\n    <script src=\"/jquery/jquery-ui.js\"></script>\n    <script src=\"/jquery/jquery-ui-timepicker-addon.js\"></script>\n    <script src=\"/scripts/plotly-latest.min.js\"></script>\n    <style>\n{{{payload.extraCSS}}}\n{{{payload.css}}}\n    </style>\n    <script>\n{{{payload.script}}}\n    </script>\n  </head>\n  <body>\n{{{payload.appContent}}}\n    <script src=\"/scripts/popper.js\"></script>\n    <script src=\"/scripts/bootstrap.js\"></script>\n  </body>\n</html>",
+        "output": "str",
+        "x": 1410,
+        "y": 260,
+        "wires": [
+            [
+                "cadef1651dae2a55"
+            ]
+        ]
+    },
+    {
+        "id": "cadef1651dae2a55",
+        "type": "http response",
+        "z": "64497cdd071a6487",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1550,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "306f22b586850cc0",
+        "type": "subflow:2d027d69.1fdeb2",
+        "z": "64497cdd071a6487",
+        "x": 180,
+        "y": 220,
+        "wires": [
+            [
+                "42d70ebfaa7e651c"
+            ]
+        ]
+    },
+    {
+        "id": "75d20dade9e6e3b8",
+        "type": "mongodb3 in",
+        "z": "64497cdd071a6487",
+        "service": "_ext_",
+        "configNode": "9cd5ff5e.caf86",
+        "name": "",
+        "collection": "trays",
+        "operation": "find.toArray",
+        "x": 1020,
+        "y": 460,
+        "wires": [
+            [
+                "c7941a215f8476d4"
+            ]
+        ]
+    },
+    {
+        "id": "9bb22ff31b636b80",
+        "type": "function",
+        "z": "64497cdd071a6487",
+        "name": "getPicobusTrays",
+        "func": "msg.payload = msg.payload.payload;\nmsg.name = \"\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 460,
+        "wires": [
+            [
+                "75d20dade9e6e3b8"
+            ]
+        ]
+    },
+    {
+        "id": "c7941a215f8476d4",
+        "type": "function",
+        "z": "64497cdd071a6487",
+        "name": "sort Trays",
+        "func": "let trayArray = [];\nfor (let ikey in msg.payload)\n{\n    if (msg.payload[ikey].name  != 'admin') trayArray.push(msg.payload[ikey]);\n}\ntrayArray.sort((a, b) => \n{\n  let nameA = a.name.toUpperCase(); \n  let nameB = b.name.toUpperCase(); \n  if (nameA < nameB) {return -1;}\n  if (nameA > nameB) {return  1;}\n  return 0;\n});\n\nfor (let itray in trayArray)\n{\n  let settingArray = [];\n  let readingArray = [];\n  for (let key in trayArray[itray])\n  {\n    if (!isObject(trayArray[itray][key])) continue;\n    if ('picobus' in trayArray[itray][key]) \n    {\n      let picoBusObj = JSON.parse(JSON.stringify(trayArray[itray][key]));\n      picoBusObj['name'] = key;\n      if (picoBusObj.action == 'setting')\n      {\n        settingArray.push(picoBusObj);\n      }\n      else\n      {\n        readingArray.push(picoBusObj);\n      }\n      delete trayArray[itray][key];\n    }\n  }\n  settingArray.sort((a, b) => \n  {\n    if (a.picobus.byteOffset < b.picobus.byteOffset) {return -1;}\n    if (a.picobus.byteOffset > b.picobus.byteOffset) {return  1;}\n    return 0;\n  });\n  readingArray.sort((a, b) => \n  {\n    if (a.picobus.byteOffset < b.picobus.byteOffset) {return -1;}\n    if (a.picobus.byteOffset > b.picobus.byteOffset) {return  1;}\n    return 0;\n  });\n\n  trayArray[itray]['setList'] = settingArray;\n  trayArray[itray]['readList'] = readingArray;\n}\n\nmsg.payload = trayArray;\nreturn {\n    topic : msg.topic,\n    payload:{\n        topic           : msg.topic,\n        payload         : trayArray,\n        userID          : msg.userID,\n        name            : msg.name\n    }\n};\n\nfunction isObject(value) {\n  return typeof value === 'object' && value !== null && !Array.isArray(value);\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 460,
+        "wires": [
+            [
+                "4acb75789901ee16"
+            ]
+        ]
+    },
+    {
+        "id": "3c532e3d0a513846",
+        "type": "template",
+        "z": "64497cdd071a6487",
+        "name": "appCard",
+        "field": "payload.appCard",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "//appCard\n        class AppCard \n        {\n            constructor(app, config)\n            {\n                this.app = app;\n                this.config = config;\n            }\n            onDocumentReady()\n            {\n                this.containerRowDiv = document.createElement('div');\n                this.containerRowDiv.setAttribute('class', 'row cubeRowCard-containerRow');\n                document.getElementById('appContent').appendChild(this.containerRowDiv);\n                \n                let containerColDiv = document.createElement('div');\n                containerColDiv.setAttribute('class', 'col-md-12');\n                containerColDiv.setAttribute('align', 'center');\n                this.containerRowDiv.appendChild(containerColDiv);\n                \n                let cardDiv = document.createElement('div');\n                cardDiv.setAttribute('class', 'card cubeRowCard');\n                containerColDiv.appendChild(cardDiv);\n\n                let titleTable = document.createElement('table');\n                titleTable.setAttribute('width', '100%');\n                let titleRow  = document.createElement('tr');\n                let titleCol  = document.createElement('td');\n                titleCol.setAttribute('width', '85%');\n                titleCol.setAttribute('align', 'left');\n                let titleSpan  = document.createElement('span');\n                titleSpan.setAttribute('class', 'cubeRowCard-title');\n                titleSpan.innerHTML = this.config.title;\n                titleCol.appendChild(titleSpan);\n                titleRow.appendChild(titleCol);\n                let buttonCol  = document.createElement('td');\n                buttonCol.setAttribute('width', '15%');\n\n                this.displayButton = document.createElement('button');\n                this.displayButton.setAttribute('class', 'btn btn-block cubeRowCard-title-button');\n                this.displayButton.innerHTML = 'Close';\n                this.displayButton.onclick = event => {this.toggle()};\n                buttonCol.appendChild(this.displayButton);\n                titleRow.appendChild(buttonCol);\n\n                this.cardBodyDiv = document.createElement('div');\n                this.cardBodyDiv.setAttribute('class', 'cubeRowCard-body');\n                this.cardBodyDiv.setAttribute('align', 'center');\n                this.addCardBodyContent(this.cardBodyDiv);\n\n                titleTable.appendChild(titleRow);\n                cardDiv.appendChild(titleTable);\n                cardDiv.appendChild(this.cardBodyDiv);\n                if (this.config.displayOnOpen)\n                {\n                    this.cardBodyDiv.style.display = \"block\";\n                    this.displayButton.innerHTML = 'Close';\n                }\n                else\n                {\n                    this.cardBodyDiv.style.display = \"none\";\n                    this.displayButton.innerHTML = 'Open';\n                }\n            }\n            toggle()\n            {\n                if (this.cardBodyDiv.style.display === \"none\") \n                {\n                    this.cardBodyDiv.style.display = \"block\";\n                    this.displayButton.innerHTML = 'Close';\n                } \n                else \n                {\n                    this.cardBodyDiv.style.display = \"none\";\n                    this.displayButton.innerHTML = 'Open';\n                }\n                \n            }\n\n         }\n",
+        "output": "str",
+        "x": 780,
+        "y": 220,
+        "wires": [
+            [
+                "a994b549cd8d9eb4"
+            ]
+        ]
+    },
+    {
+        "id": "a994b549cd8d9eb4",
+        "type": "template",
+        "z": "64497cdd071a6487",
+        "name": "trayChooserCard",
+        "field": "payload.trayChooserCard",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "//trayChooserCard\n        class TrayChooserCard extends AppCard\n        {\n                constructor(app, config)\n                {\n                        super(app, config);\n                }\n                addCardBodyContent(cardBodyDiv)\n                {\n                        let t1 = document.createElement('table');\n                        t1.setAttribute('width', '100%');\n                        let t1r1  = document.createElement('tr');\n                        let t1r1c1  = document.createElement('td');\n                        t1r1c1.setAttribute('width', '40%');\n                        t1r1c1.setAttribute('class', 'cubeRowParameterView-label-column');\n\n                        let labelSpan  = document.createElement('span');\n                        labelSpan.innerHTML = \"New Tray\";\n                        t1r1c1.appendChild(labelSpan);\n                        t1r1.appendChild(t1r1c1);\n                        t1.appendChild(t1r1);\n                        cardBodyDiv.appendChild(t1);\n\n\n                        this.inputBox = document.createElement('input');\n                        this.inputBox.setAttribute('class', 'numberSetCube-inputbox');\n                        this.inputBox.setAttribute('type', 'text');\n                        this.inputBox.setAttribute('value', ' ');\n                        this.inputBox.oninput = event => {this.inputChange()};\n    \n                        let t1r1c2  = document.createElement('td');\n                        t1r1c2.setAttribute('width', '40%');\n                        t1r1c2.setAttribute('class', 'cubeRowParameterView-widget-column-1');\n                        t1r1c2.appendChild(this.inputBox);\n                        t1r1.appendChild(t1r1c2);\n\n                        this.settingButton = document.createElement('button');\n                        this.settingButton.setAttribute('class', 'btn btn-block numberSetCube-button');\n                        this.settingButton.innerHTML = 'Add';\n                        this.settingButton.onclick = event => {this.changeSetting()};\n                        let t1r1c3  = document.createElement('td');\n                        t1r1c3.setAttribute('width', '20%');\n                        t1r1c3.appendChild(this.settingButton);\n                        t1r1.appendChild(t1r1c3);\n\n                        this.showSettingButton(false);\n\n                        let t1r2  = document.createElement('tr');\n                        let t1r2c1  = document.createElement('td');\n                        t1r2c1.setAttribute('width', '40%');\n                        t1r2c1.setAttribute('class', 'cubeRowParameterView-label-column');\n\n                        let labelSpan2  = document.createElement('span');\n                        labelSpan2.innerHTML = \"Existing Tray\";\n                        t1r2c1.appendChild(labelSpan2);\n                        t1r2.appendChild(t1r2c1);\n                        t1.appendChild(t1r2);\n\n                        this.select = document.createElement('select');\n                        this.select.setAttribute('class', 'dropChoiceCube-select');\n                        this.select.onchange = event => {this.selectChange()};\n\n                        let t1r2c2  = document.createElement('td');\n                        t1r2c2.setAttribute('width', '40%');\n                        t1r2c2.setAttribute('class', 'cubeRowParameterView-widget-column-1');\n                        t1r2c2.appendChild(this.select);\n                        t1r2.appendChild(t1r2c2);\n\n                }\n                selectChange()\n                {\n                        if (Number(this.select.value) >= 0)\n                        {                \n                                this.app.trayEditorCard.containerRowDiv.style.display = 'block';\n                                this.containerRowDiv.style.display = 'none';\n                                this.app.trayEditorCard.setData(this.app.trays[this.select.value]);\n                        }\n                }\n                showSettingButton(showButton)\n                {\n                        if (showButton)\n                        {\n                                this.settingButton.style.display='block';\n                        }\n                        else\n                        {\n                                this.settingButton.style.display='none';\n                        }\n                }\n                inputChange()\n                {\n                        this.changed = true;\n                        this.showSettingButton(true);\n                }\n                changeSetting()\n                {\n                        let newName = this.inputBox.value.trim();\n                        if (!this.isAlphaNumeric(newName) )\n                        {\n                                this.app.acknowledgeDialog.showDialog('Error: Invalid character',function(){});\n                                return;\n                        }\n                        let trayFound = false;\n                        for (let itray in this.app.trays)\n                        {\n                                if (this.app.trays[itray].name == newName)\n                                {\n                                        trayFound = true;\n                                }\n                        }\n                        if (trayFound)\n                        {\n                                this.app.acknowledgeDialog.showDialog('Error: Duplicate name',function(){});\n                                return\n                        }\n                        this.showSettingButton(false);\n                        this.changed = false;\n                        let newTray = \n                        {\n                                type: this.app.config.type,\n                                name: newName,\n                                arcPeriod: 60000,\n                                timeStamp: 1764952092876,\n                                watchdog: \n                                {\n                                        action: 'reading',\n                                        type: 'scalar',\n                                        value: 0,\n                                        unit: '',\n                                        alarm: \n                                        {\n                                                value: 0,\n                                                limits: \n                                                {\n                                                        lolo: -2,\n                                                        low: -1,\n                                                        high: 70001,\n                                                        hihi: 80000\n                                                }\n                                        }\n                                },\n                                forceArchiveData: \n                                {\n                                        action: 'reading',\n                                        type: 'scalar',\n                                        value: 0,\n                                        unit: '',\n                                        alarm: \n                                        {\n                                                value: 0,\n                                                limits: \n                                                {\n                                                        lolo: -2,\n                                                        low: -1,\n                                                        high: 2,\n                                                        hihi: 3\n                                                }\n                                        }\n                                },\n                                deviceMac: \n                                {\n                                        action: 'reading',\n                                        type: 'string',\n                                        value: '00:00:00:00:00:00'\n                                },\n                                routerMac: \n                                {\n                                        action: 'reading',\n                                        type: 'string',\n                                        value: '00:00:00:00:00:00'\n                                },\n                                lastUpdate: \n                                {\n                                        action: 'reading',\n                                        type: 'scalar',\n                                        value: 0,\n                                        unit: 'hr',\n                                        alarm: \n                                        {\n                                                value: 0,\n                                                limits: \n                                                {\n                                                        lolo: -25,\n                                                        low: -20,\n                                                        high: 90,\n                                                        hihi: 100\n                                                }\n                                        }\n                                },\n                                alias: \n                                {\n                                        action: 'setting',\n                                        type: 'string',\n                                        value: this.app.config.type + '-' + newName\n                                },\n                                trayControl: \n                                {\n                                        action: 'setting',\n                                        type: 'scalar',\n                                        value: 0,\n                                        unit: '',\n                                        enabled: 1,\n                                        alarm: \n                                        {\n                                                value: 0,\n                                                limits: \n                                                {\n                                                        lolo: -1,\n                                                        low: -1,\n                                                        high: 1,\n                                                        hihi: 1\n                                                }\n                                        }\n                                },\n                                setList: [],\n                                readList:[]\n\n                        }\n                        let actionMsg = \n                        {\n                                topic   : 'insertPicobusTray',\n                                payload : [newTray]\n                        };\n                        this.app.sendActionMsg('insertPicobusTray','writeDatabase',actionMsg);\n                        this.app.acknowledgeMsg = 'Success: Creating tray ' + newName + \" successful\";\n                        this.inputBox.value = \"\";\n                        \n                }\n                isAlphaNumeric(str) \n                {\n                        let len = str.length\n                        for (let i = 0; i < len; i++) \n                        {\n                                let code = str.charCodeAt(i);\n                                if (!(code > 47 && code < 58) && !(code > 64 && code < 91) && !(code > 96 && code < 123)) \n                                { \n                                        if (code != 45) return false;\n                                }\n                        }\n                        return true;\n                }\n                loadTrays()\n                {\n                        let numOptions = this.select.options.length\n                        for(let ioption = numOptions; ioption >= 0; ioption--) \n                        {\n                                this.select.remove(ioption);\n                        }\n\n                        let option = document.createElement('option');\n                        option.innerHTML = \" \";\n                        option.value = -1;\n                        option.setAttribute('class', 'dropChoiceCube-select');\n                        this.select.appendChild(option);\n                        for (let ii = 0; ii < this.app.trays.length; ++ii)\n                        {\n                                option = document.createElement('option');\n                                option.innerHTML = this.app.trays[ii].name;\n                                option.value = ii;\n                                option.style.background = 'white';\n                                option.setAttribute('class', 'dropChoiceCube-select');\n                                this.select.appendChild(option);\n                        }\n\n                }\n        \n        }\n",
+        "output": "str",
+        "x": 810,
+        "y": 260,
+        "wires": [
+            [
+                "cd0b0c5e50367d51"
+            ]
+        ]
+    },
+    {
+        "id": "c570dfa2702d44e5",
+        "type": "function",
+        "z": "64497cdd071a6487",
+        "name": "insertPicobusTray",
+        "func": "msg.payload = msg.payload.payload;\nlet tray = msg.payload['0'];\nmsg.type = tray.type;\nmsg.name = tray.name; \n\nfor (let icube in tray.setList)\n{\n    let setListObj = JSON.parse(JSON.stringify(tray.setList[icube]));\n    delete setListObj.name;\n    tray[tray.setList[icube].name] = setListObj;\n}\ndelete tray.setList;\n\nfor (let icube in tray.readList)\n{\n    let readListObj = JSON.parse(JSON.stringify(tray.readList[icube]));\n    delete readListObj.name;\n    tray[tray.readList[icube].name] = readListObj;\n}\ndelete tray.readList;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 520,
+        "wires": [
+            [
+                "e6c0590ddeaad432"
+            ]
+        ]
+    },
+    {
+        "id": "e6c0590ddeaad432",
+        "type": "mongodb3 in",
+        "z": "64497cdd071a6487",
+        "service": "_ext_",
+        "configNode": "9cd5ff5e.caf86",
+        "name": "insert",
+        "collection": "trays",
+        "operation": "insertOne",
+        "x": 950,
+        "y": 520,
+        "wires": [
+            [
+                "1f3c77ad587c2bd1"
+            ]
+        ]
+    },
+    {
+        "id": "1f3c77ad587c2bd1",
+        "type": "function",
+        "z": "64497cdd071a6487",
+        "name": "getPicobusTrays",
+        "func": "msg.payload = [{ type: msg.type},{projection  :{_id : 0} }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 520,
+        "wires": [
+            [
+                "75d20dade9e6e3b8"
+            ]
+        ]
+    },
+    {
+        "id": "9acb6fbe113d30cf",
+        "type": "subflow:e13648d6.d698c8",
+        "z": "64497cdd071a6487",
+        "name": "",
+        "x": 1670,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "cd0b0c5e50367d51",
+        "type": "template",
+        "z": "64497cdd071a6487",
+        "name": "trayEditorCard",
+        "field": "payload.trayEditorCard",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "//trayEditorCard\n        class TrayEditorCard extends AppCard\n        {\n            constructor(app, config)\n            {\n                super(app, config);\n                this.cubeListManager = new CubeListManager(this);\n                this.changedSettings = false;\n                this.deleteTrayState = false;\n                this.saveTrayState = false;\n                this.updateTrayState = false;\n                this.updateTrayName = '';\n            }\n            addCardBodyContent(cardBodyDiv)\n            {\n                this.containerRowDiv.style.display = 'none';\n\n                let buttonRowDiv = document.createElement('div');\n                cardBodyDiv.appendChild(buttonRowDiv);\n                \n                let t1 = document.createElement('table');\n                buttonRowDiv.appendChild(t1);\n                t1.setAttribute('width', '100%');\n\n                let t1r1  = document.createElement('tr');\n                t1.appendChild(t1r1);\n\n                let t1r1c1  = document.createElement('td');\n                t1r1.appendChild(t1r1c1);\n                t1r1c1.setAttribute('class', 'medium-text');\n                t1r1c1.style.width = '25%';\n \n                let t1r1c2  = document.createElement('td');\n                t1r1.appendChild(t1r1c2);\n                t1r1c2.style.width = '25%';\n                t1r1c2.setAttribute('class', 'medium-text');\n\n                let t1r1c3  = document.createElement('td');\n                t1r1.appendChild(t1r1c3);\n                t1r1c3.style.width = '25%';\n                t1r1c3.setAttribute('class', 'medium-text');\n\n                let t1r1c4  = document.createElement('td');\n                t1r1.appendChild(t1r1c4);\n                t1r1c4.style.width = '25%';\n                t1r1c4.setAttribute('class', 'medium-text');\n\n                this.closeButton = document.createElement('button');\n                this.closeButton.setAttribute('class', 'btn-primary btn-block');\n                this.closeButton.innerHTML = 'Close';\n                this.closeButton.onclick = event => \n                {\n                    if (this.changedSettings)\n                    {\n                        this.app.okCancelDialog.showDialog('Close without saving?',ok => { if (ok) this.closeWindow(); });\n                    }\n                    else\n                    {\n                        this.closeWindow();\n                    }\n                }\n                t1r1c1.appendChild(this.closeButton);\n\n                this.saveButton = document.createElement('button');\n                this.saveButton.setAttribute('class', 'btn-success btn-block');\n                this.saveButton.innerHTML = 'Save';\n                this.saveButton.onclick = event => \n                {\n                    if (this.changedSettings)\n                    {\n                        this.saveTrayState = true;\n                        this.pauseTray(); \n                    }\n                    else\n                    {\n                        this.closeWindow();\n                    }\n                };\n                t1r1c2.appendChild(this.saveButton);\n\n                this.saveAsButton = document.createElement('button');\n                this.saveAsButton.setAttribute('class', 'btn-warning btn-block');\n                this.saveAsButton.innerHTML = 'Save As';\n                this.saveAsButton.onclick = event => \n                {\n                        this.app.inputDialog.showDialog('Enter new Tray Name',ok => \n                        {\n                            if (ok) this.saveAs(this.app.inputDialog.inputBox);\n                        });\n                }\n                t1r1c3.appendChild(this.saveAsButton);\n\n                this.deleteButton = document.createElement('button');\n                this.deleteButton.setAttribute('class', 'btn-danger btn-block');\n                this.deleteButton.innerHTML = 'Delete';\n                this.deleteButton.onclick = event => \n                {\n                    this.app.okCancelDialog.showDialog('Caution! Do you really want to delete this tray?',ok => \n                    {\n                        if (ok) \n                        {   \n                            this.deleteTrayState = true;\n                            this.pauseTray(); \n                        }\n                    });\n                };\n                t1r1c4.appendChild(this.deleteButton);\n\n                let nameValueRowDiv = document.createElement('div');\n                cardBodyDiv.appendChild(nameValueRowDiv);\n                let t2 = document.createElement('table');\n                nameValueRowDiv.appendChild(t2);\n                t2.setAttribute('width', '100%');\n\n                let t2r1  = document.createElement('tr');\n                t2.appendChild(t2r1);\n\n                let t2r1c1  = document.createElement('td');\n                t2r1.appendChild(t2r1c1);\n                t2r1c1.setAttribute('width', '40%');\n                t2r1c1.setAttribute('class', 'cubeRowParameterView-label-column');\n\n                let t2r1c2  = document.createElement('td');\n                t2r1.appendChild(t2r1c2);\n                t2r1c2.setAttribute('width', '60%');\n                t2r1c2.setAttribute('class', 'cubeRowParameterView-label-column');\n\n                this.nameBox = this.addNameValuePair(t2, \"Tray Name\", false);\n                this.arcPeriodBox = this.addNameValuePair(t2, \"Archive Period\", true);\n                this.aliasBox = this.addNameValuePair(t2, \"Alias\", true);\n\n                this.arcPeriodBox.onchange  = event => {this.changedSettings = true;}\n                this.aliasBox.onchange  = event => {this.changedSettings = true;}\n                \n                this.cubeListManager.addContent(cardBodyDiv);\n            }\n            closeWindow()\n            {\n                this.app.trayChooserCard.select.value = -1;\n                this.app.trayChooserCard.containerRowDiv.style.display = 'block';\n                this.containerRowDiv.style.display = 'none';\n            }\n            setData(tray)\n            {\n                this.tray = tray;\n                this.changedSettings = false;\n                this.nameBox.innerHTML = this.tray.name;\n                this.arcPeriodBox.value = this.tray.arcPeriod.toString();\n                this.aliasBox.value = this.tray.alias.value;\n\n                this.cubeListManager.clearCubeLists();\n                for (let icube in this.tray.setList)\n                {\n                    this.cubeListManager.addCubeItem(this.tray.setList[icube]);\n                }\n                for (let icube in this.tray.readList)\n                {\n                    this.cubeListManager.addCubeItem(this.tray.readList[icube]);\n                }\n            }\n\n            addNameValuePair(table, label, getValueBox)\n            {\n                let r1  = document.createElement('tr');\n                table.appendChild(r1);\n\n                let r1c1  = document.createElement('td');\n                r1c1.setAttribute('width', '40%');\n                r1.appendChild(r1c1);\n\n                r1c1.setAttribute('class', 'cubeRowParameterView-label-column');\n\n                let labelSpan  = document.createElement('span');\n                r1c1.appendChild(labelSpan);\n                labelSpan.innerHTML = label;\n\n                let r1c2  = document.createElement('td');\n                r1c2.setAttribute('width', '60%');\n                r1.appendChild(r1c2);\n                r1c2.setAttribute('class', 'cubeRowParameterView-widget-column-1');\n                if (getValueBox)\n                {\n                    let valueBox = document.createElement('input');\n                    r1c2.appendChild(valueBox);\n                    valueBox.setAttribute('class', 'numberSetCube-inputbox');\n                    valueBox.setAttribute('type', 'text');\n                    valueBox.setAttribute('value', ' ');\n                    return valueBox;\n                }\n                else\n                {\n                    let valueBox = document.createElement('span');\n                    r1c2.appendChild(valueBox);\n                    valueBox.setAttribute('class', 'numberReadCube-span');\n                    valueBox.innerHTML = ' ';\n                    return valueBox;\n\n                }\n            }\n            pauseTray()\n            {\n                let actionMsg = \n                {\n                        topic   : 'pauseTray',\n                        payload : [this.tray]\n                };\n                this.app.sendActionMsg('pauseTray','setting',actionMsg);                \n            }\n            trayPaused(tray)\n            {\n                if (this.deleteTrayState)\n                {\n                    this.deleteTrayState = false;\n                    let actionMsg = \n                    {\n                            topic   : 'deleteTray',\n                            payload :  {$and :[{type : tray.type},{name : tray.name}]}\n                    };\n                    this.app.sendActionMsg('deleteTray','writeDatabase',actionMsg);   \n                    this.closeWindow();             \n                }\n                if (this.saveTrayState)\n                {\n                    this.saveTrayState = false;\n                    this.tray.arcPeriod = Number(this.arcPeriodBox.value);\n                    this.tray.alias.value = this.aliasBox.value.trim();\n\n                    let actionMsg = \n                    {\n                            topic   : 'saveTray',\n                            payload :  this.tray\n                    };\n                    this.app.sendActionMsg('saveTray','writeDatabase',actionMsg);   \n                    this.closeWindow();             \n                }\n                if (this.updateTrayState)\n                {\n                    this.updateTrayState = false;\n                    this.updateTrayName = this.tray.name;\n\n                    let actionMsg = \n                    {\n                            topic   : 'updateTray',\n                            payload :  this.tray\n                    };\n                    this.app.sendActionMsg('updateTray','writeDatabase',actionMsg);   \n                    this.closeWindow();             \n                }\n            }\n            saveAs(inputBox)\n            {\n                let newName = inputBox.value.trim();\n                inputBox.value = '';\n                if (!this.isAlphaNumeric(newName) )\n                {\n                    this.app.acknowledgeDialog.showDialog('Error: Invalid character',function(){});\n                    return;\n                }\n                let trayFound = false;\n                for (let itray in this.app.trays)\n                {\n                    if (this.app.trays[itray].name == newName)\n                    {\n                        trayFound = true;\n                    }\n                }\n                if (trayFound)\n                {\n                    this.app.acknowledgeDialog.showDialog('Error: Duplicate name',function(){});\n                    return\n                }\n                let newTray = JSON.parse(JSON.stringify(this.tray));\n                newTray.name = newName;\n                newTray.alias.value = newName;\n                let actionMsg = \n                {\n                    topic   : 'insertPicobusTray',\n                    payload : [newTray]\n                };\n                this.app.sendActionMsg('insertPicobusTray','writeDatabase',actionMsg);\n            }\n            isAlphaNumeric(str) \n            {\n                let len = str.length\n                for (let i = 0; i < len; i++) \n                {\n                    let code = str.charCodeAt(i);\n                    if (!(code > 47 && code < 58) && !(code > 64 && code < 91) && !(code > 96 && code < 123)) \n                    { \n                        if (code != 45) return false;\n                    }\n                }\n                return true;\n            }\n    }\n\n",
+        "output": "str",
+        "x": 1060,
+        "y": 60,
+        "wires": [
+            [
+                "5b0592c284cec261"
+            ]
+        ]
+    },
+    {
+        "id": "455479ccc0d1070c",
+        "type": "function",
+        "z": "64497cdd071a6487",
+        "name": "pauseTray",
+        "func": "msg.payload = msg.payload.payload['0'];\nmsg.type = msg.payload.type;\nmsg.name = msg.payload.name; \nlet payload = {'cube': 'trayControl', 'value':1};\nlet topic = global.get('box') + '/tray/' +  msg.type + '/' + msg.name + '/setting/setting';\n\nlet  newMsg1 = \n{\n    topic   : topic, \n    payload : payload, \n    userID  : msg.userID,\n    username : msg.token.username,\n};\nlet newMsg2 = \n {\n    topic : msg.topic,\n    payload:{\n        topic           : msg.topic,\n        payload         : msg.payload,\n        userID          : msg.userID,\n        name            : msg.name,\n    }\n};\n\nreturn [newMsg1, newMsg2];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 700,
+        "wires": [
+            [
+                "ca62d168e665edc7"
+            ],
+            [
+                "6e0cd4242c50c03f"
+            ]
+        ]
+    },
+    {
+        "id": "6e0cd4242c50c03f",
+        "type": "delay",
+        "z": "64497cdd071a6487",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 940,
+        "y": 740,
+        "wires": [
+            [
+                "3ec7c8f3862537d5"
+            ]
+        ]
+    },
+    {
+        "id": "5a059d5259b23b38",
+        "type": "function",
+        "z": "64497cdd071a6487",
+        "name": "deleteTray",
+        "func": "msg.payload = msg.payload.payload;\nmsg.type = msg.payload['$and'][0].type;\nmsg.name = msg.payload['$and'][1].name;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 560,
+        "wires": [
+            [
+                "dcff8f091416c17b"
+            ]
+        ]
+    },
+    {
+        "id": "dcff8f091416c17b",
+        "type": "mongodb3 in",
+        "z": "64497cdd071a6487",
+        "service": "_ext_",
+        "configNode": "9cd5ff5e.caf86",
+        "name": "removeOne",
+        "collection": "trays",
+        "operation": "removeOne",
+        "x": 970,
+        "y": 560,
+        "wires": [
+            [
+                "1f3c77ad587c2bd1"
+            ]
+        ]
+    },
+    {
+        "id": "937a2638cfdb65e4",
+        "type": "mongodb3 in",
+        "z": "64497cdd071a6487",
+        "service": "_ext_",
+        "configNode": "9cd5ff5e.caf86",
+        "name": "update",
+        "collection": "trays",
+        "operation": "update",
+        "x": 950,
+        "y": 600,
+        "wires": [
+            [
+                "5a6dbe8bed4764e2"
+            ]
+        ]
+    },
+    {
+        "id": "f1db7dcf167f3b7d",
+        "type": "function",
+        "z": "64497cdd071a6487",
+        "name": "save Tray",
+        "func": "msg.payload = msg.payload.payload;\nlet tray = msg.payload;\nfor (let icube in tray.setList)\n{\n    let setListObj = JSON.parse(JSON.stringify(tray.setList[icube]));\n    delete setListObj.name;\n    tray[tray.setList[icube].name] = setListObj;\n}\ndelete tray.setList;\n\nfor (let icube in tray.readList)\n{\n    let readListObj = JSON.parse(JSON.stringify(tray.readList[icube]));\n    delete readListObj.name;\n    tray[tray.readList[icube].name] = readListObj;\n}\ndelete tray.readList;\n\nmsg.type = tray.type;\nmsg.name = tray.name;\nmsg.payload = [{$and : [{type : msg.type},{name : msg.name}]}, tray];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 600,
+        "wires": [
+            [
+                "937a2638cfdb65e4"
+            ]
+        ]
+    },
+    {
+        "id": "5a6dbe8bed4764e2",
+        "type": "function",
+        "z": "64497cdd071a6487",
+        "name": "updateTray Complete",
+        "func": "let payload = {'cube': 'trayControl', 'value':2};\nlet topic = global.get('box') + '/tray/' +  msg.type + '/' + msg.name + '/setting/setting';\n\nlet  newMsg1 = \n{\n    topic   : topic, \n    payload : payload, \n    userID  : msg.userID,\n    username : msg.token.username,\n};\nlet newMsg2 = \n{\n    topic : msg.topic,\n    userID          : msg.userID,\n    name            : msg.name,\n    type            : msg.type,\n    payload:{ }\n};\n\nreturn [newMsg1, newMsg2];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 640,
+        "wires": [
+            [
+                "ca62d168e665edc7"
+            ],
+            [
+                "1f3c77ad587c2bd1"
+            ]
+        ]
+    },
+    {
+        "id": "2bbfba338c36e2c7",
+        "type": "link in",
+        "z": "64497cdd071a6487",
+        "name": "LogSetting In",
+        "links": [
+            "ca62d168e665edc7"
+        ],
+        "x": 1535,
+        "y": 680,
+        "wires": [
+            [
+                "9acb6fbe113d30cf"
+            ]
+        ]
+    },
+    {
+        "id": "ca62d168e665edc7",
+        "type": "link out",
+        "z": "64497cdd071a6487",
+        "name": "Setting Out",
+        "mode": "link",
+        "links": [
+            "2bbfba338c36e2c7"
+        ],
+        "x": 1395,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "106eb450dd5b7123",
+        "type": "link in",
+        "z": "64497cdd071a6487",
+        "name": "websocket in",
+        "links": [
+            "4acb75789901ee16",
+            "3ec7c8f3862537d5"
+        ],
+        "x": 1545,
+        "y": 800,
+        "wires": [
+            [
+                "35111b293da59443"
+            ]
+        ]
+    },
+    {
+        "id": "4acb75789901ee16",
+        "type": "link out",
+        "z": "64497cdd071a6487",
+        "name": "websocket out 1",
+        "mode": "link",
+        "links": [
+            "106eb450dd5b7123"
+        ],
+        "x": 1415,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "3ec7c8f3862537d5",
+        "type": "link out",
+        "z": "64497cdd071a6487",
+        "name": "websocket out 2",
+        "mode": "link",
+        "links": [
+            "106eb450dd5b7123"
+        ],
+        "x": 1025,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "5b0592c284cec261",
+        "type": "template",
+        "z": "64497cdd071a6487",
+        "name": "cubeListManager",
+        "field": "payload.cubeListManager",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "//cubeListManager\n        class CubeListManager \n        {\n            constructor(trayEditorCard)\n            {\n                this.trayEditorCard = trayEditorCard;\n            }\n            clearCubeLists()\n            {\n                destroyNode(this.cubeListDisplayDiv);\n                this.cubeListDisplayDiv = document.createElement('div');\n                this.div01.appendChild(this.cubeListDisplayDiv);\n\n                this.cubeListUl = document.createElement('ul');\n//                this.cubeListUl.style.listStyle = 'none';\n                this.cubeListUl.style.paddingLeft = '0';\n                this.cubeListUl.style.marginTop = '0';\n                this.cubeListDisplayDiv.appendChild(this.cubeListUl);\n            }\n            addContent(cardBodyDiv)\n            {\n                this.div01 = document.createElement('div');\n                cardBodyDiv.appendChild(this.div01);\n                this.div01.setAttribute('style',\"padding-top: 10px;\");\n                let div02 = document.createElement('div');\n                this.div01.appendChild(div02);\n                div02.setAttribute('style',\"display: flex; gap: 0.5rem; margin-bottom: 1rem; align-items: flex-end;\");\n                let div03 = document.createElement('div');\n                div02.appendChild(div03);\n                div03.setAttribute('style',\"flex-grow: 1;\");\n                let label01 = document.createElement('label');\n                div03.appendChild(label01);\n                label01.htmlFor = 'cubeNameInput';\n                label01.setAttribute('style',\"display: block; font-size:  var(--medium-text); font-weight: 500; color: var(--color5); margin-bottom: 0.25rem;\");\n                label01.innerText = \"Cube Name\";\n                this.cubeNameInput = document.createElement('input');\n                div03.appendChild(this.cubeNameInput);\n                this.cubeNameInput.setAttribute(\"style\",\"margin-top: 0;\");\n                this.cubeNameInput.setAttribute(\"type\",\"text\");\n                this.cubeNameInput.setAttribute(\"id\",\"cubeNameInput\");\n                this.cubeNameInput.setAttribute(\"class\",\"input-field\");\n\n                let div04 = document.createElement('div');\n                div02.appendChild(div04);\n                div04.setAttribute('style',\"width: 120px;\");\n                let label02 = document.createElement('label');\n                div04.appendChild(label02);\n                label02.setAttribute('style',\"display: block; font-size:  var(--medium-text); font-weight: 500; color: var(--color5); margin-bottom: 0.25rem;\");\n                label02.innerText = \"Type\";\n                this.cubeActionSelect = document.createElement('select');\n                div04.appendChild(this.cubeActionSelect);\n                this.cubeActionSelect.setAttribute(\"style\",\"margin-top: 0;\");\n                this.cubeActionSelect.setAttribute(\"class\",\"input-field\");\n                let cubeActionTypeReadingOption = document.createElement('option');\n                this.cubeActionSelect.appendChild(cubeActionTypeReadingOption);\n                cubeActionTypeReadingOption.setAttribute(\"value\",\"reading\");\n                cubeActionTypeReadingOption.innerText = \"reading\";\n                let cubeActionTypeSettingOption = document.createElement('option');\n                this.cubeActionSelect.appendChild(cubeActionTypeSettingOption);\n                cubeActionTypeSettingOption.setAttribute(\"value\",\"setting\");\n                cubeActionTypeSettingOption.innerText = \"setting\";\n\n                this.addButton =  document.createElement('button');\n                div02.appendChild(this.addButton);\n                this.addButton.setAttribute('type','button');\n                this.addButton.setAttribute('id','add-cube-button');\n                this.addButton.setAttribute('class','action-button');\n                this.addButton.setAttribute('style','width: 80px; padding: 0.5rem; font-size: 0.875rem; background-color: #0d9488; align-self: flex-end;');\n                this.addButton.innerText = 'Add';\n                this.addButton.onclick = event => \n                {\n                    let newName = this.cubeNameInput.value.trim();\n                    if (!this.isAlphaNumeric(newName) )\n                    {\n                        this.trayEditorCard.app.acknowledgeDialog.showDialog('Error: Invalid Cube Name',function(){});\n                        return;\n                    }\n                    let duplicateName = false;\n                    for (let icube in this.trayEditorCard.tray.readList)\n                    {\n                        if (newName == this.trayEditorCard.tray.readList[icube].name) duplicateName = true;\n                    }\n                    for (let icube in this.trayEditorCard.tray.setList)\n                    {\n                        if (newName == this.trayEditorCard.tray.setList[icube].name) duplicateName = true;\n                    }\n                    if (duplicateName)\n                    {\n                        this.trayEditorCard.app.acknowledgeDialog.showDialog('Error: Duplicate Cube Name',function(){});\n                        return;\n                    }\n                    if (this.cubeActionSelect.value == 'reading')\n                    {\n                        let newCube = \n                        {\n                            \"name\": newName,\n                            \"action\": \"reading\",\n                            \"unit\": 'unit',\n                            \"value\": 0,\n                            \"alarm\": {\n                                \"value\": 0,\n                                \"limits\": {\n                                \"lolo\": -1,\n                                \"low\": -1,\n                                \"high\": 1,\n                                \"hihi\": 1\n                                }\n                            },\n                            \"picobus\": {\n                                \"byteOffset\": 0,\n                                \"type\": \"uint16\",\n                                \"scale\": 1,\n                                \"offset\": 0,\n                                \"canEdit\": 0\n                            }\n                        }\n                        this.trayEditorCard.tray.readList.push(newCube);\n                    }\n                    else\n                    {\n                        let newCube = \n                        {\n                            \"name\": newName,\n                            \"action\": \"setting\",\n                            \"unit\": 'unit',\n                            \"value\": 0,\n                            \"enabled\":1,\n                            \"alarm\": {\n                                \"value\": 0,\n                                \"limits\": {\n                                \"lolo\": -1,\n                                \"low\": -1,\n                                \"high\": 1,\n                                \"hihi\": 1\n                                }\n                            },\n                            \"picobus\": {\n                                \"byteOffset\": 0,\n                                \"type\": \"uint16\",\n                                \"scale\": 1,\n                                \"offset\": 0,\n                            }\n                        }\n                        this.trayEditorCard.tray.setList.push(newCube);\n                    }\n                    this.trayEditorCard.updateTrayState = true;\n                    this.trayEditorCard.pauseTray(); \n                    this.cubeNameInput.value = '';\n                    this.cubeActionSelect.value = \"reading\";\n                };\n            \n                this.cubeListDisplayDiv = document.createElement('div');\n                this.div01.appendChild(this.cubeListDisplayDiv);\n            }\n            addCubeItem(cubeData)\n            {\n                let cubeItem = new CubeItem(this,  cubeData);\n                this.cubeListUl.append(cubeItem.domLi);\n            }\n            deleteCube(cube) \n            {\n                let cubeArray = [];\n                if (cube.action == 'setting') cubeArray = this.trayEditorCard.tray.setList;\n                if (cube.action == 'reading') cubeArray = this.trayEditorCard.tray.readList;\n                let foundCube = '-1';\n                for (let icube in cubeArray)\n                {\n                    if (cubeArray[icube].name == cube.name) foundCube = icube;\n                }\n                cubeArray.splice(Number(foundCube),1);\n                this.trayEditorCard.updateTrayState = true;\n                this.trayEditorCard.pauseTray(); \n            }\n            isAlphaNumeric(str) \n            {\n                let len = str.length\n                for (let i = 0; i < len; i++) \n                {\n                    let code = str.charCodeAt(i);\n                    if (!(code > 47 && code < 58) && !(code > 64 && code < 91) && !(code > 96 && code < 123)) \n                    { \n                        if (code != 45) return false;\n                    }\n                }\n                return true;\n            }\n        }\n\n",
+        "output": "str",
+        "x": 1070,
+        "y": 100,
+        "wires": [
+            [
+                "35f83ea8f8c9cd0f"
+            ]
+        ]
+    },
+    {
+        "id": "746e8ab1cf19d04f",
+        "type": "template",
+        "z": "64497cdd071a6487",
+        "name": "extraCSS",
+        "field": "payload.extraCSS",
+        "fieldType": "msg",
+        "format": "css",
+        "syntax": "mustache",
+        "template": "        .input-field {\n            width: 100%;\n            padding: 0.5rem 0.75rem;\n            margin-top: 0.25rem;\n            border: 1px solid #ccc;\n            border-radius: 0.5rem;\n            box-sizing: border-box;\n            transition: border-color 0.2s;\n        }\n        .input-field:focus {\n            border-color: #4f46e5;\n            outline: none;\n        }\n        .action-button {\n            width: 100%;\n            background-color: #4f46e5;\n            color: white;\n            padding: 0.75rem;\n            border-radius: 0.5rem;\n            font-weight: 600;\n            border: none;\n            cursor: pointer;\n            transition: background-color 0.15s;\n            margin-top: 0.5rem;\n        }\n        .action-button:hover:not(:disabled) {\n            background-color: #4338ca;\n        }\n        .action-button:disabled {\n            background-color: #a5b4fc;\n            cursor: not-allowed;\n        }\n        .delete-btn {\n            background: none;\n            border: none;\n            color: #ef4444;\n            cursor: pointer;\n            padding: 0.5rem;\n            border-radius: 50%;\n            transition: background-color 0.15s, color 0.15s;\n        }\n        .delete-btn:hover {\n            background-color: #fee2e2;\n            color: #b91c1c;\n        }\n      /* Responsive Layout Grid */\n        \n        .enabled-control-container {\n            display: flex; \n            align-items: center; \n            margin-left: 0.5rem;\n        }\n        .editable-unit {\n            font-size: 1.5rem;\n            font-weight: 500;\n            color: #6b7280;\n            margin-left: 0.5rem;\n            border: 1px solid transparent;\n            padding: 2px 4px;\n            border-radius: 4px;\n            cursor: pointer;\n            transition: all 0.2s;\n            width: 150px; \n            text-align: center;\n        }\n        .editable-unit:hover {\n            border-color: #d1d5db;\n            background-color: #f3f4f6;\n        }\n        .editable-unit:focus {\n            border-color: #4f46e5;\n            background-color: #fff;\n            outline: none;\n        }\n        .alarm-limits-container, .picobus-container {\n            display: flex;\n            gap: 0.25rem;\n            flex-wrap: wrap;\n            margin-top: 0.5rem;\n            padding: 0.5rem;\n            border: 1px dashed #ccc;\n            border-radius: 0.5rem;\n            background-color: #fafafa;\n        }\n        .alarm-limits-container input, .picobus-container input, .picobus-container select {\n            width: 100%;\n            padding: 2px;\n            font-size: 1.5rem;\n            text-align: center;\n            border: 1px solid #ddd;\n            border-radius: 4px;\n        }\n        .picobus-container select {\n            width: 100%;\n        }\n        .alarm-limits-container label, .picobus-container label {\n            font-size: 1.5rem;\n            color: #6b7280;\n            text-align: center;\n            width: 100%;\n            margin-bottom: 2px;\n        }\n        .alarm-limit-group, .picobus-field-group {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            margin-right: 0.5rem;\n        }\n        .picobus-field-group.checkbox {\n            width: 150px;\n        }\n",
+        "output": "str",
+        "x": 440,
+        "y": 180,
+        "wires": [
+            [
+                "6a2192d9b21d80eb"
+            ]
+        ]
+    },
+    {
+        "id": "35f83ea8f8c9cd0f",
+        "type": "template",
+        "z": "64497cdd071a6487",
+        "name": "cubeItem",
+        "field": "payload.cubeItem",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "//cubeItem\n        class CubeItem \n        {\n            constructor(cubeListManager, cube,)\n            {\n                this.cubeListManager = cubeListManager;\n                this.cube = cube;\n                this.domLi = this.renderCube();\n            }\n            renderCube()\n            {\n                let li = document.createElement('li');\n                li.style.display = 'flex';\n                li.style.flexDirection = 'column';\n                li.style.padding = '1.0rem';\n                li.style.marginBottom = '1.0rem';\n                li.style.marginLeft = '1.0rem';\n                li.style.marginRight = '1.0rem';\n                li.style.backgroundColor = '#000';\n                li.style.borderRadius = '1.0rem';\n                li.style.border = '1px solid #e5e7eb';\n\n                li.appendChild(this.setupHeaderConfig());\n                li.appendChild(this.setupControlConfig());\n                li.appendChild(this.setupAlarmConfig());\n                li.appendChild(this.setupPicoBusConfig());\n                return li;\n            }\n            setupHeaderConfig()\n            {\n                let headerRowDiv = document.createElement('div');\n                headerRowDiv.setAttribute('style','display: flex; justify-content: space-between; align-items: center; width: 100%;');\n                    let headerRowCntrlDiv = document.createElement('div');\n                    headerRowDiv.appendChild(headerRowCntrlDiv);\n                    headerRowCntrlDiv.setAttribute('style','display: flex; align-items: center; gap: 1.0rem; flex-wrap: wrap;');\n                        let actionBadgeSpan = document.createElement('span');\n                        headerRowCntrlDiv.appendChild(actionBadgeSpan);\n                        if (this.cube.action == 'reading')\n                        {\n                            actionBadgeSpan.setAttribute('style','font-size: 1.5rem; font-weight: 600; padding: 0.25rem 0.5rem; border-radius: 0.25rem; background-color: #e0f2f1; color: #047878;');\n                            actionBadgeSpan.innerText = 'READING';\n                        }\n                        else\n                        {\n                            actionBadgeSpan.setAttribute('style','font-size: 1.5rem; font-weight: 600; padding: 0.25rem 0.5rem; border-radius: 0.25rem; background-color: #fef3c7; color: #9d5203;');\n                            actionBadgeSpan.innerText = 'SETTING';\n                        }\n                        let cubeNameSpan = document.createElement('span');\n                        headerRowCntrlDiv.appendChild(cubeNameSpan);\n                        cubeNameSpan.setAttribute('style','font-size: 1.5rem; font-weight: 700; color: var(--color7);;');\n                        cubeNameSpan.innerText = this.cube.name;\n                    let deleteButton = document.createElement('button');\n                    headerRowDiv.appendChild(deleteButton);\n                    deleteButton.setAttribute('style', 'background-color: #fca5a5; color: #7f1d1d; border: none; padding: 0.25rem 0.5rem; border-radius: 0.25rem; cursor: pointer; font-size: 1.5rem; transition: background-color 0.15s;');\n                    deleteButton.setAttribute('class','delete-cube-btn');\n                    deleteButton.innerText = 'Delete';\n                    deleteButton.onclick = event => \n                    {\n                        this.cubeListManager.trayEditorCard.app.okCancelDialog.showDialog('Remove Cube ' + this.cube.name + '?',ok => { if (ok) this.cubeListManager.deleteCube(this.cube) });\n                    };\n                return headerRowDiv;                 \n            }\n            setupControlConfig()\n            {\n                let controlRowDiv = document.createElement('div');\n                controlRowDiv.setAttribute('style','margin-top: 0.5rem; width: 100%; text-align:left;');\n                    let controlRowDivLabel = document.createElement('label');\n                    controlRowDiv.appendChild(controlRowDivLabel);\n                    controlRowDivLabel.setAttribute('style','font-size: 1.5rem; font-weight: 600; color: #4f46e5;');\n                    controlRowDivLabel.innerText = 'Value Config.';\n                    let controlContainerDiv = document.createElement('div');\n                    controlRowDiv.appendChild(controlContainerDiv);\n                    controlContainerDiv.setAttribute('class','alarm-limits-container');\n                    controlContainerDiv.setAttribute('style','display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;');\n                        if (this.cube.action == 'setting')\n                        {\n                            let enabledControlDiv = document.createElement('div');\n                            controlContainerDiv.appendChild(enabledControlDiv);\n                            enabledControlDiv.setAttribute('class', 'picobus-field-group');\n                            enabledControlDiv.setAttribute('style', 'width: 20%');\n                                let enabledCheckboxLabel  = document.createElement('label');\n                                enabledControlDiv.appendChild(enabledCheckboxLabel);\n                                enabledCheckboxLabel.setAttribute('style','font-size: 1.5rem; font-weight: 500; color: #4b5563;');\n                                enabledCheckboxLabel.innerText = 'Enabled';\n                                let enabledCheckboxInput  = document.createElement('input');\n                                enabledControlDiv.appendChild(enabledCheckboxInput);\n                                enabledCheckboxInput.type = 'checkbox';\n                                enabledCheckboxInput.setAttribute('class', 'edit-enabled-checkbox');\n                                enabledCheckboxInput.setAttribute('style', 'margin-right: 0.5rem;');\n                                if (this.cube.enabled == 0) enabledCheckboxInput.checked = false;\n                                if (this.cube.enabled == 1) enabledCheckboxInput.checked = true;\n                                enabledCheckboxInput.onchange = event => \n                                {\n                                    if (event.target.checked ) this.cube.enabled = 1;\n                                    if (!event.target.checked ) this.cube.enabled = 0;\n                                    this.cubeListManager.trayEditorCard.changedSettings = true;\n                                };\n                        }\n                        let unitControlDiv = document.createElement('div');\n                        controlContainerDiv.appendChild(unitControlDiv);\n                        unitControlDiv.setAttribute('class', 'picobus-field-group');\n                        unitControlDiv.setAttribute('style', 'width: 100px');\n                        let unitControlLabel  = document.createElement('label');\n                        unitControlDiv.appendChild(unitControlLabel);\n                        unitControlLabel.setAttribute('style','font-size: 1.5rem; font-weight: 500; color: #4b5563;');\n                        unitControlLabel.innerText = 'Unit';\n                        let unitControlInput = document.createElement('input');\n                        unitControlDiv.appendChild(unitControlInput);\n                        unitControlInput.type = 'text';\n                        unitControlInput.setAttribute('style', 'width: 100px');\n                        unitControlInput.value = this.cube.unit;\n                        unitControlInput.onchange = event => {this.cube.unit = event.target.value; this.cubeListManager.trayEditorCard.changedSettings = true;};\n\n                        let valueControlDiv = document.createElement('div');\n                        controlContainerDiv.appendChild(valueControlDiv);\n                        valueControlDiv.setAttribute('class', 'picobus-field-group');\n                        valueControlDiv.setAttribute('style', 'width: 100px');\n                        let valueControlInputLabel = document.createElement('label');\n                        valueControlDiv.appendChild(valueControlInputLabel);\n                        valueControlInputLabel.setAttribute('style', 'font-size: 1.5rem; font-weight: 500; color: #4b5563;');\n                        valueControlInputLabel.innerText = 'Value'\n                        if (this.cube.action == 'setting')\n                        {\n                                let valueControlInput = document.createElement('input');\n                                valueControlDiv.appendChild(valueControlInput);\n                                valueControlInput.setAttribute('style', 'width: 60px;');\n                                valueControlInput.setAttribute('class', 'editable-value');\n                                valueControlInput.type = 'number';\n                                valueControlInput.value = this.cube.value;\n                                valueControlInput.onchange = event => {this.cube.value = event.target.value; this.cubeListManager.trayEditorCard.changedSettings = true;};\n                        }\n                        else\n                        {\n                            let valueControlSpan = document.createElement('span');\n                            valueControlDiv.appendChild(valueControlSpan);\n                            valueControlSpan.setAttribute('style', 'font-size: 1.5rem; color: #6b7280; margin-left: 0.75rem;');\n                            valueControlSpan.innerText = this.cube.value.toString();\n                        }\n                \n                return controlRowDiv;\n                 \n            }\n            setupAlarmConfig()\n            {\n                let limitInputs = ['lolo', 'low', 'high', 'hihi'];\n                let alarmRowDiv = document.createElement('div');\n                alarmRowDiv.setAttribute('style','margin-top: 0.5rem; width: 100%; text-align:left;');\n                    let alarmRowDivLabel = document.createElement('label');\n                    alarmRowDiv.appendChild(alarmRowDivLabel);\n                    alarmRowDivLabel.setAttribute('style','font-size: 1.5rem; font-weight: 600; color: #4f46e5;');\n                    alarmRowDivLabel.innerText = 'Alarm Limits:';\n                    let alarmLimitsContainerDiv = document.createElement('div');\n                    alarmRowDiv.appendChild(alarmLimitsContainerDiv);\n                    alarmLimitsContainerDiv.setAttribute('class','alarm-limits-container');\n\n                    for (let ilimit in limitInputs)\n                    {\n                        let alarmLimitDiv = document.createElement('div');\n                        alarmLimitsContainerDiv.appendChild(alarmLimitDiv);\n                        alarmLimitDiv.setAttribute('class','alarm-limit-group');\n                        alarmLimitDiv.setAttribute('style','width:20%;');\n                            let alarmLimitLabel = document.createElement('label');\n                            alarmLimitDiv.appendChild(alarmLimitLabel);\n                            alarmLimitLabel.innerText = limitInputs[ilimit].toUpperCase()\n                            let alarmLimitInput = document.createElement('input');\n                            alarmLimitDiv.appendChild(alarmLimitInput);\n                            alarmLimitInput.type = \"number\";\n                            alarmLimitInput.value = this.cube.alarm.limits[limitInputs[ilimit]];\n                            alarmLimitInput.onchange = event => {this.cube.alarm.limits[limitInputs[ilimit]] = event.target.value; this.cubeListManager.trayEditorCard.changedSettings = true;};\n                    }\n                return  alarmRowDiv;\n            }\n            setupPicoBusConfig()\n            {\n                let picobusRowDiv = document.createElement('div');\n                picobusRowDiv.setAttribute('style','margin-top: 0.5rem; width: 100%; text-align:left;');\n                    let picobusRowDivLabel = document.createElement('label');\n                    picobusRowDiv.appendChild(picobusRowDivLabel);\n                    picobusRowDivLabel.setAttribute('style','font-size: 1.5rem; font-weight: 600; color: #4f46e5;');\n                    picobusRowDivLabel.innerText = 'Picobus Config:';\n\n                    let picobusContainerDiv = document.createElement('div');\n                    picobusRowDiv.appendChild(picobusContainerDiv);\n                    picobusContainerDiv.setAttribute('class', 'picobus-container');\n\n                    let picobusFields = [\n                        { key: 'byteOffset', type: 'number', label: 'Byte Offset', width: '20%' },\n                        { key: 'type', type: 'select', label: 'Type', width: '20%' },\n                        { key: 'scale', type: 'number', label: 'Scale', width: '20%' },\n                        { key: 'offset', type: 'number', label: 'Offset', width: '20%' },\n                    ];\n                    let PICOBUS_TYPES = ['uint8', 'int8', 'uint16', 'int16', 'uint32', 'int32', 'uint64', 'int64', 'float32', 'float64'];\n\n                    for  (let field in picobusFields)\n                    {\n                        let fieldDiv = document.createElement('div');\n                        picobusContainerDiv.appendChild(fieldDiv);\n                        fieldDiv.setAttribute('class', 'picobus-field-group');\n                        fieldDiv.setAttribute('style', `width: ${picobusFields[field].width}`);\n\n                            let fieldLabel = document.createElement('label');\n                            fieldDiv.appendChild(fieldLabel);\n                            fieldLabel.innerText = picobusFields[field].label;\n\n                            if (picobusFields[field].type == 'number')\n                            {\n                                let fieldInput = document.createElement('input');\n                                fieldDiv.appendChild(fieldInput);\n                                fieldInput.setAttribute('type', 'number');\n                                fieldInput.setAttribute('value', this.cube.picobus[picobusFields[field].key]);\n                                fieldInput.onchange = event => \n                                {\n                                    this.cube.picobus[picobusFields[field].key] = event.target.value;\n                                    this.cubeListManager.trayEditorCard.changedSettings = true;\n                                };\n                            }\n                            if (picobusFields[field].type == 'select') \n                            {\n                                let fieldSelect = document.createElement('select');\n                                fieldDiv.appendChild(fieldSelect);\n                                fieldSelect.onchange = event => \n                                {\n                                    this.cube.picobus[picobusFields[field].key] = event.target.value;\n                                    this.cubeListManager.trayEditorCard.changedSettings = true;\n                                };\n                                for (let ioption in PICOBUS_TYPES)\n                                {\n                                    let fieldOption = document.createElement('option');\n                                    fieldSelect.appendChild(fieldOption);\n                                    fieldOption.setAttribute('value', PICOBUS_TYPES[ioption]);\n                                    fieldOption.innerText = PICOBUS_TYPES[ioption];\n                                }\n                                fieldSelect.value = this.cube.picobus[picobusFields[field].key];\n                            }\n                    }\n                    if (this.cube.action == 'reading')\n                    {\n                        let canEditCheckboxDiv = document.createElement('div');\n                        picobusContainerDiv.appendChild(canEditCheckboxDiv);\n                        canEditCheckboxDiv.setAttribute('class','picobus-field-group checkbox');\n                        let canEditCheckboxLabel = document.createElement('label');\n                        canEditCheckboxDiv.appendChild(canEditCheckboxLabel);\n                        canEditCheckboxLabel.innerText = 'Can Edit';\n                        let canEditCheckbox = document.createElement('input');\n                        canEditCheckboxDiv.appendChild(canEditCheckbox);\n                        canEditCheckbox.setAttribute('style','width: auto; margin-top: 10px;');\n                        canEditCheckbox.setAttribute('type','checkbox');\n                        if (this.cube.picobus.canEdit == 1) canEditCheckbox.checked = true;\n                        if (this.cube.picobus.canEdit == 0) canEditCheckbox.checked = false;\n                        canEditCheckbox.onchange = event => \n                        {\n                            if (event.target.checked ) this.cube.canEdit = 1;\n                            if (!event.target.checked ) this.cube.canEdit = 0;\n                            this.cubeListManager.trayEditorCard.changedSettings = true;\n                        };\n                    }\n                return picobusRowDiv;\n            }\n        }\n\n",
+        "output": "str",
+        "x": 1040,
+        "y": 140,
+        "wires": [
+            [
+                "e3b38227769ae406"
+            ]
+        ]
     }
 ]
